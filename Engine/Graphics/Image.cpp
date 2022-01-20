@@ -152,14 +152,14 @@ Texture *TextureFrameTable::GetFrameTexture(int64_t uFrameID, signed int a3) {
     TextureFrame *v5 = &v4[uFrameID];
     int v6 = v5->uAnimLength;
     if (v5->uFlags & 1 && (v6 != 0)) {
-        int v7 = (a3 >> 3) % v6;
-        for (char *i = (char *)&v5->uAnimTime;; i += 20) {
+        int animtime = ((a3 >> 3) % v6) / v5->uAnimTime;
+        /*for (char *i = (char *)&v5->uAnimTime;; i += 20) {
             int v9 = *(short *)i;
-            if (v7 <= v9) break;
-            v7 -= v9;
+            if (animtime <= v9) break;
+            animtime -= v9;
             ++v3;
-        }
-        return v4[v3].GetTexture();
+        }*/
+        return v4[v3 + animtime].GetTexture();
     } else {
         return v5->GetTexture();
     }

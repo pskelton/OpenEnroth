@@ -393,10 +393,10 @@ struct BLVDoor {  // 50h
     uint16_t *pZOffsets;
     uint16_t uNumVertices;
     uint16_t uNumFaces;
-    int16_t field_48;
+    int16_t field_48;  // uNumSectors??
     uint16_t uNumOffsets;
     State uState;
-    int16_t field_4E;
+    int16_t field_4E_not_used;
 };
 #pragma pack(pop)
 
@@ -473,7 +473,10 @@ struct BLVFace {  // 60h
     int16_t *pVertexUIDs = nullptr;
     int16_t *pVertexVIDs = nullptr;
     uint16_t uFaceExtraID;
+
     void *resource;  // unsigned __int16  uBitmapID;
+    String resourcename;
+
     uint16_t uSectorID;
     int16_t uBackSectorID;
     struct BBox_short_ pBounding {};
@@ -709,13 +712,13 @@ struct BLVRenderParams {
 #pragma pack(pop)
 extern BLVRenderParams *pBLVRenderParams;
 
-// int GetPortalScreenCoord(unsigned int uFaceID);
-// bool PortalFrustrum(int pNumVertices, struct BspRenderer_PortalViewportData *a2,
-//                   struct BspRenderer_PortalViewportData *near_portal,
-//                    int uFaceID);
-// void PrepareBspRenderList_BLV();
-// void AddBspNodeToRenderList(unsigned int node_id);
-// void sub_4406BC(unsigned int node_id, unsigned int uFirstNode);  // idb
+int GetPortalScreenCoord(unsigned int uFaceID);
+ bool PortalFrustrum(int pNumVertices, struct BspRenderer_PortalViewportData *a2,
+                   struct BspRenderer_PortalViewportData *near_portal,
+                    int uFaceID);
+void PrepareBspRenderList_BLV();
+void AddBspNodeToRenderList(unsigned int node_id);
+void sub_4406BC(unsigned int node_id, unsigned int uFirstNode);  // idb
 char DoInteractionWithTopmostZObject(int pid);
 // int sub_4AAEA6_transform(struct RenderVertexSoft *a1);
 unsigned int FaceFlowTextureOffset(unsigned int uFaceID);  // idb

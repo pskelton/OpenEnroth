@@ -12,6 +12,8 @@
 #define NK_SHADER_VERSION "#version 300 es\n"
 #endif
 
+#include "shader.h"
+
 class RenderOpenGL : public RenderBase {
  public:
     RenderOpenGL(
@@ -68,6 +70,11 @@ class RenderOpenGL : public RenderBase {
     virtual bool SwitchToWindow();
     virtual void RasterLine2D(signed int uX, signed int uY, signed int uZ,
                               signed int uW, unsigned __int16 uColor);
+    
+    void Drawlines();
+    void drawtwodverts();
+    void drawbillbverts(int* i);
+    
     virtual void ClearZBuffer();
     virtual void RestoreFrontBuffer();
     virtual void RestoreBackBuffer();
@@ -79,6 +86,7 @@ class RenderOpenGL : public RenderBase {
     virtual void DrawPolygon(struct Polygon *a3);
     virtual void DrawTerrainPolygon(struct Polygon *a4, bool transparent,
                                     bool clampAtTextureBorders);
+    void DrawIndoorBSP();
     virtual void DrawIndoorPolygon(unsigned int uNumVertices,
                                    struct BLVFace *a3, int uPackedID,
                                    unsigned int uColor, int a8);
@@ -108,21 +116,21 @@ class RenderOpenGL : public RenderBase {
                                unsigned int uZ, unsigned int uW);
     virtual void ResetUIClipRect();
 
-    virtual void DrawTextureNew(float u, float v, class Image *);
-    virtual void DrawTextureAlphaNew(float u, float v, class Image *);
+    virtual void DrawTextureNew(float u, float v, class Image*);
+    virtual void DrawTextureAlphaNew(float u, float v, class Image*);
 
-        virtual void DrawTextureCustomHeight(float u, float v, class Image *,
-                                         int height);
+    virtual void DrawTextureCustomHeight(float u, float v, class Image*,
+        int height);
     virtual void DrawTextureOffset(int x, int y, int offset_x, int offset_y,
-                                   Image *);
-    virtual void DrawImage(Image *, const Rect &rect);
+        Image*);
+    virtual void DrawImage(Image*, const Rect& rect);
 
-    virtual void ZBuffer_Fill_2(signed int a2, signed int a3, Image *pTexture,
-                                int a5);
-    virtual void ZDrawTextureAlpha(float u, float v, Image *pTexture, int zVal);
-    virtual void BlendTextures(int a2, int a3, Image *a4, Image *a5, int t,
-                               int start_opacity, int end_opacity);
-    virtual void TexturePixelRotateDraw(float u, float v, Image *img, int time);
+    virtual void ZBuffer_Fill_2(signed int a2, signed int a3, Image* pTexture,
+        int a5);
+    virtual void ZDrawTextureAlpha(float u, float v, Image* pTexture, int zVal);
+    virtual void BlendTextures(int a2, int a3, Image* a4, Image* a5, int t,
+        int start_opacity, int end_opacity);
+    virtual void TexturePixelRotateDraw(float u, float v, Image* img, int time);
     virtual void DrawMonsterPortrait(Rect rc, SpriteFrame *Portrait_Sprite, int Y_Offset);
 
 
@@ -196,6 +204,12 @@ class RenderOpenGL : public RenderBase {
     virtual void am_Blt_Chroma(Rect *pSrcRect, Point *pTargetPoint, int a3,
                                int blend_mode);
 
+    virtual void ReleaseTerrain();
+
+    virtual void ReleaseBSP();
+
+
+
  public:
     virtual void WritePixel16(int x, int y, uint16_t color);
 
@@ -210,9 +224,58 @@ class RenderOpenGL : public RenderBase {
     void DrawIndoorSkyPolygon(signed int uNumVertices,
                               struct Polygon *pSkyPolygon);
 
+    
+    int GPU_MAX_TEX_SIZE;
+    int GPU_MAX_TEX_LAYERS;
+    int GPU_MAX_TEX_UNITS;
+    int GPU_MAX_UNIFORM_COMP;
+    int GPU_MAX_TOTAL_TEXTURES;
+
+    bool InitShaders();
+    
+    Shader terrainshader;
+    Shader outbuildshader;
+    Shader bspshader;
+    Shader passthroughshader;
+    Shader lineshader;
+
+    
+    GLuint terrainVBO, terrainVAO;
+    // all terrain textures are square
+    GLuint terraintextures[8];
+    uint numterraintexloaded[8];
+    uint terraintexturesizes[8];
+    std::map<std::string, int> terraintexmap;
+
+    
+    GLuint outbuildVBO[16], outbuildVAO[16];
+    GLuint outbuildtextures[16];
+    uint numoutbuildtexloaded[16];
+    uint outbuildtexturewidths[16];
+    uint outbuildtextureheights[16];
+    std::map<std::string, int> outbuildtexmap;
+
+    GLuint bspVBO, bspVAO;
+    GLuint bsptextures[16];
+    uint bsptexloaded[16];
+    uint bsptexturewidths[16];
+    uint bsptextureheights[16];
+    std::map<std::string, int> bsptexmap;
+
+    GLuint lineVBO, lineVAO;
+
+    GLuint twodVBO, twodVAO;
+
+    GLuint billbVBO, billbVAO;
+
+
+
     int clip_x, clip_y;
     int clip_z, clip_w;
     uint32_t *render_target_rgb;  // now 32 - draw to in format A8R8G8B8 - endian swivel means BGRA
+
+    
+
 
     int GL_lastboundtex;
     struct nk_vertex {

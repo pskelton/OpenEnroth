@@ -1,3 +1,5 @@
+// Left hand, +ve x east, +ve y north, +ve z up
+
 #include "Engine/Graphics/Outdoor.h"
 
 #include <algorithm>
@@ -47,7 +49,7 @@ OutdoorLocation *pOutdoor = new OutdoorLocation;
 ODMRenderParams *pODMRenderParams;
 
 SkyBillboardStruct SkyBillboard;  // skybox planes
-std::array<struct Polygon, 2000 + 18000> array_77EC08;
+std::array<struct Polygon, 2000 + 18000> array_77EC08; // stores polygons during maths
 
 struct FogProbabilityTableEntry {
     unsigned char small_fog_chance;
@@ -967,6 +969,8 @@ void OutdoorLocation::Release() {
     uNumSpawnPoints = 0;
 
     pTerrain.Release();
+
+    render->ReleaseTerrain();
 
     free(pCmap);
     pCmap = nullptr;
@@ -2048,8 +2052,8 @@ void ODM_GetTerrainNormalAt(int pos_x, int pos_z, Vec3_int_ *out) {
 
     int grid_pos_x1 = GridCellToWorldPosX(grid_x);
     int grid_pos_x2 = GridCellToWorldPosX(grid_x + 1);
-    int grid_pos_z1 = GridCellToWorldPosZ(grid_z);
-    int grid_pos_z2 = GridCellToWorldPosZ(grid_z + 1);
+    int grid_pos_z1 = GridCellToWorldPosY(grid_z);
+    int grid_pos_z2 = GridCellToWorldPosY(grid_z + 1);
 
     int x1z1_y = pOutdoor->DoGetHeightOnTerrain(grid_x, grid_z);
     int x2z1_y = pOutdoor->DoGetHeightOnTerrain(grid_x + 1, grid_z);
@@ -3749,7 +3753,7 @@ void UpdateActors_ODM() {
                             ActuallyGetSomeOtherTileInfo(i, j - 1) >> 1) & 1;
                         if (Tile_Test_Land) {  // found land
                             int target_x = GridCellToWorldPosX(i);
-                            int target_y = GridCellToWorldPosZ(j - 1);
+                            int target_y = GridCellToWorldPosY(j - 1);
                             if (pActors[Actor_ITR].CanAct()) {  // head to land
                                 pActors[Actor_ITR].uYawAngle = TrigLUT->Atan2(target_x -
                                     pActors[Actor_ITR].vPosition.x, target_y -
@@ -3842,7 +3846,7 @@ void ODM_LoadAndInitialize(const String &pFilename, ODMRenderParams *thisa) {
             viewparams->uScreen_BttmR_X - viewparams->uScreen_topL_X + 1;
 
         extern float _calc_fov(int viewport_width, int angle_degree);
-        fov_rad = _calc_fov(uViewportWidth, 65);
+        fov_rad = _calc_fov(uViewportWidth, 75);
         fov_rad_inv = 65536.0 / fov_rad;
     }
     pODMRenderParams->int_fov_rad = (signed __int64)fov_rad;
@@ -3958,11 +3962,11 @@ unsigned int WorldPosToGridCellY(int sWorldPosY) {
 int GridCellToWorldPosX(int a1) { return (a1 - 64) << 9; }
 
 //----- (0047F476) --------------------------------------------------------
-int GridCellToWorldPosZ(int a1) { return (64 - a1) << 9; }
+int GridCellToWorldPosY(int a1) { return (64 - a1) << 9; }
 
 
 //----- (004823F4) --------------------------------------------------------
-bool IsTerrainSlopeTooHigh(int pos_x, int pos_z) {
+bool IsTerrainSlopeTooHigh(int pos_x, int pos_y) {
     // unsigned int v2; // ebx@1
     // unsigned int v3; // edi@1
     // int v4; // eax@1
@@ -3977,7 +3981,7 @@ bool IsTerrainSlopeTooHigh(int pos_x, int pos_z) {
     // v12 = a1;
     // v11 = a2;
     unsigned int grid_x = WorldPosToGridCellX(pos_x);
-    unsigned int grid_z = WorldPosToGridCellY(pos_z) - 1;
+    unsigned int grid_z = WorldPosToGridCellY(pos_y) - 1;
 
     int party_grid_x1 = GridCellToWorldPosX(grid_x);
     // dword_76D56C_terrain_cell_world_pos_around_party_x =
@@ -3986,7 +3990,7 @@ bool IsTerrainSlopeTooHigh(int pos_x, int pos_z) {
     // GridCellToWorldPosX(grid_x + 1);
     // dword_76D574_terrain_cell_world_pos_around_party_x =
     // GridCellToWorldPosX(grid_x);
-    int party_grid_z1 = GridCellToWorldPosZ(grid_z);
+    int party_grid_z1 = GridCellToWorldPosY(grid_z);
     // dword_76D55C_terrain_cell_world_pos_around_party_z =
     // GridCellToWorldPosZ(grid_z);
     // dword_76D560_terrain_cell_world_pos_around_party_z =
@@ -4002,7 +4006,7 @@ bool IsTerrainSlopeTooHigh(int pos_x, int pos_z) {
         party_x2z2_y == party_x1z2_y)
         return false;
 
-    int dx = abs(pos_x - party_grid_x1), dz = abs(party_grid_z1 - pos_z);
+    int dx = abs(pos_x - party_grid_x1), dz = abs(party_grid_z1 - pos_y);
 
     int y1, y2, y3;
     if (dz >= dx) {
@@ -4040,17 +4044,17 @@ int GetTerrainHeightsAroundParty2(int a1, int a2, bool *pIsOnWater, int bFloatAb
     int v15;         // [sp+24h] [bp+Ch]@11
 
     unsigned int grid_x = WorldPosToGridCellX(a1);
-    unsigned int grid_z = WorldPosToGridCellY(a2) - 1;
+    unsigned int grid_y = WorldPosToGridCellY(a2) - 1;
 
     int grid_x1 = GridCellToWorldPosX(grid_x),
         grid_x2 = GridCellToWorldPosX(grid_x + 1);
-    int grid_z1 = GridCellToWorldPosZ(grid_z),
-        grid_z2 = GridCellToWorldPosZ(grid_z + 1);
+    int grid_z1 = GridCellToWorldPosY(grid_y),
+        grid_z2 = GridCellToWorldPosY(grid_y + 1);
 
-    int y_x1z1 = pOutdoor->DoGetHeightOnTerrain(grid_x, grid_z),
-        y_x2z1 = pOutdoor->DoGetHeightOnTerrain(grid_x + 1, grid_z),
-        y_x2z2 = pOutdoor->DoGetHeightOnTerrain(grid_x + 1, grid_z + 1),
-        y_x1z2 = pOutdoor->DoGetHeightOnTerrain(grid_x, grid_z + 1);
+    int y_x1z1 = pOutdoor->DoGetHeightOnTerrain(grid_x, grid_y),
+        y_x2z1 = pOutdoor->DoGetHeightOnTerrain(grid_x + 1, grid_y),
+        y_x2z2 = pOutdoor->DoGetHeightOnTerrain(grid_x + 1, grid_y + 1),
+        y_x1z2 = pOutdoor->DoGetHeightOnTerrain(grid_x, grid_y + 1);
     // v4 = WorldPosToGridCellX(a1);
     // v5 = WorldPosToGridCellY(v12) - 1;
     // dword_76D538_terrain_cell_world_pos_around_party_x =
@@ -4078,7 +4082,7 @@ int GetTerrainHeightsAroundParty2(int a1, int a2, bool *pIsOnWater, int bFloatAb
     // dword_76D524_terrain_cell_world_pos_around_party_y =
     // pOutdoor->DoGetHeightOnTerrain(v4, v5 + 1);
     *pIsOnWater = false;
-    if (pOutdoor->ActuallyGetSomeOtherTileInfo(grid_x, grid_z) & 2)
+    if (pOutdoor->ActuallyGetSomeOtherTileInfo(grid_x, grid_y) & 2)
         *pIsOnWater = true;
     v14 = 0;
     if (!bFloatAboveWater && *pIsOnWater) v14 = -60;

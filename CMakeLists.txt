@@ -94,7 +94,7 @@ target_compile_features (World_of_Might_and_Magic
 )
 target_check_style(World_of_Might_and_Magic)
 
-target_link_libraries(World_of_Might_and_Magic zlib sdl2 ffmpeg)
+target_link_libraries(World_of_Might_and_Magic zlib sdl2 ffmpeg glm)
 if(WIN32)
 target_link_libraries(World_of_Might_and_Magic ddraw.lib dxguid.lib)
 else()
@@ -104,6 +104,7 @@ message(STATUS "FFMPEG_LIBRARIES = ${FFMPEG_LIBRARIES}")
 message(STATUS "OpenAL_LIBRARY = ${OPENAL_LIBRARY}")
 message(STATUS "OPENGL_opengl_LIBRARY = ${OPENGL_opengl_LIBRARY}")
 message(STATUS "OPENGL_glu_LIBRARY = ${OPENGL_glu_LIBRARY}")
+
 
 target_link_libraries(World_of_Might_and_Magic ${OPENGL_opengl_LIBRARY} ${OPENGL_glu_LIBRARY})
 

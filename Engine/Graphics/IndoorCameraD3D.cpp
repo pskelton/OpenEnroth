@@ -507,6 +507,9 @@ void IndoorCameraD3D::CreateWorldMatrixAndSomeStuff() {
     }
 
     // indoor outdoor fov different
+    // fov indoors is 50
+    // fov outdoors is 60
+
     fov = 0.8/*0.8814736*/;  // .77
     inv_fov = 1.0 / fov;
 

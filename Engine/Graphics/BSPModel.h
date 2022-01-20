@@ -145,8 +145,12 @@ struct ODMFace {
     int16_t pXInterceptDisplacements[20] {};
     int16_t pYInterceptDisplacements[20] {};
     int16_t pZInterceptDisplacements[20] {};
+
+    // details store for array texture
     void *resource = nullptr;  // __int16 uTextureID;
     String resourcename;
+    int texunit = -1;
+    int texlayer = -1;
 
     int16_t sTextureDeltaU = 0;
     int16_t sTextureDeltaV = 0;
@@ -175,7 +179,7 @@ class BSPModel {
     unsigned int index = 0;
     String pModelName;
     String pModelName2;
-    int32_t field_40 = 0;
+    int32_t field_40 = 0; // flags?? 1 for visible
     int32_t sCenterX = 0;
     int32_t sCenterY = 0;
     Vec3_int_ vPosition {};

@@ -166,7 +166,7 @@ void RenderBase::DrawSpriteObjects_ODM() {
             if (frame->hw_sprites[v9]->texture->GetHeight() == 0 || frame->hw_sprites[v9]->texture->GetWidth() == 0)
                 __debugbreak();
 
-            if (frame->uFlags & 0x20) {
+            if (frame->uFlags & 0x20) { // deadly swarm
                 // v8 = v36;
                 z -= (frame->scale * frame->hw_sprites[v9]->uBufferHeight) / 2;
             }

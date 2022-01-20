@@ -365,6 +365,8 @@ void Vis::PickOutdoorFaces_Mouse(float fDepth, RenderVertexSoft *pRay,
                                  bool only_reachable) {
     if (!pOutdoor) return;
 
+    BLVFace blv_face;
+
     for (BSPModel &model : pOutdoor->pBModels) {
         int reachable;
         if (!IsBModelVisible(&model, &reachable)) {
@@ -376,7 +378,7 @@ void Vis::PickOutdoorFaces_Mouse(float fDepth, RenderVertexSoft *pRay,
 
         for (ODMFace &face : model.pFaces) {
             if (is_part_of_selection(&face, filter)) {
-                BLVFace blv_face;
+                
                 blv_face.FromODM(&face);
 
                 RenderVertexSoft intersection;
@@ -1362,7 +1364,7 @@ bool Vis::is_part_of_selection(void *uD3DBillboardIdx_or_pBLVFace_or_pODMFace,
                 }
 
                 // v10 = &pActors[object_idx];
-                int aiState = 1 << HEXRAYS_LOBYTE(pActors[object_idx].uAIState);
+                int aiState = 1 << HEXRAYS_LOBYTE(pActors[object_idx].uAIState);  // crash here
 
                 if (aiState & filter->no_at_ai_state)
                     return false;

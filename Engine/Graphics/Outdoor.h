@@ -204,7 +204,7 @@ int sub_47C3D7_get_fog_specular(int a1, int a2, float a3);
 unsigned int WorldPosToGridCellX(int);
 unsigned int WorldPosToGridCellY(int);
 int GridCellToWorldPosX(int);
-int GridCellToWorldPosZ(int);
+int GridCellToWorldPosY(int);
 void sub_481ED9_MessWithODMRenderParams();
 bool IsTerrainSlopeTooHigh(int pos_x, int pos_y);
 int GetTerrainHeightsAroundParty2(int a1, int a2, bool *a3, int a4);

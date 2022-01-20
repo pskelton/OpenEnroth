@@ -281,7 +281,7 @@ void Render::RenderTerrainD3D() {  // New function
     int camz = pODMRenderParams->uMapGridCellY - 1;
     int tilerange = (pIndoorCameraD3D->GetFarClip() / blockScale) + 1;
 
-    float Light_tile_dist;
+    float Light_tile_dist = 0.0;
 
     for (unsigned int z = Start_Z; z < End_Z; ++z) {
         for (unsigned int x = Start_X; x < End_X; ++x) {
@@ -732,6 +732,7 @@ void Render::PrepareDecorationsRenderList_ODM() {
                     v7 = abs(pLevelDecorations[i].vPosition.x +
                              pLevelDecorations[i].vPosition.y);
 
+                    
                     frame = pSpriteFrameTable->GetFrame(decor_desc->uSpriteID,
                                                         v6 + v7);
 
@@ -2007,7 +2008,12 @@ void Render::DrawTerrainPolygon(struct Polygon *a4, bool transparent,
 
 
 
+void Render::DrawIndoorBSP() {
 
+
+
+
+}
 
 
 void Render::DrawIndoorPolygon(unsigned int uNumVertices, BLVFace *pFace,
@@ -2797,15 +2803,14 @@ Gdiplus::Bitmap *Render::BitmapWithImage(Image *image) {
     return bitmap;
 }
 
-void Render::DrawTextureCustomHeight(float u, float v, class Image *image,
-                                     int custom_height) {
+void Render::DrawTextureCustomHeight(float inx, float iny, class Image *image, int custom_height) {
     Gdiplus::Bitmap *bitmap = BitmapWithImage(image);
     if (bitmap == nullptr) {
         return;
     }
 
-    int x = window->GetWidth() * u;
-    int y = window->GetHeight() * v;
+    int x = inx * window->GetWidth();
+    int y = iny * window->GetHeight();
 
     p2DGraphics->DrawImage(bitmap, x, y, 0, 0, image->GetWidth(), custom_height,
                            Gdiplus::UnitPixel);
@@ -2813,8 +2818,8 @@ void Render::DrawTextureCustomHeight(float u, float v, class Image *image,
     delete bitmap;
 }
 
-void Render::DrawTextureNew(float u, float v, Image *bmp) {
-    DrawTextureCustomHeight(u, v, bmp, bmp->GetHeight());
+void Render::DrawTextureNew(float inx, float iny, Image *bmp) {
+    DrawTextureCustomHeight(inx, iny, bmp, bmp->GetHeight());
 }
 
 void Render::DrawTextureOffset(int x, int y, int offset_x, int offset_y,
@@ -2878,7 +2883,7 @@ void Render::DrawText(int uOutX, int uOutY, uint8_t *pFontPixels,
             ++pFontPixels;
         }
     }
-    render->DrawTextureAlphaNew(uOutX / float(window->GetWidth()), uOutY / float(window->GetHeight()), fonttemp);
+    render->DrawTextureAlphaNew(uOutX , uOutY, fonttemp);
     fonttemp->Release();
 }
 
@@ -2952,6 +2957,9 @@ void Render::TexturePixelRotateDraw(float u, float v, Image *img, int time) {
         int height = img->GetHeight();
         Image *temp = Image::Create(width, height, IMAGE_FORMAT_A8R8G8B8);
         uint32_t *temppix = (uint32_t *)temp->GetPixels(IMAGE_FORMAT_A8R8G8B8);
+
+        u *= render->GetRenderWidth();
+        v *= render->GetRenderHeight();
 
         int brightloc = -1;
         int brightval = 0;
@@ -3113,7 +3121,7 @@ void Render::BlendTextures(
             pixelpoint += imgin->GetWidth() - Width;
         }
         // draw image
-        render->DrawTextureAlphaNew(x / float(window->GetWidth()), y / float(window->GetHeight()) , temp);
+        render->DrawTextureAlphaNew(x / float(window->GetWidth()), y / float(window->GetHeight()), temp);
         temp->Release();
     }
 }
@@ -3174,14 +3182,14 @@ void Render::DrawMonsterPortrait(Rect rc, SpriteFrame *Portrait, int Y_Offset) {
     render->ResetUIClipRect();
 }
 
-void Render::DrawTextureAlphaNew(float u, float v, Image *image) {
+void Render::DrawTextureAlphaNew(float inx, float iny, Image *image) {
     Gdiplus::Bitmap *bitmap = BitmapWithImage(image);
     if (!bitmap) {
         return;
     }
 
-    int uX = u * window->GetWidth();
-    int uY = v * window->GetHeight();
+    int uX = inx * window->GetWidth();
+    int uY = iny * window->GetHeight();
     p2DGraphics->DrawImage(bitmap, uX, uY);
 
     delete bitmap;
@@ -4769,3 +4777,12 @@ void Render::NuklearFontFree(struct nk_tex_font *tfont) {}
 struct nk_image Render::NuklearImageLoad(Image* img) { return nk_image_id(0);  }
 void Render::NuklearImageFree(Image *img) {}
 
+
+
+void Render::ReleaseTerrain() {
+
+}
+
+void Render::ReleaseBSP() {
+
+}

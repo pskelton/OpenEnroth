@@ -12,6 +12,11 @@ bool LightsStack_MobileLight_::AddLight(int16_t x, int16_t y, int16_t z,
         return false;
     }
 
+    // overflow errors with some light colours??
+    if (r == 0 && b == 0 && g == 0) {
+        __debugbreak();
+    }
+
     pLights[uNumLightsActive].vPosition.x = x;
     pLights[uNumLightsActive].vPosition.y = y;
     pLights[uNumLightsActive].vPosition.z = z;

@@ -46,7 +46,9 @@ unsigned int ModulateColor(unsigned int diffuse, float multiplier) {
 }
 
 //----- (0042620A) --------------------------------------------------------
-bool sr_42620A(RenderVertexSoft *p) {
+bool sr_42620A(RenderVertexSoft *p) { // maybe near clipping on projectiles??
+    
+
     //  __int16 v1; // fps@1
     unsigned __int8 v2;   // c0@2
     char v3;              // c2@2
@@ -63,11 +65,8 @@ bool sr_42620A(RenderVertexSoft *p) {
     float v17;            // ST04_4@8
     float v18;            // ST00_4@8
 
-    if (p->vWorldViewPosition.x < 300.0 ||
-        (v2 = 300.0 < p[1].vWorldViewPosition.x, v3 = 0,
-         v4 = 300.0 == p[1].vWorldViewPosition.x,
+    if (p->vWorldViewPosition.x < 300.0 || (v2 = 300.0 < p[1].vWorldViewPosition.x, v3 = 0, v4 = 300.0 == p[1].vWorldViewPosition.x, !(v2 | v4))) {
 
-         !(v2 | v4))) {
         if (p->vWorldViewPosition.x < 300.0) {
             v6 = 300.0 < p[1].vWorldViewPosition.x;
             v7 = 0;
@@ -77,13 +76,13 @@ bool sr_42620A(RenderVertexSoft *p) {
                 return false;
             }
         }
+
         v9 = 300.0 < p->vWorldViewPosition.x;
         v10 = 0;
         v11 = 300.0 == p->vWorldViewPosition.x;
 
         if (v9 | v11) {
-            float v16 =
-                1.0f / (p->vWorldViewPosition.x - p[1].vWorldViewPosition.x);
+            float v16 = 1.0f / (p->vWorldViewPosition.x - p[1].vWorldViewPosition.x);
             v17 = (p->vWorldViewPosition.y - p[1].vWorldViewPosition.y) * v16;
             v18 = (p->vWorldViewPosition.z - p[1].vWorldViewPosition.z) * v16;
             float v19 = 300.0 - p[1].vWorldViewPosition.x;
@@ -91,8 +90,7 @@ bool sr_42620A(RenderVertexSoft *p) {
             p[1].vWorldViewPosition.y = v17 * v19 + p[1].vWorldViewPosition.y;
             p[1].vWorldViewPosition.z = v19 * v18 + p[1].vWorldViewPosition.z;
         } else {
-            float v12 =
-                1.0f / (p[1].vWorldViewPosition.x - p->vWorldViewPosition.x);
+            float v12 = 1.0f / (p[1].vWorldViewPosition.x - p->vWorldViewPosition.x);
             v13 = (p[1].vWorldViewPosition.y - p->vWorldViewPosition.y) * v12;
             v14 = (p[1].vWorldViewPosition.z - p->vWorldViewPosition.z) * v12;
             float v15 = 300.0 - p->vWorldViewPosition.x;
@@ -234,6 +232,7 @@ void SpellFxRenderer::DrawProjectiles() {
         v[1].vWorldPosition.z = p->dstZ;
         pIndoorCameraD3D->ViewTransform(v, 2);
 
+        // maybe near clip?
         sr_42620A(v);
 
         pIndoorCameraD3D->Project(v, 2, 0);
@@ -1310,7 +1309,7 @@ void SpellFxRenderer::DrawPlayerBuffAnims() {
         }
 
         Icon *icon = pIconsFrameTable->GetFrame(buff->uSpellIconID,
-                                                buff->uSpellAnimTimeElapsed);
+            buff->uSpellAnimTimeElapsed);
         render->DrawTextureAlphaNew(
             pPlayerPortraitsXCoords_For_PlayerBuffAnimsDrawing[i] / 640.0f,
             385 / 480.0f, icon->GetTexture());

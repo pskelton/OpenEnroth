@@ -82,6 +82,8 @@ class Render : public RenderBase {
     virtual void DrawPolygon(struct Polygon *a3);
     virtual void DrawTerrainPolygon(struct Polygon *a4, bool transparent,
                                     bool clampAtTextureBorders);
+
+    virtual void DrawIndoorBSP();
     virtual void DrawIndoorPolygon(unsigned int uNumVertices,
                                    struct BLVFace *a3, int uPackedID,
                                    unsigned int uColor, int a8);
@@ -110,24 +112,24 @@ class Render : public RenderBase {
                                unsigned int uZ, unsigned int uW);
     virtual void ResetUIClipRect();
 
-    virtual void DrawTextureNew(float u, float v, class Image *);
-    virtual void DrawTextureAlphaNew(float u, float v, class Image *);
-    virtual void DrawTextureCustomHeight(float u, float v, class Image *,
-                                         int height);
+    virtual void DrawTextureNew(float u, float v, class Image*);
+    virtual void DrawTextureAlphaNew(float u, float v, class Image*);
+    virtual void DrawTextureCustomHeight(float u, float v, class Image*,
+        int height);
     virtual void DrawTextureOffset(int x, int y, int offset_x, int offset_y,
-                                   Image *);
+        Image*);
     virtual void DrawImage(Image *, const Rect &rect);
 
     virtual void ZBuffer_Fill_2(signed int a2, signed int a3, Image *pTexture,
                                 int a5);
-    virtual void ZDrawTextureAlpha(float u, float v, Image *pTexture, int zVal);
+    virtual void ZDrawTextureAlpha(float u, float v, Image* pTexture, int zVal);
     virtual void BlendTextures(int x, int y, Image *imgin, Image *imgblend,
                                int time, int start_opacity, int end_opacity);
     virtual void DrawMonsterPortrait(Rect rc, SpriteFrame *Portrait, int Y_Offset);
 
     virtual void DrawMasked(float u, float v, class Image *img,
                             unsigned int color_dimming_level, uint16_t mask);
-    virtual void TexturePixelRotateDraw(float u, float v, Image * img, int time);
+    virtual void TexturePixelRotateDraw(float u, float v, Image* img, int time);
     virtual void DrawTextureGrayShade(float u, float v, class Image *a4);
     virtual void DrawTransparentRedShade(float u, float v, class Image *a4);
     virtual void DrawTransparentGreenShade(float u, float v,
@@ -193,6 +195,9 @@ class Render : public RenderBase {
 
     virtual void am_Blt_Chroma(Rect *pSrcRect, Point *pTargetPoint, int a3,
                                int blend_mode);
+
+    virtual void ReleaseTerrain();
+    virtual void ReleaseBSP();
 
     virtual HWLTexture *LoadHwlBitmap(const char *name);
     virtual HWLTexture *LoadHwlSprite(const char *name);
