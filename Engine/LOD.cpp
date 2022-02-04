@@ -1,5 +1,9 @@
 #include "Engine/LOD.h"
 
+#include <filesystem>
+#include <string>
+#include <SDL_image.h>
+
 #include "Engine/Engine.h"
 #include "Engine/ZlibWrapper.h"
 
@@ -8,6 +12,8 @@
 #include "Engine/Graphics/Sprites.h"
 
 #include "Platform/Api.h"
+
+
 
 LODFile_IconsBitmaps *pEvents_LOD = nullptr;
 
@@ -30,10 +36,11 @@ int _6A0CA4_lod_binary_search;
 int _6A0CA8_lod_unused;
 
 inline int LODFile_IconsBitmaps::LoadDummyTexture() {
-    for (unsigned int i = 0; i < uNumLoadedFiles; ++i)
+    for (unsigned int i = 0; i < uNumLoadedFiles; ++i) {
         if (!strcmp(pTextures[i].header.pName, "pending")) return i;
-    return LoadTextureFromLOD(&pTextures[uNumLoadedFiles], "pending",
-                              TEXTURE_24BIT_PALETTE);
+    }
+
+    return LoadTextureFromLOD(&pTextures[uNumLoadedFiles], "pending", TEXTURE_24BIT_PALETTE);
 }
 
 void LODFile_IconsBitmaps::_inlined_sub2() {
@@ -1057,12 +1064,33 @@ int LODFile_IconsBitmaps::ReloadTexture(Texture_MM7 *pDst,
 int LODFile_IconsBitmaps::LoadTextureFromLOD(Texture_MM7 *pOutTex,
                                              const std::string &pContainer,
                                              enum TEXTURE_TYPE eTextureType) {
-    //int result;        // esi@14
+    // int result;        // esi@14
     unsigned int v14;  // eax@21
     // size_t v22;        // ST2C_4@29
     // const void *v23;   // ecx@29
 
     size_t data_size = 0;
+
+    SDL_Surface* surf_temp = NULL;
+
+    std::string asspath = MakeDataPath("new assets");
+    // scan through directory
+    for (const auto& entry : std::filesystem::directory_iterator(asspath)) {
+        if (entry.exists()) {
+            // check against file
+            std::string file = entry.path().filename().string();
+            if (file.find(pContainer) != std::string::npos) {
+                // try to load
+                std::string filepath = entry.path().string();
+                surf_temp = IMG_Load(filepath.c_str());
+
+                if (surf_temp == NULL) logger->Info(SDL_GetError());
+            }
+        }
+    }
+
+    // if not continue as usuall..
+
     FILE *pFile = FindContainer(pContainer, &data_size);
     if (pFile == nullptr) {
         return -1;
@@ -1101,7 +1129,8 @@ int LODFile_IconsBitmaps::LoadTextureFromLOD(Texture_MM7 *pOutTex,
             //result = 1;
             free((void *)temp_container);
         }
-        //return result;
+        if (!surf_temp)
+            return 0;
     }
 
     // ICONS
@@ -1116,14 +1145,32 @@ int LODFile_IconsBitmaps::LoadTextureFromLOD(Texture_MM7 *pOutTex,
         if (header->uTextureSize > data_size) {
             assert(false);
         }
-        pOutTex->paletted_pixels = (uint8_t *)malloc(header->uDecompressedSize);
-        void *tmp_buf = malloc(header->uTextureSize);
-        fread(tmp_buf, 1, (size_t)header->uTextureSize, pFile);
-        data_size -= header->uTextureSize;
-        zlib::Uncompress(pOutTex->paletted_pixels, &header->uDecompressedSize,
-                         tmp_buf, header->uTextureSize);
-        header->uTextureSize = header->uDecompressedSize;
-        free(tmp_buf);
+
+        if (surf_temp) {  // replacemnt image found
+            void* tmp_buf = malloc(header->uTextureSize);
+            fread(tmp_buf, 1, (size_t)header->uTextureSize, pFile);
+            data_size -= header->uTextureSize;
+            free(tmp_buf);
+
+            header->uTextureSize = surf_temp->w * surf_temp->h * surf_temp->format->BytesPerPixel;
+            pOutTex->paletted_pixels = (uint8_t*)malloc(header->uTextureSize);
+            memcpy(pOutTex->paletted_pixels, surf_temp->pixels, header->uTextureSize);
+
+            header->uTextureWidth = surf_temp->w;
+            header->uTextureHeight = surf_temp->h;
+
+            if (surf_temp->format->BytesPerPixel == 3) header->pBits |= 0x0800;  // 24bit
+            if (surf_temp->format->BytesPerPixel == 4) header->pBits |= 0x1000;  // 32bit
+        } else {
+            pOutTex->paletted_pixels = (uint8_t*)malloc(header->uDecompressedSize);
+            void* tmp_buf = malloc(header->uTextureSize);
+            fread(tmp_buf, 1, (size_t)header->uTextureSize, pFile);
+            data_size -= header->uTextureSize;
+            zlib::Uncompress(pOutTex->paletted_pixels, &header->uDecompressedSize,
+                tmp_buf, header->uTextureSize);
+            header->uTextureSize = header->uDecompressedSize;
+            free(tmp_buf);
+        }
     }
 
     pOutTex->pPalette24 = nullptr;
@@ -1159,6 +1206,8 @@ int LODFile_IconsBitmaps::LoadTextureFromLOD(Texture_MM7 *pOutTex,
 
     header->uWidthMinus1 = (1 << header->uWidthLn2) - 1;
     header->uHeightMinus1 = (1 << header->uHeightLn2) - 1;
+
+    if (surf_temp) SDL_FreeSurface(surf_temp);
 
     return 1;
 }

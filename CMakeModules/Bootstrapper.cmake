@@ -75,6 +75,7 @@ endif()
 endif()
 include("${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules/thirdparty/zlib.cmake")
 include("${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules/thirdparty/sdl2.cmake")
+include("${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules/thirdparty/sdlimage.cmake")
 include("${CMAKE_CURRENT_SOURCE_DIR}/CMakeModules/thirdparty/ffmpeg.cmake")
 
 

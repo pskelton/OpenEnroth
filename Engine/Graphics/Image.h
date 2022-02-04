@@ -89,9 +89,13 @@ struct TextureHeader {
     int16_t palette_id1;
     int16_t palette_id2;
     uint32_t uDecompressedSize;
-    uint32_t pBits;  // 0x0002 - generate mipmaps
-                     // 0x0200 - 0th palette entry is transparent, else colorkey
-                     // 0x0400 - don't free buffers (???)
+    uint32_t pBits;  // 0x0002 - 2 generate mipmaps
+                     // 0x0200 - 512 0th palette entry is transparent, else colorkey
+                     // (7FF)
+                    // 0400 - 1024 on release don't free buffers (???)
+                       // 0 - alpha
+                    // 0x0800 - 2048 test addition pallette override
+                    // 0x1000 - 4096 test pallette override
 };
 #pragma pack(pop)
 

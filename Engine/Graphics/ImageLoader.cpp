@@ -1,12 +1,18 @@
+#include "Engine/Graphics/ImageLoader.h"
+
+#include <filesystem>
+#include <string>
+#include <SDL_image.h>
+
 #include "Engine/Log.h"
 
+#include "Engine/Engine.h"
 #include "Engine/ZlibWrapper.h"
 
 #include "Engine/ErrorHandling.h"
 #include "Engine/Graphics/HWLContainer.h"
 #include "Engine/Graphics/IRender.h"
 #include "Engine/Graphics/ImageFormatConverter.h"
-#include "Engine/Graphics/ImageLoader.h"
 #include "Engine/Graphics/PCX.h"
 #include "Engine/Graphics/Sprites.h"
 
@@ -73,9 +79,47 @@ uint32_t *MakeImageColorKey(unsigned int width, unsigned int height,
     return res;
 }
 
-bool ColorKey_LOD_Loader::Load(unsigned int *out_width,
-                               unsigned int *out_height, void **out_pixels,
-                               IMAGE_FORMAT *out_format) {
+uint32_t* MakeImageOverride24(uint width, uint height, uint8_t* pixels) {
+    // pallette override
+    uint32_t* res = new uint32_t[width * height];
+
+    for (unsigned int y = 0; y < height; ++y) {
+        for (unsigned int x = 0; x < width; ++x) {
+            uint8_t b = pixels[(y * width * 3) + (x * 3)];
+            uint8_t g = pixels[(y * width * 3) + (x * 3) + 1];
+            uint8_t r = pixels[(y * width * 3) + (x * 3) + 2];
+            res[y * width + x] = (0xFF << 24 | r << 16 | g << 8 | b);
+        }
+    }
+    return res;
+}
+
+uint32_t* MakeImageOverride24Alpha(uint width, uint height, uint8_t* pixels) {
+    // pallette override
+    uint32_t* res = new uint32_t[width * height];
+
+    for (unsigned int y = 0; y < height; ++y) {
+        for (unsigned int x = 0; x < width; ++x) {
+            uint8_t b = pixels[(y * width * 3) + (x * 3)];
+            uint8_t g = pixels[(y * width * 3) + (x * 3) + 1];
+            uint8_t r = pixels[(y * width * 3) + (x * 3) + 2];
+            uint8_t a = 0xFF;
+            if ((b == 0) & (g == 0) & (r == 0)) a = 0;
+            res[y * width + x] = (a << 24 | r << 16 | g << 8 | b);
+        }
+    }
+    return res;
+}
+
+uint32_t* MakeImageOverride32(uint width, uint height, uint8_t* pixels) {
+    // pallette override
+    uint32_t* res = new uint32_t[width * height];
+    memcpy(res, pixels, width * height * 4);
+    return res;
+}
+
+
+bool ColorKey_LOD_Loader::Load(unsigned int *out_width, unsigned int *out_height, void **out_pixels, IMAGE_FORMAT *out_format) {
     *out_width = 0;
     *out_height = 0;
     *out_pixels = nullptr;
@@ -88,13 +132,15 @@ bool ColorKey_LOD_Loader::Load(unsigned int *out_width,
         return false;
     }
 
-    if (tex->header.pBits & 512) {
-        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth,
-                                     tex->header.uTextureHeight,
+    if (tex->header.pBits & 0x1000) {  // pallette override 32
+        *out_pixels = MakeImageOverride32(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if (tex->header.pBits & 0x0800) {  // pallette override 24
+        *out_pixels = MakeImageOverride24(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if (tex->header.pBits & 512) {
+        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth, tex->header.uTextureHeight,
                                      tex->paletted_pixels, tex->pPalette24);
     } else {
-        *out_pixels = MakeImageColorKey(
-            tex->header.uTextureWidth, tex->header.uTextureHeight,
+        *out_pixels = MakeImageColorKey(tex->header.uTextureWidth, tex->header.uTextureHeight,
             tex->paletted_pixels, tex->pPalette24, colorkey);
     }
 
@@ -109,9 +155,7 @@ bool ColorKey_LOD_Loader::Load(unsigned int *out_width,
     return true;
 }
 
-bool Image16bit_LOD_Loader::Load(unsigned int *out_width,
-                                 unsigned int *out_height, void **out_pixels,
-                                 IMAGE_FORMAT *out_format) {
+bool Image16bit_LOD_Loader::Load(unsigned int *out_width, unsigned int *out_height, void **out_pixels, IMAGE_FORMAT *out_format) {
     *out_width = 0;
     *out_height = 0;
     *out_pixels = nullptr;
@@ -124,13 +168,15 @@ bool Image16bit_LOD_Loader::Load(unsigned int *out_width,
         return false;
     }
 
-    if (tex->header.pBits & 512) {
-        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth,
-                                     tex->header.uTextureHeight,
+    if (tex->header.pBits & 0x1000) {  // pallette override 32
+        *out_pixels = MakeImageOverride32(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if (tex->header.pBits & 0x0800) {  // pallette override 24
+        *out_pixels = MakeImageOverride24(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if (tex->header.pBits & 512) {
+        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth, tex->header.uTextureHeight,
                                      tex->paletted_pixels, tex->pPalette24);
     } else {
-        *out_pixels = MakeImageSolid(tex->header.uTextureWidth,
-                                     tex->header.uTextureHeight,
+        *out_pixels = MakeImageSolid(tex->header.uTextureWidth, tex->header.uTextureHeight,
                                      tex->paletted_pixels, tex->pPalette24);
     }
 
@@ -159,9 +205,12 @@ bool Alpha_LOD_Loader::Load(unsigned int *out_width, unsigned int *out_height,
         return false;
     }
 
-    if ((tex->header.pBits == 0) || (tex->header.pBits & 512)) {
-        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth,
-                                     tex->header.uTextureHeight,
+    if (tex->header.pBits & 0x1000) {  // pallette override 32
+        *out_pixels = MakeImageOverride32(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if (tex->header.pBits & 0x0800) {  // pallette override 24
+        *out_pixels = MakeImageOverride24(tex->header.uTextureWidth, tex->header.uTextureHeight, tex->paletted_pixels);
+    } else if ((tex->header.pBits == 0) || (tex->header.pBits & 512)) {
+        *out_pixels = MakeImageAlpha(tex->header.uTextureWidth, tex->header.uTextureHeight,
                                      tex->paletted_pixels, tex->pPalette24);
     } else {
         *out_pixels = MakeImageColorKey(
@@ -392,7 +441,44 @@ bool Sprites_LOD_Loader::Load(unsigned int *width, unsigned int *height,
     *out_pixels = nullptr;
     *format = IMAGE_INVALID_FORMAT;
 
-    HWLTexture *hwl = render->LoadHwlSprite(this->resource_name);
+
+    SDL_Surface* surf_temp = NULL;
+
+    std::string asspath = MakeDataPath("new assets");
+    // scan through directory
+    for (const auto& entry : std::filesystem::directory_iterator(asspath)) {
+        if (entry.exists()) {
+            // check against file
+            std::string file = entry.path().filename().string();
+            if (file.find(this->resource_name.c_str()) != std::string::npos) {
+                // try to load
+                std::string filepath = entry.path().string();
+                surf_temp = IMG_Load(filepath.c_str());
+
+                if (surf_temp == NULL) logger->Info(SDL_GetError());
+
+                if (surf_temp) {
+                    if (surf_temp->format->BytesPerPixel == 4)
+                        *out_pixels = MakeImageOverride32(surf_temp->w, surf_temp->h, (uint8_t*)surf_temp->pixels);
+
+                    if (surf_temp->format->BytesPerPixel == 3)
+                        *out_pixels = MakeImageOverride24Alpha(surf_temp->w, surf_temp->h, (uint8_t*)surf_temp->pixels);
+
+
+                    *width = surf_temp->w;
+                    *height = surf_temp->h;
+                    *format = IMAGE_FORMAT_A8R8G8B8;
+                    SDL_FreeSurface(surf_temp);
+                    return true;
+                }
+            }
+        }
+    }
+
+    // if not continue as usuall..
+
+
+    HWLTexture *hwl = render->LoadHwlSprite(this->resource_name.c_str());
     if (hwl) {
         int dst_width = hwl->uWidth;
         int dst_height = hwl->uHeight;
