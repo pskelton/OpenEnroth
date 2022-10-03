@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;befbe06</span>
+   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;610835c</span>
    </div>
   </td>
  </tr>
@@ -90,7 +90,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="Engine_2IocContainer_8h.html">Engine/IocContainer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BSPModel_8h.html">Engine/Graphics/BSPModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Camera_8h.html">Engine/Graphics/Camera.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="VectorTypes_8h.html">Engine/VectorTypes.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -143,12 +142,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBLVRenderParams.html">BLVRenderParams</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBspRenderer__ViewportNode.html">BspRenderer_ViewportNode</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBspFace.html">BspFace</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBspRenderer.html">BspRenderer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -157,18 +150,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a91fb3e69af7609c2810f12d81ecf6fab"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fab">PolygonType</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6faba219c780f23139ee0bd2b01e49c70cb3b">POLYGON_Invalid</a> = 0x0
-, <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fabaed80b99ffcd2645296ed9e7af033e2bb">POLYGON_VerticalWall</a> = 0x1
-, <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6faba7b70e3e9b8c294e030e2d7f32c54dbcf">POLYGON_unk</a> = 0x2
-, <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fabae4490b69eafeea478f87b3c1e9712254">POLYGON_Floor</a> = 0x3
-, <br />
-&#160;&#160;<a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fabadbd72c7f032c1d8a85e8c928083d9ce8">POLYGON_InBetweenFloorAndWall</a> = 0x4
-, <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fabae1e308275ba818e9fcd75162bcdbd4d7">POLYGON_Ceiling</a> = 0x5
-, <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6faba212f1c353912c54d258c088ffa7f80c4">POLYGON_InBetweenCeilingAndWall</a> = 0x6
-<br />
- }</td></tr>
-<tr class="separator:a91fb3e69af7609c2810f12d81ecf6fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24bf8802234f411139f3a641894c3f70"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a24bf8802234f411139f3a641894c3f70">LEVEL_TYPE</a> { <a class="el" href="Indoor_8h.html#a24bf8802234f411139f3a641894c3f70aa500030e80dddeabc1b2bb4a375580ac">LEVEL_null</a> = 0
 , <a class="el" href="Indoor_8h.html#a24bf8802234f411139f3a641894c3f70a15a823faa9b1cebf4eec0ccc61356569">LEVEL_Indoor</a> = 0x1
 , <a class="el" href="Indoor_8h.html#a24bf8802234f411139f3a641894c3f70a7763b53aec991f1e72fe3d2d88304ed3">LEVEL_Outdoor</a> = 0x2
@@ -180,20 +161,14 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0073e365c3163911ee4db4a32c7de350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a0073e365c3163911ee4db4a32c7de350">PrepareBspRenderList_BLV</a> ()</td></tr>
-<tr class="separator:a0073e365c3163911ee4db4a32c7de350"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a534cdbc98d19d62d4851f971866fb86c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a534cdbc98d19d62d4851f971866fb86c">AddBspNodeToRenderList</a> (unsigned int node_id)</td></tr>
-<tr class="separator:a534cdbc98d19d62d4851f971866fb86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bf86faaeabb31e6e5dab6f65f438bf6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a9bf86faaeabb31e6e5dab6f65f438bf6">AddNodeBSPFaces</a> (unsigned int node_id, unsigned int uFirstNode)</td></tr>
-<tr class="separator:a9bf86faaeabb31e6e5dab6f65f438bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a086d58ef699669d6bafa59d91159b276"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a086d58ef699669d6bafa59d91159b276">DoInteractionWithTopmostZObject</a> (int pid)</td></tr>
 <tr class="separator:a086d58ef699669d6bafa59d91159b276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac83cfb3a77e6e270b6876da36fd86fc5"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#ac83cfb3a77e6e270b6876da36fd86fc5">FaceFlowTextureOffset</a> (unsigned int uFaceID)</td></tr>
 <tr class="separator:ac83cfb3a77e6e270b6876da36fd86fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d511837933d59eeeccfc25275a366d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a7d511837933d59eeeccfc25275a366d8">BLV_UpdateUserInputAndOther</a> ()</td></tr>
 <tr class="separator:a7d511837933d59eeeccfc25275a366d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55d420643297196e80bf2e23fb2f6b5c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a55d420643297196e80bf2e23fb2f6b5c">BLV_GetFloorLevel</a> (const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;pos, unsigned int uSectorID, unsigned int *pFaceID)</td></tr>
-<tr class="separator:a55d420643297196e80bf2e23fb2f6b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22f20848f1052b5e1c7195cfca4fdb7d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a22f20848f1052b5e1c7195cfca4fdb7d">BLV_GetFloorLevel</a> (const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, unsigned int uSectorID, unsigned int *pFaceID)</td></tr>
+<tr class="separator:a22f20848f1052b5e1c7195cfca4fdb7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2040a9ae01357a0cee15336316e4e0ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a2040a9ae01357a0cee15336316e4e0ff">BLV_UpdateDoors</a> ()</td></tr>
 <tr class="separator:a2040a9ae01357a0cee15336316e4e0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91180cf18d91c79b7bc41c630c261cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a91180cf18d91c79b7bc41c630c261cbd">UpdateActors_BLV</a> ()</td></tr>
@@ -216,12 +191,12 @@ Functions</h2></td></tr>
 <tr class="separator:a4e966ba5799556bf0865aa8dd476d4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10cfdae51ef0087519a5060919d2e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#ad10cfdae51ef0087519a5060919d2e6f">FindBillboardsLightLevels_BLV</a> ()</td></tr>
 <tr class="separator:ad10cfdae51ef0087519a5060919d2e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2eccd7d786fedb6302b06ba9501f7b74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a2eccd7d786fedb6302b06ba9501f7b74">GetIndoorFloorZ</a> (const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;pos, unsigned int *pSectorID, unsigned int *pFaceID)</td></tr>
-<tr class="separator:a2eccd7d786fedb6302b06ba9501f7b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a447e6642ec32654b4e963eabf90e979f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a447e6642ec32654b4e963eabf90e979f">GetApproximateIndoorFloorZ</a> (const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;pos, unsigned int *pSectorID, unsigned int *pFaceID)</td></tr>
-<tr class="separator:a447e6642ec32654b4e963eabf90e979f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae44cca9234ef3317140fa1219d6b5596"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#ae44cca9234ef3317140fa1219d6b5596">Check_LineOfSight</a> (int to_x, int to_y, int to_z, <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> from)</td></tr>
-<tr class="separator:ae44cca9234ef3317140fa1219d6b5596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e399c6bec5d525013aa59dd5a5c222"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a64e399c6bec5d525013aa59dd5a5c222">GetIndoorFloorZ</a> (const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, unsigned int *pSectorID, unsigned int *pFaceID)</td></tr>
+<tr class="separator:a64e399c6bec5d525013aa59dd5a5c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b4a74619c3ad3ab687e32d739155932"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#a1b4a74619c3ad3ab687e32d739155932">GetApproximateIndoorFloorZ</a> (const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, unsigned int *pSectorID, unsigned int *pFaceID)</td></tr>
+<tr class="separator:a1b4a74619c3ad3ab687e32d739155932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6c3b6ff66e235c0169c249ce4ab2124"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8h.html#ac6c3b6ff66e235c0169c249ce4ab2124">Check_LineOfSight</a> (int to_x, int to_y, int to_z, <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> from)</td></tr>
+<tr class="separator:ac6c3b6ff66e235c0169c249ce4ab2124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -290,78 +265,9 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a91fb3e69af7609c2810f12d81ecf6fab" name="a91fb3e69af7609c2810f12d81ecf6fab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91fb3e69af7609c2810f12d81ecf6fab">&#9670;&#160;</a></span>PolygonType</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="Indoor_8h.html#a91fb3e69af7609c2810f12d81ecf6fab">PolygonType</a> : uint8_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6faba219c780f23139ee0bd2b01e49c70cb3b" name="a91fb3e69af7609c2810f12d81ecf6faba219c780f23139ee0bd2b01e49c70cb3b"></a>POLYGON_Invalid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6fabaed80b99ffcd2645296ed9e7af033e2bb" name="a91fb3e69af7609c2810f12d81ecf6fabaed80b99ffcd2645296ed9e7af033e2bb"></a>POLYGON_VerticalWall&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6faba7b70e3e9b8c294e030e2d7f32c54dbcf" name="a91fb3e69af7609c2810f12d81ecf6faba7b70e3e9b8c294e030e2d7f32c54dbcf"></a>POLYGON_unk&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6fabae4490b69eafeea478f87b3c1e9712254" name="a91fb3e69af7609c2810f12d81ecf6fabae4490b69eafeea478f87b3c1e9712254"></a>POLYGON_Floor&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6fabadbd72c7f032c1d8a85e8c928083d9ce8" name="a91fb3e69af7609c2810f12d81ecf6fabadbd72c7f032c1d8a85e8c928083d9ce8"></a>POLYGON_InBetweenFloorAndWall&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6fabae1e308275ba818e9fcd75162bcdbd4d7" name="a91fb3e69af7609c2810f12d81ecf6fabae1e308275ba818e9fcd75162bcdbd4d7"></a>POLYGON_Ceiling&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a91fb3e69af7609c2810f12d81ecf6faba212f1c353912c54d258c088ffa7f80c4" name="a91fb3e69af7609c2810f12d81ecf6faba212f1c353912c54d258c088ffa7f80c4"></a>POLYGON_InBetweenCeilingAndWall&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a534cdbc98d19d62d4851f971866fb86c" name="a534cdbc98d19d62d4851f971866fb86c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a534cdbc98d19d62d4851f971866fb86c">&#9670;&#160;</a></span>AddBspNodeToRenderList()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AddBspNodeToRenderList </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>node_id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9bf86faaeabb31e6e5dab6f65f438bf6" name="a9bf86faaeabb31e6e5dab6f65f438bf6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bf86faaeabb31e6e5dab6f65f438bf6">&#9670;&#160;</a></span>AddNodeBSPFaces()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void AddNodeBSPFaces </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>node_id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>uFirstNode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a55d420643297196e80bf2e23fb2f6b5c" name="a55d420643297196e80bf2e23fb2f6b5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a55d420643297196e80bf2e23fb2f6b5c">&#9670;&#160;</a></span>BLV_GetFloorLevel()</h2>
+<a id="a22f20848f1052b5e1c7195cfca4fdb7d" name="a22f20848f1052b5e1c7195cfca4fdb7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22f20848f1052b5e1c7195cfca4fdb7d">&#9670;&#160;</a></span>BLV_GetFloorLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,7 +275,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int BLV_GetFloorLevel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -393,8 +299,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">pos</td><td><a class="el" href="structActor.html">Actor</a>'s position. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">uSectorID</td><td><a class="el" href="structActor.html">Actor</a>'s sector id. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">pos</td><td><a class="el" href="classActor.html">Actor</a>'s position. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">uSectorID</td><td><a class="el" href="classActor.html">Actor</a>'s sector id. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pFaceID</td><td>Id of the closest floor/ceiling face for the provided position, or <code>-1</code> if wrong sector is supplied or actor is out of bounds. </td></tr>
   </table>
   </dd>
@@ -506,8 +412,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ae44cca9234ef3317140fa1219d6b5596" name="ae44cca9234ef3317140fa1219d6b5596"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae44cca9234ef3317140fa1219d6b5596">&#9670;&#160;</a></span>Check_LineOfSight()</h2>
+<a id="ac6c3b6ff66e235c0169c249ce4ab2124" name="ac6c3b6ff66e235c0169c249ce4ab2124"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c3b6ff66e235c0169c249ce4ab2124">&#9670;&#160;</a></span>Check_LineOfSight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -533,7 +439,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>&#160;</td>
           <td class="paramname"><em>from</em>&#160;</td>
         </tr>
         <tr>
@@ -696,8 +602,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a447e6642ec32654b4e963eabf90e979f" name="a447e6642ec32654b4e963eabf90e979f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a447e6642ec32654b4e963eabf90e979f">&#9670;&#160;</a></span>GetApproximateIndoorFloorZ()</h2>
+<a id="a1b4a74619c3ad3ab687e32d739155932" name="a1b4a74619c3ad3ab687e32d739155932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b4a74619c3ad3ab687e32d739155932">&#9670;&#160;</a></span>GetApproximateIndoorFloorZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -705,7 +611,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int GetApproximateIndoorFloorZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -729,12 +635,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section user"><dt>Original binary offset:</dt><dd>0x0047272C.</dd></dl>
 <p>Same as <code>GetIndoorFloorZ</code>, but also tries jiggling the party around a bit if the collision point couldn't be found.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="Indoor_8h.html#a2eccd7d786fedb6302b06ba9501f7b74">GetIndoorFloorZ</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Indoor_8h.html#a64e399c6bec5d525013aa59dd5a5c222">GetIndoorFloorZ</a> </dd></dl>
 
 </div>
 </div>
-<a id="a2eccd7d786fedb6302b06ba9501f7b74" name="a2eccd7d786fedb6302b06ba9501f7b74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2eccd7d786fedb6302b06ba9501f7b74">&#9670;&#160;</a></span>GetIndoorFloorZ()</h2>
+<a id="a64e399c6bec5d525013aa59dd5a5c222" name="a64e399c6bec5d525013aa59dd5a5c222"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64e399c6bec5d525013aa59dd5a5c222">&#9670;&#160;</a></span>GetIndoorFloorZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -742,7 +648,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">int GetIndoorFloorZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#a280a4605b33cb88d3542ac14e433315b">Vec3_int_</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -767,30 +673,13 @@ Variables</h2></td></tr>
 <dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>looks like this also works for ceilings, reflect in docs?</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">pos</td><td><a class="el" href="structActor.html">Actor</a>'s position. </td></tr>
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">pSectorID</td><td><a class="el" href="structActor.html">Actor</a>'s cached sector id. If the cached sector id is no longer valid (e.g. an actor has already moved to another sector), then the new sector id is returned in this output parameter. If the actor moves out of level bounds (this happens), then this parameter is set to 0. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">pos</td><td><a class="el" href="classActor.html">Actor</a>'s position. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">pSectorID</td><td><a class="el" href="classActor.html">Actor</a>'s cached sector id. If the cached sector id is no longer valid (e.g. an actor has already moved to another sector), then the new sector id is returned in this output parameter. If the actor moves out of level bounds (this happens), then this parameter is set to 0. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">pFaceID</td><td>Id of the floor face on which the actor is standing, or <code>-1</code> if actor is outside the level boundaries. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Z coordinate for the floor at (X, Y), or <code>-30000</code> if actor is outside the level boundaries. </dd></dl>
-
-</div>
-</div>
-<a id="a0073e365c3163911ee4db4a32c7de350" name="a0073e365c3163911ee4db4a32c7de350"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0073e365c3163911ee4db4a32c7de350">&#9670;&#160;</a></span>PrepareBspRenderList_BLV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PrepareBspRenderList_BLV </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>
