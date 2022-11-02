@@ -173,6 +173,7 @@ var menudata={children:[
 {text:"s",url:"globals_func_s.html#index_s"},
 {text:"t",url:"globals_func_t.html#index_t"},
 {text:"u",url:"globals_func_u.html#index_u"},
+{text:"v",url:"globals_func_v.html#index_v"},
 {text:"w",url:"globals_func_w.html#index_w"}]},
 {text:"Variables",url:"globals_vars.html",children:[
 {text:"_",url:"globals_vars.html#index__5F"},
@@ -203,7 +204,6 @@ var menudata={children:[
 {text:"Typedefs",url:"globals_type.html",children:[
 {text:"a",url:"globals_type.html#index_a"},
 {text:"b",url:"globals_type.html#index_b"},
-{text:"c",url:"globals_type.html#index_c"},
 {text:"e",url:"globals_type.html#index_e"},
 {text:"g",url:"globals_type.html#index_g"},
 {text:"i",url:"globals_type.html#index_i"},
@@ -248,7 +248,6 @@ var menudata={children:[
 {text:"o",url:"globals_eval_o.html#index_o"},
 {text:"p",url:"globals_eval_p.html#index_p"},
 {text:"q",url:"globals_eval_q.html#index_q"},
-{text:"r",url:"globals_eval_r.html#index_r"},
 {text:"s",url:"globals_eval_s.html#index_s"},
 {text:"t",url:"globals_eval_t.html#index_t"},
 {text:"u",url:"globals_eval_u.html#index_u"},

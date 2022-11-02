@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;736c032</span>
+   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;9e23e4f</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="ItemEnums_8h.html">Engine/Objects/ItemEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PlayerEnums_8h.html">Engine/Objects/PlayerEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Spells_8h.html">Engine/Spells/Spells.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Workaround_8h.html">Utility/Workaround.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IndexedArray_8h.html">Utility/IndexedArray.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ToUnderlying_8h.html">Utility/Workaround/ToUnderlying.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -122,7 +123,7 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a01bbadf30f7ce71859f74f8bf33fc2f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#a01bbadf30f7ce71859f74f8bf33fc2f9">DamagePlayerFromMonster</a> (unsigned int uObjID, <a class="el" href="Actor_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a> dmgSource, <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> *pPos, signed int a4)</td></tr>
+<tr class="memitem:a01bbadf30f7ce71859f74f8bf33fc2f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#a01bbadf30f7ce71859f74f8bf33fc2f9">DamagePlayerFromMonster</a> (unsigned int uObjID, <a class="el" href="ActorEnums_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a> dmgSource, <a class="el" href="VectorTypes_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> *pPos, signed int a4)</td></tr>
 <tr class="separator:a01bbadf30f7ce71859f74f8bf33fc2f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ba8f3184b97a7bae5235a13a21c60f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#a2ba8f3184b97a7bae5235a13a21c60f3">IsDwarfPresentInParty</a> (bool b)</td></tr>
 <tr class="separator:a2ba8f3184b97a7bae5235a13a21c60f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,8 +138,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:abac7ac837ed00fe097135a9a7573347a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNZIArray.html">NZIArray</a>&lt; struct <a class="el" href="structPlayer.html">Player</a> *, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#abac7ac837ed00fe097135a9a7573347a">pPlayers</a></td></tr>
-<tr class="separator:abac7ac837ed00fe097135a9a7573347a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82c61ff4b40d087d03da0c28fb29a8be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="structPlayer.html">Player</a> *, 1, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#a82c61ff4b40d087d03da0c28fb29a8be">pPlayers</a></td></tr>
+<tr class="separator:a82c61ff4b40d087d03da0c28fb29a8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9f967959e3c9d481386f9719d98c4bf"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="PlayerEnums_8h.html#ab50a2a71840e11476f69875990dc7265">PlayerSpeech</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8h.html#af9f967959e3c9d481386f9719d98c4bf">PlayerSpeechID</a></td></tr>
 <tr class="separator:af9f967959e3c9d481386f9719d98c4bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -219,7 +220,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Actor_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ActorEnums_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a>&#160;</td>
           <td class="paramname"><em>dmgSource</em>, </td>
         </tr>
         <tr>
@@ -338,8 +339,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abac7ac837ed00fe097135a9a7573347a" name="abac7ac837ed00fe097135a9a7573347a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abac7ac837ed00fe097135a9a7573347a">&#9670;&#160;</a></span>pPlayers</h2>
+<a id="a82c61ff4b40d087d03da0c28fb29a8be" name="a82c61ff4b40d087d03da0c28fb29a8be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82c61ff4b40d087d03da0c28fb29a8be">&#9670;&#160;</a></span>pPlayers</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -348,7 +349,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classNZIArray.html">NZIArray</a>&lt;struct <a class="el" href="structPlayer.html">Player</a>*, 5&gt; pPlayers</td>
+          <td class="memname"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="structPlayer.html">Player</a> *, 1, 4&gt; pPlayers</td>
         </tr>
       </table>
   </td>
