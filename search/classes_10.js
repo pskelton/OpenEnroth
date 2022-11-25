@@ -1,9 +1,9 @@
 var searchData=
 [
   ['random_0',['Random',['../structRandom.html',1,'']]],
-  ['range_1',['Range',['../classRange.html',1,'']]],
-  ['rangeiterator_2',['RangeIterator',['../classdetail_1_1RangeIterator.html',1,'detail']]],
-  ['rect_3',['Rect',['../structRect.html',1,'']]],
+  ['rangeiterator_1',['RangeIterator',['../classdetail_1_1RangeIterator.html',1,'detail']]],
+  ['rect_2',['Rect',['../structRect.html',1,'']]],
+  ['rect_3c_20int_20_3e_3',['Rect&lt; int &gt;',['../structRect.html',1,'']]],
   ['render_4',['Render',['../classRender.html',1,'']]],
   ['renderbase_5',['RenderBase',['../classRenderBase.html',1,'']]],
   ['renderbillboard_6',['RenderBillboard',['../structRenderBillboard.html',1,'']]],
