@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;39cc048</span>
+   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;2915b31</span>
    </div>
   </td>
  </tr>
@@ -297,6 +297,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afdbdce114d0fac85a69f2620f0fc24df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d14e7826b0dd35df4c4dd4cceff220f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRender.html#a7d14e7826b0dd35df4c4dd4cceff220f">DrawIndoorFaces</a> () override</td></tr>
 <tr class="separator:a7d14e7826b0dd35df4c4dd4cceff220f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef3aa13e19bd586892a126911099550a"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRender.html#aef3aa13e19bd586892a126911099550a">Reinitialize</a> (bool firstInit) override</td></tr>
+<tr class="separator:aef3aa13e19bd586892a126911099550a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a79d845f3806683c83b1a24cc878d35"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRender.html#a0a79d845f3806683c83b1a24cc878d35">ReloadShaders</a> () override</td></tr>
 <tr class="separator:a0a79d845f3806683c83b1a24cc878d35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a9116cb49d285dd20fcda2884ff2476"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRender.html#a7a9116cb49d285dd20fcda2884ff2476">WritePixel16</a> (int x, int y, uint16_t color) override</td></tr>
@@ -318,6 +320,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acdcd112abf0b2e2c8f5a1945779f6b0b inherit pub_methods_classRenderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4066bd07b80374166cb41166412340f2 inherit pub_methods_classRenderBase"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderBase.html#a4066bd07b80374166cb41166412340f2">MakeParticleBillboardAndPush</a> (<a class="el" href="structSoftwareBillboard.html">SoftwareBillboard</a> *a2, <a class="el" href="classTexture.html">Texture</a> *texture, unsigned int uDiffuse, int angle) override</td></tr>
 <tr class="separator:a4066bd07b80374166cb41166412340f2 inherit pub_methods_classRenderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a578079a02dfc25d728c7d2d0e544acc3 inherit pub_methods_classRenderBase"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderBase.html#a578079a02dfc25d728c7d2d0e544acc3">GetGamma</a> () override</td></tr>
+<tr class="separator:a578079a02dfc25d728c7d2d0e544acc3 inherit pub_methods_classRenderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ae8447247a78c9293c1f26818bfc7aa inherit pub_methods_classRenderBase"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classHWLTexture.html">HWLTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderBase.html#a3ae8447247a78c9293c1f26818bfc7aa">LoadHwlBitmap</a> (const std::string &amp;name) override</td></tr>
 <tr class="separator:a3ae8447247a78c9293c1f26818bfc7aa inherit pub_methods_classRenderBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5dc5e8f18589b4d449cd64aff7dfb1d1 inherit pub_methods_classRenderBase"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classHWLTexture.html">HWLTexture</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRenderBase.html#a5dc5e8f18589b4d449cd64aff7dfb1d1">LoadHwlSprite</a> (const std::string &amp;name) override</td></tr>
@@ -411,6 +415,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a097cf40dc7c462fe1489d8c7067781fa inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e261dcefcdcd0f92386ae36b709dacd inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a2e261dcefcdcd0f92386ae36b709dacd">MakeParticleBillboardAndPush</a> (<a class="el" href="structSoftwareBillboard.html">SoftwareBillboard</a> *a2, <a class="el" href="classTexture.html">Texture</a> *texture, unsigned int uDiffuse, int angle)=0</td></tr>
 <tr class="separator:a2e261dcefcdcd0f92386ae36b709dacd inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9249171de272e485202b51cd97fd90df inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a9249171de272e485202b51cd97fd90df">GetGamma</a> ()=0</td></tr>
+<tr class="separator:a9249171de272e485202b51cd97fd90df inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2da1f5f5a627ef2f45f1fa0dfca2a10c inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a2da1f5f5a627ef2f45f1fa0dfca2a10c">DrawBillboards_And_MaybeRenderSpecialEffects_And_EndScene</a> ()=0</td></tr>
 <tr class="separator:a2da1f5f5a627ef2f45f1fa0dfca2a10c inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2499d0ee9c9ac0f54073cde7167c2d13 inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a2499d0ee9c9ac0f54073cde7167c2d13">BillboardSphereSpellFX</a> (struct <a class="el" href="structSpellFX__Billboard.html">SpellFX_Billboard</a> *a1, int diffuse)=0</td></tr>
@@ -535,6 +541,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a0838832b098523e7ac02cd5e499eb148 inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfbff9bcb735079ba54dc01b77e2b301 inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#adfbff9bcb735079ba54dc01b77e2b301">DrawTwodVerts</a> ()=0</td></tr>
 <tr class="separator:adfbff9bcb735079ba54dc01b77e2b301 inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8072e813db48acdecbe1016f3bae1a33 inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a8072e813db48acdecbe1016f3bae1a33">Reinitialize</a> (bool firstInit=false)=0</td></tr>
+<tr class="separator:a8072e813db48acdecbe1016f3bae1a33 inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64b75ae58f37d81aa4b1fce9d03c3da4 inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a64b75ae58f37d81aa4b1fce9d03c3da4">ReloadShaders</a> ()=0</td></tr>
 <tr class="separator:a64b75ae58f37d81aa4b1fce9d03c3da4 inherit pub_methods_classIRender"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182ff1e20d7a82c6c400e8732ddfa52e inherit pub_methods_classIRender"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIRender.html#a182ff1e20d7a82c6c400e8732ddfa52e">WritePixel16</a> (int x, int y, uint16_t color)=0</td></tr>
@@ -4336,6 +4344,34 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classIRender.html#a2545b41e086465be6d46b25285c76118">IRender</a>.</p>
+
+</div>
+</div>
+<a id="aef3aa13e19bd586892a126911099550a" name="aef3aa13e19bd586892a126911099550a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef3aa13e19bd586892a126911099550a">&#9670;&#160;</a></span>Reinitialize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Render::Reinitialize </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>firstInit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classIRender.html#a8072e813db48acdecbe1016f3bae1a33">IRender</a>.</p>
 
 </div>
 </div>
