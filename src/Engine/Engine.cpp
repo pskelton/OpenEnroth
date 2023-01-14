@@ -250,17 +250,21 @@ void Engine::DrawGUI() {
         GameUI_DrawTorchlightAndWizardEye();
     }
 
+    if (current_screen_type == CURRENT_SCREEN::SCREEN_GAME &&
+        uCurrentlyLoadedLevelType == LEVEL_Outdoor)
+        pWeather->Draw();  // Ritor1: my include
+}
+
+void Engine::DebugOverlay() {
     static bool render_framerate = false;
     static float framerate = 0.0f;
     static uint frames_this_second = 0;
     static uint last_frame_time = platform->TickCount();
     static uint framerate_time_elapsed = 0;
 
-    if (current_screen_type == CURRENT_SCREEN::SCREEN_GAME &&
-        uCurrentlyLoadedLevelType == LEVEL_Outdoor)
-        pWeather->Draw();  // Ritor1: my include
+    if (!pPrimaryWindow) return;
 
-                           // while(GetTickCount() - last_frame_time < 33 );//FPS control
+    // while(GetTickCount() - last_frame_time < 33 );//FPS control
     uint frame_dt = platform->TickCount() - last_frame_time;
     last_frame_time = platform->TickCount();
     framerate_time_elapsed += frame_dt;
@@ -276,20 +280,20 @@ void Engine::DrawGUI() {
 
     if (engine->config->debug.ShowFPS.Get()) {
         if (render_framerate) {
-            pPrimaryWindow->DrawText(pFontArrus, {494, 0}, colorTable.White.C16(), StringPrintf("FPS: % .4f", framerate), 0, 0, 0);
+            pPrimaryWindow->DrawText(pFontArrus, { 494, 0 }, colorTable.White.C16(), StringPrintf("FPS: % .4f", framerate), 0, 0, 0);
         }
 
-        pPrimaryWindow->DrawText(pFontArrus, {300, 0}, colorTable.White.C16(), StringPrintf("DrawCalls: %d", render->drawcalls), 0, 0, 0);
+        pPrimaryWindow->DrawText(pFontArrus, { 300, 0 }, colorTable.White.C16(), StringPrintf("DrawCalls: %d", render->drawcalls), 0, 0, 0);
         render->drawcalls = 0;
 
 
         int debug_info_offset = 0;
         if (uCurrentlyLoadedLevelType == LEVEL_Indoor) {
             int sector_id = pBLVRenderParams->uPartySectorID;
-            pPrimaryWindow->DrawText(pFontArrus, {16, debug_info_offset + 16}, colorTable.White.C16(),
+            pPrimaryWindow->DrawText(pFontArrus, { 16, debug_info_offset + 16 }, colorTable.White.C16(),
                 StringPrintf("Party Sector ID:        %u/%zu\n", sector_id, pIndoor->pSectors.size()), 0, 0, 0);
         }
-        pPrimaryWindow->DrawText(pFontArrus, {16, debug_info_offset + 16}, colorTable.White.C16(),
+        pPrimaryWindow->DrawText(pFontArrus, { 16, debug_info_offset + 16 }, colorTable.White.C16(),
             StringPrintf("Party Position:         % d % d % d", pParty->vPosition.x, pParty->vPosition.y, pParty->vPosition.z), 0, 0, 0);
 
         std::string floor_level_str;
@@ -310,12 +314,25 @@ void Engine::DrawGUI() {
                 "ODM_GetFloorLevel: %d   on_water: %s  on: %s\n",
                 floor_level, on_water ? "true" : "false",
                 bmodel_pid == 0
-                    ? "---"
-                    : StringPrintf("BModel=%d Face=%d", bmodel_pid >> 6, bmodel_pid & 0x3F).c_str()
+                ? "---"
+                : StringPrintf("BModel=%d Face=%d", bmodel_pid >> 6, bmodel_pid & 0x3F).c_str()
             );
         }
 
-        pPrimaryWindow->DrawText(pFontArrus, {16, debug_info_offset + 16 + 16}, colorTable.White.C16(), floor_level_str, 0, 0, 0);
+        pPrimaryWindow->DrawText(pFontArrus, { 16, debug_info_offset + 16 + 16 }, colorTable.White.C16(), floor_level_str, 0, 0, 0);
+    }
+
+    if (true) { // engine config trace mode
+        // get mouse / playback pos
+        Pointi mousept = mouse->GetCursorPos();
+        if (true) { // engine config trace mode
+            // recording
+            render->FillRectFast(mousept.x - 5, mousept.y - 5, 10, 10, colorTable.Red.C16());
+            pPrimaryWindow->DrawText(pFontComic, { mousept.x + 10, mousept.y - 5 }, colorTable.Red.C16(), "REC");
+        } else {
+            // playback
+            render->FillRectFast(mousept.x - 5, mousept.y - 5, 10, 10, colorTable.LaserLemon.C16());
+        }
     }
 }
 

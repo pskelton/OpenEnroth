@@ -3772,6 +3772,9 @@ void RenderOpenGL::DrawTextAlpha(int x, int y, unsigned char *font_pixels,
 }
 
 void RenderOpenGL::Present() {
+    // TODO(pskelton): Move this - just an easy way to grab all drawing for now
+    engine->DebugOverlay();
+
     // flush any undrawn items
     DrawTwodVerts();
     EndLines2D();
