@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>World of Might and Magic: src/Utility/Random/Random.h File Reference</title>
+<title>OpenEnroth: src/Utility/Random/Random.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;f6860bd</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;36ba7be</span>
    </div>
   </td>
  </tr>
@@ -86,8 +86,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:a8043d88285c9fdc0df23f29bfca1a5fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classRandomEngine.html">RandomEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#a8043d88285c9fdc0df23f29bfca1a5fa">GlobalRandomEngine</a> ()</td></tr>
 <tr class="separator:a8043d88285c9fdc0df23f29bfca1a5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6239fb8d5a794d4197b776ed1aa4eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#aa6239fb8d5a794d4197b776ed1aa4eac">SetGlobalRandomEngine</a> (std::unique_ptr&lt; <a class="el" href="classRandomEngine.html">RandomEngine</a> &gt; <a class="el" href="Engine_8cpp.html#a911c866a46f710d4f1b358efcfb2604a">engine</a>)</td></tr>
-<tr class="separator:aa6239fb8d5a794d4197b776ed1aa4eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4adb55c793dfedd814030450aa40fa7c"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="classRandomEngine.html">RandomEngine</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#a4adb55c793dfedd814030450aa40fa7c">SetGlobalRandomEngine</a> (std::unique_ptr&lt; <a class="el" href="classRandomEngine.html">RandomEngine</a> &gt; <a class="el" href="Engine_8cpp.html#a911c866a46f710d4f1b358efcfb2604a">engine</a>)</td></tr>
+<tr class="separator:a4adb55c793dfedd814030450aa40fa7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab92b92d73572db0a229cce554f75561a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#ab92b92d73572db0a229cce554f75561a">SeedRandom</a> (int seed)</td></tr>
 <tr class="separator:ab92b92d73572db0a229cce554f75561a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a056254c23ba050907457e97f7612cb8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#a056254c23ba050907457e97f7612cb8a">Random</a> (int hi)</td></tr>
@@ -98,11 +98,11 @@ Functions</h2></td></tr>
 <tr class="separator:a4f11994534b888fcf650c04b5d61d9d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b4183ec97372e2dba6e04843c337fe8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Random_8h.html#a1b4183ec97372e2dba6e04843c337fe8">RandomDice</a> (int count, int faces)</td></tr>
 <tr class="separator:a1b4183ec97372e2dba6e04843c337fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5dc416ce52f62e16309055ac37e721a"><td class="memTemplParams" colspan="2">template&lt;class Range , class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>  = typename Range::value_type&gt; </td></tr>
-<tr class="memitem:aa5dc416ce52f62e16309055ac37e721a"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Random_8h.html#aa5dc416ce52f62e16309055ac37e721a">Sample</a> (const Range &amp;range)</td></tr>
+<tr class="memitem:aa5dc416ce52f62e16309055ac37e721a"><td class="memTemplParams" colspan="2">template&lt;class Range , class T  = typename Range::value_type&gt; </td></tr>
+<tr class="memitem:aa5dc416ce52f62e16309055ac37e721a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Random_8h.html#aa5dc416ce52f62e16309055ac37e721a">Sample</a> (const Range &amp;range)</td></tr>
 <tr class="separator:aa5dc416ce52f62e16309055ac37e721a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91b35d7892a8f1f6bcabcefddc72fea6"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </td></tr>
-<tr class="memitem:a91b35d7892a8f1f6bcabcefddc72fea6"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Random_8h.html#a91b35d7892a8f1f6bcabcefddc72fea6">Sample</a> (std::initializer_list&lt; <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; range)</td></tr>
+<tr class="memitem:a91b35d7892a8f1f6bcabcefddc72fea6"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a91b35d7892a8f1f6bcabcefddc72fea6"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="Random_8h.html#a91b35d7892a8f1f6bcabcefddc72fea6">Sample</a> (std::initializer_list&lt; T &gt; range)</td></tr>
 <tr class="separator:a91b35d7892a8f1f6bcabcefddc72fea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
@@ -246,10 +246,10 @@ Functions</h2></td></tr>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class Range , class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a>  = typename Range::value_type&gt; </div>
+template&lt;class Range , class T  = typename Range::value_type&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> Sample </td>
+          <td class="memname">T Sample </td>
           <td>(</td>
           <td class="paramtype">const Range &amp;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
@@ -273,12 +273,12 @@ template&lt;class Range , class <a class="el" href="PlatformKey_8h.html#a2ba5974
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt; </div>
+template&lt;class T &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> Sample </td>
+          <td class="memname">T Sample </td>
           <td>(</td>
-          <td class="paramtype">std::initializer_list&lt; <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccab9ece18c950afbfa6b0fdbfa4ff731d3">T</a> &gt;&#160;</td>
+          <td class="paramtype">std::initializer_list&lt; T &gt;&#160;</td>
           <td class="paramname"><em>range</em></td><td>)</td>
           <td></td>
         </tr>
@@ -312,14 +312,14 @@ template&lt;class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd119
 
 </div>
 </div>
-<a id="aa6239fb8d5a794d4197b776ed1aa4eac" name="aa6239fb8d5a794d4197b776ed1aa4eac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6239fb8d5a794d4197b776ed1aa4eac">&#9670;&#160;</a></span>SetGlobalRandomEngine()</h2>
+<a id="a4adb55c793dfedd814030450aa40fa7c" name="a4adb55c793dfedd814030450aa40fa7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4adb55c793dfedd814030450aa40fa7c">&#9670;&#160;</a></span>SetGlobalRandomEngine()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void SetGlobalRandomEngine </td>
+          <td class="memname">std::unique_ptr&lt; <a class="el" href="classRandomEngine.html">RandomEngine</a> &gt; SetGlobalRandomEngine </td>
           <td>(</td>
           <td class="paramtype">std::unique_ptr&lt; <a class="el" href="classRandomEngine.html">RandomEngine</a> &gt;&#160;</td>
           <td class="paramname"><em>engine</em></td><td>)</td>
@@ -333,6 +333,7 @@ template&lt;class <a class="el" href="PlatformKey_8h.html#a2ba59747730ab559dd119
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>Old random engine. </dd></dl>
 
 </div>
 </div>

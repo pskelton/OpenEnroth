@@ -1,12 +1,12 @@
 var searchData=
 [
   ['testeventloop_0',['TestEventLoop',['../classTestEventLoop.html',1,'']]],
-  ['testgamepad_1',['TestGamepad',['../classTestGamepad.html',1,'']]],
-  ['testopenglcontext_2',['TestOpenGLContext',['../classTestOpenGLContext.html',1,'']]],
+  ['testopenglcontext_1',['TestOpenGLContext',['../classTestOpenGLContext.html',1,'']]],
+  ['testpair_2',['TestPair',['../structTestPair.html',1,'']]],
   ['testplatform_3',['TestPlatform',['../classTestPlatform.html',1,'']]],
-  ['testrandomengine_4',['TestRandomEngine',['../classTestRandomEngine.html',1,'']]],
-  ['teststate_5',['TestState',['../classTestState.html',1,'']]],
-  ['teststatehandle_6',['TestStateHandle',['../classTestStateHandle.html',1,'']]],
+  ['teststate_4',['TestState',['../classTestState.html',1,'']]],
+  ['teststatehandle_5',['TestStateHandle',['../classTestStateHandle.html',1,'']]],
+  ['teststruct_6',['TestStruct',['../structTestStruct.html',1,'']]],
   ['testwindow_7',['TestWindow',['../classTestWindow.html',1,'']]],
   ['texture_8',['Texture',['../classTexture.html',1,'']]],
   ['texture_5fmm7_9',['Texture_MM7',['../structTexture__MM7.html',1,'']]],

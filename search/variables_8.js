@@ -17,7 +17,7 @@ var searchData=
   ['hide_5fcard_5fanim_5frunnning_14',['hide_card_anim_runnning',['../Arcomage_8cpp.html#adc3c4b8df2af3b95a5a485d94ba54c33',1,'Arcomage.cpp']]],
   ['hide_5fcard_5fanim_5fstart_15',['hide_card_anim_start',['../Arcomage_8cpp.html#a9bf9272a1fd53d48c201ff380fb53ead',1,'Arcomage.cpp']]],
   ['hirelingscrollposition_16',['hirelingScrollPosition',['../structParty.html#a9c7d0f2cdf2357565052b81d024ce813',1,'Party::hirelingScrollPosition()'],['../structParty__MM7.html#a1483a976f8306f33339dc3d5d416c29f',1,'Party_MM7::hirelingScrollPosition()']]],
-  ['history_17',['History',['../classApplication_1_1GameConfig_1_1Gamepad.html#ae9e4dc6c2c0585a77b797040e4ec7948',1,'Application::GameConfig::Gamepad::History()'],['../classApplication_1_1GameConfig_1_1Keybindings.html#aefbba0ed15eb5e34530b82696d190f07',1,'Application::GameConfig::Keybindings::History()']]],
+  ['history_17',['History',['../classApplication_1_1GameConfig_1_1Gamepad.html#ab6f8e23043b63b9faa814026a2acd72f',1,'Application::GameConfig::Gamepad::History()'],['../classApplication_1_1GameConfig_1_1Keybindings.html#a58daa56cf7339824f1893e0bced8ac2f',1,'Application::GameConfig::Keybindings::History()']]],
   ['historyeventtimes_18',['HistoryEventTimes',['../structPartyTimeStruct__MM7.html#a312eb75d1eeebe324f800a8b5d169212',1,'PartyTimeStruct_MM7::HistoryEventTimes()'],['../structPartyTimeStruct.html#a2866b9e52d33fc9925ebd3b21ebb8813',1,'PartyTimeStruct::HistoryEventTimes()']]],
   ['hotkeys_19',['hotkeys',['../Nuklear_8cpp.html#a47d7359ae2b6b4e1cef094ac9838bb5e',1,'Nuklear.cpp']]],
   ['hour_20',['Hour',['../structTimer.html#aece83d6a9db76b82a8d36c92666fead2',1,'Timer']]],

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>World of Might and Magic: Actor Class Reference</title>
+<title>OpenEnroth: Actor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">World of Might and Magic<span id="projectnumber">&#160;f6860bd</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;36ba7be</span>
    </div>
   </td>
  </tr>
@@ -147,8 +147,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a49b223a6e46a50fd3688168173eb172e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a49b223a6e46a50fd3688168173eb172e">_SelectTarget</a> (unsigned int uActorID, int *a2, bool can_target_party)</td></tr>
-<tr class="separator:a49b223a6e46a50fd3688168173eb172e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd2920c2c0808264eebd8827cda7692"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#afcd2920c2c0808264eebd8827cda7692">_SelectTarget</a> (unsigned int uActorID, int *OutTargetPID, bool can_target_party)</td></tr>
+<tr class="separator:afcd2920c2c0808264eebd8827cda7692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3148a1df5916c9c4fbf7c81bed51415"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#af3148a1df5916c9c4fbf7c81bed51415">AI_Pursue3</a> (unsigned int uActorID, unsigned int a2, signed int uActionLength, struct <a class="el" href="structAIDirection.html">AIDirection</a> *a4)</td></tr>
 <tr class="separator:af3148a1df5916c9c4fbf7c81bed51415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3d789f7a1e1208a1213ca42b7c3c601"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#af3d789f7a1e1208a1213ca42b7c3c601">AI_Pursue2</a> (unsigned int uActorID, unsigned int a2, signed int uActionLength, struct <a class="el" href="structAIDirection.html">AIDirection</a> *pDir, int a5)</td></tr>
@@ -318,6 +318,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a5502d96e3404a4d3d415772aa06d6925"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7c83fd16e08bc008251953685fb8b01"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#af7c83fd16e08bc008251953685fb8b01">field_338</a> [12] = {}</td></tr>
 <tr class="separator:af7c83fd16e08bc008251953685fb8b01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09f869696b3100956fa6f7bdd3ea175b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a09f869696b3100956fa6f7bdd3ea175b">donebloodsplat</a> { false }</td></tr>
+<tr class="separator:a09f869696b3100956fa6f7bdd3ea175b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a0ff4335a1ee9096df90f288c026c8b" name="a2a0ff4335a1ee9096df90f288c026c8b"></a>
@@ -484,8 +486,8 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a49b223a6e46a50fd3688168173eb172e" name="a49b223a6e46a50fd3688168173eb172e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49b223a6e46a50fd3688168173eb172e">&#9670;&#160;</a></span>_SelectTarget()</h2>
+<a id="afcd2920c2c0808264eebd8827cda7692" name="afcd2920c2c0808264eebd8827cda7692"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd2920c2c0808264eebd8827cda7692">&#9670;&#160;</a></span>_SelectTarget()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -503,7 +505,7 @@ Public Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>a2</em>, </td>
+          <td class="paramname"><em>OutTargetPID</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2746,6 +2748,20 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">std::array&lt;<a class="el" href="structItemGen.html">ItemGen</a>, 4&gt; Actor::ActorHasItems</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a09f869696b3100956fa6f7bdd3ea175b" name="a09f869696b3100956fa6f7bdd3ea175b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09f869696b3100956fa6f7bdd3ea175b">&#9670;&#160;</a></span>donebloodsplat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Actor::donebloodsplat { false }</td>
         </tr>
       </table>
 </div><div class="memdoc">
