@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h_0',['H',['../PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eeccac1d9f50f86825a1a2302ec2449c17196',1,'PlatformKey.h']]],
+  ['h_0',['H',['../PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eeccac1d9f50f86825a1a2302ec2449c17196',1,'PlatformEnums.h']]],
   ['h_1',['h',['../structSize.html#a33719b3600ba6eb4a880c79577cac8d6',1,'Size::h()'],['../structRect.html#a78ae244d7142df714716f083db77533f',1,'Rect::h()']]],
   ['hacking_2emd_2',['HACKING.md',['../HACKING_8md.html',1,'']]],
   ['handlelostresources_3',['HandleLostResources',['../classRenderD3D.html#ae7fc77606007c87d1129e1b403cb1fba',1,'RenderD3D']]],
@@ -47,7 +47,7 @@ var searchData=
   ['hirelingscrollposition_44',['hirelingScrollPosition',['../structParty.html#a9c7d0f2cdf2357565052b81d024ce813',1,'Party::hirelingScrollPosition()'],['../structParty__MM7.html#a1483a976f8306f33339dc3d5d416c29f',1,'Party_MM7::hirelingScrollPosition()']]],
   ['history_45',['History',['../classApplication_1_1GameConfig_1_1Gamepad.html#ab6f8e23043b63b9faa814026a2acd72f',1,'Application::GameConfig::Gamepad::History()'],['../namespaceIo.html#a547e2ba6c6a5bb3a0b5987131e62a90ca16d2b386b2034b9488996466aaae0b57',1,'Io::History()'],['../classApplication_1_1GameConfig_1_1Keybindings.html#a58daa56cf7339824f1893e0bced8ac2f',1,'Application::GameConfig::Keybindings::History()']]],
   ['historyeventtimes_46',['HistoryEventTimes',['../structPartyTimeStruct__MM7.html#a312eb75d1eeebe324f800a8b5d169212',1,'PartyTimeStruct_MM7::HistoryEventTimes()'],['../structPartyTimeStruct.html#a2866b9e52d33fc9925ebd3b21ebb8813',1,'PartyTimeStruct::HistoryEventTimes()']]],
-  ['home_47',['Home',['../PlatformKey_8h.html#a2ba59747730ab559dd1191f51081eecca8cf04a9734132302f96da8e113e80ce5',1,'PlatformKey.h']]],
+  ['home_47',['Home',['../PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecca8cf04a9734132302f96da8e113e80ce5',1,'PlatformEnums.h']]],
   ['homepath_48',['HomePath',['../FileSystem_8cpp.html#ad7c75ed4b4f0e475ca493fb0e2683a10',1,'FileSystem.cpp']]],
   ['horseman_49',['Horseman',['../NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4a9898d6259b8e8091de47234b4d0e9016',1,'NPCEnums.h']]],
   ['hostility_5fclose_50',['Hostility_Close',['../structMonsterInfo.html#a110c64aadfccebdf40039599c96cde07a37b8d246dbd9fd3fb3c51d5d41e023f7',1,'MonsterInfo']]],
