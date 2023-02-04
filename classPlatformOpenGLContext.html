@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;9c2ce4c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2e26b01</span>
    </div>
   </td>
  </tr>
@@ -83,12 +83,13 @@ Inheritance diagram for PlatformOpenGLContext:</div>
  <div class="center">
   <img src="classPlatformOpenGLContext.png" usemap="#PlatformOpenGLContext_map" alt=""/>
   <map id="PlatformOpenGLContext_map" name="PlatformOpenGLContext_map">
-<area href="classProxyBase.html" alt="ProxyBase&lt; PlatformOpenGLContext &gt;" shape="rect" coords="242,56,474,80"/>
-<area href="classSdlOpenGLContext.html" alt="SdlOpenGLContext" shape="rect" coords="484,56,716,80"/>
-<area href="classProxyOpenGLContext.html" alt="ProxyOpenGLContext" shape="rect" coords="242,112,474,136"/>
+<area href="classProxyBase.html" alt="ProxyBase&lt; PlatformOpenGLContext &gt;" shape="rect" coords="363,56,595,80"/>
+<area href="classSdlOpenGLContext.html" alt="SdlOpenGLContext" shape="rect" coords="605,56,837,80"/>
+<area href="classProxyOpenGLContext.html" alt="ProxyOpenGLContext" shape="rect" coords="363,112,595,136"/>
 <area href="classApplicationProxy.html" alt="ApplicationProxy" shape="rect" coords="0,168,232,192"/>
-<area href="classEventTracer.html" alt="EventTracer" shape="rect" coords="242,168,474,192"/>
-<area href="classTestProxy.html" alt="TestProxy" shape="rect" coords="484,168,716,192"/>
+<area href="classEngineControlPlugin.html" alt="EngineControlPlugin" shape="rect" coords="242,168,474,192"/>
+<area href="classEngineDeterministicPlugin.html" alt="EngineDeterministicPlugin" shape="rect" coords="484,168,716,192"/>
+<area href="classEngineTracePlugin.html" alt="EngineTracePlugin" shape="rect" coords="726,168,958,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -96,12 +97,14 @@ Inheritance diagram for PlatformOpenGLContext:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a37cf06185f6b7f54e26cfb1479b18b98"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#a37cf06185f6b7f54e26cfb1479b18b98">~PlatformOpenGLContext</a> ()=default</td></tr>
 <tr class="separator:a37cf06185f6b7f54e26cfb1479b18b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee00e7972352490a311738d7f0da8a28"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#aee00e7972352490a311738d7f0da8a28">MakeCurrent</a> ()=0</td></tr>
-<tr class="separator:aee00e7972352490a311738d7f0da8a28"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d419136e8235858407128e70a0fa898"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#a8d419136e8235858407128e70a0fa898">SwapBuffers</a> ()=0</td></tr>
-<tr class="separator:a8d419136e8235858407128e70a0fa898"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6ee10fc5728ad2f04faedea8a1b6c26"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#aa6ee10fc5728ad2f04faedea8a1b6c26">GetProcAddress</a> (const char *name)=0</td></tr>
-<tr class="separator:aa6ee10fc5728ad2f04faedea8a1b6c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc75ee2e5b6736369658848bb170f830"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#adc75ee2e5b6736369658848bb170f830">bind</a> ()=0</td></tr>
+<tr class="separator:adc75ee2e5b6736369658848bb170f830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7380c1d7148317103824bf05954547e9"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#a7380c1d7148317103824bf05954547e9">unbind</a> ()=0</td></tr>
+<tr class="separator:a7380c1d7148317103824bf05954547e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c2091bb2c65ad009cab04c515eda37"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#a26c2091bb2c65ad009cab04c515eda37">swapBuffers</a> ()=0</td></tr>
+<tr class="separator:a26c2091bb2c65ad009cab04c515eda37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25bb9c2bf624c083c47e1e776ed8bbb8"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformOpenGLContext.html#a25bb9c2bf624c083c47e1e776ed8bbb8">getProcAddress</a> (const char *name)=0</td></tr>
+<tr class="separator:a25bb9c2bf624c083c47e1e776ed8bbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a37cf06185f6b7f54e26cfb1479b18b98" name="a37cf06185f6b7f54e26cfb1479b18b98"></a>
@@ -130,8 +133,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa6ee10fc5728ad2f04faedea8a1b6c26" name="aa6ee10fc5728ad2f04faedea8a1b6c26"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6ee10fc5728ad2f04faedea8a1b6c26">&#9670;&#160;</a></span>GetProcAddress()</h2>
+<a id="adc75ee2e5b6736369658848bb170f830" name="adc75ee2e5b6736369658848bb170f830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc75ee2e5b6736369658848bb170f830">&#9670;&#160;</a></span>bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,7 +143,34 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void * PlatformOpenGLContext::GetProcAddress </td>
+          <td class="memname">virtual bool PlatformOpenGLContext::bind </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classProxyOpenGLContext.html#aeed052f589e1b39bbb002113be03cfdd">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#a827bc1dc8610dba418ec463fbc737ee9">SdlOpenGLContext</a>.</p>
+
+</div>
+</div>
+<a id="a25bb9c2bf624c083c47e1e776ed8bbb8" name="a25bb9c2bf624c083c47e1e776ed8bbb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25bb9c2bf624c083c47e1e776ed8bbb8">&#9670;&#160;</a></span>getProcAddress()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void * PlatformOpenGLContext::getProcAddress </td>
           <td>(</td>
           <td class="paramtype">const char *&#160;</td>
           <td class="paramname"><em>name</em></td><td>)</td>
@@ -154,12 +184,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classProxyOpenGLContext.html#a52ff1981086641891ada366e69f2f25f">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#a333ce54e476f458d1b59dedb3b81662f">SdlOpenGLContext</a>.</p>
+<p>Implemented in <a class="el" href="classProxyOpenGLContext.html#a239fa0a8914580d13cee8d2fe75c7745">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#af67c01f95e6e1944b51db54b1255af22">SdlOpenGLContext</a>.</p>
 
 </div>
 </div>
-<a id="aee00e7972352490a311738d7f0da8a28" name="aee00e7972352490a311738d7f0da8a28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee00e7972352490a311738d7f0da8a28">&#9670;&#160;</a></span>MakeCurrent()</h2>
+<a id="a26c2091bb2c65ad009cab04c515eda37" name="a26c2091bb2c65ad009cab04c515eda37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26c2091bb2c65ad009cab04c515eda37">&#9670;&#160;</a></span>swapBuffers()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +198,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual bool PlatformOpenGLContext::MakeCurrent </td>
+          <td class="memname">virtual void PlatformOpenGLContext::swapBuffers </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -181,12 +211,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classProxyOpenGLContext.html#a1ba0236f6a5714c6a74ac775baf1f068">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#a39c4c3139f89030d88782cb205e639d9">SdlOpenGLContext</a>.</p>
+<p>Implemented in <a class="el" href="classEngineControlPlugin.html#a720e57dc52c956def62c889e68cca8e0">EngineControlPlugin</a>, <a class="el" href="classEngineDeterministicPlugin.html#a816805b2c1aac24fa750dfd9229de6b7">EngineDeterministicPlugin</a>, <a class="el" href="classEngineTracePlugin.html#a6beeb9eaf8a8dae7b083f9735724a31c">EngineTracePlugin</a>, <a class="el" href="classProxyOpenGLContext.html#a2f921f6e285b160ee434f20b6de79a7c">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#a0ed149a81ca025c63018c492039a2c30">SdlOpenGLContext</a>.</p>
 
 </div>
 </div>
-<a id="a8d419136e8235858407128e70a0fa898" name="a8d419136e8235858407128e70a0fa898"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d419136e8235858407128e70a0fa898">&#9670;&#160;</a></span>SwapBuffers()</h2>
+<a id="a7380c1d7148317103824bf05954547e9" name="a7380c1d7148317103824bf05954547e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7380c1d7148317103824bf05954547e9">&#9670;&#160;</a></span>unbind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +225,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void PlatformOpenGLContext::SwapBuffers </td>
+          <td class="memname">virtual bool PlatformOpenGLContext::unbind </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -208,7 +238,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classEventTracer.html#a56c3104057b81717138b630d81294c8d">EventTracer</a>, <a class="el" href="classProxyOpenGLContext.html#a2019299a8e9bf85ec1c4850506dd96ab">ProxyOpenGLContext</a>, <a class="el" href="classSdlOpenGLContext.html#a6dc694aee812415176ff92afe9b80153">SdlOpenGLContext</a>, and <a class="el" href="classTestProxy.html#a27a97530c49538038a4354a339a21156">TestProxy</a>.</p>
+<p>Implemented in <a class="el" href="classProxyOpenGLContext.html#abee69b09bbbe630ca613ac7e4ca81d21">ProxyOpenGLContext</a>, and <a class="el" href="classSdlOpenGLContext.html#ab0df3f39e110878f542d31b88c6595b6">SdlOpenGLContext</a>.</p>
 
 </div>
 </div>

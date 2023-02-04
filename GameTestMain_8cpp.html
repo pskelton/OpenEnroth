@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;9c2ce4c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2e26b01</span>
    </div>
   </td>
  </tr>
@@ -80,25 +80,20 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;gtest/gtest.h&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
 <code>#include &quot;<a class="el" href="Game_8h.html">Application/Game.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameFactory_8h.html">Application/GameFactory.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="TestState_8h.html">Testing/Engine/TestState.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="TestStateHandle_8h.html">Testing/Engine/TestStateHandle.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="TestProxy_8h.html">Testing/Engine/TestProxy.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GameWrapper_8h.html">Testing/Game/GameWrapper.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EngineTracer_8h.html">Engine/Plugins/EngineTracer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EngineControlPlugin_8h.html">Engine/Plugins/EngineControlPlugin.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EngineController_8h.html">Engine/Plugins/EngineController.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="EngineDeterministicPlugin_8h.html">Engine/Plugins/EngineDeterministicPlugin.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameTest_8h.html">Testing/Game/GameTest.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PlatformApplication_8h.html">Library/Application/PlatformApplication.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="NonRandomEngine_8h.html">Library/Random/NonRandomEngine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ScopeGuard_8h.html">Utility/ScopeGuard.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameTestOptions_8h.html">GameTestOptions.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGameThread.html">GameThread</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTestThread.html">TestThread</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -107,8 +102,8 @@ Functions</h2></td></tr>
 <tr class="separator:aa05d0414cd128051a88f3042255ffb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a563de07718bfbc034ffcc7a44dfbdfab"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameTestMain_8cpp.html#a563de07718bfbc034ffcc7a44dfbdfab">parseOptions</a> (int argc, char **argv, <a class="el" href="structGameTestOptions.html">GameTestOptions</a> *opts)</td></tr>
 <tr class="separator:a563de07718bfbc034ffcc7a44dfbdfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a001a4638f3d962ac05fc5078e1a4c56a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameTestMain_8cpp.html#a001a4638f3d962ac05fc5078e1a4c56a">PlatformMain</a> (int argc, char **argv)</td></tr>
-<tr class="separator:a001a4638f3d962ac05fc5078e1a4c56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac514b18d4266e4a2f5a39f9d19a88f77"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GameTestMain_8cpp.html#ac514b18d4266e4a2f5a39f9d19a88f77">platformMain</a> (int argc, char **argv)</td></tr>
+<tr class="separator:ac514b18d4266e4a2f5a39f9d19a88f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a563de07718bfbc034ffcc7a44dfbdfab" name="a563de07718bfbc034ffcc7a44dfbdfab"></a>
@@ -145,14 +140,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a001a4638f3d962ac05fc5078e1a4c56a" name="a001a4638f3d962ac05fc5078e1a4c56a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a001a4638f3d962ac05fc5078e1a4c56a">&#9670;&#160;</a></span>PlatformMain()</h2>
+<a id="ac514b18d4266e4a2f5a39f9d19a88f77" name="ac514b18d4266e4a2f5a39f9d19a88f77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac514b18d4266e4a2f5a39f9d19a88f77">&#9670;&#160;</a></span>platformMain()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int PlatformMain </td>
+          <td class="memname">int platformMain </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>argc</em>, </td>
