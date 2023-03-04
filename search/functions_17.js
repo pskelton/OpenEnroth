@@ -1,7 +1,7 @@
 var searchData=
 [
   ['waitformessages_0',['waitForMessages',['../classPlatformApplication.html#abe7e2d86d4c6a0cffaeed95d773a479b',1,'PlatformApplication::waitForMessages()'],['../classPlatformEventLoop.html#a4037638cdbd173edc78112afcc64f33a',1,'PlatformEventLoop::waitForMessages()'],['../classProxyEventLoop.html#a63ef4c77720e1b330d1a84decaf081ab',1,'ProxyEventLoop::waitForMessages()'],['../classSdlEventLoop.html#a8cc91323e5c274ea9471a9d7f8192856',1,'SdlEventLoop::waitForMessages()'],['../classEngineControlPlugin.html#abbaecfa799e79b279854ead756969b7b',1,'EngineControlPlugin::waitForMessages()']]],
-  ['warning_1',['Warning',['../classLogger.html#ae685cefc5e40eea4bb461739168ec10f',1,'Logger']]],
+  ['warning_1',['Warning',['../classLogger.html#ae1d007b925301dafb5840928b554e008',1,'Logger']]],
   ['waterwalkactive_2',['WaterWalkActive',['../structParty.html#af73cfe796a0b14bb518a63ad56c8837b',1,'Party']]],
   ['weaponshopdialog_3',['WeaponShopDialog',['../UIHouses_8h.html#af61c121dc37dbb99e2b840b538ec6f1e',1,'WeaponShopDialog():&#160;UIShops.cpp'],['../UIShops_8cpp.html#af61c121dc37dbb99e2b840b538ec6f1e',1,'WeaponShopDialog():&#160;UIShops.cpp']]],
   ['weaponshopwares_4',['WeaponShopWares',['../UIShops_8h.html#a31553fdddae423f12250a5b2638d5a30',1,'WeaponShopWares(GUIWindow dialogwin, bool special=0):&#160;UIShops.cpp'],['../UIShops_8cpp.html#a8353cbf45ed20454c60b0b8a0ad12df4',1,'WeaponShopWares(GUIWindow dialogwin, bool special):&#160;UIShops.cpp']]],
@@ -14,8 +14,8 @@ var searchData=
   ['wetsuiton_11',['WetsuitOn',['../UICharacter_8cpp.html#ad5c64f8a520c6a5e1aec82f3923ba9dc',1,'UICharacter.cpp']]],
   ['wheelevent_12',['wheelEvent',['../classPlatformEventHandler.html#a6c234c5588cda7f556991d4cdb0174ec',1,'PlatformEventHandler::wheelEvent()'],['../classPlatformEventFilter.html#a6d2ceb2951b04d99b1b100eb1ddb926e',1,'PlatformEventFilter::wheelEvent()'],['../classNuklearEventHandler.html#a256c5ccadffa2df441eeeaef3558a52a',1,'NuklearEventHandler::wheelEvent()'],['../classApplication_1_1GameWindowHandler.html#a5f80b8a600f2253aebfe25f9a6d5b5d6',1,'Application::GameWindowHandler::wheelEvent()']]],
   ['which_5fplayer_5fto_5fattack_13',['which_player_to_attack',['../structstru319.html#a933b24bd5d5d683b7c1604d2a0d929d0',1,'stru319']]],
-  ['window_14',['Window',['../classApplication_1_1GameConfig_1_1Window.html#a4f3b203db56aae61e743b5810491a144',1,'Application::GameConfig::Window']]],
-  ['window_15',['window',['../classSdlPlatformSharedState.html#a5f975d2b8f08e301486d2162304318eb',1,'SdlPlatformSharedState::window()'],['../classPlatformApplication.html#a26f76cd527f0952fbc83ff46d746af77',1,'PlatformApplication::window()']]],
+  ['window_14',['window',['../classSdlPlatformSharedState.html#a5f975d2b8f08e301486d2162304318eb',1,'SdlPlatformSharedState::window()'],['../classPlatformApplication.html#a26f76cd527f0952fbc83ff46d746af77',1,'PlatformApplication::window()']]],
+  ['window_15',['Window',['../classApplication_1_1GameConfig_1_1Window.html#a4f3b203db56aae61e743b5810491a144',1,'Application::GameConfig::Window']]],
   ['windowdata_16',['WindowData',['../structWindowData.html#a8ccdaa0705b6bf6890262751cd27c2cc',1,'WindowData::WindowData(void *value)'],['../structWindowData.html#ae217fae6b6a1539adf4bbc59eb33cd47',1,'WindowData::WindowData(int value)'],['../structWindowData.html#a6f5b80420bdee170da5d0d41c279fc6a',1,'WindowData::WindowData()']]],
   ['windowmanager_17',['WindowManager',['../classWindowManager.html#a3a283b34c19aaa20296befaabad4d29b',1,'WindowManager']]],
   ['windowmode_18',['windowMode',['../classSdlWindow.html#a1914652e87aef27eab846a1f2f65c25b',1,'SdlWindow::windowMode()'],['../classProxyWindow.html#a96f07192973e7cc0318e7c48544941f2',1,'ProxyWindow::windowMode()'],['../classPlatformWindow.html#abd6ec415b73871b3fdc8ebbc2400a568',1,'PlatformWindow::windowMode()']]],
