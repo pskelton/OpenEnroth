@@ -17,7 +17,7 @@ var searchData=
   ['makeimagecolorkey_14',['MakeImageColorKey',['../ImageLoader_8cpp.html#aa741fbe2dfd434c94dab5f621d06a9fb',1,'ImageLoader.cpp']]],
   ['makeimagesolid_15',['MakeImageSolid',['../ImageLoader_8cpp.html#a468759cf57a1d2be638f7b0968cc25c1',1,'ImageLoader.cpp']]],
   ['makeparticlebillboardandpush_16',['MakeParticleBillboardAndPush',['../classIRender.html#a2e261dcefcdcd0f92386ae36b709dacd',1,'IRender::MakeParticleBillboardAndPush()'],['../classRenderBase.html#a4066bd07b80374166cb41166412340f2',1,'RenderBase::MakeParticleBillboardAndPush()']]],
-  ['makescreenshot16_17',['MakeScreenshot16',['../classIRender.html#a4caca6860f7b0dfe94d7621151ee94e8',1,'IRender::MakeScreenshot16()'],['../classRenderOpenGL.html#a1f80ed50a7677250ddd9baf7815fdcd1',1,'RenderOpenGL::MakeScreenshot16()']]],
+  ['makescreenshot32_17',['MakeScreenshot32',['../classIRender.html#aa71c8cc4cb7fdafe115fa345fa86cca6',1,'IRender::MakeScreenshot32()'],['../classRenderOpenGL.html#a2b97e25aa37e0e1ca3c378b2786dd9de',1,'RenderOpenGL::MakeScreenshot32()']]],
   ['maketemppath_18',['makeTempPath',['../DataPath_8h.html#a569823ea7771cf67e8c68cb9bd0250b5',1,'makeTempPath(const char *file_rel_path):&#160;DataPath.cpp'],['../DataPath_8cpp.html#a569823ea7771cf67e8c68cb9bd0250b5',1,'makeTempPath(const char *file_rel_path):&#160;DataPath.cpp']]],
   ['makevisiblesectorlist_19',['MakeVisibleSectorList',['../structBspRenderer.html#acbf92a5a5953c56e1a92a4a7d334a87d',1,'BspRenderer']]],
   ['mapdefaultkey_20',['MapDefaultKey',['../structIo_1_1KeyboardActionMapping.html#a1958ecd3a43f69d65c76259fe7bc15d0',1,'Io::KeyboardActionMapping']]],
