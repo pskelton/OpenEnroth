@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;5aae899</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6b76c9b</span>
    </div>
   </td>
  </tr>
@@ -141,6 +141,7 @@ Coding style</h1>
 <p >Naming:</p><ul>
 <li>Use <code>MM_</code> prefix for macro naming. Macro names should be in <code>SNAKE_CASE_ALL_CAPS</code>.</li>
 <li>Use <code>SNAKE_CASE_ALL_CAPS</code> for <code>enum</code> values. E.g. <code>ITEM_CRATE_OF_ARROWHEADS</code>, <code>ITEM_SLOT_RING6</code>.</li>
+<li>For naming enum values, prefix the name with the name of the type, e.g. <code>MONSTER_TROLL_1</code> for a value of <code>enum MonsterType</code>. For values that are then used in array bounds, put the <code>_FIRST</code>, <code>_LAST</code> and <code>_COUNT</code> right after the name of the type, e.g. <code>ITEM_FIRST_MESSAGE_SCROLL</code>.</li>
 <li>Use <code>CamelCase</code> for everything else.</li>
 <li>Type names should start with a capital letter. E.g. <code><a class="el" href="classIndexedArray.html">IndexedArray</a></code>, <code>InputAction</code>, <code>PlatformLogLevel</code>. This applies to all types, including classes, structs, enums and typedefs, with certain exceptions as listed below.</li>
 <li>Method &amp; function names should start with a lowercase letter. E.g. <code><a class="el" href="structVec3.html#a129e719058dc74a0eec615d6090f1256">Vec3::length</a></code>, <code>gridCellToWorldPosX</code>, <code>getCeilingHeight</code>.</li>
@@ -157,6 +158,7 @@ Coding style</h1>
 <li>It's OK to use plain <code>enum</code>s if you really need to have implicit casts to integer types, but this is a very rare use case. If you're using <code>enum</code> values to index into some array, consider using <code>enum class</code> coupled with <code><a class="el" href="classIndexedArray.html">IndexedArray</a></code>.</li>
 <li>Make your code speak for itself when it comes to ownership. If a function takes ownership of one of its parameters, it should take <code>std::unique_ptr</code> by value. If it allocates its result and passes ownership to the caller, then it should return <code>std::unique_ptr</code>.</li>
 <li>Use an <code>int</code> unless you need something else. Don’t try to avoid negative values by using <code>unsigned</code>, this implies many changes to the usual behavior of integers and can be a source of bugs. See a section in <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#arithmetic">core guidelines</a> for more info. However, don't overdo it, use <code>size_t</code> for indexing into STL containers.</li>
+<li>Don't use namespaces when breaking up your code into libraries. OpenEnroth is a relatively small codebase and doesn't need the measures advocated by the Google style guide to prevent name clashes. <a class="el" href="classException.html">Exception</a> to this rule is <code>namespace detail</code> that you're encouraged to use to hide implementation details and prevent cluttering of the global namespace.</li>
 </ul>
 <p >There is a lot of code in the project that doesn't follow these conventions. Please feel free to fix it, preferably not mixing up style and logical changes in the same PR.</p>
 <h1><a class="anchor" id="autotoc_md5"></a>
@@ -174,9 +176,9 @@ Testing</h1>
 <p >Tests are not built by default, and you will need to set <code>ENABLE_TESTS</code> cmake variable to be able to build them. You can either use your IDE for that, or just run <code>cmake</code> with <code>-DENABLE_TESTS=ON</code> from the command line.</p>
 <p >Tests in OpenEnroth fall into two categories:</p><ul>
 <li>Unit tests. These are a standard breed of tests, written using Google Test. You can see some examples in <code>src/Utility/Tests</code>.</li>
-<li>Game tests. If you're familiar with how testing is done these days for complex mobile apps, then you can consider game tests a variation of UI tests that's specific to our project. Game tests need game assets to run, and are currently <b>not</b> run in github actions.</li>
+<li><a class="el" href="classGame.html">Game</a> tests. If you're familiar with how testing is done these days for complex mobile apps, then you can consider game tests a variation of UI tests that's specific to our project. <a class="el" href="classGame.html">Game</a> tests need game assets to run, and are currently <b>not</b> run in github actions.</li>
 </ul>
-<p >Game tests work by instrumenting the engine, and then running test code in between the game frames. This code usually sends events to the engine (e.g. mouse clicks), which are then processed by the engine in the next frame, but it can do pretty much anything else – all of engine's data is accessible and writable from inside the game test.</p>
+<p ><a class="el" href="classGame.html">Game</a> tests work by instrumenting the engine, and then running test code in between the game frames. This code usually sends events to the engine (e.g. mouse clicks), which are then processed by the engine in the next frame, but it can do pretty much anything else – all of engine's data is accessible and writable from inside the game test.</p>
 <p >As typing out all the events to send inside the test code can be pretty tedious, we also have an event recording functionality, so that the test creation workflow usually looks as follows:</p><ul>
 <li>Load a save that reproduces the bug that you've just fixed.</li>
 <li>Press <code>Ctrl+Shift+R</code> to start recording an event trace. Check logs to make sure that trace recording has started.</li>

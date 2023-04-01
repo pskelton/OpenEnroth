@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;5aae899</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6b76c9b</span>
    </div>
   </td>
  </tr>
@@ -75,7 +75,6 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">Player.cpp File Reference</div></div>
@@ -121,11 +120,6 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerCreation__AttributeProps.html">PlayerCreation_AttributeProps</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:a8df51996eaa93ee226542e4ebb9d6f14"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a8df51996eaa93ee226542e4ebb9d6f14">EngineIoc</a> = <a class="el" href="classEngine___1_1IocContainer.html">Engine_::IocContainer</a></td></tr>
-<tr class="separator:a8df51996eaa93ee226542e4ebb9d6f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a4f8f745d8a5e19a2f27c5ae1196a3967"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a4f8f745d8a5e19a2f27c5ae1196a3967">PlayerCreation_GetUnspentAttributePointCount</a> ()</td></tr>
@@ -143,9 +137,9 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a4be5eddf8db91559b1d06e3390387cc6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDecalBuilder.html">DecalBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a4be5eddf8db91559b1d06e3390387cc6">decal_builder</a> = EngineIoc::ResolveDecalBuilder()</td></tr>
+<tr class="memitem:a4be5eddf8db91559b1d06e3390387cc6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structDecalBuilder.html">DecalBuilder</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a4be5eddf8db91559b1d06e3390387cc6">decal_builder</a> = <a class="el" href="classEngineIocContainer.html#aa98cfa56243c2eb114b8917c4de6d2e6">EngineIocContainer::ResolveDecalBuilder</a>()</td></tr>
 <tr class="separator:a4be5eddf8db91559b1d06e3390387cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad751f48ec25997384265298b15224f31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSpellFxRenderer.html">SpellFxRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#ad751f48ec25997384265298b15224f31">spell_fx_renderer</a> = EngineIoc::ResolveSpellFxRenderer()</td></tr>
+<tr class="memitem:ad751f48ec25997384265298b15224f31"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structSpellFxRenderer.html">SpellFxRenderer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#ad751f48ec25997384265298b15224f31">spell_fx_renderer</a> = <a class="el" href="classEngineIocContainer.html#a691e969b21ea43ae5a5f013015507bf2">EngineIocContainer::ResolveSpellFxRenderer</a>()</td></tr>
 <tr class="separator:ad751f48ec25997384265298b15224f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82c61ff4b40d087d03da0c28fb29a8be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="structPlayer.html">Player</a> *, 1, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a82c61ff4b40d087d03da0c28fb29a8be">pPlayers</a></td></tr>
 <tr class="separator:a82c61ff4b40d087d03da0c28fb29a8be"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,8 +153,8 @@ Variables</h2></td></tr>
 <tr class="separator:a834d2c9dcd0b23d99af1b60fe4301bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a817160d627012877551fa1c455383935"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; int, <a class="el" href="PlayerEnums_8h.html#ae7fdd356d1b4ddbdd59bcba036e6f942ae104ff021581230f1738b166fa9344b5">PLAYER_SKILL_MASTERY_FIRST</a>, <a class="el" href="PlayerEnums_8h.html#ae7fdd356d1b4ddbdd59bcba036e6f942a8bf040e078072832de4714e5d27a4aec">PLAYER_SKILL_MASTERY_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a817160d627012877551fa1c455383935">StealingEnchantmentBonusForSkill</a></td></tr>
 <tr class="separator:a817160d627012877551fa1c455383935"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89055457d7f9c966bf09882bb81a8803"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="ItemEnums_8h.html#a0d39a5522e687048169a274163e6e2a6">ITEM_SLOT</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2da060709b3eac69668fef7ad3b22984e2a">EQUIP_TYPE_COUNT</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a89055457d7f9c966bf09882bb81a8803">pEquipTypeToBodyAnchor</a></td></tr>
-<tr class="separator:a89055457d7f9c966bf09882bb81a8803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69bca1cb51a7f3e468ed755af571aa9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="ItemEnums_8h.html#a0d39a5522e687048169a274163e6e2a6">ITEM_SLOT</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2da552cfc15d6917760654f4dad6e87c22f">EQUIP_FIRST</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2dab9da594b4154972bafab291a9d96f6dd">EQUIP_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a69bca1cb51a7f3e468ed755af571aa9c">pEquipTypeToBodyAnchor</a></td></tr>
+<tr class="separator:a69bca1cb51a7f3e468ed755af571aa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21b239e534b4c42326ed55b467f94e25"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a21b239e534b4c42326ed55b467f94e25">pBaseHealthByClass</a> [12]</td></tr>
 <tr class="separator:a21b239e534b4c42326ed55b467f94e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a241e8575eb236bcc34655e8be9ee842c"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a241e8575eb236bcc34655e8be9ee842c">pBaseManaByClass</a> [12] = {0, 0, 0, 5, 5, 0, 10, 10, 15, 0, 0, 0}</td></tr>
@@ -180,21 +174,6 @@ Variables</h2></td></tr>
 <tr class="memitem:a7f9f15a7989d5582ad9503a58e2ad355"><td class="memItemLeft" align="right" valign="top">signed int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Player_8cpp.html#a7f9f15a7989d5582ad9503a58e2ad355">parameter_to_bonus_value</a> [29]</td></tr>
 <tr class="separator:a7f9f15a7989d5582ad9503a58e2ad355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a id="a8df51996eaa93ee226542e4ebb9d6f14" name="a8df51996eaa93ee226542e4ebb9d6f14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8df51996eaa93ee226542e4ebb9d6f14">&#9670;&#160;</a></span>EngineIoc</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="Game_8h.html#a8df51996eaa93ee226542e4ebb9d6f14">EngineIoc</a> =  <a class="el" href="classEngine___1_1IocContainer.html">Engine_::IocContainer</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a4127c2dd36f413d4e9678b30b4f7948a" name="a4127c2dd36f413d4e9678b30b4f7948a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4127c2dd36f413d4e9678b30b4f7948a">&#9670;&#160;</a></span>CmpSkillValue()</h2>
@@ -346,7 +325,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structDecalBuilder.html">DecalBuilder</a>* decal_builder = EngineIoc::ResolveDecalBuilder()</td>
+          <td class="memname"><a class="el" href="structDecalBuilder.html">DecalBuilder</a>* decal_builder = <a class="el" href="classEngineIocContainer.html#aa98cfa56243c2eb114b8917c4de6d2e6">EngineIocContainer::ResolveDecalBuilder</a>()</td>
         </tr>
       </table>
   </td>
@@ -521,14 +500,14 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a89055457d7f9c966bf09882bb81a8803" name="a89055457d7f9c966bf09882bb81a8803"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89055457d7f9c966bf09882bb81a8803">&#9670;&#160;</a></span>pEquipTypeToBodyAnchor</h2>
+<a id="a69bca1cb51a7f3e468ed755af571aa9c" name="a69bca1cb51a7f3e468ed755af571aa9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69bca1cb51a7f3e468ed755af571aa9c">&#9670;&#160;</a></span>pEquipTypeToBodyAnchor</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="ItemEnums_8h.html#a0d39a5522e687048169a274163e6e2a6">ITEM_SLOT</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2da060709b3eac69668fef7ad3b22984e2a">EQUIP_TYPE_COUNT</a>&gt; pEquipTypeToBodyAnchor</td>
+          <td class="memname"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="ItemEnums_8h.html#a0d39a5522e687048169a274163e6e2a6">ITEM_SLOT</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2da552cfc15d6917760654f4dad6e87c22f">EQUIP_FIRST</a>, <a class="el" href="ItemEnums_8h.html#a6efba91e38f0848b5e0d1d4cc6011a2dab9da594b4154972bafab291a9d96f6dd">EQUIP_LAST</a>&gt; pEquipTypeToBodyAnchor</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -629,7 +608,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structSpellFxRenderer.html">SpellFxRenderer</a>* spell_fx_renderer = EngineIoc::ResolveSpellFxRenderer()</td>
+          <td class="memname"><a class="el" href="structSpellFxRenderer.html">SpellFxRenderer</a>* spell_fx_renderer = <a class="el" href="classEngineIocContainer.html#a691e969b21ea43ae5a5f013015507bf2">EngineIocContainer::ResolveSpellFxRenderer</a>()</td>
         </tr>
       </table>
   </td>
