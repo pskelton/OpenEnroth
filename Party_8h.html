@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;d58713c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;de391d6</span>
    </div>
   </td>
  </tr>
@@ -238,6 +238,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="Party_8h.html#a1d55b380c0ae0f422472f1de19d01e36a5a3e1b0ba1793049451900a1e065630d">PartyAlignment_Evil</a> = 2
  }</td></tr>
 <tr class="separator:a1d55b380c0ae0f422472f1de19d01e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f91a8d38bb9da7b7b42d5bc4ce1c05"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05">GoldReceivePolicy</a> { <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103">GOLD_RECEIVE_SHARE</a>
+, <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f">GOLD_RECEIVE_NOSHARE_MSG</a>
+, <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b">GOLD_RECEIVE_NOSHARE_SILENT</a>
+ }</td></tr>
+<tr class="separator:a29f91a8d38bb9da7b7b42d5bc4ce1c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -247,8 +252,8 @@ Functions</h2></td></tr>
 <tr class="separator:ae9c14df23e30ae62c7e581335f3d9a79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a599ef8a30dd8c1245d9bd515a1f27ecc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a599ef8a30dd8c1245d9bd515a1f27ecc">RestAndHeal</a> (int uNumMinutes)</td></tr>
 <tr class="separator:a599ef8a30dd8c1245d9bd515a1f27ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b4bc5b810c765998d778c19b917eb52"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a6b4bc5b810c765998d778c19b917eb52">GetTravelTime</a> ()</td></tr>
-<tr class="separator:a6b4bc5b810c765998d778c19b917eb52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6210bf99466b023425f6f0a6e82c66"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a9e6210bf99466b023425f6f0a6e82c66">getTravelTime</a> ()</td></tr>
+<tr class="separator:a9e6210bf99466b023425f6f0a6e82c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa01264472ea7dcb05880846fec64b7c3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#aa01264472ea7dcb05880846fec64b7c3">_449B57_test_bit</a> (uint8_t *a1, int16_t a2)</td></tr>
 <tr class="separator:aa01264472ea7dcb05880846fec64b7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dcd1576e011d3d4ff119d155742c5ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Party_8h.html#a2dcd1576e011d3d4ff119d155742c5ef">_449B7E_toggle_bit</a> (unsigned char *pArray, int16_t a2, uint16_t bToggle)</td></tr>
@@ -277,6 +282,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29f91a8d38bb9da7b7b42d5bc4ce1c05">&#9670;&#160;</a></span>GoldReceivePolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="Party_8h.html#a29f91a8d38bb9da7b7b42d5bc4ce1c05">GoldReceivePolicy</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Controls gold receiving mechanics. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05ae88c12de7efc4aa8f4ad03c81b925103"></a>GOLD_RECEIVE_SHARE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05af22442ef2408da0f081e23d055994a3f"></a>GOLD_RECEIVE_NOSHARE_MSG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b" name="a29f91a8d38bb9da7b7b42d5bc4ce1c05a8d142335d7454e113d2cf6999f35288b"></a>GOLD_RECEIVE_NOSHARE_SILENT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="a7935db13258ffa8a17fd65aa633b80df" name="a7935db13258ffa8a17fd65aa633b80df"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7935db13258ffa8a17fd65aa633b80df">&#9670;&#160;</a></span>PARTY_BUFF_INDEX</h2>
 
@@ -534,20 +567,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6b4bc5b810c765998d778c19b917eb52" name="a6b4bc5b810c765998d778c19b917eb52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b4bc5b810c765998d778c19b917eb52">&#9670;&#160;</a></span>GetTravelTime()</h2>
+<a id="a9e6210bf99466b023425f6f0a6e82c66" name="a9e6210bf99466b023425f6f0a6e82c66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e6210bf99466b023425f6f0a6e82c66">&#9670;&#160;</a></span>getTravelTime()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GetTravelTime </td>
+          <td class="memname">int getTravelTime </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x444D80 </dd></dl>
 
 </div>
 </div>
