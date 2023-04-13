@@ -402,7 +402,7 @@ var searchData=
   ['findsound_399',['FindSound',['../classAudioPlayer.html#aac82d03b250711ed0ce64fa22dfe3a59',1,'AudioPlayer']]],
   ['findtexturebyname_400',['FindTextureByName',['../classLODFile__IconsBitmaps.html#a8b1765aaa0911f5b66a1938f47b38aca',1,'LODFile_IconsBitmaps::FindTextureByName()'],['../structTextureFrameTable.html#ac58201b44361d82a1e977c1448754c24',1,'TextureFrameTable::FindTextureByName()']]],
   ['finish_401',['finish',['../classEngineTraceComponent.html#a48061ca85f12f8aef5aa673227f6474e',1,'EngineTraceComponent']]],
-  ['finishrecording_402',['finishRecording',['../classEngineTraceRecorder.html#a595d75f063656ce5058f7af67a56e957',1,'EngineTraceRecorder']]],
+  ['finishrecording_402',['finishRecording',['../classEngineTraceRecorder.html#a6a657c968efc8229f90716e8fac346d4',1,'EngineTraceRecorder']]],
   ['first_5finitialization_403',['first_initialization',['../UIMainMenu_8cpp.html#a4eaa5d14dee1de73efaff92ece9fae9a',1,'UIMainMenu.cpp']]],
   ['fittextinawindow_404',['FitTextInAWindow',['../classGUIFont.html#ac14d94f0de9621b2f8b054e38a4eaaf5',1,'GUIFont']]],
   ['fittwofontstringinwindow_405',['FitTwoFontStringINWindow',['../classGUIFont.html#a36dc3aa452a09fb72bef43d629b9216e',1,'GUIFont']]],
