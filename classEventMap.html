@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;c8f11f4</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;7b328bc</span>
    </div>
   </td>
  </tr>
@@ -83,10 +83,16 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a192947eeff4207f927603b161b9f92b6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a192947eeff4207f927603b161b9f92b6">add</a> (int eventId, <a class="el" href="classEventIR.html">EventIR</a> ir)</td></tr>
 <tr class="separator:a192947eeff4207f927603b161b9f92b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c41252310b2c46c9507d42b19531f6b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a9c41252310b2c46c9507d42b19531f6b">isHaveEvents</a> (int eventId) const</td></tr>
+<tr class="separator:a9c41252310b2c46c9507d42b19531f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b5f3f6a9c36a18e725195c856f0e671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEventIR.html">EventIR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a3b5f3f6a9c36a18e725195c856f0e671">get</a> (int eventId, int step) const</td></tr>
+<tr class="separator:a3b5f3f6a9c36a18e725195c856f0e671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73e0ea3906b4325ce8d15d1402216e3e"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classEventIR.html">EventIR</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a73e0ea3906b4325ce8d15d1402216e3e">getEvents</a> (int eventId) const</td></tr>
+<tr class="separator:a73e0ea3906b4325ce8d15d1402216e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0d813c0cd42d719b66f367580905f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#aa0d813c0cd42d719b66f367580905f7e">clear</a> ()</td></tr>
 <tr class="separator:aa0d813c0cd42d719b66f367580905f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae109a73278870e0c4eb4c9e0f34a6155"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#ae109a73278870e0c4eb4c9e0f34a6155">execute</a> (int eventId, int startStep, bool canShowMessages) const</td></tr>
-<tr class="separator:ae109a73278870e0c4eb4c9e0f34a6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e9f85fb7ff6ecb6ca282f1e9b03132"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structEventTrigger.html">EventTrigger</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a27e9f85fb7ff6ecb6ca282f1e9b03132">enumerateTriggers</a> (<a class="el" href="EventEnums_8h.html#afdf2c10d40c582d9884ac5635a374a34">EventType</a> triggerType)</td></tr>
+<tr class="separator:a27e9f85fb7ff6ecb6ca282f1e9b03132"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdd4f3b0c99fe998c3c6046a8099587c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#acdd4f3b0c99fe998c3c6046a8099587c">getHintString</a> (int eventId) const</td></tr>
 <tr class="separator:acdd4f3b0c99fe998c3c6046a8099587c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8116841cc91c74eaef88048fc278b454"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEventMap.html#a8116841cc91c74eaef88048fc278b454">dumpAll</a> () const</td></tr>
@@ -188,14 +194,32 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ae109a73278870e0c4eb4c9e0f34a6155" name="ae109a73278870e0c4eb4c9e0f34a6155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae109a73278870e0c4eb4c9e0f34a6155">&#9670;&#160;</a></span>execute()</h2>
+<a id="a27e9f85fb7ff6ecb6ca282f1e9b03132" name="a27e9f85fb7ff6ecb6ca282f1e9b03132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27e9f85fb7ff6ecb6ca282f1e9b03132">&#9670;&#160;</a></span>enumerateTriggers()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void EventMap::execute </td>
+          <td class="memname">std::vector&lt; <a class="el" href="structEventTrigger.html">EventTrigger</a> &gt; EventMap::enumerateTriggers </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="EventEnums_8h.html#afdf2c10d40c582d9884ac5635a374a34">EventType</a>&#160;</td>
+          <td class="paramname"><em>triggerType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3b5f3f6a9c36a18e725195c856f0e671" name="a3b5f3f6a9c36a18e725195c856f0e671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b5f3f6a9c36a18e725195c856f0e671">&#9670;&#160;</a></span>get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classEventIR.html">EventIR</a> EventMap::get </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>eventId</em>, </td>
@@ -204,18 +228,30 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>startStep</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>canShowMessages</em>&#160;</td>
+          <td class="paramname"><em>step</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
           <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73e0ea3906b4325ce8d15d1402216e3e" name="a73e0ea3906b4325ce8d15d1402216e3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73e0ea3906b4325ce8d15d1402216e3e">&#9670;&#160;</a></span>getEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt; <a class="el" href="classEventIR.html">EventIR</a> &gt; &amp; EventMap::getEvents </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventId</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -236,6 +272,32 @@ Private Attributes</h2></td></tr>
           <td> const</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c41252310b2c46c9507d42b19531f6b" name="a9c41252310b2c46c9507d42b19531f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c41252310b2c46c9507d42b19531f6b">&#9670;&#160;</a></span>isHaveEvents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EventMap::isHaveEvents </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>eventId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
