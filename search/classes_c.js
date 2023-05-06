@@ -1,8 +1,8 @@
 var searchData=
 [
   ['mapeventvariables_0',['MapEventVariables',['../structMapEventVariables.html',1,'']]],
-  ['mapinfo_1',['MapInfo',['../structMapInfo.html',1,'']]],
-  ['mapslongtimer_2',['MapsLongTimer',['../structMapsLongTimer.html',1,'']]],
+  ['mapeventvariables_5fmm7_1',['MapEventVariables_MM7',['../structMapEventVariables__MM7.html',1,'']]],
+  ['mapinfo_2',['MapInfo',['../structMapInfo.html',1,'']]],
   ['mapstats_3',['MapStats',['../structMapStats.html',1,'']]],
   ['maptimer_4',['MapTimer',['../structMapTimer.html',1,'']]],
   ['margins_5',['Margins',['../structMargins.html',1,'']]],
