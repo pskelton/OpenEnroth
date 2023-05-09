@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Engine/Serialization/Serializer.h File Reference</title>
+<title>OpenEnroth: is_memcopy_serializable&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;074adf6</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;c4e67df</span>
    </div>
   </td>
  </tr>
@@ -67,36 +67,35 @@ $(function() {
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3072bc1f55ed1280fe4fbe6b21c78379.html">Engine</a></li><li class="navelem"><a class="el" href="dir_6795a471b3be4bfaa0b0a47008154f6f.html">Serialization</a></li>  </ul>
-</div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
-  <div class="headertitle"><div class="title">Serializer.h File Reference</div></div>
+  <div class="headertitle"><div class="title">is_memcopy_serializable&lt; T &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;utility&gt;</code><br />
-<code>#include &quot;<a class="el" href="Embedded_8h.html">Utility/Embedded.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="FileOutputStream_8h.html">Utility/Streams/FileOutputStream.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="OutputStream_8h.html">Utility/Streams/OutputStream.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="StringOutputStream_8h.html">Utility/Streams/StringOutputStream.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Blob_8h.html">Utility/Memory/Blob.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerializer.html">Serializer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFileSerializer.html">FileSerializer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobSerializer.html">BlobSerializer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
+
+<p><code>#include &lt;MemCopySerialization.h&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for is_memcopy_serializable&lt; T &gt;:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="structis__memcopy__serializable.png" alt=""/>
+ </div></div>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class T&gt;<br />
+struct is_memcopy_serializable&lt; T &gt;</div><p >Type trait that's used by the binary serialization framework to check if a type can be binary-serialized with a simple <code>memcpy</code> call.</p>
+<p >Instead of specializing this trait directly for your class, use <code>MM_DECLARE_MEMCOPY_SERIALIZABLE</code>.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>Type to get the trait value for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a> </dd>
+<dd>
+<a class="el" href="MemCopySerialization_8h.html#a0e5a65ffd33a77c01b7a2cad84b5618a">MM_DECLARE_MEMCOPY_SERIALIZABLE</a> </dd></dl>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/Library/Binary/<a class="el" href="MemCopySerialization_8h.html">MemCopySerialization.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
