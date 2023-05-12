@@ -84,7 +84,7 @@ var searchData=
   ['gender_81',['gender',['../structGenderTableEntry.html#a01a9af90782f16840ed9dd4058bddf5b',1,'GenderTableEntry']]],
   ['gender_5ftable_82',['gender_table',['../mm7text__ru_8cpp.html#aa4d4b6d178c81a28e77289f0eab918c7',1,'mm7text_ru.cpp']]],
   ['gender_5ftable_5fcaps_83',['gender_table_caps',['../mm7text__ru_8cpp.html#a9e3972d5534f46aab22dcb29b0eac287',1,'mm7text_ru.cpp']]],
-  ['generation_5finterval_5fdays_84',['generation_interval_days',['../struct__2devent.html#a0392fe5afd85041c2b706f8a197e2be4',1,'_2devent']]],
+  ['generation_5finterval_5fdays_84',['generation_interval_days',['../structBuildingDesc.html#a83dace9f59226208473766a377f3d8c0',1,'BuildingDesc']]],
   ['give_5fitem_5fdescr_85',['give_item_descr',['../classEventIR.html#a05db68e00c585b6a76bb0b7d804e4c2d',1,'EventIR']]],
   ['gl_5flastboundtex_86',['GL_lastboundtex',['../classRenderOpenGL.html#a5f8e3638d15f37ef21573a2a5d6bd1a5',1,'RenderOpenGL']]],
   ['globaldatapath_87',['globalDataPath',['../DataPath_8cpp.html#a9fbedb85abf638b9d4ce6f5560f78d83',1,'DataPath.cpp']]],
