@@ -24,7 +24,7 @@ var searchData=
   ['hireling1name_21',['hireling1Name',['../structParty__MM7.html#a1dd3982ef8a6deea910ee022709d6da0',1,'Party_MM7']]],
   ['hireling2name_22',['hireling2Name',['../structParty__MM7.html#a79f96e2caf15f53d2a7256813abb47dc',1,'Party_MM7']]],
   ['hirelings_23',['hirelings',['../structParty__MM7.html#a09c83f1c4da2bd6b4b785b66ab56c897',1,'Party_MM7']]],
-  ['hirelingscrollposition_24',['hirelingScrollPosition',['../structParty.html#a9c7d0f2cdf2357565052b81d024ce813',1,'Party::hirelingScrollPosition()'],['../structParty__MM7.html#a1483a976f8306f33339dc3d5d416c29f',1,'Party_MM7::hirelingScrollPosition()']]],
+  ['hirelingscrollposition_24',['hirelingScrollPosition',['../structParty__MM7.html#a1483a976f8306f33339dc3d5d416c29f',1,'Party_MM7::hirelingScrollPosition()'],['../structParty.html#a9c7d0f2cdf2357565052b81d024ce813',1,'Party::hirelingScrollPosition()']]],
   ['history_25',['History',['../classGameConfig_1_1Gamepad.html#ab3725727f0e56fef65505bea54dbcaa9',1,'GameConfig::Gamepad::History()'],['../classGameConfig_1_1Keybindings.html#a12abf38fbd23e9bac01aa623b2779ba1',1,'GameConfig::Keybindings::History()']]],
   ['historyeventtimes_26',['historyEventTimes',['../structPartyTimeStruct__MM7.html#a11c859425e939c784bc99fdbcae43d30',1,'PartyTimeStruct_MM7']]],
   ['historyeventtimes_27',['HistoryEventTimes',['../structPartyTimeStruct.html#a2866b9e52d33fc9925ebd3b21ebb8813',1,'PartyTimeStruct']]],
@@ -44,10 +44,11 @@ var searchData=
   ['housenpcdata_41',['HouseNPCData',['../mm7__data_8h.html#ac93254c7952fa50ba081cf89b6602251',1,'HouseNPCData():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#ac93254c7952fa50ba081cf89b6602251',1,'HouseNPCData():&#160;mm7_data.cpp']]],
   ['housenpcportraitsbuttonslist_42',['HouseNPCPortraitsButtonsList',['../mm7__data_8cpp.html#ad2210b7fb396df6fdfda22d3041a9018',1,'HouseNPCPortraitsButtonsList():&#160;mm7_data.cpp'],['../mm7__data_8h.html#ad2210b7fb396df6fdfda22d3041a9018',1,'HouseNPCPortraitsButtonsList():&#160;mm7_data.cpp']]],
   ['hp_43',['hp',['../structMonsterInfo__MM7.html#ac83622127aa9596cd33b136d3999a30e',1,'MonsterInfo_MM7']]],
-  ['hres_44',['hres',['../structPCXHeader.html#a182817b2b03ff8e33f15b0122c859a19',1,'PCXHeader']]],
-  ['hw_5fsprites_45',['hw_sprites',['../classSpriteFrame.html#a570870a98efb87232e903eaf9dd1b3c0',1,'SpriteFrame']]],
-  ['hwlbitmaps_46',['HWLBitmaps',['../classGameConfig_1_1Graphics.html#a2d4f0a13f7b697002843bb21890f30b3',1,'GameConfig::Graphics']]],
-  ['hwlsprites_47',['HWLSprites',['../classGameConfig_1_1Graphics.html#a253d26260afbcc17538e4cc773d98933',1,'GameConfig::Graphics']]],
-  ['hwsprite_48',['hwsprite',['../structRenderBillboard.html#a0a19983757101fd9c21b5859f972b901',1,'RenderBillboard']]],
-  ['hwspriteids_49',['hwSpriteIds',['../structSpriteFrame__MM6.html#ae7dd515fd0dc0b6d61ecc92b28698a47',1,'SpriteFrame_MM6']]]
+  ['hp_5fdescription_44',['hp_description',['../classLocalization.html#a34e2afa01689e666a3ba8b5a7e11cf2f',1,'Localization']]],
+  ['hres_45',['hres',['../structPCXHeader.html#a182817b2b03ff8e33f15b0122c859a19',1,'PCXHeader']]],
+  ['hw_5fsprites_46',['hw_sprites',['../classSpriteFrame.html#a570870a98efb87232e903eaf9dd1b3c0',1,'SpriteFrame']]],
+  ['hwlbitmaps_47',['HWLBitmaps',['../classGameConfig_1_1Graphics.html#a2d4f0a13f7b697002843bb21890f30b3',1,'GameConfig::Graphics']]],
+  ['hwlsprites_48',['HWLSprites',['../classGameConfig_1_1Graphics.html#a253d26260afbcc17538e4cc773d98933',1,'GameConfig::Graphics']]],
+  ['hwsprite_49',['hwsprite',['../structRenderBillboard.html#a0a19983757101fd9c21b5859f972b901',1,'RenderBillboard']]],
+  ['hwspriteids_50',['hwSpriteIds',['../structSpriteFrame__MM6.html#ae7dd515fd0dc0b6d61ecc92b28698a47',1,'SpriteFrame_MM6']]]
 ];
