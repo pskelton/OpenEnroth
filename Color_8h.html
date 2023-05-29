@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Utility/Color.h File Reference</title>
+<title>OpenEnroth: src/Library/Color/Color.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;70fd134</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f129e80</span>
    </div>
   </td>
  </tr>
@@ -69,176 +69,53 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9761b53e3d9349800c0cb59b71c8cd3d.html">Utility</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f741251061e5c7c7ed48ab45c3348f11.html">Library</a></li><li class="navelem"><a class="el" href="dir_9a249798127840b8d0f50be103cee52f.html">Color</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle"><div class="title">Color.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &quot;<a class="el" href="Format_8h.html">Utility/Format.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColorTable.html">ColorTable</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1ColorTag.html">detail::ColorTag&lt; Color &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classColorTable_1_1Color.html">ColorTable::Color</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structColor.html">Color</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfmt_1_1formatter_3_01ColorTag_01_4.html">fmt::formatter&lt; ColorTag &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ab1408336154985d918907e88ba961430"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Color_8h.html#ab1408336154985d918907e88ba961430">color16</a> (uint8_t r, uint8_t g, uint8_t b)</td></tr>
-<tr class="separator:ab1408336154985d918907e88ba961430"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a089753f5b3407a4b0656cc7f9613b902"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Color_8h.html#a089753f5b3407a4b0656cc7f9613b902">color32</a> (uint8_t r, uint8_t g, uint8_t b, uint8_t a=255)</td></tr>
-<tr class="separator:a089753f5b3407a4b0656cc7f9613b902"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a180cf2fbd6c0b61136091514722d96fa"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Color_8h.html#a180cf2fbd6c0b61136091514722d96fa">color32</a> (uint16_t <a class="el" href="Color_8h.html#ab1408336154985d918907e88ba961430">color16</a>)</td></tr>
-<tr class="separator:a180cf2fbd6c0b61136091514722d96fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespacefmt"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacefmt.html">fmt</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespacedetail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a27424caf81c072fa7c64723bacdce1a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classColorTable.html">ColorTable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Color_8h.html#a27424caf81c072fa7c64723bacdce1a2">colorTable</a></td></tr>
-<tr class="separator:a27424caf81c072fa7c64723bacdce1a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a2cb32521ab54b7edb88d3d9d0db57c26"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Color_8h.html#a2cb32521ab54b7edb88d3d9d0db57c26">ColorTag</a> = <a class="el" href="structdetail_1_1ColorTag.html">detail::ColorTag</a>&lt; <a class="el" href="structColor.html">Color</a> &gt;</td></tr>
+<tr class="separator:a2cb32521ab54b7edb88d3d9d0db57c26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ab1408336154985d918907e88ba961430" name="ab1408336154985d918907e88ba961430"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1408336154985d918907e88ba961430">&#9670;&#160;</a></span>color16()</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a2cb32521ab54b7edb88d3d9d0db57c26" name="a2cb32521ab54b7edb88d3d9d0db57c26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb32521ab54b7edb88d3d9d0db57c26">&#9670;&#160;</a></span>ColorTag</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static uint16_t color16 </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">using <a class="el" href="Color_8h.html#a2cb32521ab54b7edb88d3d9d0db57c26">ColorTag</a> =  <a class="el" href="structdetail_1_1ColorTag.html">detail::ColorTag</a>&lt;<a class="el" href="structColor.html">Color</a>&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a180cf2fbd6c0b61136091514722d96fa" name="a180cf2fbd6c0b61136091514722d96fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a180cf2fbd6c0b61136091514722d96fa">&#9670;&#160;</a></span>color32() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t color32 </td>
-          <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>color16</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a089753f5b3407a4b0656cc7f9613b902" name="a089753f5b3407a4b0656cc7f9613b902"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a089753f5b3407a4b0656cc7f9613b902">&#9670;&#160;</a></span>color32() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint32_t color32 </td>
-          <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>r</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>g</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>a</em> = <code>255</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a27424caf81c072fa7c64723bacdce1a2" name="a27424caf81c072fa7c64723bacdce1a2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27424caf81c072fa7c64723bacdce1a2">&#9670;&#160;</a></span>colorTable</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classColorTable.html">ColorTable</a> colorTable</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_0',['a',['../structforcepersverts.html#a097658bcd729ee81c271bda89e3a4a3b',1,'forcepersverts::a()'],['../structlinesverts.html#ae6d7d067e9ed26506f8c13d1be41322b',1,'linesverts::a()'],['../structPlaneZCalcf.html#a2082baffd8c41e8eb152fd714aadb8eb',1,'PlaneZCalcf::a()'],['../structTestPair.html#a3adb5b0569d0c1e1b453df4d1b511bac',1,'TestPair::a()'],['../structParticle.html#a8820cc4b7d902fc100a7c4d23dee99ef',1,'Particle::a()'],['../structbillbverts.html#aa4d690423304fd86d2bc9fda56d8cb88',1,'billbverts::a()'],['../structtwodverts.html#af8d1b73307d9b7bd2ec3478dbf3ff8a0',1,'twodverts::a()']]],
+  ['a_0',['a',['../structforcepersverts.html#a097658bcd729ee81c271bda89e3a4a3b',1,'forcepersverts::a()'],['../structlinesverts.html#ae6d7d067e9ed26506f8c13d1be41322b',1,'linesverts::a()'],['../structPlaneZCalcf.html#a2082baffd8c41e8eb152fd714aadb8eb',1,'PlaneZCalcf::a()'],['../structTestPair.html#a3adb5b0569d0c1e1b453df4d1b511bac',1,'TestPair::a()'],['../structColor.html#a12022d435709c08f47937a7361fe8441',1,'Color::a()'],['../structParticle.html#a8820cc4b7d902fc100a7c4d23dee99ef',1,'Particle::a()'],['../structbillbverts.html#aa4d690423304fd86d2bc9fda56d8cb88',1,'billbverts::a()'],['../structtwodverts.html#af8d1b73307d9b7bd2ec3478dbf3ff8a0',1,'twodverts::a()']]],
   ['ac_1',['ac',['../structMonsterInfo__MM7.html#a71c3ac27f4c27738852c90bbf09d495e',1,'MonsterInfo_MM7']]],
   ['accuracy_2',['accuracy',['../structPlayer__MM7.html#a6cb285de0a761e3f0fb9a089f7dca642',1,'Player_MM7']]],
   ['accuracybonus_3',['accuracyBonus',['../structPlayer__MM7.html#a9e331c310f01a711cbce620e2d43274d',1,'Player_MM7']]],
@@ -19,7 +19,7 @@ var searchData=
   ['additional_5fslot_5fcount_16',['ADDITIONAL_SLOT_COUNT',['../structPlayer.html#ae3affb4132e035a9737384e808848547',1,'Player']]],
   ['adjusted_5fmove_5fdistance_17',['adjusted_move_distance',['../structCollisionState.html#a28b8469f6c4da9223674b7ad9cf09df3',1,'CollisionState']]],
   ['afterenchclickeventid_18',['AfterEnchClickEventId',['../mm7__data_8h.html#aafc5ab975abc5fd226235bc980a71ae9',1,'AfterEnchClickEventId():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#aafc5ab975abc5fd226235bc980a71ae9',1,'AfterEnchClickEventId():&#160;mm7_data.cpp']]],
-  ['afterenchclickeventsecondparam_19',['AfterEnchClickEventSecondParam',['../mm7__data_8cpp.html#a0a4a6d0f7fde0c106291adac4948619c',1,'AfterEnchClickEventSecondParam():&#160;mm7_data.cpp'],['../mm7__data_8h.html#a0a4a6d0f7fde0c106291adac4948619c',1,'AfterEnchClickEventSecondParam():&#160;mm7_data.cpp']]],
+  ['afterenchclickeventsecondparam_19',['AfterEnchClickEventSecondParam',['../mm7__data_8h.html#a0a4a6d0f7fde0c106291adac4948619c',1,'AfterEnchClickEventSecondParam():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#a0a4a6d0f7fde0c106291adac4948619c',1,'AfterEnchClickEventSecondParam():&#160;mm7_data.cpp']]],
   ['afterenchclickeventtimeout_20',['AfterEnchClickEventTimeout',['../mm7__data_8cpp.html#a5d0c16f793c530c5c55c6de7a2b1e4d2',1,'AfterEnchClickEventTimeout():&#160;mm7_data.cpp'],['../mm7__data_8h.html#a5d0c16f793c530c5c55c6de7a2b1e4d2',1,'AfterEnchClickEventTimeout():&#160;mm7_data.cpp']]],
   ['age_5fdescription_21',['age_description',['../classLocalization.html#a5e6accfee232d9decc5ef6c0628b37e4',1,'Localization']]],
   ['agemodifier_22',['ageModifier',['../structPlayer__MM7.html#a93d30e75e43bbdc63b40826df44f4fff',1,'Player_MM7']]],
@@ -45,7 +45,7 @@ var searchData=
   ['am_5finput_5fkey_42',['am_input_key',['../structArcomageGame__InputMSG.html#afaf385aef556b8e93e5a1477fa979d70',1,'ArcomageGame_InputMSG']]],
   ['am_5finput_5ftype_43',['am_input_type',['../structArcomageGame__InputMSG.html#aa714bdc5141b5d01dd233e8f25bb8756',1,'ArcomageGame_InputMSG']]],
   ['am_5fplayers_44',['am_Players',['../Arcomage_8cpp.html#a573cf9451b518b5fec88de9c6354cbfa',1,'Arcomage.cpp']]],
-  ['anakiwa_45',['Anakiwa',['../classColorTable.html#a29441dbe04c6583d1f20dea352644aae',1,'ColorTable']]],
+  ['anakiwa_45',['Anakiwa',['../classColorTable.html#ada75191a2eb216c9ae0372e1ded4aab0',1,'ColorTable']]],
   ['angle_46',['angle',['../structParticle.html#a48ab07efb5860c6a58b5fd469440e812',1,'Particle']]],
   ['angledelta_47',['angleDelta',['../classPlatformWheelEvent.html#a9103411b5f517eaaff44a29f63f9d575',1,'PlatformWheelEvent']]],
   ['anim_5fcard_5fpos_5fdrawncard_48',['anim_card_pos_drawncard',['../Arcomage_8cpp.html#af8dce954218bb27177a6f35bef2f91e3',1,'Arcomage.cpp']]],
@@ -61,7 +61,7 @@ var searchData=
   ['animtime_58',['animTime',['../structUIAnimation__MM7.html#ada717470aecb05fb87c9600f762bf4a7',1,'UIAnimation_MM7::animTime()'],['../structIconFrame__MM7.html#ab29bc852bad9c493c82a7ad62f138124',1,'IconFrame_MM7::animTime()'],['../structTextureFrame__MM7.html#adf232f73b447373a78caafefe3153392',1,'TextureFrame_MM7::animTime()'],['../structSpriteFrame__MM6.html#a12373518f47d6b9d82a4d252f900d6a6',1,'SpriteFrame_MM6::animTime()']]],
   ['aoedamagedistance_59',['AoeDamageDistance',['../classGameConfig_1_1Gameplay.html#a0dae0b882a95dcadf7c60decbed2d9d3',1,'GameConfig::Gameplay']]],
   ['application_60',['application',['../EngineGlobals_8h.html#a72a12c3fd157814e5ecfe471779c69d9',1,'application():&#160;EngineGlobals.cpp'],['../EngineGlobals_8cpp.html#a72a12c3fd157814e5ecfe471779c69d9',1,'application():&#160;EngineGlobals.cpp']]],
-  ['aqua_61',['Aqua',['../classColorTable.html#aab27a43ab8b2bc85b75b0566ced825c0',1,'ColorTable']]],
+  ['aqua_61',['Aqua',['../classColorTable.html#aebf84fa0e4ba15d2966ca967acff71df',1,'ColorTable']]],
   ['arcomagewins_62',['arcomageWins',['../structParty__MM7.html#aa12b7d57675592ce447d2e4ac416f73e',1,'Party_MM7']]],
   ['armageddon_5ftimer_63',['armageddon_timer',['../structParty.html#a3414d7dcd28e0bcc501f5306171a6ef7',1,'Party']]],
   ['armageddondamage_64',['armageddonDamage',['../structParty.html#a0709924b2ebc11e156deabba7daf792f',1,'Party::armageddonDamage()'],['../structParty__MM7.html#a1effe17a25515442e61db0a4a25eda3a',1,'Party_MM7::armageddonDamage()']]],
@@ -72,7 +72,7 @@ var searchData=
   ['array_5f4_69',['array_4',['../structSpellFxRenderer.html#acf96274d16d333a1f3905b1ee0fb45b4',1,'SpellFxRenderer']]],
   ['array_5f4eb8b8_70',['array_4EB8B8',['../stru160_8h.html#af51acc29302118509c8077ac02d55902',1,'array_4EB8B8():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#af51acc29302118509c8077ac02d55902',1,'array_4EB8B8():&#160;mm7_data.cpp']]],
   ['array_5f4ebbd0_71',['array_4EBBD0',['../stru160_8h.html#accaa376d580c71835f68cfa7ebc4dbd9',1,'array_4EBBD0():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#accaa376d580c71835f68cfa7ebc4dbd9',1,'array_4EBBD0():&#160;mm7_data.cpp']]],
-  ['array_5f4ebbd0_5fx_72',['array_4EBBD0_x',['../mm7__data_8cpp.html#a25304d5ed5ec66dfa425eb37839b0df1',1,'array_4EBBD0_x():&#160;mm7_data.cpp'],['../stru160_8h.html#a25304d5ed5ec66dfa425eb37839b0df1',1,'array_4EBBD0_x():&#160;mm7_data.cpp']]],
+  ['array_5f4ebbd0_5fx_72',['array_4EBBD0_x',['../stru160_8h.html#a25304d5ed5ec66dfa425eb37839b0df1',1,'array_4EBBD0_x():&#160;mm7_data.cpp'],['../mm7__data_8cpp.html#a25304d5ed5ec66dfa425eb37839b0df1',1,'array_4EBBD0_x():&#160;mm7_data.cpp']]],
   ['array_5f507d30_73',['array_507D30',['../RenderOpenGL_8cpp.html#a7722562f00abbc88c6d6dfc91e713986',1,'array_507D30():&#160;RenderOpenGL.cpp'],['../IRender_8h.html#a7722562f00abbc88c6d6dfc91e713986',1,'array_507D30():&#160;RenderOpenGL.cpp']]],
   ['array_5f73d150_74',['array_73D150',['../IRender_8h.html#ae0e8b846813ddc7739d09740605152ee',1,'array_73D150():&#160;RenderOpenGL.cpp'],['../RenderOpenGL_8cpp.html#ae0e8b846813ddc7739d09740605152ee',1,'array_73D150():&#160;RenderOpenGL.cpp']]],
   ['array_5f77ec08_75',['array_77EC08',['../Polygon_8h.html#a3dd60995d0c0ab4f7ff3b8064535c4fa',1,'array_77EC08():&#160;Outdoor.cpp'],['../Outdoor_8cpp.html#a3dd60995d0c0ab4f7ff3b8064535c4fa',1,'array_77EC08():&#160;Outdoor.cpp']]],
@@ -124,6 +124,6 @@ var searchData=
   ['aviocontext_121',['avioContext',['../classMovie.html#a811bee64c93e9942371deb39497e4384',1,'Movie']]],
   ['awards_122',['Awards',['../classGameConfig_1_1Keybindings.html#a678b4f4a3e170434c25acf3306afd6ee',1,'GameConfig::Keybindings::Awards()'],['../classGameConfig_1_1Gamepad.html#a34eb2ecf7883af1cea43a4410239fac1',1,'GameConfig::Gamepad::Awards()']]],
   ['axis_123',['axis',['../classPlatformGamepadAxisEvent.html#a5d34f2d053a27f165402f72a044e7e9d',1,'PlatformGamepadAxisEvent']]],
-  ['azure_124',['Azure',['../classColorTable.html#aecd8cfd78429ade451fef705e91f3810',1,'ColorTable']]],
-  ['azureradiance_125',['AzureRadiance',['../classColorTable.html#a6dc8679c4f814c2e33836a82887f1a4f',1,'ColorTable']]]
+  ['azure_124',['Azure',['../classColorTable.html#a8f3cef2720e9574dbec3539855cab531',1,'ColorTable']]],
+  ['azureradiance_125',['AzureRadiance',['../classColorTable.html#a4acd12093cf6ef9721e65e0c42c51f53',1,'ColorTable']]]
 ];

@@ -278,7 +278,7 @@ var searchData=
   ['vguardingposition_275',['vGuardingPosition',['../structActor__MM7.html#af49fc0952bea505d83cb4f3c1511f6d3',1,'Actor_MM7::vGuardingPosition()'],['../classActor.html#acf8133a0504e79a5026c75ae47d5e7ea',1,'Actor::vGuardingPosition()']]],
   ['via_276',['via',['../MultiStageSerialization_8h.html#a020bb72f6aa44db6e7e8eca032cb4ef2',1,'MultiStageSerialization.h']]],
   ['viadst_277',['ViaDst',['../structdetail_1_1ViaDst.html',1,'detail::ViaDst&lt; Via, T &gt;'],['../structdetail_1_1ViaDst.html#ac733b30f300135acd15139c8f13e8d14',1,'detail::ViaDst::ViaDst()']]],
-  ['vibrantgreen_278',['VibrantGreen',['../classColorTable.html#abd374d50aefed916d33d81656ac0a18a',1,'ColorTable']]],
+  ['vibrantgreen_278',['VibrantGreen',['../classColorTable.html#aad8231c7801e6c0867870c6fc41942b3',1,'ColorTable']]],
   ['victory_5ftype_279',['Victory_type',['../structArcomageGame.html#a9136caea3621d73e5e4f60acf7dc7545',1,'ArcomageGame']]],
   ['video_280',['video',['../classMovie.html#a8a86213ee9dfa3c989dd8a3a52ce69c3',1,'Movie']]],
   ['video_5fname_281',['video_name',['../structHouseAnimDescr.html#aec55f35fd728df2fbcfe13d4d4981726',1,'HouseAnimDescr']]],
