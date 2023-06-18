@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['v_0',['v',['../structFlatFace.html#adb48a989018de0beb4b5055dd916b74e',1,'FlatFace::v()'],['../structRenderVertexSoft.html#ae00c351b5a854b067cbf271e1b98adb3',1,'RenderVertexSoft::v()'],['../structforcepersverts.html#aabdef03cd2f52105bd734b423eeddcda',1,'forcepersverts::v()'],['../structtwodverts.html#a9203a48d6566c85273863c299dca1eba',1,'twodverts::v()'],['../structGLdecalverts.html#a52ccba4966e5c316ac99ab11c040159c',1,'GLdecalverts::v()'],['../structGLshaderverts.html#a3d41f0b1f7d0597a7d41ac3d55eb9d45',1,'GLshaderverts::v()'],['../structbillbverts.html#a911574ca2d240e28b789d4c7f4f9d56c',1,'billbverts::v()'],['../structTestStruct.html#a6560a80b03bc08e545cb7379fd598d4f',1,'TestStruct::v()'],['../Json__ut_8cpp.html#a3ed32accd846b2ea66b4133b8b0bacbd',1,'v():&#160;Json_ut.cpp']]],
+  ['v_0',['v',['../structFlatFace.html#adb48a989018de0beb4b5055dd916b74e',1,'FlatFace::v()'],['../structRenderVertexSoft.html#ae00c351b5a854b067cbf271e1b98adb3',1,'RenderVertexSoft::v()'],['../structforcepersverts.html#aabdef03cd2f52105bd734b423eeddcda',1,'forcepersverts::v()'],['../structtwodverts.html#a9203a48d6566c85273863c299dca1eba',1,'twodverts::v()'],['../structGLdecalverts.html#a52ccba4966e5c316ac99ab11c040159c',1,'GLdecalverts::v()'],['../structGLshaderverts.html#a3d41f0b1f7d0597a7d41ac3d55eb9d45',1,'GLshaderverts::v()'],['../structbillbverts.html#a911574ca2d240e28b789d4c7f4f9d56c',1,'billbverts::v()'],['../structHsvColorf.html#a80baafe8bd2b089b2189ebc2e0f2ef13',1,'HsvColorf::v()'],['../structTestStruct.html#a6560a80b03bc08e545cb7379fd598d4f',1,'TestStruct::v()'],['../Json__ut_8cpp.html#a3ed32accd846b2ea66b4133b8b0bacbd',1,'v():&#160;Json_ut.cpp']]],
   ['v1_1',['v1',['../struct__evt__raw.html#a451566fa89149c0061577cb3c3b62528',1,'_evt_raw']]],
   ['v10_2',['v10',['../struct__evt__raw.html#af168a6fe3c478d66db83f6bbc033507f',1,'_evt_raw']]],
   ['v11_3',['v11',['../struct__evt__raw.html#ae48a01d6746f4ff89ec23bc1f2b23e58',1,'_evt_raw']]],
@@ -37,7 +37,7 @@ var searchData=
   ['valid_34',['Valid',['../structGameTime.html#a7be2495c8b562bc9065128876a224679',1,'GameTime']]],
   ['validateaoedistance_35',['ValidateAoeDistance',['../classGameConfig_1_1Gameplay.html#a223a9e052a6282c955eda7622e6f11d5',1,'GameConfig::Gameplay']]],
   ['validateartifactlimit_36',['ValidateArtifactLimit',['../classGameConfig_1_1Gameplay.html#a03a7b525a140ada800253c533b8a7bd7',1,'GameConfig::Gameplay']]],
-  ['validatedatapath_37',['validateDataPath',['../DataPath_8cpp.html#a2fc07bbc4ad979168d091d1e709f457f',1,'validateDataPath(const std::string &amp;data_path):&#160;DataPath.cpp'],['../DataPath_8h.html#a2fc07bbc4ad979168d091d1e709f457f',1,'validateDataPath(const std::string &amp;data_path):&#160;DataPath.cpp']]],
+  ['validatedatapath_37',['validateDataPath',['../DataPath_8h.html#a2fc07bbc4ad979168d091d1e709f457f',1,'validateDataPath(const std::string &amp;data_path):&#160;DataPath.cpp'],['../DataPath_8cpp.html#a2fc07bbc4ad979168d091d1e709f457f',1,'validateDataPath(const std::string &amp;data_path):&#160;DataPath.cpp']]],
   ['validatefloorcheckseps_38',['ValidateFloorChecksEps',['../classGameConfig_1_1Gameplay.html#ae0a1e1c85f3a59f7ee7fad990bb6a34c',1,'GameConfig::Gameplay']]],
   ['validateframetime_39',['ValidateFrameTime',['../classGameConfig_1_1Debug.html#a0e0b0eebbddc004958689cfe6980dc6c',1,'GameConfig::Debug']]],
   ['validategamma_40',['ValidateGamma',['../classGameConfig_1_1Graphics.html#ab0ceeff3de48a2d35e3df0ecb3a9e4bd',1,'GameConfig::Graphics']]],
@@ -58,8 +58,8 @@ var searchData=
   ['validateturnspeed_55',['ValidateTurnSpeed',['../classGameConfig_1_1Settings.html#ad9f4406a4af2d883a943c4fb314f0e21',1,'GameConfig::Settings']]],
   ['validateverticalturnspeed_56',['ValidateVerticalTurnSpeed',['../classGameConfig_1_1Settings.html#afe359821bec506e9ff64326af6d808e2',1,'GameConfig::Settings']]],
   ['validatewidth_57',['ValidateWidth',['../classGameConfig_1_1Window.html#a11b80f0b4abd4f14f6412aeb01955a50',1,'GameConfig::Window']]],
-  ['validator_58',['Validator',['../classAnyConfigEntry.html#a4d5a189adaecdb5828bdf4e8cee4414d',1,'AnyConfigEntry']]],
-  ['validator_59',['validator',['../classAnyConfigEntry.html#a1bf7df3f8f477720e9e775a5e6c6f6fc',1,'AnyConfigEntry']]],
+  ['validator_58',['validator',['../classAnyConfigEntry.html#a1bf7df3f8f477720e9e775a5e6c6f6fc',1,'AnyConfigEntry']]],
+  ['validator_59',['Validator',['../classAnyConfigEntry.html#a4d5a189adaecdb5828bdf4e8cee4414d',1,'AnyConfigEntry']]],
   ['value_60',['value',['../classConfigEntry.html#a010be505ebdea4d00b8bc92f23f0bbfd',1,'ConfigEntry::value()'],['../classEventIR.html#a0096cb59f2f186fe87c97687f459c28a',1,'EventIR::value()'],['../structGameTime.html#a19529c76d49c92dc7e664297b1d51244',1,'GameTime::value()'],['../structEventTraceConfigLine.html#af70497f44056335c669b1480a1bad62f',1,'EventTraceConfigLine::value()'],['../classPlatformGamepadAxisEvent.html#a1fcda63b8faadbb81e5077ce5e3334cb',1,'PlatformGamepadAxisEvent::value()'],['../classAnyConfigEntry.html#ad594ad35178b51b18572b265b6e24a0f',1,'AnyConfigEntry::value()']]],
   ['value_5f0_61',['VALUE_0',['../Json__ut_8cpp.html#a6391cb104127d8e1737f9b9af4981691a154621ec0e7785920905c1d30afa6f1e',1,'Json_ut.cpp']]],
   ['value_5f1_62',['VALUE_1',['../Json__ut_8cpp.html#a6391cb104127d8e1737f9b9af4981691a45b2127147301f58b0823ad51e502f09',1,'VALUE_1():&#160;Json_ut.cpp'],['../Serialization__ut_8cpp.html#a94beb900defc123803319b326e764a0da45b2127147301f58b0823ad51e502f09',1,'VALUE_1():&#160;Serialization_ut.cpp']]],
