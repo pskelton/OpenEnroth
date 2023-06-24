@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: MapEventVariables_MM7 Struct Reference</title>
+<title>OpenEnroth: src/GUI/GUIMessageQueue.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;5d7ed96</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4345f08</span>
    </div>
   </td>
  </tr>
@@ -67,56 +67,59 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4e4e2e75df7fa6971448b424c011c8b5.html">GUI</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structMapEventVariables__MM7-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">MapEventVariables_MM7 Struct Reference</div></div>
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">GUIMessageQueue.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;EntitySnapshots.h&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ad9ecefb9bbf90f68e5951556ccaf07c9"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned char, 75 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMapEventVariables__MM7.html#ad9ecefb9bbf90f68e5951556ccaf07c9">mapVars</a></td></tr>
-<tr class="separator:ad9ecefb9bbf90f68e5951556ccaf07c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ff846aa4f716917c8b887cb1662263"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned char, 125 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structMapEventVariables__MM7.html#af1ff846aa4f716917c8b887cb1662263">decorVars</a></td></tr>
-<tr class="separator:af1ff846aa4f716917c8b887cb1662263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a61cdbb275c8cc0ab21cfa9d6191b03f0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIMessageQueue_8cpp.html#a61cdbb275c8cc0ab21cfa9d6191b03f0">pCurrentFrameMessageQueue</a> = new <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a></td></tr>
+<tr class="separator:a61cdbb275c8cc0ab21cfa9d6191b03f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada5db3e64fea1b6658282b08e5b71094"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIMessageQueue_8cpp.html#ada5db3e64fea1b6658282b08e5b71094">pNextFrameMessageQueue</a> = new <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a></td></tr>
+<tr class="separator:ada5db3e64fea1b6658282b08e5b71094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="af1ff846aa4f716917c8b887cb1662263" name="af1ff846aa4f716917c8b887cb1662263"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1ff846aa4f716917c8b887cb1662263">&#9670;&#160;</a></span>decorVars</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a61cdbb275c8cc0ab21cfa9d6191b03f0" name="a61cdbb275c8cc0ab21cfa9d6191b03f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61cdbb275c8cc0ab21cfa9d6191b03f0">&#9670;&#160;</a></span>pCurrentFrameMessageQueue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;unsigned char, 125&gt; MapEventVariables_MM7::decorVars</td>
+          <td class="memname">struct <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a>* pCurrentFrameMessageQueue = new <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Message queue for current frame.</p>
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x50CBD0 </dd></dl>
 
 </div>
 </div>
-<a id="ad9ecefb9bbf90f68e5951556ccaf07c9" name="ad9ecefb9bbf90f68e5951556ccaf07c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9ecefb9bbf90f68e5951556ccaf07c9">&#9670;&#160;</a></span>mapVars</h2>
+<a id="ada5db3e64fea1b6658282b08e5b71094" name="ada5db3e64fea1b6658282b08e5b71094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada5db3e64fea1b6658282b08e5b71094">&#9670;&#160;</a></span>pNextFrameMessageQueue</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;unsigned char, 75&gt; MapEventVariables_MM7::mapVars</td>
+          <td class="memname">struct <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a>* pNextFrameMessageQueue = new <a class="el" href="structGUIMessageQueue.html">GUIMessageQueue</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
+<p >Message queue that will be processed on next frame. </p><dl class="section user"><dt>Original binary offset:</dt><dd>0x50C9E8 </dd></dl>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/Engine/Snapshots/<a class="el" href="EntitySnapshots_8h.html">EntitySnapshots.h</a></li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

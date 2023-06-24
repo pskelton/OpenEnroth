@@ -6,7 +6,7 @@ var searchData=
   ['waittilldawn_3',['WaitTillDawn',['../classGameConfig_1_1Gamepad.html#a4c28b8c04a2e86e2f879edee404eb683',1,'GameConfig::Gamepad::WaitTillDawn()'],['../classGameConfig_1_1Keybindings.html#a1fae97f42320444df4056cf9180d1be0',1,'GameConfig::Keybindings::WaitTillDawn()']]],
   ['wakeevents_4',['wakeEvents',['../classEngineControlState.html#a2937e8ae5967b04cb271abc13cdd1647',1,'EngineControlState']]],
   ['walksound_5',['WalkSound',['../classGameConfig_1_1Settings.html#ac4b4057b3d9ae6aaa627ca15091d087b',1,'GameConfig::Settings']]],
-  ['walksoundtimer_6',['walkSoundTimer',['../structParty__MM7.html#af3e013e392c68f85842538d06ff520c7',1,'Party_MM7']]],
+  ['walksoundtimerunused_6',['walkSoundTimerUnused',['../structParty__MM7.html#af8564f847a41efc59b86dfd3e500beff',1,'Party_MM7']]],
   ['walkspeed_7',['walkSpeed',['../structParty__MM7.html#a81077e662100b72b053e0b6208ace40e',1,'Party_MM7']]],
   ['wall_5fheight_8',['wall_height',['../structArcomageStartConditions.html#a9ddc9f810ab99fd7aee2efa1cf803b28',1,'ArcomageStartConditions::wall_height()'],['../structArcomagePlayer.html#a8d4f2c9409faf133875f8684bf20e87d',1,'ArcomagePlayer::wall_height()']]],
   ['wandspellids_9',['wandSpellIds',['../Spells_8h.html#aee988c0b54e4ecd8a816dd9ea73a6957',1,'wandSpellIds():&#160;Spells.cpp'],['../Spells_8cpp.html#aee988c0b54e4ecd8a816dd9ea73a6957',1,'wandSpellIds():&#160;Spells.cpp']]],

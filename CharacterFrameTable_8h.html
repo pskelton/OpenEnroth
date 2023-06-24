@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: PlayerSpellbookChapter Struct Reference</title>
+<title>OpenEnroth: src/Engine/Tables/CharacterFrameTable.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;5d7ed96</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4345f08</span>
    </div>
   </td>
  </tr>
@@ -67,40 +67,57 @@ $(function() {
 </div>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_3072bc1f55ed1280fe4fbe6b21c78379.html">Engine</a></li><li class="navelem"><a class="el" href="dir_1ffd5d9cbf2cf27fe69ac5a09184dea7.html">Tables</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="structPlayerSpellbookChapter-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">PlayerSpellbookChapter Struct Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">CharacterFrameTable.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;Player.h&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a7cc7d65550b2f29c4ba2ccc6de4817a6"><td class="memItemLeft" align="right" valign="top">std::array&lt; char, 11 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerSpellbookChapter.html#a7cc7d65550b2f29c4ba2ccc6de4817a6">bIsSpellAvailable</a></td></tr>
-<tr class="separator:a7cc7d65550b2f29c4ba2ccc6de4817a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &quot;<a class="el" href="Character_8h.html">Engine/Objects/Character.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Blob_8h.html">Utility/Memory/Blob.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerFrame.html">PlayerFrame</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structPlayerFrameTable.html">PlayerFrameTable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a02aea648c360550b3e6a11174e133f56"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structPlayerFrameTable.html">PlayerFrameTable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CharacterFrameTable_8h.html#a02aea648c360550b3e6a11174e133f56">pPlayerFrameTable</a></td></tr>
+<tr class="separator:a02aea648c360550b3e6a11174e133f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a7cc7d65550b2f29c4ba2ccc6de4817a6" name="a7cc7d65550b2f29c4ba2ccc6de4817a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc7d65550b2f29c4ba2ccc6de4817a6">&#9670;&#160;</a></span>bIsSpellAvailable</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a02aea648c360550b3e6a11174e133f56" name="a02aea648c360550b3e6a11174e133f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02aea648c360550b3e6a11174e133f56">&#9670;&#160;</a></span>pPlayerFrameTable</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;char, 11&gt; PlayerSpellbookChapter::bIsSpellAvailable</td>
+          <td class="memname">struct <a class="el" href="structPlayerFrameTable.html">PlayerFrameTable</a>* pPlayerFrameTable</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/Engine/Objects/<a class="el" href="Player_8h.html">Player.h</a></li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

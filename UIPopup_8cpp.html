@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;5d7ed96</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4345f08</span>
    </div>
   </td>
  </tr>
@@ -96,12 +96,13 @@ $(function() {
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="PlayerFrameTable_8h.html">Engine/Tables/PlayerFrameTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CharacterFrameTable_8h.html">Engine/Tables/CharacterFrameTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapBook_8h.html">GUI/UI/Books/MapBook.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UICharacter_8h.html">GUI/UI/UICharacter.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIPopup_8h.html">GUI/UI/UIPopup.h</a>&quot;</code><br />
@@ -134,9 +135,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab9920ae2d9d62a92b2952fa613ba55ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf003c892749d9a7dbf4b8b594f082ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#abf003c892749d9a7dbf4b8b594f082ff">MonsterPopup_Draw</a> (unsigned int uActorID, <a class="el" href="classGUIWindow.html">GUIWindow</a> *pWindow)</td></tr>
 <tr class="separator:abf003c892749d9a7dbf4b8b594f082ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35ac3794b04dc649ab9f3ebe08cce79c"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a35ac3794b04dc649ab9f3ebe08cce79c">CharacterUI_GetSkillDescText</a> (unsigned int uPlayerID, <a class="el" href="PlayerEnums_8h.html#a882aeeabc7e03f0fa334764a909ab3f5">PLAYER_SKILL_TYPE</a> uPlayerSkillType)</td></tr>
-<tr class="memdesc:a35ac3794b04dc649ab9f3ebe08cce79c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating message for skill description popup.  <a href="UIPopup_8cpp.html#a35ac3794b04dc649ab9f3ebe08cce79c">More...</a><br /></td></tr>
-<tr class="separator:a35ac3794b04dc649ab9f3ebe08cce79c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132ab5554b257938c13b75a5cba8bc83"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a132ab5554b257938c13b75a5cba8bc83">CharacterUI_GetSkillDescText</a> (unsigned int uPlayerID, <a class="el" href="CharacterEnums_8h.html#afb7e1cb64c82efee699c6bd5b7467bb3">CharacterSkillType</a> uPlayerSkillType)</td></tr>
+<tr class="memdesc:a132ab5554b257938c13b75a5cba8bc83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generating message for skill description popup.  <a href="UIPopup_8cpp.html#a132ab5554b257938c13b75a5cba8bc83">More...</a><br /></td></tr>
+<tr class="separator:a132ab5554b257938c13b75a5cba8bc83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f92c406d1384a8e1cc3e30e7d16181b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a6f92c406d1384a8e1cc3e30e7d16181b">CharacterUI_SkillsTab_ShowHint</a> ()</td></tr>
 <tr class="separator:a6f92c406d1384a8e1cc3e30e7d16181b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab17bfb498c0046842747153c59ca8d4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#ab17bfb498c0046842747153c59ca8d4d">CharacterUI_StatsTab_ShowHint</a> ()</td></tr>
@@ -151,8 +152,8 @@ Functions</h2></td></tr>
 <tr class="separator:a91d819980fe7424716bab4dde73a9cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78364230a9d48e2bf4566f5a370b95c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a78364230a9d48e2bf4566f5a370b95c2">ShowPopupShopItem</a> ()</td></tr>
 <tr class="separator:a78364230a9d48e2bf4566f5a370b95c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a83da9a8aa6b14560e6a2132ef3d0c3f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a83da9a8aa6b14560e6a2132ef3d0c3f4">GameUI_CharacterQuickRecord_Draw</a> (<a class="el" href="classGUIWindow.html">GUIWindow</a> *<a class="el" href="EngineGlobals_8cpp.html#a88500cd1785fee2e88c7a54241cb6a4e">window</a>, <a class="el" href="structPlayer.html">Player</a> *player)</td></tr>
-<tr class="separator:a83da9a8aa6b14560e6a2132ef3d0c3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfdecf6e433207c6905ab9bbee7f2c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#adbfdecf6e433207c6905ab9bbee7f2c7">GameUI_CharacterQuickRecord_Draw</a> (<a class="el" href="classGUIWindow.html">GUIWindow</a> *<a class="el" href="EngineGlobals_8cpp.html#a88500cd1785fee2e88c7a54241cb6a4e">window</a>, <a class="el" href="structCharacter.html">Character</a> *player)</td></tr>
+<tr class="separator:adbfdecf6e433207c6905ab9bbee7f2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00553156c8ca7ea90900a38bbe696ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a00553156c8ca7ea90900a38bbe696ee5">GameUI_DrawNPCPopup</a> (void *_this)</td></tr>
 <tr class="separator:a00553156c8ca7ea90900a38bbe696ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b9d033e0116029f628ef0c4a9a7d306"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIPopup_8cpp.html#a4b9d033e0116029f628ef0c4a9a7d306">UI_OnMouseRightClick</a> (int mouse_x, int mouse_y)</td></tr>
@@ -250,8 +251,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a35ac3794b04dc649ab9f3ebe08cce79c" name="a35ac3794b04dc649ab9f3ebe08cce79c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35ac3794b04dc649ab9f3ebe08cce79c">&#9670;&#160;</a></span>CharacterUI_GetSkillDescText()</h2>
+<a id="a132ab5554b257938c13b75a5cba8bc83" name="a132ab5554b257938c13b75a5cba8bc83"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132ab5554b257938c13b75a5cba8bc83">&#9670;&#160;</a></span>CharacterUI_GetSkillDescText()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -265,7 +266,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="PlayerEnums_8h.html#a882aeeabc7e03f0fa334764a909ab3f5">PLAYER_SKILL_TYPE</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="CharacterEnums_8h.html#afb7e1cb64c82efee699c6bd5b7467bb3">CharacterSkillType</a>&#160;</td>
           <td class="paramname"><em>uPlayerSkillType</em>&#160;</td>
         </tr>
         <tr>
@@ -280,7 +281,7 @@ Variables</h2></td></tr>
 <dl class="section user"><dt>Original binary offset:</dt><dd>0x00417BB5.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">uPlayerID</td><td>Character identifier. </td></tr>
+    <tr><td class="paramname">uPlayerID</td><td><a class="el" href="structCharacter.html">Character</a> identifier. </td></tr>
     <tr><td class="paramname">uPlayerSkillType</td><td>Skill type identifier. </td></tr>
   </table>
   </dd>
@@ -406,8 +407,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a83da9a8aa6b14560e6a2132ef3d0c3f4" name="a83da9a8aa6b14560e6a2132ef3d0c3f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83da9a8aa6b14560e6a2132ef3d0c3f4">&#9670;&#160;</a></span>GameUI_CharacterQuickRecord_Draw()</h2>
+<a id="adbfdecf6e433207c6905ab9bbee7f2c7" name="adbfdecf6e433207c6905ab9bbee7f2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbfdecf6e433207c6905ab9bbee7f2c7">&#9670;&#160;</a></span>GameUI_CharacterQuickRecord_Draw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -421,7 +422,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structPlayer.html">Player</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="structCharacter.html">Character</a> *&#160;</td>
           <td class="paramname"><em>player</em>&#160;</td>
         </tr>
         <tr>
