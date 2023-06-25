@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4345f08</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;7ea00cf</span>
    </div>
   </td>
  </tr>
@@ -81,28 +81,21 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="UIHouses_8h.html">UIHouses.h</a>&quot;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &quot;<a class="el" href="Arcomage_8h.html">Arcomage/Arcomage.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="EngineGlobals_8h.html">Engine/EngineGlobals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Camera_8h.html">Engine/Graphics/Camera.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Decoration_8h.html">Engine/Graphics/Level/Decoration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Outdoor_8h.html">Engine/Graphics/Outdoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Viewport_8h.html">Engine/Graphics/Viewport.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LOD_8h.html">Engine/LOD.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PriceCalculator_8h.html">Engine/PriceCalculator.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SaveLoad_8h.html">Engine/SaveLoad.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="CastSpellInfo_8h.html">Engine/Spells/CastSpellInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BuildingTable_8h.html">Engine/Tables/BuildingTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AwardTable_8h.html">Engine/Tables/AwardTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MerchantTable_8h.html">Engine/Tables/MerchantTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TransitionTable_8h.html">Engine/Tables/TransitionTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
@@ -110,7 +103,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIDialogue_8h.html">GUI/UI/UIDialogue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIGame_8h.html">GUI/UI/UIGame.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="UIPartyCreation_8h.html">GUI/UI/UIPartyCreation.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MagicGuild_8h.html">GUI/UI/Houses/MagicGuild.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Bank_8h.html">GUI/UI/Houses/Bank.h</a>&quot;</code><br />
@@ -134,10 +126,8 @@ $(function() {
 Functions</h2></td></tr>
 <tr class="memitem:ad6c0486935e2c520b805471c35d21f46"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#ad6c0486935e2c520b805471c35d21f46">enterHouse</a> (<a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> uHouseID)</td></tr>
 <tr class="separator:ad6c0486935e2c520b805471c35d21f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5340de19eef94b2e764511479a8e612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#ad5340de19eef94b2e764511479a8e612">PrepareHouse</a> (<a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> house)</td></tr>
-<tr class="separator:ad5340de19eef94b2e764511479a8e612"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24aa347826f0bbf037cee75945dec5d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#a24aa347826f0bbf037cee75945dec5d1">SimpleHouseDialog</a> ()</td></tr>
-<tr class="separator:a24aa347826f0bbf037cee75945dec5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58b665d1bdb988484c3412007e6fb261"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#a58b665d1bdb988484c3412007e6fb261">prepareHouse</a> (<a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> house)</td></tr>
+<tr class="separator:a58b665d1bdb988484c3412007e6fb261"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a256c12176d1f1063f29354e85b1d4f41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#a256c12176d1f1063f29354e85b1d4f41">onSelectShopDialogueOption</a> (<a class="el" href="GUIDialogues_8h.html#afcd7885d9ec6583fa04d9e8f0f641d00">DIALOGUE_TYPE</a> option)</td></tr>
 <tr class="separator:a256c12176d1f1063f29354e85b1d4f41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab50814e24f412098388cc3a206867ea1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIHouses_8cpp.html#ab50814e24f412098388cc3a206867ea1">houseDialogPressEscape</a> ()</td></tr>
@@ -288,14 +278,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5340de19eef94b2e764511479a8e612" name="ad5340de19eef94b2e764511479a8e612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5340de19eef94b2e764511479a8e612">&#9670;&#160;</a></span>PrepareHouse()</h2>
+<a id="a58b665d1bdb988484c3412007e6fb261" name="a58b665d1bdb988484c3412007e6fb261"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58b665d1bdb988484c3412007e6fb261">&#9670;&#160;</a></span>prepareHouse()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void PrepareHouse </td>
+          <td class="memname">void prepareHouse </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a>&#160;</td>
           <td class="paramname"><em>house</em></td><td>)</td>
@@ -303,23 +293,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a24aa347826f0bbf037cee75945dec5d1" name="a24aa347826f0bbf037cee75945dec5d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24aa347826f0bbf037cee75945dec5d1">&#9670;&#160;</a></span>SimpleHouseDialog()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SimpleHouseDialog </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x44606A </dd></dl>
 
 </div>
 </div>
