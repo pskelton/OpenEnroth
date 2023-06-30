@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/GUI/UI/UIArena.h File Reference</title>
+<title>OpenEnroth: src/GUI/UI/ItemGrid.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;7ea00cf</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;8498d7f</span>
    </div>
   </td>
  </tr>
@@ -74,65 +74,52 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">UIArena.h File Reference</div></div>
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">ItemGrid.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;array&gt;</code><br />
-<code>#include &quot;<a class="el" href="Vec_8h.html">Utility/Geometry/Vec.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &quot;<a class="el" href="ItemGrid_8h.html">ItemGrid.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac109357600e9ae8133449a874a466e1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIArena_8h.html#ac109357600e9ae8133449a874a466e1f">Arena_SelectionFightLevel</a> ()</td></tr>
-<tr class="separator:ac109357600e9ae8133449a874a466e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad46b571b6ee5f3df6c7a39113d768cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIArena_8h.html#ad46b571b6ee5f3df6c7a39113d768cc4">ArenaFight</a> ()</td></tr>
-<tr class="separator:ad46b571b6ee5f3df6c7a39113d768cc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a5c5fcd0c94348dc64e15c34ee92e4fd2"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="Vec_8h.html#a117a07b9e7c47a4975f94512a951bd73">Vec2i</a>, 20 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIArena_8h.html#a5c5fcd0c94348dc64e15c34ee92e4fd2">pMonsterArenaPlacements</a></td></tr>
-<tr class="separator:a5c5fcd0c94348dc64e15c34ee92e4fd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5584f7df9d072b238f90f4312442ac7f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ItemGrid_8cpp.html#a5584f7df9d072b238f90f4312442ac7f">roundIntDownToBase</a> (int <a class="el" href="Json__ut_8cpp.html#a7e98b8a17c0aad30ba64d47b74e2a6c1">i</a>, int base)</td></tr>
+<tr class="separator:a5584f7df9d072b238f90f4312442ac7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dde032be88f195449c48d2964fd4363"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ItemGrid_8cpp.html#a2dde032be88f195449c48d2964fd4363">itemOffset</a> (int widthOrHeight)</td></tr>
+<tr class="memdesc:a2dde032be88f195449c48d2964fd4363"><td class="mdescLeft">&#160;</td><td class="mdescRight">itemOffset Calculate offsets for placing items on a grid.  <a href="ItemGrid_8cpp.html#a2dde032be88f195449c48d2964fd4363">More...</a><br /></td></tr>
+<tr class="separator:a2dde032be88f195449c48d2964fd4363"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac109357600e9ae8133449a874a466e1f" name="ac109357600e9ae8133449a874a466e1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac109357600e9ae8133449a874a466e1f">&#9670;&#160;</a></span>Arena_SelectionFightLevel()</h2>
+<a id="a2dde032be88f195449c48d2964fd4363" name="a2dde032be88f195449c48d2964fd4363"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2dde032be88f195449c48d2964fd4363">&#9670;&#160;</a></span>itemOffset()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Arena_SelectionFightLevel </td>
+          <td class="memname">int itemOffset </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dimension</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="ad46b571b6ee5f3df6c7a39113d768cc4" name="ad46b571b6ee5f3df6c7a39113d768cc4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad46b571b6ee5f3df6c7a39113d768cc4">&#9670;&#160;</a></span>ArenaFight()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ArenaFight </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p ><a class="el" href="structMonsterStats.html#af740f33299fb75dc1dafe63bf58ef858">MonsterStats::BelongsToSupertype</a>(*((short *)v7 + 22), MONSTER_SUPERTYPE_8)</p>
+<p>itemOffset Calculate offsets for placing items on a grid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>width or height of the item</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Inventory grid have 32x32 cells. Items don't exactly fit into the grid, but are slightly smaller or larger. The function calculates offsets for the item to be centered. Calculations are the same for length and width.</p>
+<dl class="section return"><dt>Returns</dt><dd>offset in pixels </dd></dl>
 
 </div>
 </div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a5c5fcd0c94348dc64e15c34ee92e4fd2" name="a5c5fcd0c94348dc64e15c34ee92e4fd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c5fcd0c94348dc64e15c34ee92e4fd2">&#9670;&#160;</a></span>pMonsterArenaPlacements</h2>
+<a id="a5584f7df9d072b238f90f4312442ac7f" name="a5584f7df9d072b238f90f4312442ac7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5584f7df9d072b238f90f4312442ac7f">&#9670;&#160;</a></span>roundIntDownToBase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -141,12 +128,26 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="Vec_8h.html#a117a07b9e7c47a4975f94512a951bd73">Vec2i</a>, 20&gt; pMonsterArenaPlacements</td>
+          <td class="memname">static int roundIntDownToBase </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>base</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
