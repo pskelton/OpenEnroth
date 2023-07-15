@@ -72,7 +72,7 @@ var searchData=
   ['nonrandomengine_69',['NonRandomEngine',['../classNonRandomEngine.html',1,'']]],
   ['nonrandomengine_2eh_70',['NonRandomEngine.h',['../NonRandomEngine_8h.html',1,'']]],
   ['noprofession_71',['NoProfession',['../NPCEnums_8h.html#ae6501f571f97d74c2c78fddcb371bad4aeaabdb4712894a57fce18470cea5f75b',1,'NPCEnums.h']]],
-  ['normal_72',['normal',['../structPlanei.html#af05528ac1db149229441cc1644e0d70b',1,'Planei::normal()'],['../structPlanef.html#ae515a4b903c2f6aee35ff4c834d4ff4f',1,'Planef::normal()']]],
+  ['normal_72',['normal',['../structPlanei__MM7.html#aa4e9ed16344e1100c52ea18506ec0f3a',1,'Planei_MM7::normal()'],['../structPlanef.html#ae515a4b903c2f6aee35ff4c834d4ff4f',1,'Planef::normal()']]],
   ['normal_73',['Normal',['../structstru314.html#a10f36ff95c66013fb51d658f68dedd38',1,'stru314']]],
   ['normalcount_74',['normalCount',['../structOutdoorLocation__MM7.html#a33b45aff87e3554066cb7b6158a26f62',1,'OutdoorLocation_MM7']]],
   ['normalize_75',['normalize',['../structVec3.html#a4e0b64da632764dff526787fe3a4a3ac',1,'Vec3']]],

@@ -15,7 +15,7 @@ var searchData=
   ['height_12',['Height',['../classGameConfig_1_1Window.html#a6f5107f88378e1164debda4dbf075780',1,'GameConfig::Window']]],
   ['height_5fpadding_13',['HEIGHT_PADDING',['../classorg_1_1libsdl_1_1app_1_1SDLActivity_1_1ShowTextInputTask.html#ab603ffcc59629b4caadb7725fddef5de',1,'org::libsdl::app::SDLActivity::ShowTextInputTask']]],
   ['heightmap_14',['heightMap',['../structOutdoorLocation__MM7.html#a6a200577ce9cdf08a5718a33218ae528',1,'OutdoorLocation_MM7']]],
-  ['helpprinted_15',['helpPrinted',['../structGameOptions.html#a5c481745e318ed4933ba90873f6011c0',1,'GameOptions']]],
+  ['helpprinted_15',['helpPrinted',['../structOpenEnrothOptions.html#a3f7191584781e1e2019fbe782822fe8e',1,'OpenEnrothOptions']]],
   ['helprequested_16',['helpRequested',['../structGameTestOptions.html#a33ac23ffdda63f5a5ec8db22d5af79af',1,'GameTestOptions']]],
   ['hfile_17',['hFile',['../classMovie.html#af2475fe6037b8d5464d860c0915450f9',1,'Movie']]],
   ['hide_18',['hide',['../classEventIR.html#ae812787155e397f3592582dc70ccb973',1,'EventIR']]],

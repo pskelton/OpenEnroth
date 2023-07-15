@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2c4a408</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;49da93f</span>
    </div>
   </td>
  </tr>
@@ -88,8 +88,8 @@ $(function() {
 <code>#include &lt;array&gt;</code><br />
 <code>#include &quot;<a class="el" href="GameConfig_8h.html">Application/GameConfig.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EventMap_8h.html">Engine/Events/EventMap.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MapEnums_8h.html">Engine/MapEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mm7__data_8h.html">Engine/mm7_data.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Blob_8h.html">Utility/Memory/Blob.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
@@ -114,28 +114,26 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4cc39f049df62b331976f9a4482bd3ea"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3ea">GAME_STATE</a> { <br />
-&#160;&#160;<a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaaaf786ee27d609fe60b6a21cb91918af9">GAME_STATE_PLAYING</a> = 0
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa62b18e37f0fb46c01a38e11263b01774">GAME_FINISHED</a> = 1
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa6a2704fb16b7fa208da71b6a42f14a45">GAME_STATE_CHANGE_LOCATION</a> = 2
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaad5c1d5e279c32d74c5ceaa741113ab10">GAME_STATE_LOADING_GAME</a> = 3
+<tr class="memitem:a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> { <br />
+&#160;&#160;<a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285aaf786ee27d609fe60b6a21cb91918af9">GAME_STATE_PLAYING</a> = 0
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a62b18e37f0fb46c01a38e11263b01774">GAME_FINISHED</a> = 1
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a6a2704fb16b7fa208da71b6a42f14a45">GAME_STATE_CHANGE_LOCATION</a> = 2
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285ad5c1d5e279c32d74c5ceaa741113ab10">GAME_STATE_LOADING_GAME</a> = 3
 , <br />
-&#160;&#160;<a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa3406fd73fa0179bc993b85f3b9a569b1">GAME_STATE_NEWGAME_OUT_GAMEMENU</a> = 4
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa019d8468e0a1be3a133e73b62b115a21">GAME_STATE_5</a> = 5
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaaa19ff81ddace1bc490cace4c3fca6c07">GAME_STATE_STARTING_NEW_GAME</a> = 6
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa2043f9bc0dc5b6afd35a6bbf382c1c82">GAME_STATE_GAME_QUITTING_TO_MAIN_MENU</a> = 7
+&#160;&#160;<a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a3406fd73fa0179bc993b85f3b9a569b1">GAME_STATE_NEWGAME_OUT_GAMEMENU</a> = 4
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a019d8468e0a1be3a133e73b62b115a21">GAME_STATE_5</a> = 5
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285aa19ff81ddace1bc490cace4c3fca6c07">GAME_STATE_STARTING_NEW_GAME</a> = 6
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a2043f9bc0dc5b6afd35a6bbf382c1c82">GAME_STATE_GAME_QUITTING_TO_MAIN_MENU</a> = 7
 , <br />
-&#160;&#160;<a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaae08e2d2086c9da3361ea6ae216e70e05">GAME_STATE_PARTY_DIED</a> = 8
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaa3f15fa201cdd846d2403c9304fde7068">GAME_STATE_FINAL_WINDOW</a> = 9
-, <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3eaafac9a23864079913eef015d559457052">GAME_STATE_A</a> = 10
+&#160;&#160;<a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285ae08e2d2086c9da3361ea6ae216e70e05">GAME_STATE_PARTY_DIED</a> = 8
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285a3f15fa201cdd846d2403c9304fde7068">GAME_STATE_FINAL_WINDOW</a> = 9
+, <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285afac9a23864079913eef015d559457052">GAME_STATE_A</a> = 10
 <br />
  }</td></tr>
-<tr class="separator:a4cc39f049df62b331976f9a4482bd3ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7899b65f1ea0f655e4bbf8d2a5714285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1cd3528b0bd43ba7c76cceb5ad5a568b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a1cd3528b0bd43ba7c76cceb5ad5a568b">Engine_DeinitializeAndTerminate</a> (int exitCode)</td></tr>
-<tr class="separator:a1cd3528b0bd43ba7c76cceb5ad5a568b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46472657a76c2669922d1d101c859cdd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a46472657a76c2669922d1d101c859cdd">PlayButtonClickSound</a> ()</td></tr>
 <tr class="separator:a46472657a76c2669922d1d101c859cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2abba234a27ed12ea4d6fa54367ed10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a2abba234a27ed12ea4d6fa54367ed10b">back_to_game</a> ()</td></tr>
@@ -180,21 +178,21 @@ Functions</h2></td></tr>
 <tr class="separator:a1ec9273d2cd901e48e54eedaecd87b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7c70729a3af9d53e1c4fe25879f2cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a4c7c70729a3af9d53e1c4fe25879f2cb">_44100D_should_alter_right_panel</a> ()</td></tr>
 <tr class="separator:a4c7c70729a3af9d53e1c4fe25879f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4592f9b64d929ea91623d21002dc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a7a4592f9b64d929ea91623d21002dc2d">Transition_StopSound_Autosave</a> (const std::string &amp;pMapName, <a class="el" href="MapInfo_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a> point)</td></tr>
+<tr class="memitem:a7a4592f9b64d929ea91623d21002dc2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a7a4592f9b64d929ea91623d21002dc2d">Transition_StopSound_Autosave</a> (const std::string &amp;pMapName, <a class="el" href="MapEnums_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a> point)</td></tr>
 <tr class="separator:a7a4592f9b64d929ea91623d21002dc2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac081aee5cb02b8e5dfb077674a160d68"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#ac081aee5cb02b8e5dfb077674a160d68">TeleportToNWCDungeon</a> ()</td></tr>
 <tr class="separator:ac081aee5cb02b8e5dfb077674a160d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a34dfed29c15f0fc3afbd05c67ffd3962"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3ea">GAME_STATE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a34dfed29c15f0fc3afbd05c67ffd3962">uGameState</a></td></tr>
-<tr class="separator:a34dfed29c15f0fc3afbd05c67ffd3962"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4358d82195358dc00433523e6a7fe535"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a4358d82195358dc00433523e6a7fe535">uGameState</a></td></tr>
+<tr class="separator:a4358d82195358dc00433523e6a7fe535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04ee0d142e98779501ddb0ea5f687ac7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classEngine.html">Engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8h.html#a04ee0d142e98779501ddb0ea5f687ac7">engine</a></td></tr>
 <tr class="separator:a04ee0d142e98779501ddb0ea5f687ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a4cc39f049df62b331976f9a4482bd3ea" name="a4cc39f049df62b331976f9a4482bd3ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4cc39f049df62b331976f9a4482bd3ea">&#9670;&#160;</a></span>GAME_STATE</h2>
+<a id="a7899b65f1ea0f655e4bbf8d2a5714285" name="a7899b65f1ea0f655e4bbf8d2a5714285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7899b65f1ea0f655e4bbf8d2a5714285">&#9670;&#160;</a></span>GameState</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -203,7 +201,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum class <a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3ea">GAME_STATE</a></td>
+          <td class="memname">enum class <a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a></td>
         </tr>
       </table>
   </td>
@@ -213,17 +211,17 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaaaf786ee27d609fe60b6a21cb91918af9" name="a4cc39f049df62b331976f9a4482bd3eaaaf786ee27d609fe60b6a21cb91918af9"></a>GAME_STATE_PLAYING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa62b18e37f0fb46c01a38e11263b01774" name="a4cc39f049df62b331976f9a4482bd3eaa62b18e37f0fb46c01a38e11263b01774"></a>GAME_FINISHED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa6a2704fb16b7fa208da71b6a42f14a45" name="a4cc39f049df62b331976f9a4482bd3eaa6a2704fb16b7fa208da71b6a42f14a45"></a>GAME_STATE_CHANGE_LOCATION&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaad5c1d5e279c32d74c5ceaa741113ab10" name="a4cc39f049df62b331976f9a4482bd3eaad5c1d5e279c32d74c5ceaa741113ab10"></a>GAME_STATE_LOADING_GAME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa3406fd73fa0179bc993b85f3b9a569b1" name="a4cc39f049df62b331976f9a4482bd3eaa3406fd73fa0179bc993b85f3b9a569b1"></a>GAME_STATE_NEWGAME_OUT_GAMEMENU&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa019d8468e0a1be3a133e73b62b115a21" name="a4cc39f049df62b331976f9a4482bd3eaa019d8468e0a1be3a133e73b62b115a21"></a>GAME_STATE_5&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaaa19ff81ddace1bc490cace4c3fca6c07" name="a4cc39f049df62b331976f9a4482bd3eaaa19ff81ddace1bc490cace4c3fca6c07"></a>GAME_STATE_STARTING_NEW_GAME&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa2043f9bc0dc5b6afd35a6bbf382c1c82" name="a4cc39f049df62b331976f9a4482bd3eaa2043f9bc0dc5b6afd35a6bbf382c1c82"></a>GAME_STATE_GAME_QUITTING_TO_MAIN_MENU&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaae08e2d2086c9da3361ea6ae216e70e05" name="a4cc39f049df62b331976f9a4482bd3eaae08e2d2086c9da3361ea6ae216e70e05"></a>GAME_STATE_PARTY_DIED&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaa3f15fa201cdd846d2403c9304fde7068" name="a4cc39f049df62b331976f9a4482bd3eaa3f15fa201cdd846d2403c9304fde7068"></a>GAME_STATE_FINAL_WINDOW&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4cc39f049df62b331976f9a4482bd3eaafac9a23864079913eef015d559457052" name="a4cc39f049df62b331976f9a4482bd3eaafac9a23864079913eef015d559457052"></a>GAME_STATE_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285aaf786ee27d609fe60b6a21cb91918af9" name="a7899b65f1ea0f655e4bbf8d2a5714285aaf786ee27d609fe60b6a21cb91918af9"></a>GAME_STATE_PLAYING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a62b18e37f0fb46c01a38e11263b01774" name="a7899b65f1ea0f655e4bbf8d2a5714285a62b18e37f0fb46c01a38e11263b01774"></a>GAME_FINISHED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a6a2704fb16b7fa208da71b6a42f14a45" name="a7899b65f1ea0f655e4bbf8d2a5714285a6a2704fb16b7fa208da71b6a42f14a45"></a>GAME_STATE_CHANGE_LOCATION&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285ad5c1d5e279c32d74c5ceaa741113ab10" name="a7899b65f1ea0f655e4bbf8d2a5714285ad5c1d5e279c32d74c5ceaa741113ab10"></a>GAME_STATE_LOADING_GAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a3406fd73fa0179bc993b85f3b9a569b1" name="a7899b65f1ea0f655e4bbf8d2a5714285a3406fd73fa0179bc993b85f3b9a569b1"></a>GAME_STATE_NEWGAME_OUT_GAMEMENU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a019d8468e0a1be3a133e73b62b115a21" name="a7899b65f1ea0f655e4bbf8d2a5714285a019d8468e0a1be3a133e73b62b115a21"></a>GAME_STATE_5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285aa19ff81ddace1bc490cace4c3fca6c07" name="a7899b65f1ea0f655e4bbf8d2a5714285aa19ff81ddace1bc490cace4c3fca6c07"></a>GAME_STATE_STARTING_NEW_GAME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a2043f9bc0dc5b6afd35a6bbf382c1c82" name="a7899b65f1ea0f655e4bbf8d2a5714285a2043f9bc0dc5b6afd35a6bbf382c1c82"></a>GAME_STATE_GAME_QUITTING_TO_MAIN_MENU&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285ae08e2d2086c9da3361ea6ae216e70e05" name="a7899b65f1ea0f655e4bbf8d2a5714285ae08e2d2086c9da3361ea6ae216e70e05"></a>GAME_STATE_PARTY_DIED&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285a3f15fa201cdd846d2403c9304fde7068" name="a7899b65f1ea0f655e4bbf8d2a5714285a3f15fa201cdd846d2403c9304fde7068"></a>GAME_STATE_FINAL_WINDOW&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a7899b65f1ea0f655e4bbf8d2a5714285afac9a23864079913eef015d559457052" name="a7899b65f1ea0f655e4bbf8d2a5714285afac9a23864079913eef015d559457052"></a>GAME_STATE_A&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -302,24 +300,6 @@ Variables</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1cd3528b0bd43ba7c76cceb5ad5a568b" name="a1cd3528b0bd43ba7c76cceb5ad5a568b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cd3528b0bd43ba7c76cceb5ad5a568b">&#9670;&#160;</a></span>Engine_DeinitializeAndTerminate()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Engine_DeinitializeAndTerminate </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>exitCode</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -717,7 +697,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="MapInfo_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="MapEnums_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a>&#160;</td>
           <td class="paramname"><em>point</em>&#160;</td>
         </tr>
         <tr>
@@ -770,8 +750,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a34dfed29c15f0fc3afbd05c67ffd3962" name="a34dfed29c15f0fc3afbd05c67ffd3962"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34dfed29c15f0fc3afbd05c67ffd3962">&#9670;&#160;</a></span>uGameState</h2>
+<a id="a4358d82195358dc00433523e6a7fe535" name="a4358d82195358dc00433523e6a7fe535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4358d82195358dc00433523e6a7fe535">&#9670;&#160;</a></span>uGameState</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -780,7 +760,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="Engine_8h.html#a4cc39f049df62b331976f9a4482bd3ea">GAME_STATE</a> uGameState</td>
+          <td class="memname"><a class="el" href="Engine_8h.html#a7899b65f1ea0f655e4bbf8d2a5714285">GameState</a> uGameState</td>
         </tr>
       </table>
   </td>
