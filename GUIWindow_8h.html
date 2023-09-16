@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cfc8021</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;0b6fedc</span>
    </div>
   </td>
  </tr>
@@ -99,6 +99,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="ColorTable_8h.html">Library/Color/ColorTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Size_8h.html">Utility/Geometry/Size.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Point_8h.html">Utility/Geometry/Point.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="IndexedArray_8h.html">Utility/IndexedArray.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -200,10 +201,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2c04776db08e21e3fb9372aa7a8f1100"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0143a0f4fd2506eacca48c9a49fa429d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a0143a0f4fd2506eacca48c9a49fa429d">isHoldingMouseRightButton</a> ()</td></tr>
 <tr class="separator:a0143a0f4fd2506eacca48c9a49fa429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fcb2bd6c6ca4218087e6948191f1feb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a1fcb2bd6c6ca4218087e6948191f1feb">BuildDialogueString</a> (const char *lpsz, uint8_t uPlayerID, struct <a class="el" href="structItemGen.html">ItemGen</a> *a3, <a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> houseId, int a5, <a class="el" href="structGameTime.html">GameTime</a> *a6=nullptr)</td></tr>
-<tr class="separator:a1fcb2bd6c6ca4218087e6948191f1feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64ed456bd2a1a6d2704a4eb121cfc6fb"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a64ed456bd2a1a6d2704a4eb121cfc6fb">BuildDialogueString</a> (std::string &amp;str, uint8_t uPlayerID, struct <a class="el" href="structItemGen.html">ItemGen</a> *a3, <a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> houseId, int shop_screen, <a class="el" href="structGameTime.html">GameTime</a> *a6=nullptr)</td></tr>
-<tr class="separator:a64ed456bd2a1a6d2704a4eb121cfc6fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee403929b4f5fdbdd66718e4bcf24d62"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#aee403929b4f5fdbdd66718e4bcf24d62">BuildDialogueString</a> (const std::string &amp;str, uint8_t uPlayerID, struct <a class="el" href="structItemGen.html">ItemGen</a> *a3, <a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a> houseId, int shop_screen, <a class="el" href="structGameTime.html">GameTime</a> *a6=nullptr)</td></tr>
+<tr class="separator:aee403929b4f5fdbdd66718e4bcf24d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0acdf32f5caec50a2095d7ae989352f3"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a0acdf32f5caec50a2095d7ae989352f3">NameAndTitle</a> (const std::string &amp;name, const std::string &amp;title)</td></tr>
 <tr class="separator:a0acdf32f5caec50a2095d7ae989352f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad88e06090d4028604e96eee21f009fd7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#ad88e06090d4028604e96eee21f009fd7">NameAndTitle</a> (const std::string &amp;name, <a class="el" href="CharacterEnums_8h.html#affc99db0cab57aa5ce6f7f21cf5d56b6">CharacterClassType</a> class_type)</td></tr>
@@ -301,8 +300,6 @@ Variables</h2></td></tr>
 <tr class="separator:a76e6c36d4a2e10e720a2073e71a18b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d96fc5c21600c278ecb54462dfb65b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a7d96fc5c21600c278ecb54462dfb65b6">ui_game_minimap_treasure_color</a></td></tr>
 <tr class="separator:a7d96fc5c21600c278ecb54462dfb65b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3e18d047a69092efece4a7acbbd18b"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="structColor.html">Color</a>, 24 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a4b3e18d047a69092efece4a7acbbd18b">ui_game_character_record_playerbuff_colors</a></td></tr>
-<tr class="separator:a4b3e18d047a69092efece4a7acbbd18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bd221c98ae8e1a59412b2cf877198b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a4bd221c98ae8e1a59412b2cf877198b9">ui_gamemenu_video_gamma_title_color</a></td></tr>
 <tr class="separator:a4bd221c98ae8e1a59412b2cf877198b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70964eb2068bfab75a073a61af738b9a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#a70964eb2068bfab75a073a61af738b9a">ui_gamemenu_keys_action_name_color</a></td></tr>
@@ -387,10 +384,12 @@ Variables</h2></td></tr>
 <tr class="separator:a1a55c58353729e76ac3d3297a1e4e1d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3710b35f2f02bb4bcb416f455842b03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GUIEnums_8h.html#a9f5ff9109158e83287c5c888bf7bb8a7">ScreenType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#ab3710b35f2f02bb4bcb416f455842b03">prev_screen_type</a></td></tr>
 <tr class="separator:ab3710b35f2f02bb4bcb416f455842b03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af845969bf7ce9892377fc90302bbf921"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="structColor.html">Color</a>, <a class="el" href="CharacterEnums_8h.html#ac446b240b6be7a1768934b00aa32d95aa021851d6c9073af69290ba409f22c925">CHARACTER_BUFF_FIRST</a>, <a class="el" href="CharacterEnums_8h.html#ac446b240b6be7a1768934b00aa32d95aacdfc60b9a5273182c3a4209d8670c91e">CHARACTER_BUFF_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="GUIWindow_8h.html#af845969bf7ce9892377fc90302bbf921">ui_game_character_record_playerbuff_colors</a></td></tr>
+<tr class="separator:af845969bf7ce9892377fc90302bbf921"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1fcb2bd6c6ca4218087e6948191f1feb" name="a1fcb2bd6c6ca4218087e6948191f1feb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fcb2bd6c6ca4218087e6948191f1feb">&#9670;&#160;</a></span>BuildDialogueString() <span class="overload">[1/2]</span></h2>
+<a id="aee403929b4f5fdbdd66718e4bcf24d62" name="aee403929b4f5fdbdd66718e4bcf24d62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee403929b4f5fdbdd66718e4bcf24d62">&#9670;&#160;</a></span>BuildDialogueString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -398,59 +397,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">std::string BuildDialogueString </td>
           <td>(</td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>lpsz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>uPlayerID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structItemGen.html">ItemGen</a> *&#160;</td>
-          <td class="paramname"><em>a3</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="UIHouseEnums_8h.html#aaee3335261c70d04921051c52287405f">HOUSE_ID</a>&#160;</td>
-          <td class="paramname"><em>houseId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a5</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structGameTime.html">GameTime</a> *&#160;</td>
-          <td class="paramname"><em>a6</em> = <code>nullptr</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64ed456bd2a1a6d2704a4eb121cfc6fb" name="a64ed456bd2a1a6d2704a4eb121cfc6fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64ed456bd2a1a6d2704a4eb121cfc6fb">&#9670;&#160;</a></span>BuildDialogueString() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string BuildDialogueString </td>
-          <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>str</em>, </td>
         </tr>
         <tr>
@@ -490,6 +437,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x495461 </dd></dl>
 
 </div>
 </div>
@@ -2713,8 +2661,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a4b3e18d047a69092efece4a7acbbd18b" name="a4b3e18d047a69092efece4a7acbbd18b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b3e18d047a69092efece4a7acbbd18b">&#9670;&#160;</a></span>ui_game_character_record_playerbuff_colors</h2>
+<a id="af845969bf7ce9892377fc90302bbf921" name="af845969bf7ce9892377fc90302bbf921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af845969bf7ce9892377fc90302bbf921">&#9670;&#160;</a></span>ui_game_character_record_playerbuff_colors</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2723,7 +2671,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="structColor.html">Color</a>, 24&gt; ui_game_character_record_playerbuff_colors</td>
+          <td class="memname">const <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="structColor.html">Color</a>, <a class="el" href="CharacterEnums_8h.html#ac446b240b6be7a1768934b00aa32d95aa021851d6c9073af69290ba409f22c925">CHARACTER_BUFF_FIRST</a>, <a class="el" href="CharacterEnums_8h.html#ac446b240b6be7a1768934b00aa32d95aacdfc60b9a5273182c3a4209d8670c91e">CHARACTER_BUFF_LAST</a>&gt; ui_game_character_record_playerbuff_colors</td>
         </tr>
       </table>
   </td>
