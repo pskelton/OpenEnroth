@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;3c0581f</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;e36b9f2</span>
    </div>
   </td>
  </tr>
@@ -80,7 +80,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;span&gt;</code><br />
 <code>#include &quot;<a class="el" href="CharacterEnums_8h.html">Engine/Objects/CharacterEnums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ItemEnums_8h.html">Engine/Objects/ItemEnums.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="UIHouseEnums_8h.html">GUI/UI/UIHouseEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ToUnderlying_8h.html">Utility/Workaround/ToUnderlying.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Segment_8h.html">Utility/Segment.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -418,27 +421,23 @@ Enumerations</h2></td></tr>
 , <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baab3bd98aae8820e9552959b4e8a641043">MONSTER_ULTRA_DRAGON_B</a> = 263
 , <br />
 &#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baacaa5045f436be28ac31b7879571182f8">MONSTER_ULTRA_DRAGON_C</a> = 264
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa7486de2a566bf90e6892ca87dc9e2f55">MONSTER_265</a> = 265
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa4453e67d092bdb0b510a9167a6553908">MONSTER_266</a> = 266
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa04a58d8be9de46e38f1aa67409e62951">MONSTER_267</a> = 267
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa17defe307e8f3b179711bdf608b466f5">MONSTER_UNUSED_CAT_A</a> = 265
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa7c07116729701f6552efcf72620a6a69">MONSTER_UNUSED_CAT_B</a> = 266
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baac85b8edb032d0dff4043038e5f2e040c">MONSTER_UNUSED_CAT_C</a> = 267
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baad2b87e7d01ed2392ca6adf1a243fa027">MONSTER_268</a> = 268
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa8125bc45e6914617917aab3a13fdf114">MONSTER_269</a> = 269
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa21a991df57d80a5f4df6bddc3d638ba2">MONSTER_270</a> = 270
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baafd4e3a1e3e282f8f494cd01f793ca046">MONSTER_271</a> = 271
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baac0c82a8cb4826e655cd091baf8f0f07d">MONSTER_UNUSED_CHICKEN_A</a> = 268
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa83fbfae17e4b4885883fb967abb79d06">MONSTER_UNUSED_CHICKEN_B</a> = 269
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa4e29363f086e7f5c44edb2f36e909863">MONSTER_UNUSED_CHICKEN_C</a> = 270
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaf37d14cf7583661e1ba446df84635bd4">MONSTER_UNUSED_DOG_A</a> = 271
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaf1dffc8c7f22bbcbb2e9790b4a37fccb">MONSTER_272</a> = 272
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa2143e9f911dcb338baf41107af6932ce">MONSTER_273</a> = 273
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa6a193db4dc54e99de96ad175e5ee64e3">MONSTER_274</a> = 274
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa18d31f7c62bad5d10f4640b0c97c53bf">MONSTER_275</a> = 275
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa07fa245627f87e9bed3e7de70b1cb192">MONSTER_UNUSED_DOG_B</a> = 272
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baac36ade0c5ccf3e4c793b0930c8e47092">MONSTER_UNUSED_DOG_C</a> = 273
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baac69d39bdb1d2dcc4bc7b5791d943b30c">MONSTER_UNUSED_RAT_A</a> = 274
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baab2096a4ad94326aec833a2e3e78a23ab">MONSTER_UNUSED_RAT_B</a> = 275
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baab065ce38524e6eaf65bd89df12e6cf5b">MONSTER_276</a> = 276
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa079266a0acd9fa71f02fe6ccbcd47045">MONSTER_277</a> = 277
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baab080b26d20f3fbbd73f16c6dfb24bb0e">MONSTER_UNUSED_RAT_C</a> = 276
 , <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa4cc005ed16ad55cc304dd275a5a18329">MONSTER_FIRST</a> = MONSTER_ANGEL_A
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c">MONSTER_LAST</a> = MONSTER_277
-, <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baa3dfa7ad6b5e1b862ea5500be1855e731">MONSTER_FIRST_ARENA</a> = MONSTER_ANGEL_A
-, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaf0e505ca8043dbf7506e6b305c81d0e8">MONSTER_LAST_ARENA</a> = MONSTER_GHOUL_C
+, <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c">MONSTER_LAST</a> = MONSTER_UNUSED_RAT_C
 <br />
  }</td></tr>
 <tr class="separator:a9c8dbe33f930c23cbaddd4e0afad01ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -554,26 +553,24 @@ Enumerations</h2></td></tr>
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a91d6fa00ffbb7b252ed2efcb9b0d9a7e">MONSTER_TYPE_BLASTERGUY</a> = 87
 , <br />
 &#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492ac25d59f5eb9a463dd225a124ba9a28aa">MONSTER_TYPE_ULTRA_DRAGON</a> = 88
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492add46c650b48c2b251c3b3b8e793774ca">MONSTER_TYPE_89</a> = 89
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492aa2dbc5b107d8de792c4515305ebac1e4">MONSTER_TYPE_90</a> = 90
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a775224bd06e23fcdb3ac762ef9a60ad2">MONSTER_TYPE_91</a> = 91
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492adefd4150bf6780b3090b431edadfd1f8">MONSTER_TYPE_UNUSED_CAT</a> = 89
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a1f9bad79f6dcec6a2d332e5b4de2c0bb">MONSTER_TYPE_UNUSED_CHICKEN</a> = 90
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a36b200f7ba0131ded93f655d20a2c362">MONSTER_TYPE_UNUSED_DOG</a> = 91
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a3aa0ec1cf613ccc067c252a060c27d40">MONSTER_TYPE_92</a> = 92
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a083c0e3c4d8e76a7be5ae7c5aac00d0f">MONSTER_TYPE_93</a> = 93
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492ac8a79e547a0dbf22758f776cf56585a5">MONSTER_TYPE_UNUSED_RAT</a> = 92
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a66a2a2e348ec06e19551ae16689a284a">MONSTER_TYPE_9999</a> = 9999
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492ae54e2826c95f933757729f0caacb3fe3">MONSTER_TYPE_FIRST</a> = MONSTER_TYPE_ANGEL
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a6907e7b994b395eb5dd5960289731699">MONSTER_TYPE_LAST</a> = MONSTER_TYPE_UNUSED_RAT
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a6907e7b994b395eb5dd5960289731699">MONSTER_TYPE_LAST</a> = MONSTER_TYPE_ULTRA_DRAGON
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a2025c8949550a1163a9b13d577d9dbb0">MONSTER_TYPE_FIRST_PEASANT_DWARF</a> = MONSTER_TYPE_PEASANT_DWARF_FEMALE_A
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a2025c8949550a1163a9b13d577d9dbb0">MONSTER_TYPE_FIRST_PEASANT_DWARF</a> = MONSTER_TYPE_PEASANT_DWARF_FEMALE_A
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a4653df8dc38b5448a0787e8c3fcad6fe">MONSTER_TYPE_LAST_PEASANT_DWARF</a> = MONSTER_TYPE_PEASANT_DWARF_MALE_C
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a775fab902a66d18ad9e67dd628de5b7b">MONSTER_TYPE_FIRST_PEASANT_ELF</a> = MONSTER_TYPE_PEASANT_ELF_FEMALE_A
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a8782d3752f8618190c25e9f3e91b4091">MONSTER_TYPE_LAST_PEASANT_ELF</a> = MONSTER_TYPE_PEASANT_ELF_MALE_C
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a8782d3752f8618190c25e9f3e91b4091">MONSTER_TYPE_LAST_PEASANT_ELF</a> = MONSTER_TYPE_PEASANT_ELF_MALE_C
-, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a4f4f8148e03e84c960c2646988cbd5f0">MONSTER_TYPE_FIRST_PEASANT_HUMAN</a> = MONSTER_TYPE_PEASANT_HUMAN1_FEMALE_A
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a4f4f8148e03e84c960c2646988cbd5f0">MONSTER_TYPE_FIRST_PEASANT_HUMAN</a> = MONSTER_TYPE_PEASANT_HUMAN1_FEMALE_A
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a8e7c37a083f37ba25b0cabe92f5bf178">MONSTER_TYPE_LAST_PEASANT_HUMAN</a> = MONSTER_TYPE_PEASANT_HUMAN2_FEMALE_C
 , <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492a6b2d03e6e02fc2cefb1597e3f618d6e6">MONSTER_TYPE_FIRST_PEASANT_GOBLIN</a> = MONSTER_TYPE_PEASANT_GOBLIN_FEMALE_A
-, <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492af1ffa549412ac143c833ada8980bbd3f">MONSTER_TYPE_LAST_PEASANT_GOBLIN</a> = MONSTER_TYPE_PEASANT_GOBLIN_MALE_C
+, <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492af1ffa549412ac143c833ada8980bbd3f">MONSTER_TYPE_LAST_PEASANT_GOBLIN</a> = MONSTER_TYPE_PEASANT_GOBLIN_MALE_C
 <br />
  }</td></tr>
 <tr class="separator:abd758b4216b3fc46a32b2f1a359b3492"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -605,7 +602,7 @@ Enumerations</h2></td></tr>
 , <a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aaabc445b6d71db99092c2610d1edf2bd0c">MONSTER_SUPERTYPE_TREANT</a> = 0x6
 , <a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aaae47f36d2b8c88a213dc624f06f082c99">MONSTER_SUPERTYPE_TITAN</a> = 0x7
 , <br />
-&#160;&#160;<a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aaa3ec28f283863a5534e3ead792eb74900">MONSTER_SUPERTYPE_8</a> = 0x8
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aaa8d82e72398c29990fe5eab6cebca9866">MONSTER_SUPERTYPE_NOT_ARENA</a> = 0x8
 <br />
  }</td></tr>
 <tr class="separator:ac552b73822a59b6fa1a2a38ae54ec8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -654,19 +651,65 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:afd55c26f076611124ae70d54156f45de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1e4d12b1e3d4491a8af20318a81a83a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83a">MonsterAiType</a> { <a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83aa817edacb7305aa7759c241c8dbf79940">MONSTER_AI_SUICIDE</a> = 0
+, <a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83aa24b5c7dc090ae89d6a7286cfc941eeee">MONSTER_AI_WIMP</a> = 1
+, <a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83aaac09b2683aefca1555953a6e7d687a01">MONSTER_AI_NORMAL</a> = 2
+, <a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83aa1d50fa51ca1fca8a35b57398b289b130">MONSTER_AI_AGGRESSIVE</a> = 3
+ }</td></tr>
+<tr class="separator:aa1e4d12b1e3d4491a8af20318a81a83a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b5fd7097e027577e35297679af06a1d"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1d">MonsterAttackPreference</a> : uint16_t { <br />
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da9febe8a6e89af49163a5f245d17a78c7">ATTACK_PREFERENCE_KNIGHT</a> = 0x0001
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da65b517646c3f42e2192a2c5a5d21ca7b">ATTACK_PREFERENCE_PALADIN</a> = 0x0002
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da5ad53faf16a3a69a22b235096815b6e6">ATTACK_PREFERENCE_ARCHER</a> = 0x0004
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1dabd85f7bcf3299e3d640286b6532a0433">ATTACK_PREFERENCE_DRUID</a> = 0x0008
+, <br />
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1daba7fb547a16083f076d41bb387e5aaa8">ATTACK_PREFERENCE_CLERIC</a> = 0x0010
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1dabf5d41d344ba2729c218904d2007958a">ATTACK_PREFERENCE_SORCERER</a> = 0x0020
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1dac2608d0e1a36100a7263d07295cc9b39">ATTACK_PREFERENCE_RANGER</a> = 0x0040
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da555b506a3ee2142600a040647b127002">ATTACK_PREFERENCE_THIEF</a> = 0x0080
+, <br />
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1daa6558b7393041d94ead99238059135a6">ATTACK_PREFERENCE_MONK</a> = 0x0100
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da2ec154cccd8acc532487c5f0c3073e8a">ATTACK_PREFERENCE_MALE</a> = 0x0200
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da9d5671b994d7a268609be95c5ad1490b">ATTACK_PREFERENCE_FEMALE</a> = 0x0400
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1daf1306ff7764fd3d46dad34e561a5f9fd">ATTACK_PREFERENCE_HUMAN</a> = 0x0800
+, <br />
+&#160;&#160;<a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1dabbc1924cf0646f1afbd825aceee7d379">ATTACK_PREFERENCE_ELF</a> = 0x1000
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da98425db0b07dc3e086891e47e0a77348">ATTACK_PREFERENCE_DWARF</a> = 0x2000
+, <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1da415b7521cae7c6a7061f0cb791bd2259">ATTACK_PREFERENCE_GOBLIN</a> = 0x4000
+<br />
+ }</td></tr>
+<tr class="separator:a0b5fd7097e027577e35297679af06a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3e23dd53d734ce4f4979729acad77e6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a3e23dd53d734ce4f4979729acad77e6d">allArenaMonsters</a> ()</td></tr>
-<tr class="separator:a3e23dd53d734ce4f4979729acad77e6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07273e19ee32a0957750cd0ff0e755a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a07273e19ee32a0957750cd0ff0e755a9">allMonsters</a> ()</td></tr>
+<tr class="separator:a07273e19ee32a0957750cd0ff0e755a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5af6c86f86cd48228827710f221828d"><td class="memItemLeft" align="right" valign="top">std::span&lt; const <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#af5af6c86f86cd48228827710f221828d">allArenaMonsters</a> ()</td></tr>
+<tr class="separator:af5af6c86f86cd48228827710f221828d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df50b4da19c804145180877c89d7797"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a3df50b4da19c804145180877c89d7797">allMonsterTypes</a> ()</td></tr>
+<tr class="separator:a3df50b4da19c804145180877c89d7797"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ad786465d667cc39d2b26fd9f7ec4af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a4ad786465d667cc39d2b26fd9f7ec4af">monsterTypeForMonsterId</a> (<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> monsterId)</td></tr>
 <tr class="separator:a4ad786465d667cc39d2b26fd9f7ec4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ea0bd2c0c21dcc7e8fb0942dea1a18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a01ea0bd2c0c21dcc7e8fb0942dea1a18">monsterIdsForMonsterType</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
+<tr class="separator:a01ea0bd2c0c21dcc7e8fb0942dea1a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54a179076dc4668a6493d35d93885f74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a54a179076dc4668a6493d35d93885f74">isPeasant</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
 <tr class="separator:a54a179076dc4668a6493d35d93885f74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab117e53c7d2458dd2cfb67551ca74064"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#ab117e53c7d2458dd2cfb67551ca74064">isPeasant</a> (<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> monsterId)</td></tr>
+<tr class="separator:ab117e53c7d2458dd2cfb67551ca74064"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d76ae5db6f9e1371f9ff1378db5cabc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CharacterEnums_8h.html#af94989509cee39bae2fca4abd6280802">CharacterSex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a8d76ae5db6f9e1371f9ff1378db5cabc">sexForMonsterType</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
 <tr class="separator:a8d76ae5db6f9e1371f9ff1378db5cabc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acef19e3faf8c64eca86716c7513bac49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="CharacterEnums_8h.html#aa2df4028f474807638d438104900b003">Race</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#acef19e3faf8c64eca86716c7513bac49">raceForMonsterType</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
 <tr class="separator:acef19e3faf8c64eca86716c7513bac49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa257d3c50808ecca2d0e0c6028283e4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#aa257d3c50808ecca2d0e0c6028283e4f">isBountyHuntable</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType, <a class="el" href="UIHouseEnums_8h.html#a5ea2a2987049a04401b3ec8a45cbf17c">HouseId</a> townHall)</td></tr>
+<tr class="separator:aa257d3c50808ecca2d0e0c6028283e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f3c35b5fa492fc06dbff2c8e686a570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ItemEnums_8h.html#a238bdd793c3bf80cc1530e03ba5eca0b">ItemId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a9f3c35b5fa492fc06dbff2c8e686a570">itemDropForMonsterType</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
+<tr class="separator:a9f3c35b5fa492fc06dbff2c8e686a570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59cef0cf192166c0ca7e40e0077c4d00"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aa">MONSTER_SUPERTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#a59cef0cf192166c0ca7e40e0077c4d00">supertypeForMonsterType</a> (<a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> monsterType)</td></tr>
+<tr class="separator:a59cef0cf192166c0ca7e40e0077c4d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0e39b88b1d8113d877d10ca4d1ab134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aa">MONSTER_SUPERTYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#ad0e39b88b1d8113d877d10ca4d1ab134">supertypeForMonsterId</a> (<a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> monsterId)</td></tr>
+<tr class="separator:ad0e39b88b1d8113d877d10ca4d1ab134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a2eaeb4e2f87592290e53b9228e101"><td class="memItemLeft" align="right" valign="top">std::span&lt; const <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1d">MonsterAttackPreference</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MonsterEnums_8h.html#ac7a2eaeb4e2f87592290e53b9228e101">allMonsterAttackPreferences</a> ()</td></tr>
+<tr class="separator:ac7a2eaeb4e2f87592290e53b9228e101"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ab27a6d5f6ecfc6e54c722ea094a31bd9" name="ab27a6d5f6ecfc6e54c722ea094a31bd9"></a>
@@ -755,7 +798,74 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="ac552b73822a59b6fa1a2a38ae54ec8aaaf381f784faf70e78ffb89449875ba4b3" name="ac552b73822a59b6fa1a2a38ae54ec8aaaf381f784faf70e78ffb89449875ba4b3"></a>MONSTER_SUPERTYPE_WATER_ELEMENTAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac552b73822a59b6fa1a2a38ae54ec8aaabc445b6d71db99092c2610d1edf2bd0c" name="ac552b73822a59b6fa1a2a38ae54ec8aaabc445b6d71db99092c2610d1edf2bd0c"></a>MONSTER_SUPERTYPE_TREANT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ac552b73822a59b6fa1a2a38ae54ec8aaae47f36d2b8c88a213dc624f06f082c99" name="ac552b73822a59b6fa1a2a38ae54ec8aaae47f36d2b8c88a213dc624f06f082c99"></a>MONSTER_SUPERTYPE_TITAN&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac552b73822a59b6fa1a2a38ae54ec8aaa3ec28f283863a5534e3ead792eb74900" name="ac552b73822a59b6fa1a2a38ae54ec8aaa3ec28f283863a5534e3ead792eb74900"></a>MONSTER_SUPERTYPE_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac552b73822a59b6fa1a2a38ae54ec8aaa8d82e72398c29990fe5eab6cebca9866" name="ac552b73822a59b6fa1a2a38ae54ec8aaa8d82e72398c29990fe5eab6cebca9866"></a>MONSTER_SUPERTYPE_NOT_ARENA&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa1e4d12b1e3d4491a8af20318a81a83a" name="aa1e4d12b1e3d4491a8af20318a81a83a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1e4d12b1e3d4491a8af20318a81a83a">&#9670;&#160;</a></span>MonsterAiType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="MonsterEnums_8h.html#aa1e4d12b1e3d4491a8af20318a81a83a">MonsterAiType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa1e4d12b1e3d4491a8af20318a81a83aa817edacb7305aa7759c241c8dbf79940" name="aa1e4d12b1e3d4491a8af20318a81a83aa817edacb7305aa7759c241c8dbf79940"></a>MONSTER_AI_SUICIDE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa1e4d12b1e3d4491a8af20318a81a83aa24b5c7dc090ae89d6a7286cfc941eeee" name="aa1e4d12b1e3d4491a8af20318a81a83aa24b5c7dc090ae89d6a7286cfc941eeee"></a>MONSTER_AI_WIMP&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa1e4d12b1e3d4491a8af20318a81a83aaac09b2683aefca1555953a6e7d687a01" name="aa1e4d12b1e3d4491a8af20318a81a83aaac09b2683aefca1555953a6e7d687a01"></a>MONSTER_AI_NORMAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa1e4d12b1e3d4491a8af20318a81a83aa1d50fa51ca1fca8a35b57398b289b130" name="aa1e4d12b1e3d4491a8af20318a81a83aa1d50fa51ca1fca8a35b57398b289b130"></a>MONSTER_AI_AGGRESSIVE&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0b5fd7097e027577e35297679af06a1d" name="a0b5fd7097e027577e35297679af06a1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b5fd7097e027577e35297679af06a1d">&#9670;&#160;</a></span>MonsterAttackPreference</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1d">MonsterAttackPreference</a> : uint16_t</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da9febe8a6e89af49163a5f245d17a78c7" name="a0b5fd7097e027577e35297679af06a1da9febe8a6e89af49163a5f245d17a78c7"></a>ATTACK_PREFERENCE_KNIGHT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da65b517646c3f42e2192a2c5a5d21ca7b" name="a0b5fd7097e027577e35297679af06a1da65b517646c3f42e2192a2c5a5d21ca7b"></a>ATTACK_PREFERENCE_PALADIN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da5ad53faf16a3a69a22b235096815b6e6" name="a0b5fd7097e027577e35297679af06a1da5ad53faf16a3a69a22b235096815b6e6"></a>ATTACK_PREFERENCE_ARCHER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1dabd85f7bcf3299e3d640286b6532a0433" name="a0b5fd7097e027577e35297679af06a1dabd85f7bcf3299e3d640286b6532a0433"></a>ATTACK_PREFERENCE_DRUID&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1daba7fb547a16083f076d41bb387e5aaa8" name="a0b5fd7097e027577e35297679af06a1daba7fb547a16083f076d41bb387e5aaa8"></a>ATTACK_PREFERENCE_CLERIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1dabf5d41d344ba2729c218904d2007958a" name="a0b5fd7097e027577e35297679af06a1dabf5d41d344ba2729c218904d2007958a"></a>ATTACK_PREFERENCE_SORCERER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1dac2608d0e1a36100a7263d07295cc9b39" name="a0b5fd7097e027577e35297679af06a1dac2608d0e1a36100a7263d07295cc9b39"></a>ATTACK_PREFERENCE_RANGER&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da555b506a3ee2142600a040647b127002" name="a0b5fd7097e027577e35297679af06a1da555b506a3ee2142600a040647b127002"></a>ATTACK_PREFERENCE_THIEF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1daa6558b7393041d94ead99238059135a6" name="a0b5fd7097e027577e35297679af06a1daa6558b7393041d94ead99238059135a6"></a>ATTACK_PREFERENCE_MONK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da2ec154cccd8acc532487c5f0c3073e8a" name="a0b5fd7097e027577e35297679af06a1da2ec154cccd8acc532487c5f0c3073e8a"></a>ATTACK_PREFERENCE_MALE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da9d5671b994d7a268609be95c5ad1490b" name="a0b5fd7097e027577e35297679af06a1da9d5671b994d7a268609be95c5ad1490b"></a>ATTACK_PREFERENCE_FEMALE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1daf1306ff7764fd3d46dad34e561a5f9fd" name="a0b5fd7097e027577e35297679af06a1daf1306ff7764fd3d46dad34e561a5f9fd"></a>ATTACK_PREFERENCE_HUMAN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1dabbc1924cf0646f1afbd825aceee7d379" name="a0b5fd7097e027577e35297679af06a1dabbc1924cf0646f1afbd825aceee7d379"></a>ATTACK_PREFERENCE_ELF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da98425db0b07dc3e086891e47e0a77348" name="a0b5fd7097e027577e35297679af06a1da98425db0b07dc3e086891e47e0a77348"></a>ATTACK_PREFERENCE_DWARF&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0b5fd7097e027577e35297679af06a1da415b7521cae7c6a7061f0cb791bd2259" name="a0b5fd7097e027577e35297679af06a1da415b7521cae7c6a7061f0cb791bd2259"></a>ATTACK_PREFERENCE_GOBLIN&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1079,23 +1189,20 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baae909cd3b4782d7864969db5da57a64ad" name="a9c8dbe33f930c23cbaddd4e0afad01baae909cd3b4782d7864969db5da57a64ad"></a>MONSTER_ULTRA_DRAGON_A&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baab3bd98aae8820e9552959b4e8a641043" name="a9c8dbe33f930c23cbaddd4e0afad01baab3bd98aae8820e9552959b4e8a641043"></a>MONSTER_ULTRA_DRAGON_B&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baacaa5045f436be28ac31b7879571182f8" name="a9c8dbe33f930c23cbaddd4e0afad01baacaa5045f436be28ac31b7879571182f8"></a>MONSTER_ULTRA_DRAGON_C&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa7486de2a566bf90e6892ca87dc9e2f55" name="a9c8dbe33f930c23cbaddd4e0afad01baa7486de2a566bf90e6892ca87dc9e2f55"></a>MONSTER_265&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa4453e67d092bdb0b510a9167a6553908" name="a9c8dbe33f930c23cbaddd4e0afad01baa4453e67d092bdb0b510a9167a6553908"></a>MONSTER_266&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa04a58d8be9de46e38f1aa67409e62951" name="a9c8dbe33f930c23cbaddd4e0afad01baa04a58d8be9de46e38f1aa67409e62951"></a>MONSTER_267&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baad2b87e7d01ed2392ca6adf1a243fa027" name="a9c8dbe33f930c23cbaddd4e0afad01baad2b87e7d01ed2392ca6adf1a243fa027"></a>MONSTER_268&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa8125bc45e6914617917aab3a13fdf114" name="a9c8dbe33f930c23cbaddd4e0afad01baa8125bc45e6914617917aab3a13fdf114"></a>MONSTER_269&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa21a991df57d80a5f4df6bddc3d638ba2" name="a9c8dbe33f930c23cbaddd4e0afad01baa21a991df57d80a5f4df6bddc3d638ba2"></a>MONSTER_270&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baafd4e3a1e3e282f8f494cd01f793ca046" name="a9c8dbe33f930c23cbaddd4e0afad01baafd4e3a1e3e282f8f494cd01f793ca046"></a>MONSTER_271&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baaf1dffc8c7f22bbcbb2e9790b4a37fccb" name="a9c8dbe33f930c23cbaddd4e0afad01baaf1dffc8c7f22bbcbb2e9790b4a37fccb"></a>MONSTER_272&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa2143e9f911dcb338baf41107af6932ce" name="a9c8dbe33f930c23cbaddd4e0afad01baa2143e9f911dcb338baf41107af6932ce"></a>MONSTER_273&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa6a193db4dc54e99de96ad175e5ee64e3" name="a9c8dbe33f930c23cbaddd4e0afad01baa6a193db4dc54e99de96ad175e5ee64e3"></a>MONSTER_274&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa18d31f7c62bad5d10f4640b0c97c53bf" name="a9c8dbe33f930c23cbaddd4e0afad01baa18d31f7c62bad5d10f4640b0c97c53bf"></a>MONSTER_275&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baab065ce38524e6eaf65bd89df12e6cf5b" name="a9c8dbe33f930c23cbaddd4e0afad01baab065ce38524e6eaf65bd89df12e6cf5b"></a>MONSTER_276&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa079266a0acd9fa71f02fe6ccbcd47045" name="a9c8dbe33f930c23cbaddd4e0afad01baa079266a0acd9fa71f02fe6ccbcd47045"></a>MONSTER_277&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa17defe307e8f3b179711bdf608b466f5" name="a9c8dbe33f930c23cbaddd4e0afad01baa17defe307e8f3b179711bdf608b466f5"></a>MONSTER_UNUSED_CAT_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa7c07116729701f6552efcf72620a6a69" name="a9c8dbe33f930c23cbaddd4e0afad01baa7c07116729701f6552efcf72620a6a69"></a>MONSTER_UNUSED_CAT_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baac85b8edb032d0dff4043038e5f2e040c" name="a9c8dbe33f930c23cbaddd4e0afad01baac85b8edb032d0dff4043038e5f2e040c"></a>MONSTER_UNUSED_CAT_C&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baac0c82a8cb4826e655cd091baf8f0f07d" name="a9c8dbe33f930c23cbaddd4e0afad01baac0c82a8cb4826e655cd091baf8f0f07d"></a>MONSTER_UNUSED_CHICKEN_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa83fbfae17e4b4885883fb967abb79d06" name="a9c8dbe33f930c23cbaddd4e0afad01baa83fbfae17e4b4885883fb967abb79d06"></a>MONSTER_UNUSED_CHICKEN_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa4e29363f086e7f5c44edb2f36e909863" name="a9c8dbe33f930c23cbaddd4e0afad01baa4e29363f086e7f5c44edb2f36e909863"></a>MONSTER_UNUSED_CHICKEN_C&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baaf37d14cf7583661e1ba446df84635bd4" name="a9c8dbe33f930c23cbaddd4e0afad01baaf37d14cf7583661e1ba446df84635bd4"></a>MONSTER_UNUSED_DOG_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa07fa245627f87e9bed3e7de70b1cb192" name="a9c8dbe33f930c23cbaddd4e0afad01baa07fa245627f87e9bed3e7de70b1cb192"></a>MONSTER_UNUSED_DOG_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baac36ade0c5ccf3e4c793b0930c8e47092" name="a9c8dbe33f930c23cbaddd4e0afad01baac36ade0c5ccf3e4c793b0930c8e47092"></a>MONSTER_UNUSED_DOG_C&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baac69d39bdb1d2dcc4bc7b5791d943b30c" name="a9c8dbe33f930c23cbaddd4e0afad01baac69d39bdb1d2dcc4bc7b5791d943b30c"></a>MONSTER_UNUSED_RAT_A&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baab2096a4ad94326aec833a2e3e78a23ab" name="a9c8dbe33f930c23cbaddd4e0afad01baab2096a4ad94326aec833a2e3e78a23ab"></a>MONSTER_UNUSED_RAT_B&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baab080b26d20f3fbbd73f16c6dfb24bb0e" name="a9c8dbe33f930c23cbaddd4e0afad01baab080b26d20f3fbbd73f16c6dfb24bb0e"></a>MONSTER_UNUSED_RAT_C&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa4cc005ed16ad55cc304dd275a5a18329" name="a9c8dbe33f930c23cbaddd4e0afad01baa4cc005ed16ad55cc304dd275a5a18329"></a>MONSTER_FIRST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c" name="a9c8dbe33f930c23cbaddd4e0afad01baaeba066196d7b381b8bb621e13b91b58c"></a>MONSTER_LAST&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baa3dfa7ad6b5e1b862ea5500be1855e731" name="a9c8dbe33f930c23cbaddd4e0afad01baa3dfa7ad6b5e1b862ea5500be1855e731"></a>MONSTER_FIRST_ARENA&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a9c8dbe33f930c23cbaddd4e0afad01baaf0e505ca8043dbf7506e6b305c81d0e8" name="a9c8dbe33f930c23cbaddd4e0afad01baaf0e505ca8043dbf7506e6b305c81d0e8"></a>MONSTER_LAST_ARENA&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -1212,11 +1319,10 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492aa7a970082b5089ea2e9aacf65718b8de" name="abd758b4216b3fc46a32b2f1a359b3492aa7a970082b5089ea2e9aacf65718b8de"></a>MONSTER_TYPE_GHOUL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a91d6fa00ffbb7b252ed2efcb9b0d9a7e" name="abd758b4216b3fc46a32b2f1a359b3492a91d6fa00ffbb7b252ed2efcb9b0d9a7e"></a>MONSTER_TYPE_BLASTERGUY&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492ac25d59f5eb9a463dd225a124ba9a28aa" name="abd758b4216b3fc46a32b2f1a359b3492ac25d59f5eb9a463dd225a124ba9a28aa"></a>MONSTER_TYPE_ULTRA_DRAGON&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492add46c650b48c2b251c3b3b8e793774ca" name="abd758b4216b3fc46a32b2f1a359b3492add46c650b48c2b251c3b3b8e793774ca"></a>MONSTER_TYPE_89&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492aa2dbc5b107d8de792c4515305ebac1e4" name="abd758b4216b3fc46a32b2f1a359b3492aa2dbc5b107d8de792c4515305ebac1e4"></a>MONSTER_TYPE_90&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a775224bd06e23fcdb3ac762ef9a60ad2" name="abd758b4216b3fc46a32b2f1a359b3492a775224bd06e23fcdb3ac762ef9a60ad2"></a>MONSTER_TYPE_91&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a3aa0ec1cf613ccc067c252a060c27d40" name="abd758b4216b3fc46a32b2f1a359b3492a3aa0ec1cf613ccc067c252a060c27d40"></a>MONSTER_TYPE_92&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a083c0e3c4d8e76a7be5ae7c5aac00d0f" name="abd758b4216b3fc46a32b2f1a359b3492a083c0e3c4d8e76a7be5ae7c5aac00d0f"></a>MONSTER_TYPE_93&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492adefd4150bf6780b3090b431edadfd1f8" name="abd758b4216b3fc46a32b2f1a359b3492adefd4150bf6780b3090b431edadfd1f8"></a>MONSTER_TYPE_UNUSED_CAT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a1f9bad79f6dcec6a2d332e5b4de2c0bb" name="abd758b4216b3fc46a32b2f1a359b3492a1f9bad79f6dcec6a2d332e5b4de2c0bb"></a>MONSTER_TYPE_UNUSED_CHICKEN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a36b200f7ba0131ded93f655d20a2c362" name="abd758b4216b3fc46a32b2f1a359b3492a36b200f7ba0131ded93f655d20a2c362"></a>MONSTER_TYPE_UNUSED_DOG&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492ac8a79e547a0dbf22758f776cf56585a5" name="abd758b4216b3fc46a32b2f1a359b3492ac8a79e547a0dbf22758f776cf56585a5"></a>MONSTER_TYPE_UNUSED_RAT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a66a2a2e348ec06e19551ae16689a284a" name="abd758b4216b3fc46a32b2f1a359b3492a66a2a2e348ec06e19551ae16689a284a"></a>MONSTER_TYPE_9999&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492ae54e2826c95f933757729f0caacb3fe3" name="abd758b4216b3fc46a32b2f1a359b3492ae54e2826c95f933757729f0caacb3fe3"></a>MONSTER_TYPE_FIRST&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="abd758b4216b3fc46a32b2f1a359b3492a6907e7b994b395eb5dd5960289731699" name="abd758b4216b3fc46a32b2f1a359b3492a6907e7b994b395eb5dd5960289731699"></a>MONSTER_TYPE_LAST&#160;</td><td class="fielddoc"></td></tr>
@@ -1281,8 +1387,43 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3e23dd53d734ce4f4979729acad77e6d" name="a3e23dd53d734ce4f4979729acad77e6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e23dd53d734ce4f4979729acad77e6d">&#9670;&#160;</a></span>allArenaMonsters()</h2>
+<a id="af5af6c86f86cd48228827710f221828d" name="af5af6c86f86cd48228827710f221828d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5af6c86f86cd48228827710f221828d">&#9670;&#160;</a></span>allArenaMonsters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::span&lt; const <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt; allArenaMonsters </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>A span of all monsters that can appear in Arena. </dd></dl>
+
+</div>
+</div>
+<a id="ac7a2eaeb4e2f87592290e53b9228e101" name="ac7a2eaeb4e2f87592290e53b9228e101"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a2eaeb4e2f87592290e53b9228e101">&#9670;&#160;</a></span>allMonsterAttackPreferences()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::span&lt; const <a class="el" href="MonsterEnums_8h.html#a0b5fd7097e027577e35297679af06a1d">MonsterAttackPreference</a> &gt; allMonsterAttackPreferences </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a07273e19ee32a0957750cd0ff0e755a9" name="a07273e19ee32a0957750cd0ff0e755a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07273e19ee32a0957750cd0ff0e755a9">&#9670;&#160;</a></span>allMonsters()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1291,7 +1432,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt; allArenaMonsters </td>
+          <td class="memname"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt; allMonsters </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -1306,8 +1447,61 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a54a179076dc4668a6493d35d93885f74" name="a54a179076dc4668a6493d35d93885f74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54a179076dc4668a6493d35d93885f74">&#9670;&#160;</a></span>isPeasant()</h2>
+<a id="a3df50b4da19c804145180877c89d7797" name="a3df50b4da19c804145180877c89d7797"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3df50b4da19c804145180877c89d7797">&#9670;&#160;</a></span>allMonsterTypes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a> &gt; allMonsterTypes </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa257d3c50808ecca2d0e0c6028283e4f" name="aa257d3c50808ecca2d0e0c6028283e4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa257d3c50808ecca2d0e0c6028283e4f">&#9670;&#160;</a></span>isBountyHuntable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isBountyHuntable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td>
+          <td class="paramname"><em>monsterType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="UIHouseEnums_8h.html#a5ea2a2987049a04401b3ec8a45cbf17c">HouseId</a>&#160;</td>
+          <td class="paramname"><em>townHall</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab117e53c7d2458dd2cfb67551ca74064" name="ab117e53c7d2458dd2cfb67551ca74064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab117e53c7d2458dd2cfb67551ca74064">&#9670;&#160;</a></span>isPeasant() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1317,6 +1511,76 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">bool isPeasant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a>&#160;</td>
+          <td class="paramname"><em>monsterId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a54a179076dc4668a6493d35d93885f74" name="a54a179076dc4668a6493d35d93885f74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54a179076dc4668a6493d35d93885f74">&#9670;&#160;</a></span>isPeasant() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool isPeasant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td>
+          <td class="paramname"><em>monsterType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9f3c35b5fa492fc06dbff2c8e686a570" name="a9f3c35b5fa492fc06dbff2c8e686a570"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f3c35b5fa492fc06dbff2c8e686a570">&#9670;&#160;</a></span>itemDropForMonsterType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="ItemEnums_8h.html#a238bdd793c3bf80cc1530e03ba5eca0b">ItemId</a> itemDropForMonsterType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td>
+          <td class="paramname"><em>monsterType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01ea0bd2c0c21dcc7e8fb0942dea1a18" name="a01ea0bd2c0c21dcc7e8fb0942dea1a18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ea0bd2c0c21dcc7e8fb0942dea1a18">&#9670;&#160;</a></span>monsterIdsForMonsterType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSegment.html">Segment</a>&lt; <a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a> &gt; monsterIdsForMonsterType </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td>
           <td class="paramname"><em>monsterType</em></td><td>)</td>
@@ -1391,6 +1655,58 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad0e39b88b1d8113d877d10ca4d1ab134" name="ad0e39b88b1d8113d877d10ca4d1ab134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0e39b88b1d8113d877d10ca4d1ab134">&#9670;&#160;</a></span>supertypeForMonsterId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aa">MONSTER_SUPERTYPE</a> supertypeForMonsterId </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#a9c8dbe33f930c23cbaddd4e0afad01ba">MonsterId</a>&#160;</td>
+          <td class="paramname"><em>monsterId</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59cef0cf192166c0ca7e40e0077c4d00" name="a59cef0cf192166c0ca7e40e0077c4d00"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59cef0cf192166c0ca7e40e0077c4d00">&#9670;&#160;</a></span>supertypeForMonsterType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="MonsterEnums_8h.html#ac552b73822a59b6fa1a2a38ae54ec8aa">MONSTER_SUPERTYPE</a> supertypeForMonsterType </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MonsterEnums_8h.html#abd758b4216b3fc46a32b2f1a359b3492">MonsterType</a>&#160;</td>
+          <td class="paramname"><em>monsterType</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x00438BDF</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">monsterType</td><td>Monster type to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Supertype for the provided monster type. </dd></dl>
 
 </div>
 </div>

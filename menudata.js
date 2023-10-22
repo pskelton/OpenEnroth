@@ -157,6 +157,7 @@ var menudata={children:[
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Enumerator",url:"functions_eval.html"},
 {text:"Related Functions",url:"functions_rela.html",children:[
+{text:"a",url:"functions_rela.html#index_a"},
 {text:"c",url:"functions_rela.html#index_c"},
 {text:"d",url:"functions_rela.html#index_d"},
 {text:"o",url:"functions_rela.html#index_o"},
@@ -241,6 +242,7 @@ var menudata={children:[
 {text:"w",url:"globals_vars_w.html#index_w"},
 {text:"z",url:"globals_vars_z.html#index_z"}]},
 {text:"Typedefs",url:"globals_type.html",children:[
+{text:"a",url:"globals_type.html#index_a"},
 {text:"b",url:"globals_type.html#index_b"},
 {text:"c",url:"globals_type.html#index_c"},
 {text:"e",url:"globals_type.html#index_e"},
