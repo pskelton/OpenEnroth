@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['a_0',['a',['../structColorf.html#a4a8372e6fa691b4c5fc1e0864248b535',1,'Colorf::a()'],['../structColor.html#a12022d435709c08f47937a7361fe8441',1,'Color::a()'],['../structPlaneZCalcf.html#a2082baffd8c41e8eb152fd714aadb8eb',1,'PlaneZCalcf::a()'],['../structHsvColorf.html#a466980a45ade508925a8a772713ccf0e',1,'HsvColorf::a()'],['../structTestPair.html#a3adb5b0569d0c1e1b453df4d1b511bac',1,'TestPair::a()']]],
+  ['a_0',['a',['../structColorf.html#a4a8372e6fa691b4c5fc1e0864248b535',1,'Colorf::a()'],['../structColor.html#a12022d435709c08f47937a7361fe8441',1,'Color::a()'],['../structTestPair.html#a3adb5b0569d0c1e1b453df4d1b511bac',1,'TestPair::a()'],['../structHsvColorf.html#a466980a45ade508925a8a772713ccf0e',1,'HsvColorf::a()'],['../structPlaneZCalcf.html#a2082baffd8c41e8eb152fd714aadb8eb',1,'PlaneZCalcf::a()']]],
   ['ac_1',['ac',['../structMonsterInfo__MM7.html#a71c3ac27f4c27738852c90bbf09d495e',1,'MonsterInfo_MM7']]],
   ['accuracy_2',['accuracy',['../structPlayer__MM7.html#a6cb285de0a761e3f0fb9a089f7dca642',1,'Player_MM7']]],
   ['accuracybonus_3',['accuracyBonus',['../structPlayer__MM7.html#a9e331c310f01a711cbce620e2d43274d',1,'Player_MM7']]],
@@ -33,9 +33,9 @@ var searchData=
   ['air_5fres_5fdescription_30',['air_res_description',['../classLocalization.html#a2a2003afaf690303e147ef54b709f034',1,'Localization']]],
   ['aistate_31',['aiState',['../classActor.html#ae3f4416433303234f1de44f20d87755f',1,'Actor']]],
   ['aitype_32',['aiType',['../structMonsterInfo__MM7.html#af0104d25160d741914aa35530a2992a1',1,'MonsterInfo_MM7']]],
-  ['al_5fformat_33',['al_format',['../classAudioTrackS16.html#a41dbbd490658cd01beaa79aa3a43c31f',1,'AudioTrackS16']]],
-  ['al_5fsample_5frate_34',['al_sample_rate',['../classAudioTrackS16.html#a7af2bf343552f7e38b616991595fc760',1,'AudioTrackS16']]],
-  ['al_5fsource_35',['al_source',['../classAudioTrackS16.html#ac11c1679346f1ab7578e9e367c74f73f',1,'AudioTrackS16::al_source()'],['../classAudioSample16.html#adcc046bc28f99fe6a2c824d8c1a6abcb',1,'AudioSample16::al_source()']]],
+  ['al_5fformat_33',['al_format',['../classOpenALTrack16.html#a555f4448a59601b04765126b37293c6b',1,'OpenALTrack16']]],
+  ['al_5fsample_5frate_34',['al_sample_rate',['../classOpenALTrack16.html#a24a17ec0092226fe0b4f23a9694fcfe7',1,'OpenALTrack16']]],
+  ['al_5fsource_35',['al_source',['../classAudioSample16.html#adcc046bc28f99fe6a2c824d8c1a6abcb',1,'AudioSample16::al_source()'],['../classOpenALTrack16.html#a15e112e5a907e420fc7913b81718078a',1,'OpenALTrack16::al_source()']]],
   ['alarmtime_36',['alarmTime',['../structMapTimer.html#a8b4c6709bf630a83a0fa7e035001cf1f',1,'MapTimer']]],
   ['alchemyshopvariationspecial_37',['alchemyShopVariationSpecial',['../Shops_8cpp.html#abf2575716814427fe6fe978c2256b2be',1,'Shops.cpp']]],
   ['alchemyshopvariationstandard_38',['alchemyShopVariationStandard',['../Shops_8cpp.html#acfd07b6bab2cd22487083a9d5f2c6417',1,'Shops.cpp']]],
