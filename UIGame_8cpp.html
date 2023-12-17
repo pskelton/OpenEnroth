@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -94,7 +94,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Decoration_8h.html">Engine/Graphics/Level/Decoration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Outdoor_8h.html">Engine/Graphics/Outdoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Sprites_8h.html">Engine/Graphics/Sprites.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Viewport_8h.html">Engine/Graphics/Viewport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Vis_8h.html">Engine/Graphics/Vis.h</a>&quot;</code><br />
@@ -112,10 +112,9 @@ $(function() {
 <code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IconFrameTable_8h.html">Engine/Tables/IconFrameTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CharacterFrameTable_8h.html">Engine/Tables/CharacterFrameTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Timer_8h.html">Engine/Time/Timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LloydsBook_8h.html">GUI/UI/Books/LloydsBook.h</a>&quot;</code><br />
@@ -185,10 +184,12 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a2106de368c401ff4ecd45e1302bbe8e0"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a2106de368c401ff4ecd45e1302bbe8e0">pHealthBarPos</a> = {{23, 138, 251, 366}}</td></tr>
-<tr class="separator:a2106de368c401ff4ecd45e1302bbe8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abada2f56e55b7e4614271e54d9bdc7f7"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#abada2f56e55b7e4614271e54d9bdc7f7">pManaBarPos</a> = {{102, 217, 331, 447}}</td></tr>
-<tr class="separator:abada2f56e55b7e4614271e54d9bdc7f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9610ad9e180bf089271fd5607691413"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#aa9610ad9e180bf089271fd5607691413">pHealthBarPos</a> = {{23, 138, 251, 366}}</td></tr>
+<tr class="separator:aa9610ad9e180bf089271fd5607691413"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7ccc135d37172635abf0f0eff05e95"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a9f7ccc135d37172635abf0f0eff05e95">pManaBarPos</a> = {{102, 217, 331, 447}}</td></tr>
+<tr class="separator:a9f7ccc135d37172635abf0f0eff05e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25621f60334eb897b21f21fa888deb67"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a25621f60334eb897b21f21fa888deb67">pHealthManaBarYPos</a> = 402</td></tr>
+<tr class="separator:a25621f60334eb897b21f21fa888deb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a515c4d8d435b979a19ccfcd1a06c807a"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a515c4d8d435b979a19ccfcd1a06c807a">pHiredNPCsIconsOffsetsX</a> = {{489, 559}}</td></tr>
 <tr class="separator:a515c4d8d435b979a19ccfcd1a06c807a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44c42557b24f3ea430144f465906873f"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned int, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a44c42557b24f3ea430144f465906873f">pHiredNPCsIconsOffsetsY</a> = {{152, 152}}</td></tr>
@@ -197,8 +198,8 @@ Variables</h2></td></tr>
 <tr class="separator:a9c53cb5ec1c444f03260028ac21df72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60b4dc613aacfb8ea52fecc2e6a39069"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a60b4dc613aacfb8ea52fecc2e6a39069">pPartySpellbuffsUI_smthns</a></td></tr>
 <tr class="separator:a60b4dc613aacfb8ea52fecc2e6a39069"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b549715d362c75631bbb39cf4bf66fd"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80df">PARTY_BUFF_INDEX</a>, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a8b549715d362c75631bbb39cf4bf66fd">spellBuffsAtRightPanel</a></td></tr>
-<tr class="separator:a8b549715d362c75631bbb39cf4bf66fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78cb0cc31e1f4396624b3ccbd06e11ce"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cf">PartyBuff</a>, 14 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a78cb0cc31e1f4396624b3ccbd06e11ce">spellBuffsAtRightPanel</a></td></tr>
+<tr class="separator:a78cb0cc31e1f4396624b3ccbd06e11ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acab125eb88f33eeaf9ce782901412a27"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#acab125eb88f33eeaf9ce782901412a27">BtnTurnCoord</a></td></tr>
 <tr class="separator:acab125eb88f33eeaf9ce782901412a27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68bca70ba12f132f27f37483f0022468"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGraphicsImage.html">GraphicsImage</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a68bca70ba12f132f27f37483f0022468">game_ui_statusbar</a> = nullptr</td></tr>
@@ -319,8 +320,8 @@ Variables</h2></td></tr>
 <tr class="separator:aa5d3ed5edadc366bc8011a2390ee13c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa55f9cc1c11ab47de036a5bf5a65e3b3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#aa55f9cc1c11ab47de036a5bf5a65e3b3">bookFlashState</a> = false</td></tr>
 <tr class="separator:aa55f9cc1c11ab47de036a5bf5a65e3b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab11f377820d5a75638ebf052741fe77a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structGameTime.html">GameTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#ab11f377820d5a75638ebf052741fe77a">bookFlashTimer</a> = <a class="el" href="structGameTime.html">GameTime</a>(0)</td></tr>
-<tr class="separator:ab11f377820d5a75638ebf052741fe77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192d97e11bf6b6e1e3851e8cdd1c5084"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classTime.html">Time</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a192d97e11bf6b6e1e3851e8cdd1c5084">bookFlashTimer</a></td></tr>
+<tr class="separator:a192d97e11bf6b6e1e3851e8cdd1c5084"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f70373e8d65f7f76d15ae2ff1511076"><td class="memItemLeft" align="right" valign="top">InputAction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#a6f70373e8d65f7f76d15ae2ff1511076">currently_selected_action_for_binding</a></td></tr>
 <tr class="separator:a6f70373e8d65f7f76d15ae2ff1511076"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac779193a7bd296fbdcabc8799a780aa0"><td class="memItemLeft" align="right" valign="top">std::map&lt; InputAction, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="UIGame_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0">key_map_conflicted</a></td></tr>
@@ -899,8 +900,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab11f377820d5a75638ebf052741fe77a" name="ab11f377820d5a75638ebf052741fe77a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab11f377820d5a75638ebf052741fe77a">&#9670;&#160;</a></span>bookFlashTimer</h2>
+<a id="a192d97e11bf6b6e1e3851e8cdd1c5084" name="a192d97e11bf6b6e1e3851e8cdd1c5084"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a192d97e11bf6b6e1e3851e8cdd1c5084">&#9670;&#160;</a></span>bookFlashTimer</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -909,7 +910,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structGameTime.html">GameTime</a> bookFlashTimer = <a class="el" href="structGameTime.html">GameTime</a>(0)</td>
+          <td class="memname"><a class="el" href="classTime.html">Time</a> bookFlashTimer</td>
         </tr>
       </table>
   </td>
@@ -1787,16 +1788,38 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a2106de368c401ff4ecd45e1302bbe8e0" name="a2106de368c401ff4ecd45e1302bbe8e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2106de368c401ff4ecd45e1302bbe8e0">&#9670;&#160;</a></span>pHealthBarPos</h2>
+<a id="aa9610ad9e180bf089271fd5607691413" name="aa9610ad9e180bf089271fd5607691413"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9610ad9e180bf089271fd5607691413">&#9670;&#160;</a></span>pHealthBarPos</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;unsigned int, 4&gt; pHealthBarPos = {{23, 138, 251, 366}}</td>
+          <td class="memname">std::array&lt;int, 4&gt; pHealthBarPos = {{23, 138, 251, 366}}</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a25621f60334eb897b21f21fa888deb67" name="a25621f60334eb897b21f21fa888deb67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25621f60334eb897b21f21fa888deb67">&#9670;&#160;</a></span>pHealthManaBarYPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int pHealthManaBarYPos = 402</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -1829,14 +1852,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="abada2f56e55b7e4614271e54d9bdc7f7" name="abada2f56e55b7e4614271e54d9bdc7f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abada2f56e55b7e4614271e54d9bdc7f7">&#9670;&#160;</a></span>pManaBarPos</h2>
+<a id="a9f7ccc135d37172635abf0f0eff05e95" name="a9f7ccc135d37172635abf0f0eff05e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f7ccc135d37172635abf0f0eff05e95">&#9670;&#160;</a></span>pManaBarPos</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;unsigned int, 4&gt; pManaBarPos = {{102, 217, 331, 447}}</td>
+          <td class="memname">std::array&lt;int, 4&gt; pManaBarPos = {{102, 217, 331, 447}}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1889,37 +1912,37 @@ Variables</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a8b549715d362c75631bbb39cf4bf66fd" name="a8b549715d362c75631bbb39cf4bf66fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b549715d362c75631bbb39cf4bf66fd">&#9670;&#160;</a></span>spellBuffsAtRightPanel</h2>
+<a id="a78cb0cc31e1f4396624b3ccbd06e11ce" name="a78cb0cc31e1f4396624b3ccbd06e11ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78cb0cc31e1f4396624b3ccbd06e11ce">&#9670;&#160;</a></span>spellBuffsAtRightPanel</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt;<a class="el" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80df">PARTY_BUFF_INDEX</a>, 14&gt; spellBuffsAtRightPanel</td>
+          <td class="memname">std::array&lt;<a class="el" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cf">PartyBuff</a>, 14&gt; spellBuffsAtRightPanel</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    {<a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaa167c3f17823bd6e393fa966e27ec0ec">PARTY_BUFF_FEATHER_FALL</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa92cf2b16c7dda2398c182d05bb0c4a1f">PARTY_BUFF_RESIST_FIRE</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf12dcaa9615ca6f21554c0926fc08d7b">PARTY_BUFF_RESIST_AIR</a>,</div>
-<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf486a0e8efe41131f061a62047c63725">PARTY_BUFF_RESIST_WATER</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfad1347271a05daa1b91766bbfc126aaa5">PARTY_BUFF_RESIST_MIND</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0a55105c6f3ac3f556a31d35a28a1541">PARTY_BUFF_RESIST_EARTH</a>,</div>
-<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfada02f62df8350b64963b91bb6f375900">PARTY_BUFF_RESIST_BODY</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa1c98437532682cd8b3fb60566dde39b5">PARTY_BUFF_HEROISM</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa423a9bb59d12fb4e97519c779f4cac89">PARTY_BUFF_HASTE</a>,</div>
-<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfafbf2f9a8ee141215419e9cdff7900419">PARTY_BUFF_SHIELD</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa31a8d357bf06f42274752db193f5cd8a">PARTY_BUFF_STONE_SKIN</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa142bc5dcd7a96bc1fde1f84ca1c9ffe1">PARTY_BUFF_PROTECTION_FROM_MAGIC</a>,</div>
-<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfab38a7d30a704ca63b3588633b84bd3cb">PARTY_BUFF_IMMOLATION</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa2b74bc7d19b92d6e8810fd343498031f">PARTY_BUFF_DAY_OF_GODS</a>}}</div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa0a55105c6f3ac3f556a31d35a28a1541"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa0a55105c6f3ac3f556a31d35a28a1541">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_EARTH</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_EARTH</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa142bc5dcd7a96bc1fde1f84ca1c9ffe1"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa142bc5dcd7a96bc1fde1f84ca1c9ffe1">PARTY_BUFF_INDEX::PARTY_BUFF_PROTECTION_FROM_MAGIC</a></div><div class="ttdeci">@ PARTY_BUFF_PROTECTION_FROM_MAGIC</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa1c98437532682cd8b3fb60566dde39b5"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa1c98437532682cd8b3fb60566dde39b5">PARTY_BUFF_INDEX::PARTY_BUFF_HEROISM</a></div><div class="ttdeci">@ PARTY_BUFF_HEROISM</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa2b74bc7d19b92d6e8810fd343498031f"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa2b74bc7d19b92d6e8810fd343498031f">PARTY_BUFF_INDEX::PARTY_BUFF_DAY_OF_GODS</a></div><div class="ttdeci">@ PARTY_BUFF_DAY_OF_GODS</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa31a8d357bf06f42274752db193f5cd8a"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa31a8d357bf06f42274752db193f5cd8a">PARTY_BUFF_INDEX::PARTY_BUFF_STONE_SKIN</a></div><div class="ttdeci">@ PARTY_BUFF_STONE_SKIN</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa423a9bb59d12fb4e97519c779f4cac89"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa423a9bb59d12fb4e97519c779f4cac89">PARTY_BUFF_INDEX::PARTY_BUFF_HASTE</a></div><div class="ttdeci">@ PARTY_BUFF_HASTE</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfa92cf2b16c7dda2398c182d05bb0c4a1f"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfa92cf2b16c7dda2398c182d05bb0c4a1f">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_FIRE</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_FIRE</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfaa167c3f17823bd6e393fa966e27ec0ec"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaa167c3f17823bd6e393fa966e27ec0ec">PARTY_BUFF_INDEX::PARTY_BUFF_FEATHER_FALL</a></div><div class="ttdeci">@ PARTY_BUFF_FEATHER_FALL</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfab38a7d30a704ca63b3588633b84bd3cb"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfab38a7d30a704ca63b3588633b84bd3cb">PARTY_BUFF_INDEX::PARTY_BUFF_IMMOLATION</a></div><div class="ttdeci">@ PARTY_BUFF_IMMOLATION</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfad1347271a05daa1b91766bbfc126aaa5"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfad1347271a05daa1b91766bbfc126aaa5">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_MIND</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_MIND</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfada02f62df8350b64963b91bb6f375900"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfada02f62df8350b64963b91bb6f375900">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_BODY</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_BODY</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfaf12dcaa9615ca6f21554c0926fc08d7b"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf12dcaa9615ca6f21554c0926fc08d7b">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_AIR</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_AIR</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfaf486a0e8efe41131f061a62047c63725"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfaf486a0e8efe41131f061a62047c63725">PARTY_BUFF_INDEX::PARTY_BUFF_RESIST_WATER</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_WATER</div></div>
-<div class="ttc" id="aPartyEnums_8h_html_a7935db13258ffa8a17fd65aa633b80dfafbf2f9a8ee141215419e9cdff7900419"><div class="ttname"><a href="PartyEnums_8h.html#a7935db13258ffa8a17fd65aa633b80dfafbf2f9a8ee141215419e9cdff7900419">PARTY_BUFF_INDEX::PARTY_BUFF_SHIELD</a></div><div class="ttdeci">@ PARTY_BUFF_SHIELD</div></div>
+<div class="line">    {<a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaa167c3f17823bd6e393fa966e27ec0ec">PARTY_BUFF_FEATHER_FALL</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa92cf2b16c7dda2398c182d05bb0c4a1f">PARTY_BUFF_RESIST_FIRE</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaf12dcaa9615ca6f21554c0926fc08d7b">PARTY_BUFF_RESIST_AIR</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaf486a0e8efe41131f061a62047c63725">PARTY_BUFF_RESIST_WATER</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfad1347271a05daa1b91766bbfc126aaa5">PARTY_BUFF_RESIST_MIND</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa0a55105c6f3ac3f556a31d35a28a1541">PARTY_BUFF_RESIST_EARTH</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfada02f62df8350b64963b91bb6f375900">PARTY_BUFF_RESIST_BODY</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa1c98437532682cd8b3fb60566dde39b5">PARTY_BUFF_HEROISM</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa423a9bb59d12fb4e97519c779f4cac89">PARTY_BUFF_HASTE</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfafbf2f9a8ee141215419e9cdff7900419">PARTY_BUFF_SHIELD</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa31a8d357bf06f42274752db193f5cd8a">PARTY_BUFF_STONE_SKIN</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa142bc5dcd7a96bc1fde1f84ca1c9ffe1">PARTY_BUFF_PROTECTION_FROM_MAGIC</a>,</div>
+<div class="line">     <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfab38a7d30a704ca63b3588633b84bd3cb">PARTY_BUFF_IMMOLATION</a>, <a class="code hl_enumvalue" href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa2b74bc7d19b92d6e8810fd343498031f">PARTY_BUFF_DAY_OF_GODS</a>}}</div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa0a55105c6f3ac3f556a31d35a28a1541"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa0a55105c6f3ac3f556a31d35a28a1541">PartyBuff::PARTY_BUFF_RESIST_EARTH</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_EARTH</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa142bc5dcd7a96bc1fde1f84ca1c9ffe1"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa142bc5dcd7a96bc1fde1f84ca1c9ffe1">PartyBuff::PARTY_BUFF_PROTECTION_FROM_MAGIC</a></div><div class="ttdeci">@ PARTY_BUFF_PROTECTION_FROM_MAGIC</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa1c98437532682cd8b3fb60566dde39b5"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa1c98437532682cd8b3fb60566dde39b5">PartyBuff::PARTY_BUFF_HEROISM</a></div><div class="ttdeci">@ PARTY_BUFF_HEROISM</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa2b74bc7d19b92d6e8810fd343498031f"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa2b74bc7d19b92d6e8810fd343498031f">PartyBuff::PARTY_BUFF_DAY_OF_GODS</a></div><div class="ttdeci">@ PARTY_BUFF_DAY_OF_GODS</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa31a8d357bf06f42274752db193f5cd8a"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa31a8d357bf06f42274752db193f5cd8a">PartyBuff::PARTY_BUFF_STONE_SKIN</a></div><div class="ttdeci">@ PARTY_BUFF_STONE_SKIN</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa423a9bb59d12fb4e97519c779f4cac89"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa423a9bb59d12fb4e97519c779f4cac89">PartyBuff::PARTY_BUFF_HASTE</a></div><div class="ttdeci">@ PARTY_BUFF_HASTE</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfa92cf2b16c7dda2398c182d05bb0c4a1f"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfa92cf2b16c7dda2398c182d05bb0c4a1f">PartyBuff::PARTY_BUFF_RESIST_FIRE</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_FIRE</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfaa167c3f17823bd6e393fa966e27ec0ec"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaa167c3f17823bd6e393fa966e27ec0ec">PartyBuff::PARTY_BUFF_FEATHER_FALL</a></div><div class="ttdeci">@ PARTY_BUFF_FEATHER_FALL</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfab38a7d30a704ca63b3588633b84bd3cb"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfab38a7d30a704ca63b3588633b84bd3cb">PartyBuff::PARTY_BUFF_IMMOLATION</a></div><div class="ttdeci">@ PARTY_BUFF_IMMOLATION</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfad1347271a05daa1b91766bbfc126aaa5"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfad1347271a05daa1b91766bbfc126aaa5">PartyBuff::PARTY_BUFF_RESIST_MIND</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_MIND</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfada02f62df8350b64963b91bb6f375900"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfada02f62df8350b64963b91bb6f375900">PartyBuff::PARTY_BUFF_RESIST_BODY</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_BODY</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfaf12dcaa9615ca6f21554c0926fc08d7b"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaf12dcaa9615ca6f21554c0926fc08d7b">PartyBuff::PARTY_BUFF_RESIST_AIR</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_AIR</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfaf486a0e8efe41131f061a62047c63725"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfaf486a0e8efe41131f061a62047c63725">PartyBuff::PARTY_BUFF_RESIST_WATER</a></div><div class="ttdeci">@ PARTY_BUFF_RESIST_WATER</div></div>
+<div class="ttc" id="aPartyEnums_8h_html_ac5d5059fad462cad214d66803c3f61cfafbf2f9a8ee141215419e9cdff7900419"><div class="ttname"><a href="PartyEnums_8h.html#ac5d5059fad462cad214d66803c3f61cfafbf2f9a8ee141215419e9cdff7900419">PartyBuff::PARTY_BUFF_SHIELD</a></div><div class="ttdeci">@ PARTY_BUFF_SHIELD</div></div>
 </div><!-- fragment -->
 </div>
 </div>

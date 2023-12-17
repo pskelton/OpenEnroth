@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EngineIocContainer_8h.html">Engine/EngineIocContainer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LocationFunctions_8h.html">Engine/Graphics/LocationFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
@@ -95,19 +95,16 @@ $(function() {
 <code>#include &quot;<a class="el" href="Items_8h.html">Engine/Objects/Items.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PriceCalculator_8h.html">Engine/PriceCalculator.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="AwardTable_8h.html">Engine/Tables/AwardTable.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MerchantTable_8h.html">Engine/Tables/MerchantTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIHouses_8h.html">GUI/UI/UIHouses.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Shops_8h.html">GUI/UI/Houses/Shops.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndexedArray_8h.html">Utility/IndexedArray.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -121,8 +118,8 @@ Functions</h2></td></tr>
 <tr class="separator:a80f9ff7d06d16069d56cda98f75331d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aca8686a043838ad0d29c872ad035059a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Shops_8cpp.html#aca8686a043838ad0d29c872ad035059a">addUniqueItemClasses</a> (const <a class="el" href="structITEM__VARIATION.html">ITEM_VARIATION</a> &amp;variation, std::vector&lt; <a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a> &gt; &amp;set)</td></tr>
 <tr class="separator:aca8686a043838ad0d29c872ad035059a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d495f60edd41fe0d4b1a92b7c00f5ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GUIDialogues_8h.html#afcd7885d9ec6583fa04d9e8f0f641d00">DIALOGUE_TYPE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Shops_8cpp.html#a6d495f60edd41fe0d4b1a92b7c00f5ac">getSkillLearnDualogueForItemClass</a> (<a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a> itemClass)</td></tr>
-<tr class="separator:a6d495f60edd41fe0d4b1a92b7c00f5ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb73b22377f2ebb4644da7d9eb9c4cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="GUIDialogues_8h.html#a5351d2555183e79b94e2c0fe6ca4e9a7">DialogueId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Shops_8cpp.html#a3cb73b22377f2ebb4644da7d9eb9c4cd">getSkillLearnDualogueForItemClass</a> (<a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a> itemClass)</td></tr>
+<tr class="separator:a3cb73b22377f2ebb4644da7d9eb9c4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -182,14 +179,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a6d495f60edd41fe0d4b1a92b7c00f5ac" name="a6d495f60edd41fe0d4b1a92b7c00f5ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d495f60edd41fe0d4b1a92b7c00f5ac">&#9670;&#160;</a></span>getSkillLearnDualogueForItemClass()</h2>
+<a id="a3cb73b22377f2ebb4644da7d9eb9c4cd" name="a3cb73b22377f2ebb4644da7d9eb9c4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb73b22377f2ebb4644da7d9eb9c4cd">&#9670;&#160;</a></span>getSkillLearnDualogueForItemClass()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="GUIDialogues_8h.html#afcd7885d9ec6583fa04d9e8f0f641d00">DIALOGUE_TYPE</a> getSkillLearnDualogueForItemClass </td>
+          <td class="memname"><a class="el" href="GUIDialogues_8h.html#a5351d2555183e79b94e2c0fe6ca4e9a7">DialogueId</a> getSkillLearnDualogueForItemClass </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a>&#160;</td>
           <td class="paramname"><em>itemClass</em></td><td>)</td>

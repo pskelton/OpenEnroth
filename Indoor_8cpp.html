@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -82,6 +82,7 @@ $(function() {
 <div class="textblock"><code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
 <code>#include &lt;algorithm&gt;</code><br />
 <code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
 <code>#include &quot;<a class="el" href="Engine_8h.html">Engine/Engine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="EngineGlobals_8h.html">Engine/EngineGlobals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
@@ -100,7 +101,8 @@ $(function() {
 <code>#include &quot;<a class="el" href="PortalFunctions_8h.html">Engine/Graphics/PortalFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Viewport_8h.html">Engine/Graphics/Viewport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
@@ -109,7 +111,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CompositeSnapshots_8h.html">Engine/Snapshots/CompositeSnapshots.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpellFxRenderer_8h.html">Engine/SpellFxRenderer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Timer_8h.html">Engine/Time/Timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
@@ -118,7 +120,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LodFormats_8h.html">Library/LodFormats/LodFormats.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FreeDeleter_8h.html">Utility/Memory/FreeDeleter.h</a>&quot;</code><br />
@@ -150,8 +151,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7d511837933d59eeeccfc25275a366d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07b99aba77bf867821578ea0151a2f64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a07b99aba77bf867821578ea0151a2f64">BLV_ProcessPartyActions</a> ()</td></tr>
 <tr class="separator:a07b99aba77bf867821578ea0151a2f64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5faa0b67b22698e38a93101e7f053709"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a5faa0b67b22698e38a93101e7f053709">switchDoorAnimation</a> (unsigned int uDoorID, int a2)</td></tr>
-<tr class="separator:a5faa0b67b22698e38a93101e7f053709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83a0cc251dff835bd5e8acd2b9e824ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a83a0cc251dff835bd5e8acd2b9e824ad">switchDoorAnimation</a> (unsigned int uDoorID, <a class="el" href="FaceEnums_8h.html#a2d021ad08a3c636ba315b6625bc5ef7b">DoorAction</a> a2)</td></tr>
+<tr class="separator:a83a0cc251dff835bd5e8acd2b9e824ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a30df2bace671fdb9c53d5955263ae2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a0a30df2bace671fdb9c53d5955263ae2">CalcDistPointToLine</a> (int x1, int y1, int x2, int y2, int x3, int y3)</td></tr>
 <tr class="separator:a0a30df2bace671fdb9c53d5955263ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37ce513996c958704b75ff9e7cdbef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a9b37ce513996c958704b75ff9e7cdbef">SpawnEncounterMonsters</a> (<a class="el" href="structMapInfo.html">MapInfo</a> *map_info, int enc_index)</td></tr>
@@ -173,8 +174,8 @@ Variables</h2></td></tr>
 <tr class="separator:a9b7a8d8a38babff41b0d4655a053ca75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0fb829e03a912f8cfee4431c86ddce9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structBLVRenderParams.html">BLVRenderParams</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ac0fb829e03a912f8cfee4431c86ddce9">pBLVRenderParams</a> = new <a class="el" href="structBLVRenderParams.html">BLVRenderParams</a></td></tr>
 <tr class="separator:ac0fb829e03a912f8cfee4431c86ddce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac71cece33674ac95b13fc989c632f7b4"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; uint16_t, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a004cd1d18d3718e56032d41f1038e1cb">MAP_FIRST</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a1a5ac6e24ef7236bc09e9d4d87cbc998">MAP_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ac71cece33674ac95b13fc989c632f7b4">pDoorSoundIDsByLocationID</a></td></tr>
-<tr class="separator:ac71cece33674ac95b13fc989c632f7b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5583ee0df8a0ec04e9aa41f75a3f466"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="SoundEnums_8h.html#ac4c17c8b309b1f9d7dc69286c18b871e">SoundId</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a004cd1d18d3718e56032d41f1038e1cb">MAP_FIRST</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a1a5ac6e24ef7236bc09e9d4d87cbc998">MAP_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#aa5583ee0df8a0ec04e9aa41f75a3f466">pDoorSoundIDsByLocationID</a></td></tr>
+<tr class="separator:aa5583ee0df8a0ec04e9aa41f75a3f466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7204929de76f2cc3e43a6f5e92875fb"><td class="memItemLeft" align="right" valign="top">std::array&lt; const char *, 11 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ad7204929de76f2cc3e43a6f5e92875fb">_4E6BDC_loc_names</a></td></tr>
 <tr class="separator:ad7204929de76f2cc3e43a6f5e92875fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -680,8 +681,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5faa0b67b22698e38a93101e7f053709" name="a5faa0b67b22698e38a93101e7f053709"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5faa0b67b22698e38a93101e7f053709">&#9670;&#160;</a></span>switchDoorAnimation()</h2>
+<a id="a83a0cc251dff835bd5e8acd2b9e824ad" name="a83a0cc251dff835bd5e8acd2b9e824ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83a0cc251dff835bd5e8acd2b9e824ad">&#9670;&#160;</a></span>switchDoorAnimation()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -695,7 +696,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="FaceEnums_8h.html#a2d021ad08a3c636ba315b6625bc5ef7b">DoorAction</a>&#160;</td>
           <td class="paramname"><em>a2</em>&#160;</td>
         </tr>
         <tr>
@@ -759,8 +760,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac71cece33674ac95b13fc989c632f7b4" name="ac71cece33674ac95b13fc989c632f7b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac71cece33674ac95b13fc989c632f7b4">&#9670;&#160;</a></span>pDoorSoundIDsByLocationID</h2>
+<a id="aa5583ee0df8a0ec04e9aa41f75a3f466" name="aa5583ee0df8a0ec04e9aa41f75a3f466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5583ee0df8a0ec04e9aa41f75a3f466">&#9670;&#160;</a></span>pDoorSoundIDsByLocationID</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -769,7 +770,7 @@ Variables</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;uint16_t, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a004cd1d18d3718e56032d41f1038e1cb">MAP_FIRST</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a1a5ac6e24ef7236bc09e9d4d87cbc998">MAP_LAST</a>&gt; pDoorSoundIDsByLocationID</td>
+          <td class="memname">constexpr <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt;<a class="el" href="SoundEnums_8h.html#ac4c17c8b309b1f9d7dc69286c18b871e">SoundId</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a004cd1d18d3718e56032d41f1038e1cb">MAP_FIRST</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a1a5ac6e24ef7236bc09e9d4d87cbc998">MAP_LAST</a>&gt; pDoorSoundIDsByLocationID</td>
         </tr>
       </table>
   </td>

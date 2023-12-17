@@ -19,8 +19,8 @@ var searchData=
   ['object_5fitem_16',['OBJECT_Item',['../Pid_8h.html#a842c5e2e69277690b064bf363c017980a3af58f70a502929f924f163b29fabe80',1,'Pid.h']]],
   ['object_5flight_17',['OBJECT_Light',['../Pid_8h.html#a842c5e2e69277690b064bf363c017980a0dd701ca27e7798838eec6ca18fef2bb',1,'Pid.h']]],
   ['object_5fnone_18',['OBJECT_None',['../Pid_8h.html#a842c5e2e69277690b064bf363c017980a0e8d7b92b7e50ab6ad6d87679170b55f',1,'Pid.h']]],
-  ['odm_5fface_5fid_5fmax_19',['ODM_FACE_ID_MAX',['../classPid.html#a94274d80a1fd2546f7e19d17fe17be50af003b40ec850d2f2767e0fe55e3b6950',1,'Pid']]],
-  ['odm_5fmodel_5fid_5fmax_20',['ODM_MODEL_ID_MAX',['../classPid.html#a94274d80a1fd2546f7e19d17fe17be50a2e45a51c6074d3098dc09ecf6a931741',1,'Pid']]],
+  ['odm_5fface_5fid_5fmax_19',['ODM_FACE_ID_MAX',['../classPid.html#a623abd366c1f020d40a5778117c893eaaf003b40ec850d2f2767e0fe55e3b6950',1,'Pid']]],
+  ['odm_5fmodel_5fid_5fmax_20',['ODM_MODEL_ID_MAX',['../classPid.html#a623abd366c1f020d40a5778117c893eaa2e45a51c6074d3098dc09ecf6a931741',1,'Pid']]],
   ['on_5fcast_5fcastinginprogress_21',['ON_CAST_CastingInProgress',['../CastSpellInfo_8h.html#a889063f13dc96df1a7636304713a022fa034bd3f73980fbe3e1d98c9a6b9fc9ef',1,'CastSpellInfo.h']]],
   ['on_5fcast_5fcastviascroll_22',['ON_CAST_CastViaScroll',['../CastSpellInfo_8h.html#a889063f13dc96df1a7636304713a022faa23a967ab05e51bb5202900c27f79d43',1,'CastSpellInfo.h']]],
   ['on_5fcast_5fnorecoveryspell_23',['ON_CAST_NoRecoverySpell',['../CastSpellInfo_8h.html#a889063f13dc96df1a7636304713a022fa11ccffebe8328732f49b0d1af5da3b49',1,'CastSpellInfo.h']]],
@@ -34,7 +34,5 @@ var searchData=
   ['opaque_5f1_31',['Opaque_1',['../structRenderBillboardD3D.html#aefe0c017fb0e2d7f0e2a603c19647016a00d02778174c82814778fa7901e20b17',1,'RenderBillboardD3D']]],
   ['opaque_5f2_32',['Opaque_2',['../structRenderBillboardD3D.html#aefe0c017fb0e2d7f0e2a603c19647016a4d4df4408fe95ae6374fb18413df479e',1,'RenderBillboardD3D']]],
   ['opaque_5f3_33',['Opaque_3',['../structRenderBillboardD3D.html#aefe0c017fb0e2d7f0e2a603c19647016a1a32bbc94bc5a45596a5418fa4d217a3',1,'RenderBillboardD3D']]],
-  ['open_34',['Open',['../structBLVDoor.html#a938bde09f5649e4d1982d7e51a31b832ac3bf447eabe632720a3aa1a7ce401274',1,'BLVDoor']]],
-  ['opening_35',['Opening',['../structBLVDoor.html#a938bde09f5649e4d1982d7e51a31b832a9bd99a0beea48f10663fc4a7d7a33140',1,'BLVDoor']]],
-  ['options_36',['Options',['../namespaceIo.html#a547e2ba6c6a5bb3a0b5987131e62a90cadae8ace18bdcbcc6ae5aece263e14fe8',1,'Io']]]
+  ['options_34',['Options',['../namespaceIo.html#a547e2ba6c6a5bb3a0b5987131e62a90cadae8ace18bdcbcc6ae5aece263e14fe8',1,'Io']]]
 ];

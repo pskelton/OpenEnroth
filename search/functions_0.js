@@ -9,7 +9,7 @@ var searchData=
   ['_5f42ecb5_5fcharacterattacksactor_6',['_42ECB5_CharacterAttacksActor',['../classCharacter.html#a79b60679dd5ab0f916a32aa85530d46d',1,'Character']]],
   ['_5f42fa66_5fdo_5fexplosive_5fimpact_7',['_42FA66_do_explosive_impact',['../classCharacter.html#a9fd09afd6aa3e1ddfe5f440d912ec128',1,'Character']]],
   ['_5f439df3_5fget_5fadditional_5fdamage_8',['_439DF3_get_additional_damage',['../structItemGen.html#a882fbd113ad3783c4ec27d760a815c0e',1,'ItemGen']]],
-  ['_5f43b3e0_5fcalcdamage_9',['_43B3E0_CalcDamage',['../classActor.html#a01d33a20d9b5a5f986f7dd22a635487e',1,'Actor']]],
+  ['_5f43b3e0_5fcalcdamage_9',['_43B3E0_CalcDamage',['../classActor.html#a16260386811b3f153944636e7f60b37e',1,'Actor']]],
   ['_5f43f55f_5fget_5fbillboard_5flight_5flevel_10',['_43F55F_get_billboard_light_level',['../LightmapBuilder_8cpp.html#ae9c04a501d9a011f780e3183b54a681d',1,'_43F55F_get_billboard_light_level(const RenderBillboard *a1, int uBaseLightLevel):&#160;LightmapBuilder.cpp'],['../LightmapBuilder_8h.html#ae9c04a501d9a011f780e3183b54a681d',1,'_43F55F_get_billboard_light_level(const RenderBillboard *a1, int uBaseLightLevel):&#160;LightmapBuilder.cpp']]],
   ['_5f44100d_5fshould_5falter_5fright_5fpanel_11',['_44100D_should_alter_right_panel',['../Engine_8cpp.html#a4c7c70729a3af9d53e1c4fe25879f2cb',1,'_44100D_should_alter_right_panel():&#160;Engine.cpp'],['../Engine_8h.html#a4c7c70729a3af9d53e1c4fe25879f2cb',1,'_44100D_should_alter_right_panel():&#160;Engine.cpp']]],
   ['_5f4418b6_12',['_4418B6',['../structActiveOverlayList.html#a7efc69b2f367053128474830d4074eb6',1,'ActiveOverlayList']]],
@@ -37,11 +37,11 @@ var searchData=
   ['_5f4a7c07_5fstun_5fspell_5ffx_34',['_4A7C07_stun_spell_fx',['../structSpellFxRenderer.html#aa3347d545ef33a03e121ea468eb45201',1,'SpellFxRenderer']]],
   ['_5f4a7f74_35',['_4A7F74',['../structSpellFxRenderer.html#a003d0ba7d2245a178a30356d2e56e3f6',1,'SpellFxRenderer']]],
   ['_5f4a806f_5fget_5fmass_5fdistortion_5fvalue_36',['_4A806F_get_mass_distortion_value',['../structSpellFxRenderer.html#ab1ecbb8f41ed659f88025c23ae01e616',1,'SpellFxRenderer']]],
-  ['_5f4a8bfc_5fprismatic_5flight_37',['_4A8BFC_prismatic_light',['../structSpellFxRenderer.html#aae709462f85e9dc5875ff66d529a175a',1,'SpellFxRenderer']]],
+  ['_5f4a8bfc_5fprismatic_5flight_37',['_4A8BFC_prismatic_light',['../structSpellFxRenderer.html#a37e6adb2e0e0edad2d5a25f6423a5d41',1,'SpellFxRenderer']]],
   ['_5fget_5fnormals_38',['_get_normals',['../structBLVFace.html#aef30e1e4346c3357d0b6b9e3fde1819e',1,'BLVFace']]],
   ['_5fselecttarget_39',['_SelectTarget',['../classActor.html#ae68fd9faf29b645a7664aabc93dd3076',1,'Actor']]],
-  ['_5fset_5f3d_5fmodelview_5fmatrix_40',['_set_3d_modelview_matrix',['../classRenderOpenGL.html#ab03449d5141fb82ddc324204883bab0c',1,'RenderOpenGL']]],
-  ['_5fset_5f3d_5fprojection_5fmatrix_41',['_set_3d_projection_matrix',['../classRenderOpenGL.html#a7d5ffdf04f796810a19224b04d0ff3ea',1,'RenderOpenGL']]],
-  ['_5fset_5fortho_5fmodelview_42',['_set_ortho_modelview',['../classRenderOpenGL.html#aba07e6fc89c29aa14955190507c90546',1,'RenderOpenGL']]],
-  ['_5fset_5fortho_5fprojection_43',['_set_ortho_projection',['../classRenderOpenGL.html#a5a8f73f1f24c87c1e20c0822c48757ea',1,'RenderOpenGL']]]
+  ['_5fset_5f3d_5fmodelview_5fmatrix_40',['_set_3d_modelview_matrix',['../classOpenGLRenderer.html#a1d172a631484c081e11bd66476b794cb',1,'OpenGLRenderer']]],
+  ['_5fset_5f3d_5fprojection_5fmatrix_41',['_set_3d_projection_matrix',['../classOpenGLRenderer.html#a801acf5bc0462a5b6d2553e5eb301d4c',1,'OpenGLRenderer']]],
+  ['_5fset_5fortho_5fmodelview_42',['_set_ortho_modelview',['../classOpenGLRenderer.html#a8517f3bab1f58716ae3879bd7a3f240c',1,'OpenGLRenderer']]],
+  ['_5fset_5fortho_5fprojection_43',['_set_ortho_projection',['../classOpenGLRenderer.html#aa516d829bf373f6bba13a3086bb1401d',1,'OpenGLRenderer']]]
 ];

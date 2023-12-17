@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['key_0',['key',['../classPlatformKeyEvent.html#a47843d2ef4759e9938f79913f8999f54',1,'PlatformKeyEvent::key()'],['../structhotkey.html#ad4f9fda682e5faab90e374c6786d7b20',1,'hotkey::key()'],['../structEventTraceConfigLine.html#acf793069dacf36fdddcca01cfdfb1e35',1,'EventTraceConfigLine::key()'],['../classPlatformGamepadKeyEvent.html#a58f0340dfaa5b641a40cedd625b2eb20',1,'PlatformGamepadKeyEvent::key()']]],
+  ['key_0',['key',['../structConfigPatchEntry.html#a592bb0e202f7e96833e2060c86dd5cb7',1,'ConfigPatchEntry::key()'],['../structhotkey.html#ad4f9fda682e5faab90e374c6786d7b20',1,'hotkey::key()'],['../classPlatformGamepadKeyEvent.html#a58f0340dfaa5b641a40cedd625b2eb20',1,'PlatformGamepadKeyEvent::key()'],['../classPlatformKeyEvent.html#a47843d2ef4759e9938f79913f8999f54',1,'PlatformKeyEvent::key()']]],
   ['key_5fmap_5fconflicted_1',['key_map_conflicted',['../KeyboardActionMapping_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0',1,'key_map_conflicted():&#160;GameMenu.cpp'],['../UIGame_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0',1,'key_map_conflicted():&#160;GameMenu.cpp'],['../GameMenu_8cpp.html#ac779193a7bd296fbdcabc8799a780aa0',1,'key_map_conflicted():&#160;GameMenu.cpp']]],
   ['keybindings_2',['keybindings',['../classGameConfig.html#ade821648220780a0c33bf1daef3fb7d9',1,'GameConfig']]],
   ['keyboard_5finput_5fstatus_3',['keyboard_input_status',['../classGUIWindow.html#a136d91cf325d21d59c8ad9b9c496912e',1,'GUIWindow']]],
@@ -8,7 +8,7 @@ var searchData=
   ['keyboardinputhandler_5',['keyboardInputHandler',['../classEngine.html#a13713fd89015a3306a2520fa3967cdba',1,'Engine::keyboardInputHandler()'],['../KeyboardInputHandler_8cpp.html#aca0721632e060229cd5befb50bb05a65',1,'keyboardInputHandler():&#160;KeyboardInputHandler.cpp'],['../KeyboardInputHandler_8h.html#aca0721632e060229cd5befb50bb05a65',1,'keyboardInputHandler():&#160;KeyboardInputHandler.cpp']]],
   ['keyboardinteractiondepth_6',['KeyboardInteractionDepth',['../classGameConfig_1_1Gameplay.html#ab1fd1ec867e46cf198a404c6fe944074',1,'GameConfig::Gameplay']]],
   ['keyboardpagenum_7',['KeyboardPageNum',['../mm7__data_8cpp.html#a7cf63c5278459a867027ed4eaf64cdfc',1,'KeyboardPageNum():&#160;mm7_data.cpp'],['../mm7__data_8h.html#a7cf63c5278459a867027ed4eaf64cdfc',1,'KeyboardPageNum():&#160;mm7_data.cpp']]],
-  ['keydelaytimer_8',['keydelaytimer',['../classIo_1_1KeyboardInputHandler.html#a0a8abf92e3c5f9a82cc6be1b3259682d',1,'Io::KeyboardInputHandler']]],
+  ['keydelaytimer_8',['keydelaytimer',['../classIo_1_1KeyboardInputHandler.html#a152da4ffbda25767855c45f1894827de',1,'Io::KeyboardInputHandler']]],
   ['keymappingparams_9',['keyMappingParams',['../KeyboardActionMapping_8cpp.html#a492680900722e89bbe10e67c802ee43e',1,'KeyboardActionMapping.cpp']]],
   ['keytogglemap_10',['keyToggleMap',['../classIo_1_1KeyboardActionMapping.html#a6bec1fe1388d4246402e7351ef5cc070',1,'Io::KeyboardActionMapping']]]
 ];

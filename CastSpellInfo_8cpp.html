@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -89,30 +89,32 @@ $(function() {
 <code>#include &quot;<a class="el" href="Decoration_8h.html">Engine/Graphics/Level/Decoration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Outdoor_8h.html">Engine/Graphics/Outdoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Viewport_8h.html">Engine/Graphics/Viewport.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="NPC_8h.html">Engine/Objects/NPC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CharacterEnumFunctions_8h.html">Engine/Objects/CharacterEnumFunctions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MonsterEnumFunctions_8h.html">Engine/Objects/MonsterEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OurMath_8h.html">Engine/OurMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpellFxRenderer_8h.html">Engine/SpellFxRenderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ItemTable_8h.html">Engine/Tables/ItemTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IconFrameTable_8h.html">Engine/Tables/IconFrameTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Timer_8h.html">Engine/Time/Timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TurnEngine_8h.html">Engine/TurnEngine/TurnEngine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Spells_8h.html">Engine/Spells/Spells.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SpellEnumFunctions_8h.html">Engine/Spells/SpellEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIGame_8h.html">GUI/UI/UIGame.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UISpell_8h.html">GUI/UI/UISpell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TrigLut_8h.html">Utility/Math/TrigLut.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -120,8 +122,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab5fadbcc3239b59c41e7fee991449c0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19ec3fa409280bffd996c0ee004e5b2d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#a19ec3fa409280bffd996c0ee004e5b2d">spellFailed</a> (<a class="el" href="structCastSpellInfo.html">CastSpellInfo</a> *pCastSpell, int error_str_id)</td></tr>
 <tr class="separator:a19ec3fa409280bffd996c0ee004e5b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9de5b080f9428f861e8b62fcdcacd48"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#ad9de5b080f9428f861e8b62fcdcacd48">setSpellRecovery</a> (<a class="el" href="structCastSpellInfo.html">CastSpellInfo</a> *pCastSpell, int recoveryTime)</td></tr>
-<tr class="separator:ad9de5b080f9428f861e8b62fcdcacd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d4f43b9b39c3788ffd6b8444a5b311"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#a58d4f43b9b39c3788ffd6b8444a5b311">setSpellRecovery</a> (<a class="el" href="structCastSpellInfo.html">CastSpellInfo</a> *pCastSpell, <a class="el" href="classDuration.html">Duration</a> recoveryTime)</td></tr>
+<tr class="separator:a58d4f43b9b39c3788ffd6b8444a5b311"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77555be04fd3fd61005987948596319d"><td class="memItemLeft" align="right" valign="top">static size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#a77555be04fd3fd61005987948596319d">pushCastSpellInfo</a> (<a class="el" href="SpellEnums_8h.html#a44a2b004ec19c525f902f08cd7b7ef90">SpellId</a> uSpellID, int casterIndex, <a class="el" href="classCombinedSkillValue.html">CombinedSkillValue</a> skill_level, SpellCastFlags uFlags, int overrideSoundId)</td></tr>
 <tr class="separator:a77555be04fd3fd61005987948596319d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28f6d8f77d31169894ce5a050b01f2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#ae28f6d8f77d31169894ce5a050b01f2b">pushSpellOrRangedAttack</a> (<a class="el" href="SpellEnums_8h.html#a44a2b004ec19c525f902f08cd7b7ef90">SpellId</a> spell, int casterIndex, <a class="el" href="classCombinedSkillValue.html">CombinedSkillValue</a> skill_value, SpellCastFlags flags, int overrideSoundId)</td></tr>
@@ -143,6 +145,8 @@ Variables</h2></td></tr>
 <tr class="separator:a6c5ea2872dcbe8ac53c2f24f907446a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dccff3a63c7ab1c82962e6278c4b2d1"><td class="memItemLeft" align="right" valign="top">static std::array&lt; <a class="el" href="structCastSpellInfo.html">CastSpellInfo</a>, <a class="el" href="CastSpellInfo_8cpp.html#a6c5ea2872dcbe8ac53c2f24f907446a6">CAST_SPELL_QUEUE_SIZE</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#a3dccff3a63c7ab1c82962e6278c4b2d1">pCastSpellInfo</a></td></tr>
 <tr class="separator:a3dccff3a63c7ab1c82962e6278c4b2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c3beadd8dd6324aadf21dd0b4c8e11b"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CastSpellInfo_8cpp.html#a6c3beadd8dd6324aadf21dd0b4c8e11b">SPELL_FAILURE_RECOVERY_TIME_ON_CURSE</a> = 100_ticks</td></tr>
+<tr class="separator:a6c3beadd8dd6324aadf21dd0b4c8e11b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ab5fadbcc3239b59c41e7fee991449c0a" name="ab5fadbcc3239b59c41e7fee991449c0a"></a>
@@ -397,8 +401,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad9de5b080f9428f861e8b62fcdcacd48" name="ad9de5b080f9428f861e8b62fcdcacd48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9de5b080f9428f861e8b62fcdcacd48">&#9670;&#160;</a></span>setSpellRecovery()</h2>
+<a id="a58d4f43b9b39c3788ffd6b8444a5b311" name="a58d4f43b9b39c3788ffd6b8444a5b311"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d4f43b9b39c3788ffd6b8444a5b311">&#9670;&#160;</a></span>setSpellRecovery()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -415,7 +419,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="classDuration.html">Duration</a>&#160;</td>
           <td class="paramname"><em>recoveryTime</em>&#160;</td>
         </tr>
         <tr>
@@ -546,6 +550,28 @@ Variables</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c3beadd8dd6324aadf21dd0b4c8e11b" name="a6c3beadd8dd6324aadf21dd0b4c8e11b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3beadd8dd6324aadf21dd0b4c8e11b">&#9670;&#160;</a></span>SPELL_FAILURE_RECOVERY_TIME_ON_CURSE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classDuration.html">Duration</a> SPELL_FAILURE_RECOVERY_TIME_ON_CURSE = 100_ticks</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

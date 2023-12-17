@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -89,8 +89,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="Camera_8h.html">Engine/Graphics/Camera.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecalBuilder_8h.html">Engine/Graphics/DecalBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecorationList_8h.html">Engine/Graphics/DecorationList.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRenderFactory_8h.html">Engine/Graphics/IRenderFactory.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Decoration_8h.html">Engine/Graphics/Level/Decoration.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LightmapBuilder_8h.html">Engine/Graphics/LightmapBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LightsStack_8h.html">Engine/Graphics/LightsStack.h</a>&quot;</code><br />
@@ -115,8 +114,10 @@ $(function() {
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="NPC_8h.html">Engine/Objects/NPC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MonsterEnumFunctions_8h.html">Engine/Objects/MonsterEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OurMath_8h.html">Engine/OurMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SaveLoad_8h.html">Engine/SaveLoad.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TableSerialization_8h.html">Engine/Snapshots/TableSerialization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpellFxRenderer_8h.html">Engine/SpellFxRenderer.h</a>&quot;</code><br />
@@ -134,12 +135,11 @@ $(function() {
 <code>#include &quot;<a class="el" href="TransitionTable_8h.html">Engine/Tables/TransitionTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MerchantTable_8h.html">Engine/Tables/MerchantTable.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MessageScrollTable_8h.html">Engine/Tables/MessageScrollTable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Time_8h.html">Engine/Time.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Timer_8h.html">Engine/Time/Timer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AttackList_8h.html">Engine/AttackList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameResourceManager_8h.html">Engine/GameResourceManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIFont_8h.html">GUI/GUIFont.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIProgressBar_8h.html">GUI/GUIProgressBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
@@ -150,7 +150,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="SoundList_8h.html">Media/Audio/SoundList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MediaPlayer_8h.html">Media/MediaPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BuildInfo_8h.html">Library/BuildInfo/BuildInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DataPath_8h.html">Utility/DataPath.h</a>&quot;</code><br />
@@ -199,8 +198,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab52e2625929cd50898334ffbbf15702b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4658b592373a5425bedc65fe7647cc93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a4658b592373a5425bedc65fe7647cc93">RegeneratePartyHealthMana</a> ()</td></tr>
 <tr class="separator:a4658b592373a5425bedc65fe7647cc93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd42e78492ad71ee95e9be01c4c48e79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structGameTime.html">GameTime</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#afd42e78492ad71ee95e9be01c4c48e79">timeUntilDawn</a> ()</td></tr>
-<tr class="separator:afd42e78492ad71ee95e9be01c4c48e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e89a8a5f7ba31f4f3e97f7c959af91b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a2e89a8a5f7ba31f4f3e97f7c959af91b">timeUntilDawn</a> ()</td></tr>
+<tr class="separator:a2e89a8a5f7ba31f4f3e97f7c959af91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdc2a70992101807c27947c797e599d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#abcdc2a70992101807c27947c797e599d">initLevelStrings</a> (const <a class="el" href="classBlob.html">Blob</a> &amp;blob)</td></tr>
 <tr class="separator:abcdc2a70992101807c27947c797e599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ec9273d2cd901e48e54eedaecd87b1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a1ec9273d2cd901e48e54eedaecd87b1b">Level_LoadEvtAndStr</a> (const std::string &amp;pLevelName)</td></tr>
@@ -711,14 +710,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="afd42e78492ad71ee95e9be01c4c48e79" name="afd42e78492ad71ee95e9be01c4c48e79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afd42e78492ad71ee95e9be01c4c48e79">&#9670;&#160;</a></span>timeUntilDawn()</h2>
+<a id="a2e89a8a5f7ba31f4f3e97f7c959af91b" name="a2e89a8a5f7ba31f4f3e97f7c959af91b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e89a8a5f7ba31f4f3e97f7c959af91b">&#9670;&#160;</a></span>timeUntilDawn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structGameTime.html">GameTime</a> timeUntilDawn </td>
+          <td class="memname"><a class="el" href="classDuration.html">Duration</a> timeUntilDawn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;f8781a7</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
    </div>
   </td>
  </tr>
@@ -87,16 +87,20 @@ $(function() {
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="CastSpellInfo_8h.html">Engine/Spells/CastSpellInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Spells_8h.html">Engine/Spells/Spells.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SpellEnumFunctions_8h.html">Engine/Spells/SpellEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecalBuilder_8h.html">Engine/Graphics/DecalBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Indoor_8h.html">Engine/Graphics/Indoor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Engine_2Graphics_2Image_8h.html">Engine/Graphics/Image.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="IRender_8h.html">Engine/Graphics/IRender.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Renderer_8h.html">Engine/Graphics/Renderer/Renderer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Localization_8h.html">Engine/Localization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Random_8h.html">Engine/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Actor_8h.html">Engine/Objects/Actor.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ObjectList_8h.html">Engine/Objects/ObjectList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpriteObject_8h.html">Engine/Objects/SpriteObject.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="NPC_8h.html">Engine/Objects/NPC.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="CharacterEnumFunctions_8h.html">Engine/Objects/CharacterEnumFunctions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="MonsterEnumFunctions_8h.html">Engine/Objects/MonsterEnumFunctions.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="OurMath_8h.html">Engine/OurMath.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Party_8h.html">Engine/Party.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="PriceCalculator_8h.html">Engine/PriceCalculator.h</a>&quot;</code><br />
@@ -119,7 +123,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="UIMessageScroll_8h.html">GUI/UI/UIMessageScroll.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UISpell_8h.html">GUI/UI/UISpell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AutonotesBook_8h.html">GUI/UI/Books/AutonotesBook.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Random_8h.html">Library/Random/Random.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MemSet_8h.html">Utility/Memory/MemSet.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FixPoint_8h.html">Utility/Math/FixPoint.h</a>&quot;</code><br />
@@ -142,8 +145,8 @@ Functions</h2></td></tr>
 <tr class="separator:abb181cd130e631d1c79d1d3507bcfe6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b5a311f8164e95ad03d064553db1223"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Character_8cpp.html#a7b5a311f8164e95ad03d064553db1223">IsDwarfPresentInParty</a> (bool a1)</td></tr>
 <tr class="separator:a7b5a311f8164e95ad03d064553db1223"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0139dc0c81c55adb6d387642ebb7a7a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Character_8cpp.html#a0139dc0c81c55adb6d387642ebb7a7a7">DamageCharacterFromMonster</a> (<a class="el" href="classPid.html">Pid</a> uObjID, <a class="el" href="ActorEnums_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a> dmgSource, <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> *pPos, signed int targetchar)</td></tr>
-<tr class="separator:a0139dc0c81c55adb6d387642ebb7a7a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37829c4ed82fc7b937eb871cd9bfee7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Character_8cpp.html#a37829c4ed82fc7b937eb871cd9bfee7c">DamageCharacterFromMonster</a> (<a class="el" href="classPid.html">Pid</a> uObjID, <a class="el" href="ActorEnums_8h.html#adf8438223a48250b5b8f0f6dfa470a10">ActorAbility</a> dmgSource, <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> *pPos, signed int targetchar)</td></tr>
+<tr class="separator:a37829c4ed82fc7b937eb871cd9bfee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -243,8 +246,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a0139dc0c81c55adb6d387642ebb7a7a7" name="a0139dc0c81c55adb6d387642ebb7a7a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0139dc0c81c55adb6d387642ebb7a7a7">&#9670;&#160;</a></span>DamageCharacterFromMonster()</h2>
+<a id="a37829c4ed82fc7b937eb871cd9bfee7c" name="a37829c4ed82fc7b937eb871cd9bfee7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37829c4ed82fc7b937eb871cd9bfee7c">&#9670;&#160;</a></span>DamageCharacterFromMonster()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -258,7 +261,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="ActorEnums_8h.html#a224eb67ac920c1beeacc7956d5c95fa2">ABILITY_INDEX</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="ActorEnums_8h.html#adf8438223a48250b5b8f0f6dfa470a10">ActorAbility</a>&#160;</td>
           <td class="paramname"><em>dmgSource</em>, </td>
         </tr>
         <tr>
