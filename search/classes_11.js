@@ -24,7 +24,7 @@ var searchData=
   ['tiledesc_5fmm7_21',['TileDesc_MM7',['../structTileDesc__MM7.html',1,'']]],
   ['tiletable_22',['TileTable',['../structTileTable.html',1,'']]],
   ['time_23',['Time',['../classTime.html',1,'']]],
-  ['timer_24',['Timer',['../structTimer.html',1,'']]],
+  ['timer_24',['Timer',['../classTimer.html',1,'']]],
   ['timer_5fmm7_25',['Timer_MM7',['../structTimer__MM7.html',1,'']]],
   ['townportaldata_26',['TownPortalData',['../structTownPortalData.html',1,'']]],
   ['tracingrandomengine_27',['TracingRandomEngine',['../classTracingRandomEngine.html',1,'']]],
@@ -35,6 +35,7 @@ var searchData=
   ['triblob_32',['TriBlob',['../structTriBlob.html',1,'']]],
   ['trigtablelookup_33',['TrigTableLookup',['../classTrigTableLookup.html',1,'']]],
   ['turnbased_5fqueueelem_34',['TurnBased_QueueElem',['../structTurnBased__QueueElem.html',1,'']]],
-  ['twodverts_35',['twodverts',['../structtwodverts.html',1,'']]],
-  ['typedhandler_36',['TypedHandler',['../classdetail_1_1TypedHandler.html',1,'detail']]]
+  ['turnbasedoverlay_35',['TurnBasedOverlay',['../classTurnBasedOverlay.html',1,'']]],
+  ['twodverts_36',['twodverts',['../structtwodverts.html',1,'']]],
+  ['typedhandler_37',['TypedHandler',['../classdetail_1_1TypedHandler.html',1,'detail']]]
 ];

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6116f06</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;fbec39b</span>
    </div>
   </td>
  </tr>
@@ -274,7 +274,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3b128536c6ff0addaa9175d4f009b613"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91fd59cbc6ea74a86272e3267cbbb18b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a91fd59cbc6ea74a86272e3267cbbb18b">sectorId</a> = 0</td></tr>
 <tr class="separator:a91fd59cbc6ea74a86272e3267cbbb18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93a7dfcbf61756197cd35b7798e08611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a93a7dfcbf61756197cd35b7798e08611">currentActionLength</a> = <a class="el" href="classDuration.html#a3c45d1cc69ecf64cd63180ea2b1eddae">Duration::zero</a>()</td></tr>
+<tr class="memitem:a93a7dfcbf61756197cd35b7798e08611"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a93a7dfcbf61756197cd35b7798e08611">currentActionLength</a> = 0_ticks</td></tr>
 <tr class="separator:a93a7dfcbf61756197cd35b7798e08611"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad1f2f112bda57eaba654d3a453b6cd62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#ad1f2f112bda57eaba654d3a453b6cd62">initialPosition</a></td></tr>
 <tr class="separator:ad1f2f112bda57eaba654d3a453b6cd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -288,7 +288,7 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a2aae526115623850988c9e9f49e35384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9c85cc3da54c2c1b011acbc8d6a07c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="ItemEnums_8h.html#a238bdd793c3bf80cc1530e03ba5eca0b">ItemId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#ad9c85cc3da54c2c1b011acbc8d6a07c6">carriedItemId</a> = <a class="el" href="ItemEnums_8h.html#a238bdd793c3bf80cc1530e03ba5eca0bac038a004f35849b7d2c38e5ba310f384">ITEM_NULL</a></td></tr>
 <tr class="separator:ad9c85cc3da54c2c1b011acbc8d6a07c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf13583e15013dfb03b0e5afeb87a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#aeaf13583e15013dfb03b0e5afeb87a1d">currentActionTime</a> = <a class="el" href="classDuration.html#a3c45d1cc69ecf64cd63180ea2b1eddae">Duration::zero</a>()</td></tr>
+<tr class="memitem:aeaf13583e15013dfb03b0e5afeb87a1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#aeaf13583e15013dfb03b0e5afeb87a1d">currentActionTime</a> = 0_ticks</td></tr>
 <tr class="separator:aeaf13583e15013dfb03b0e5afeb87a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdfff323b55c9c012e9cc2d833121c6e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; uint16_t, <a class="el" href="ActorEnums_8h.html#a00c665f8db82f6bfeaaa22bcff8e0ab7a4b5d426e4f184e669ffc2862f66ab8a6">ANIM_First</a>, <a class="el" href="ActorEnums_8h.html#a00c665f8db82f6bfeaaa22bcff8e0ab7ad52e311f8082e7c1cb13b179d4eb04d5">ANIM_Last</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#abdfff323b55c9c012e9cc2d833121c6e">spriteIds</a> = {{}}</td></tr>
 <tr class="separator:abdfff323b55c9c012e9cc2d833121c6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -312,8 +312,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a876dda4f05b4c42a6700872c9edc4202"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f869696b3100956fa6f7bdd3ea175b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a09f869696b3100956fa6f7bdd3ea175b">donebloodsplat</a> { false }</td></tr>
 <tr class="separator:a09f869696b3100956fa6f7bdd3ea175b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88e12a03cf523d346b5671e9680b8507"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a88e12a03cf523d346b5671e9680b8507">massDistortionTime</a> = -1</td></tr>
-<tr class="separator:a88e12a03cf523d346b5671e9680b8507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a400dd46edda76d915699626106465e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDuration.html">Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a8a400dd46edda76d915699626106465e">massDistortionTime</a></td></tr>
+<tr class="separator:a8a400dd46edda76d915699626106465e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2a0ff4335a1ee9096df90f288c026c8b" name="a2a0ff4335a1ee9096df90f288c026c8b"></a>
@@ -2865,7 +2865,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDuration.html">Duration</a> Actor::currentActionLength = <a class="el" href="classDuration.html#a3c45d1cc69ecf64cd63180ea2b1eddae">Duration::zero</a>()</td>
+          <td class="memname"><a class="el" href="classDuration.html">Duration</a> Actor::currentActionLength = 0_ticks</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2879,7 +2879,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classDuration.html">Duration</a> Actor::currentActionTime = <a class="el" href="classDuration.html#a3c45d1cc69ecf64cd63180ea2b1eddae">Duration::zero</a>()</td>
+          <td class="memname"><a class="el" href="classDuration.html">Duration</a> Actor::currentActionTime = 0_ticks</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3012,14 +3012,14 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a88e12a03cf523d346b5671e9680b8507" name="a88e12a03cf523d346b5671e9680b8507"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88e12a03cf523d346b5671e9680b8507">&#9670;&#160;</a></span>massDistortionTime</h2>
+<a id="a8a400dd46edda76d915699626106465e" name="a8a400dd46edda76d915699626106465e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a400dd46edda76d915699626106465e">&#9670;&#160;</a></span>massDistortionTime</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Actor::massDistortionTime = -1</td>
+          <td class="memname"><a class="el" href="classDuration.html">Duration</a> Actor::massDistortionTime</td>
         </tr>
       </table>
 </div><div class="memdoc">
