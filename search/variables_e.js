@@ -68,7 +68,7 @@ var searchData=
   ['num_5fparticles_65',['num_particles',['../structTrailParticleGenerator.html#afa202247b6680c63642c8b0c543ef127',1,'TrailParticleGenerator']]],
   ['numarcomageloses_66',['numArcomageLoses',['../structParty__MM7.html#a950fa8ad6a2ce05b665f48cde07e18e5',1,'Party_MM7']]],
   ['numarcomagewins_67',['numArcomageWins',['../structParty__MM7.html#a41893a544eac7b8157e4ad4aae4efc69',1,'Party_MM7']]],
-  ['numarenawins_68',['numArenaWins',['../structParty__MM7.html#aaf2a64216317a4e32852737f6ffcb55f',1,'Party_MM7']]],
+  ['numarenawins_68',['numArenaWins',['../structParty__MM7.html#ae224e848b66c3985df1749ee60b3bb58',1,'Party_MM7']]],
   ['numarmageddoncasts_69',['numArmageddonCasts',['../structPlayer__MM7.html#a572e4034f01bcc06043ddad54fffaade',1,'Player_MM7']]],
   ['numbountiescollected_70',['numBountiesCollected',['../structParty__MM7.html#a6118876a385bf439b83cf33741b89ead',1,'Party_MM7']]],
   ['numbspverts_71',['numBSPverts',['../OpenGLRenderer_8cpp.html#a3b5a2d36c725b66030e4f39f7869bb00',1,'OpenGLRenderer.cpp']]],
