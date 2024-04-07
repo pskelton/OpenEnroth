@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;46d013e</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;bbe9de6</span>
    </div>
   </td>
  </tr>
@@ -155,6 +155,7 @@ Coding style</h1>
 <li>Make your code speak for itself when it comes to ownership. If a function takes ownership of one of its parameters, it should take <code>std::unique_ptr</code> by value. If it allocates its result and passes ownership to the caller, then it should return <code>std::unique_ptr</code>.</li>
 <li>Use an <code>int</code> unless you need something else. Don’t try to avoid negative values by using <code>unsigned</code>, this implies many changes to the usual behavior of integers and can be a source of bugs. See a section in <a href="https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#arithmetic">core guidelines</a> for more info. However, don't overdo it, use <code>size_t</code> for indexing into STL containers.</li>
 <li>We generally refrain from using namespaces, and we consider the approach where namespace hierarchy follows the directory structure an antipattern that might make sense in other languages (e.g. Java), but not in C++. Besides, OpenEnroth is a relatively small codebase and doesn't need the measures advocated by the Google style guide to prevent name clashes. <a class="el" href="classException.html">Exception</a> to this rule is <code>namespace detail</code> that you're encouraged to use to hide implementation details and to prevent cluttering of the global namespace.</li>
+<li>For string function parameters, use <code>std::string_view</code> passed by value. In general, you shouldn't bother optimizing code paths where you might save an allocation by moving in an <code>std::string</code> or passing it by const reference, the performance benefits are almost always negligible. But feel free to use <code>std::string</code> or <code>const std::string &amp;</code> where it makes your code simpler (e.g. by avoiding jumping through hoops when converting from <code>std::string_view</code> to <code>std::string</code>).</li>
 </ul>
 <p >Error handling:</p><ul>
 <li>Use <code>assert</code>s to check for coding errors and conditions that must never be false, no matter how the program is run.</li>
@@ -192,7 +193,7 @@ Testing</h1>
 <li>Rename them into something more suiting (e.g. <code>issue_XXX.json</code> and <code>issue_XXX.mm7</code>) and create a PR to the <a href="https://github.com/OpenEnroth/OpenEnroth_TestData">OpenEnroth_TestData</a> repo.</li>
 <li>Once it's merged update the reference tag in the corresponding <a href="https://github.com/OpenEnroth/OpenEnroth/blob/master/test/Bin/GameTest/CMakeLists.txt">CMakeLists.txt</a> in the main repo.</li>
 <li>Create a new test case in one of the game test files in <a href="https://github.com/OpenEnroth/OpenEnroth/tree/master/test/Bin/GameTest">the game tests folder</a>.</li>
-<li>Use <code><a class="el" href="classTestController.html#aa95b8bebe6e4b34a470d20c3ef0688bb">TestController::playTraceFromTestData</a></code> to play back your trace, and add the necessary checks around it.</li>
+<li>Use <code><a class="el" href="classTestController.html#af9fcbb7e65a9e0c5c0798c3f09790011">TestController::playTraceFromTestData</a></code> to play back your trace, and add the necessary checks around it.</li>
 </ul>
 <p >If you need to record a trace with non-standard FPS (e.g. if an issue doesn't reproduce on lower FPS values), set <code>debug.trace_frame_time_ms</code> config value before starting OpenEnroth for recording.</p>
 <p >By default, traces are recorded with a random number generator that's just returning a sequence of natural numbers. If you want to record a trace using the default Mersenne Twister random number generator, set <code>debug.trace_random_engine</code> config value to <code>mersenne_twister</code> before starting OpenEnroth for recording.</p>
@@ -200,9 +201,21 @@ Testing</h1>
 <p >To run all game tests locally, set <code>OPENENROTH_MM7_PATH</code> environment variable to point to the location of the game assets, then build <code><a class="el" href="classGameTest.html">GameTest</a></code> cmake target. Alternatively, you can build <code>OpenEnroth_GameTest</code>, and run it manually, passing the paths to both game assets and the test data via command line.</p>
 <p >Changing game logic might result in failures in game tests because they check random number generator state after each frame, and this will show as <code>Random state desynchronized when playing back trace</code> message in test logs. This is intentional – we don't want accidental game logic changes. If the change was actually intentional, then you might need to either retrace or re-record the traces for the failing tests. To retrace, run <code>OpenEnroth retrace &lt;path-to-trace.json&gt;</code>. Note that you can pass multiple trace paths to this command.</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
+Console Commands</h1>
+<p >The game features a console capable of executing various Lua script commands. To activate this feature, please follow these steps:</p>
+<ol type="1">
+<li>Copy the <code>resources/ui</code> folder to the game's installation directory.</li>
+<li>Launch the game.</li>
+<li>Begin by loading an existing game or creating a new one.</li>
+<li>Once in-game, press the <code>~</code> key to open the DebugView.</li>
+<li>If the Lua scripts have been loaded correctly, you'll find a button labeled <code>Console</code>.</li>
+<li>Click on the <code>Console</code> button to reveal the command-line interface at the bottom left corner of the screen.</li>
+</ol>
+<p >Currently, the console is only available while in-game.</p>
+<h1><a class="anchor" id="autotoc_md8"></a>
 Additional Resources</h1>
 <p >Old event decompiler and IDB files can be found <a href="https://www.dropbox.com/sh/if4u3lphn633oit/AADUYMxNcrkAU6epJ50RskyXa?dl=0">here</a>. Feel free to ping <code>zipi#6029</code> on Discord for more info.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md9"></a>
 Support</h1>
 <p >Still having problems? Ask for help on our discord! <a href="https://discord.gg/jRCyPtq"><img src="https://img.shields.io/badge/chat-on%20discord-green.svg" alt="" style="pointer-events: none;" class="inline"/></a> </p>
 </div></div><!-- contents -->
