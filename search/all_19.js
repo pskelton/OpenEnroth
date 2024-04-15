@@ -8,7 +8,7 @@ var searchData=
   ['yawgranularity_5',['yawGranularity',['../structParty__MM7.html#ada9767ba776b4e94084105a957acf819',1,'Party_MM7']]],
   ['yawrotationspeed_6',['yawRotationSpeed',['../structParty__MM7.html#a5a415838ba6ba927fdd537fc42ec433b',1,'Party_MM7']]],
   ['year_7',['year',['../structCivilTime.html#a2e3c51d4d8b362e1f9a6015d0571f1f3',1,'CivilTime']]],
-  ['years_8',['years',['../structLongCivilDuration.html#a2dda9e14f78e8bd04caa41c8533f8928',1,'LongCivilDuration']]],
+  ['years_8',['years',['../structLongCivilDuration.html#a2dda9e14f78e8bd04caa41c8533f8928',1,'LongCivilDuration::years()'],['../classDuration.html#acfbb9366bc9908aae78304a1587b2586',1,'Duration::years()']]],
   ['yell_9',['Yell',['../classGameConfig_1_1Gamepad.html#a9ddbf0b834ae4eac40e7a2b0072c4992',1,'GameConfig::Gamepad::Yell()'],['../classGameConfig_1_1Keybindings.html#a8042ccfbe0fc5667eca414014cff4514',1,'GameConfig::Keybindings::Yell()']]],
   ['yell_10',['yell',['../structParty.html#ad16be520243d09fe59040f85842c4e3c',1,'Party']]],
   ['yell_11',['Yell',['../namespaceIo.html#a547e2ba6c6a5bb3a0b5987131e62a90ca13a7a219f971512ebec62e4b689ab603',1,'Io']]],
