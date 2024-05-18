@@ -24,5 +24,11 @@ set(IMGUI_HEADERS
   )
 
 add_library(imgui STATIC ${IMGUI_SOURCES} ${IMGUI_HEADERS})
-target_link_libraries(imgui PRIVATE SDL2::SDL2OE GLESv3)
+target_link_libraries(imgui PRIVATE SDL2::SDL2OE)
+
+# TODO(pskelton): Ideally we should use our GLAD loader for this
+if(OE_BUILD_PLATFORM STREQUAL "android")
+    target_link_libraries(imgui PRIVATE GLESv3)
+endif()
+
 target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}/imgui)
