@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;c0bbb1c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2310288</span>
    </div>
   </td>
  </tr>
@@ -87,7 +87,6 @@ $(function() {
 <code>#include &quot;<a class="el" href="EngineGlobals_8h.html">Engine/EngineGlobals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AssetsManager_8h.html">Engine/AssetsManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Processor_8h.html">Engine/Events/Processor.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="RawEvent_8h.html">Engine/Events/RawEvent.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Camera_8h.html">Engine/Graphics/Camera.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecalBuilder_8h.html">Engine/Graphics/DecalBuilder.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DecorationList_8h.html">Engine/Graphics/DecorationList.h</a>&quot;</code><br />
@@ -141,19 +140,20 @@ $(function() {
 <code>#include &quot;<a class="el" href="AttackList_8h.html">Engine/AttackList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GameResourceManager_8h.html">Engine/GameResourceManager.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapInfo_8h.html">Engine/MapInfo.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="GUIButton_8h.html">GUI/GUIButton.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIProgressBar_8h.html">GUI/GUIProgressBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIWindow_8h.html">GUI/GUIWindow.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIStatusBar_8h.html">GUI/UI/UIStatusBar.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIPopup_8h.html">GUI/UI/UIPopup.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="UIMessageScroll_8h.html">GUI/UI/UIMessageScroll.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="GUIMessageQueue_8h.html">GUI/GUIMessageQueue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OverlaySystem_8h.html">GUI/Overlay/OverlaySystem.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SoundList_8h.html">Media/Audio/SoundList.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MediaPlayer_8h.html">Media/MediaPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Mouse_8h.html">Io/Mouse.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BuildInfo_8h.html">Library/BuildInfo/BuildInfo.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ascii_8h.html">Utility/String/Ascii.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="DataPath_8h.html">Utility/DataPath.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -174,8 +174,6 @@ Functions</h2></td></tr>
 <tr class="separator:a706129ccf676662e6dd2368567111ba0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a618e8a6c6e0a2f7d5c0153a88795407c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a618e8a6c6e0a2f7d5c0153a88795407c">MM7Initialization</a> ()</td></tr>
 <tr class="separator:a618e8a6c6e0a2f7d5c0153a88795407c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66414ff7233b4a02ab4f223560f4cbf2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a66414ff7233b4a02ab4f223560f4cbf2">PrepareToLoadODM</a> (bool bLoading, <a class="el" href="structODMRenderParams.html">ODMRenderParams</a> *a2)</td></tr>
-<tr class="separator:a66414ff7233b4a02ab4f223560f4cbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44e79e29a4ea6c303e979e18ac3dcb40"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a44e79e29a4ea6c303e979e18ac3dcb40">InitializeTurnBasedAnimations</a> (void *_this)</td></tr>
 <tr class="separator:a44e79e29a4ea6c303e979e18ac3dcb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d0606898b0fe5f58025c4bd6b21cc90"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a8d0606898b0fe5f58025c4bd6b21cc90">GetGravityStrength</a> ()</td></tr>
@@ -204,8 +202,8 @@ Functions</h2></td></tr>
 <tr class="separator:a2e89a8a5f7ba31f4f3e97f7c959af91b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdc2a70992101807c27947c797e599d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#abcdc2a70992101807c27947c797e599d">initLevelStrings</a> (const <a class="el" href="classBlob.html">Blob</a> &amp;blob)</td></tr>
 <tr class="separator:abcdc2a70992101807c27947c797e599d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9c8a87470f78734a1093e7aaf93454e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#ab9c8a87470f78734a1093e7aaf93454e">Level_LoadEvtAndStr</a> (std::string_view pLevelName)</td></tr>
-<tr class="separator:ab9c8a87470f78734a1093e7aaf93454e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6485919d788437ec9191b35a704dfccc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a6485919d788437ec9191b35a704dfccc">loadMapEventsAndStrings</a> (<a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a> mapid)</td></tr>
+<tr class="separator:a6485919d788437ec9191b35a704dfccc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7c70729a3af9d53e1c4fe25879f2cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#a4c7c70729a3af9d53e1c4fe25879f2cb">_44100D_should_alter_right_panel</a> ()</td></tr>
 <tr class="separator:a4c7c70729a3af9d53e1c4fe25879f2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add17ec59fa3e3f85b1395e31aa3c3b63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Engine_8cpp.html#add17ec59fa3e3f85b1395e31aa3c3b63">Transition_StopSound_Autosave</a> (std::string_view pMapName, <a class="el" href="MapEnums_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a> start_point)</td></tr>
@@ -372,17 +370,17 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9c8a87470f78734a1093e7aaf93454e" name="ab9c8a87470f78734a1093e7aaf93454e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9c8a87470f78734a1093e7aaf93454e">&#9670;&#160;</a></span>Level_LoadEvtAndStr()</h2>
+<a id="a6485919d788437ec9191b35a704dfccc" name="a6485919d788437ec9191b35a704dfccc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6485919d788437ec9191b35a704dfccc">&#9670;&#160;</a></span>loadMapEventsAndStrings()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Level_LoadEvtAndStr </td>
+          <td class="memname">void loadMapEventsAndStrings </td>
           <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>pLevelName</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a>&#160;</td>
+          <td class="paramname"><em>mapid</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -473,34 +471,6 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <dl class="section user"><dt>Original binary offset:</dt><dd>0x42FC15 </dd></dl>
-
-</div>
-</div>
-<a id="a66414ff7233b4a02ab4f223560f4cbf2" name="a66414ff7233b4a02ab4f223560f4cbf2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66414ff7233b4a02ab4f223560f4cbf2">&#9670;&#160;</a></span>PrepareToLoadODM()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PrepareToLoadODM </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bLoading</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structODMRenderParams.html">ODMRenderParams</a> *&#160;</td>
-          <td class="paramname"><em>a2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

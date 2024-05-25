@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;c0bbb1c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2310288</span>
    </div>
   </td>
  </tr>
@@ -123,7 +123,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="AudioPlayer_8h.html">Media/Audio/AudioPlayer.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Logger_8h.html">Library/Logger/Logger.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LodFormats_8h.html">Library/LodFormats/LodFormats.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="FreeDeleter_8h.html">Utility/Memory/FreeDeleter.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="Ascii_8h.html">Utility/String/Ascii.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="TrigLut_8h.html">Utility/Math/TrigLut.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="FixPoint_8h.html">Utility/Math/FixPoint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Exception_8h.html">Utility/Exception.h</a>&quot;</code><br />
@@ -136,16 +136,16 @@ Functions</h2></td></tr>
 <tr class="separator:a2040a9ae01357a0cee15336316e4e0ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91180cf18d91c79b7bc41c630c261cbd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a91180cf18d91c79b7bc41c630c261cbd">UpdateActors_BLV</a> ()</td></tr>
 <tr class="separator:a91180cf18d91c79b7bc41c630c261cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47ac13ac7daaac0c541dbff213117ccf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a47ac13ac7daaac0c541dbff213117ccf">PrepareToLoadBLV</a> (bool bLoading)</td></tr>
-<tr class="separator:a47ac13ac7daaac0c541dbff213117ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac33633df0ff257ec7412058698059ecf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ac33633df0ff257ec7412058698059ecf">BLV_GetFloorLevel</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, int uSectorID, int *pFaceID)</td></tr>
-<tr class="separator:ac33633df0ff257ec7412058698059ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac88d7cf9f84ddc5056bfa1c340c83940"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ac88d7cf9f84ddc5056bfa1c340c83940">Check_LineOfSight</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;target, const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;from)</td></tr>
-<tr class="separator:ac88d7cf9f84ddc5056bfa1c340c83940"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f9295ff17d908f3fa60e80f216cc037"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a3f9295ff17d908f3fa60e80f216cc037">Check_LOS_Obscurred_Indoors</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;target, const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;from)</td></tr>
-<tr class="separator:a3f9295ff17d908f3fa60e80f216cc037"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b098ca68ffb2e811752aabf35508b95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a8b098ca68ffb2e811752aabf35508b95">Check_LOS_Obscurred_Outdoors_Bmodels</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;target, const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;from)</td></tr>
-<tr class="separator:a8b098ca68ffb2e811752aabf35508b95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130cb21f4b4d1c28e20b74fcc4d1454d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a130cb21f4b4d1c28e20b74fcc4d1454d">loadAndPrepareBLV</a> (<a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a> mapid, bool bLoading)</td></tr>
+<tr class="separator:a130cb21f4b4d1c28e20b74fcc4d1454d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9235e5e7788e46b3797cbfa12467f44"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ad9235e5e7788e46b3797cbfa12467f44">BLV_GetFloorLevel</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;pos, int uSectorID, int *pFaceID)</td></tr>
+<tr class="separator:ad9235e5e7788e46b3797cbfa12467f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49650e4b23075d330cd137c2e70001f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#aa49650e4b23075d330cd137c2e70001f">Check_LineOfSight</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;target, const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;from)</td></tr>
+<tr class="separator:aa49650e4b23075d330cd137c2e70001f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3fe561f1cb70a5f5fe756e77ed2db4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#aec3fe561f1cb70a5f5fe756e77ed2db4">Check_LOS_Obscurred_Indoors</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;target, const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;from)</td></tr>
+<tr class="separator:aec3fe561f1cb70a5f5fe756e77ed2db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6747280e05091e26f5293e26f0ea2e79"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a6747280e05091e26f5293e26f0ea2e79">Check_LOS_Obscurred_Outdoors_Bmodels</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;target, const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;from)</td></tr>
+<tr class="separator:a6747280e05091e26f5293e26f0ea2e79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72a6c5111fcaff9c3a04db196aef9356"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a72a6c5111fcaff9c3a04db196aef9356">DoInteractionWithTopmostZObject</a> (<a class="el" href="classPid.html">Pid</a> pid)</td></tr>
 <tr class="separator:a72a6c5111fcaff9c3a04db196aef9356"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d511837933d59eeeccfc25275a366d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a7d511837933d59eeeccfc25275a366d8">BLV_UpdateUserInputAndOther</a> ()</td></tr>
@@ -158,16 +158,16 @@ Functions</h2></td></tr>
 <tr class="separator:a0a30df2bace671fdb9c53d5955263ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b37ce513996c958704b75ff9e7cdbef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a9b37ce513996c958704b75ff9e7cdbef">SpawnEncounterMonsters</a> (<a class="el" href="structMapInfo.html">MapInfo</a> *map_info, int enc_index)</td></tr>
 <tr class="separator:a9b37ce513996c958704b75ff9e7cdbef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90afed9c265a6f3d55807df2e034a1c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a90afed9c265a6f3d55807df2e034a1c5">DropTreasureAt</a> (<a class="el" href="ItemEnums_8h.html#a38d9b49da2474dd2a7da4ad935eb94e4">ItemTreasureLevel</a> trs_level, <a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a> trs_type, <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> pos, uint16_t facing)</td></tr>
-<tr class="separator:a90afed9c265a6f3d55807df2e034a1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c3e70faa14d2455f85a31adf179094"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ad1c3e70faa14d2455f85a31adf179094">DropTreasureAt</a> (<a class="el" href="ItemEnums_8h.html#a38d9b49da2474dd2a7da4ad935eb94e4">ItemTreasureLevel</a> trs_level, <a class="el" href="ItemEnums_8h.html#ac17d128fea2ce038be2a17b3c1737e25">RandomItemType</a> trs_type, <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> pos, uint16_t facing)</td></tr>
+<tr class="separator:ad1c3e70faa14d2455f85a31adf179094"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d104b32eac49edd22f15beca1800985"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a5d104b32eac49edd22f15beca1800985">SpawnRandomTreasure</a> (<a class="el" href="structMapInfo.html">MapInfo</a> *mapInfo, <a class="el" href="structSpawnPoint.html">SpawnPoint</a> *a2)</td></tr>
 <tr class="separator:a5d104b32eac49edd22f15beca1800985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad10cfdae51ef0087519a5060919d2e6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ad10cfdae51ef0087519a5060919d2e6f">FindBillboardsLightLevels_BLV</a> ()</td></tr>
 <tr class="separator:ad10cfdae51ef0087519a5060919d2e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a269c06cfbb2276c940958a47eeba9d1b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a269c06cfbb2276c940958a47eeba9d1b">GetIndoorFloorZ</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, int *pSectorID, int *pFaceID)</td></tr>
-<tr class="separator:a269c06cfbb2276c940958a47eeba9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11202ff348b58fda6b8ec56e395d3c9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a11202ff348b58fda6b8ec56e395d3c9e">GetApproximateIndoorFloorZ</a> (const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;pos, int *pSectorID, int *pFaceID)</td></tr>
-<tr class="separator:a11202ff348b58fda6b8ec56e395d3c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af576de970417a57f6214ea84f6b8be93"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#af576de970417a57f6214ea84f6b8be93">GetIndoorFloorZ</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;pos, int *pSectorID, int *pFaceID)</td></tr>
+<tr class="separator:af576de970417a57f6214ea84f6b8be93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d31b0b72a9df326dd098c6f8f2414ec"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#a4d31b0b72a9df326dd098c6f8f2414ec">GetApproximateIndoorFloorZ</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;pos, int *pSectorID, int *pFaceID)</td></tr>
+<tr class="separator:a4d31b0b72a9df326dd098c6f8f2414ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -177,20 +177,18 @@ Variables</h2></td></tr>
 <tr class="separator:ac0fb829e03a912f8cfee4431c86ddce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5583ee0df8a0ec04e9aa41f75a3f466"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="classIndexedArray.html">IndexedArray</a>&lt; <a class="el" href="SoundEnums_8h.html#ac4c17c8b309b1f9d7dc69286c18b871e">SoundId</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a004cd1d18d3718e56032d41f1038e1cb">MAP_FIRST</a>, <a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0a1a5ac6e24ef7236bc09e9d4d87cbc998">MAP_LAST</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#aa5583ee0df8a0ec04e9aa41f75a3f466">pDoorSoundIDsByLocationID</a></td></tr>
 <tr class="separator:aa5583ee0df8a0ec04e9aa41f75a3f466"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7204929de76f2cc3e43a6f5e92875fb"><td class="memItemLeft" align="right" valign="top">std::array&lt; const char *, 11 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Indoor_8cpp.html#ad7204929de76f2cc3e43a6f5e92875fb">_4E6BDC_loc_names</a></td></tr>
-<tr class="separator:ad7204929de76f2cc3e43a6f5e92875fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ac33633df0ff257ec7412058698059ecf" name="ac33633df0ff257ec7412058698059ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac33633df0ff257ec7412058698059ecf">&#9670;&#160;</a></span>BLV_GetFloorLevel()</h2>
+<a id="ad9235e5e7788e46b3797cbfa12467f44" name="ad9235e5e7788e46b3797cbfa12467f44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9235e5e7788e46b3797cbfa12467f44">&#9670;&#160;</a></span>BLV_GetFloorLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int BLV_GetFloorLevel </td>
+          <td class="memname">float BLV_GetFloorLevel </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -220,7 +218,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Fixpoint Z coordinate of the floor/ceiling face for the given position. If wrong sector is supplied or actor is out of bounds, <code>-30000</code> is returned. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Float Z coordinate of the floor/ceiling face for the given position. If wrong sector is supplied or actor is out of bounds, <code>-30000</code> is returned. </dd></dl>
 
 </div>
 </div>
@@ -327,8 +325,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ac88d7cf9f84ddc5056bfa1c340c83940" name="ac88d7cf9f84ddc5056bfa1c340c83940"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac88d7cf9f84ddc5056bfa1c340c83940">&#9670;&#160;</a></span>Check_LineOfSight()</h2>
+<a id="aa49650e4b23075d330cd137c2e70001f" name="aa49650e4b23075d330cd137c2e70001f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49650e4b23075d330cd137c2e70001f">&#9670;&#160;</a></span>Check_LineOfSight()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,13 +334,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool Check_LineOfSight </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>from</em>&#160;</td>
         </tr>
         <tr>
@@ -354,8 +352,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target</td><td>Vec3i of position to check line of sight to </td></tr>
-    <tr><td class="paramname">from</td><td>Vec3i of position to check line of sight from</td></tr>
+    <tr><td class="paramname">target</td><td>Vec3f of position to check line of sight to </td></tr>
+    <tr><td class="paramname">from</td><td>Vec3f of position to check line of sight from</td></tr>
   </table>
   </dd>
 </dl>
@@ -363,8 +361,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a3f9295ff17d908f3fa60e80f216cc037" name="a3f9295ff17d908f3fa60e80f216cc037"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f9295ff17d908f3fa60e80f216cc037">&#9670;&#160;</a></span>Check_LOS_Obscurred_Indoors()</h2>
+<a id="aec3fe561f1cb70a5f5fe756e77ed2db4" name="aec3fe561f1cb70a5f5fe756e77ed2db4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3fe561f1cb70a5f5fe756e77ed2db4">&#9670;&#160;</a></span>Check_LOS_Obscurred_Indoors()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -372,13 +370,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool Check_LOS_Obscurred_Indoors </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>from</em>&#160;</td>
         </tr>
         <tr>
@@ -390,8 +388,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target</td><td>Vec3i of position to check line of sight to </td></tr>
-    <tr><td class="paramname">from</td><td>Vec3i of position to check line of sight from</td></tr>
+    <tr><td class="paramname">target</td><td>Vec3f of position to check line of sight to </td></tr>
+    <tr><td class="paramname">from</td><td>Vec3f of position to check line of sight from</td></tr>
   </table>
   </dd>
 </dl>
@@ -399,8 +397,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a8b098ca68ffb2e811752aabf35508b95" name="a8b098ca68ffb2e811752aabf35508b95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b098ca68ffb2e811752aabf35508b95">&#9670;&#160;</a></span>Check_LOS_Obscurred_Outdoors_Bmodels()</h2>
+<a id="a6747280e05091e26f5293e26f0ea2e79" name="a6747280e05091e26f5293e26f0ea2e79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6747280e05091e26f5293e26f0ea2e79">&#9670;&#160;</a></span>Check_LOS_Obscurred_Outdoors_Bmodels()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -408,13 +406,13 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">bool Check_LOS_Obscurred_Outdoors_Bmodels </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>target</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>from</em>&#160;</td>
         </tr>
         <tr>
@@ -426,8 +424,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">target</td><td>Vec3i of position to check line of sight to </td></tr>
-    <tr><td class="paramname">from</td><td>Vec3i of position to check line of sight from</td></tr>
+    <tr><td class="paramname">target</td><td>Vec3f of position to check line of sight to </td></tr>
+    <tr><td class="paramname">from</td><td>Vec3f of position to check line of sight from</td></tr>
   </table>
   </dd>
 </dl>
@@ -453,8 +451,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a90afed9c265a6f3d55807df2e034a1c5" name="a90afed9c265a6f3d55807df2e034a1c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90afed9c265a6f3d55807df2e034a1c5">&#9670;&#160;</a></span>DropTreasureAt()</h2>
+<a id="ad1c3e70faa14d2455f85a31adf179094" name="ad1c3e70faa14d2455f85a31adf179094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1c3e70faa14d2455f85a31adf179094">&#9670;&#160;</a></span>DropTreasureAt()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +472,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a>&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -510,16 +508,16 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a11202ff348b58fda6b8ec56e395d3c9e" name="a11202ff348b58fda6b8ec56e395d3c9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11202ff348b58fda6b8ec56e395d3c9e">&#9670;&#160;</a></span>GetApproximateIndoorFloorZ()</h2>
+<a id="a4d31b0b72a9df326dd098c6f8f2414ec" name="a4d31b0b72a9df326dd098c6f8f2414ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d31b0b72a9df326dd098c6f8f2414ec">&#9670;&#160;</a></span>GetApproximateIndoorFloorZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GetApproximateIndoorFloorZ </td>
+          <td class="memname">float GetApproximateIndoorFloorZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -543,20 +541,20 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section user"><dt>Original binary offset:</dt><dd>0x0047272C.</dd></dl>
 <p>Same as <code>GetIndoorFloorZ</code>, but also tries jiggling the party around a bit if the collision point couldn't be found.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="Indoor_8h.html#a6c12fd7c509ccbd5c7c954e96aa42cce">GetIndoorFloorZ</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="Indoor_8h.html#a73e9dbb6a9ae06a37174ea2a26ca00e7">GetIndoorFloorZ</a> </dd></dl>
 
 </div>
 </div>
-<a id="a269c06cfbb2276c940958a47eeba9d1b" name="a269c06cfbb2276c940958a47eeba9d1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269c06cfbb2276c940958a47eeba9d1b">&#9670;&#160;</a></span>GetIndoorFloorZ()</h2>
+<a id="af576de970417a57f6214ea84f6b8be93" name="af576de970417a57f6214ea84f6b8be93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af576de970417a57f6214ea84f6b8be93">&#9670;&#160;</a></span>GetIndoorFloorZ()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int GetIndoorFloorZ </td>
+          <td class="memname">float GetIndoorFloorZ </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="Vec_8h.html#adf6e1d7d066bb09da957cc89f2b3ceb2">Vec3i</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;&#160;</td>
           <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
@@ -591,6 +589,35 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a130cb21f4b4d1c28e20b74fcc4d1454d" name="a130cb21f4b4d1c28e20b74fcc4d1454d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130cb21f4b4d1c28e20b74fcc4d1454d">&#9670;&#160;</a></span>loadAndPrepareBLV()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void loadAndPrepareBLV </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a>&#160;</td>
+          <td class="paramname"><em>mapid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bLoading</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section user"><dt>Original binary offset:</dt><dd>0x460A78 </dd></dl>
+
+</div>
+</div>
 <a id="ab7663442878fb1d9ce8c4293f7206c0e" name="ab7663442878fb1d9ce8c4293f7206c0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab7663442878fb1d9ce8c4293f7206c0e">&#9670;&#160;</a></span>PrepareDrawLists_BLV()</h2>
 
@@ -601,24 +628,6 @@ Variables</h2></td></tr>
           <td class="memname">void PrepareDrawLists_BLV </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47ac13ac7daaac0c541dbff213117ccf" name="a47ac13ac7daaac0c541dbff213117ccf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47ac13ac7daaac0c541dbff213117ccf">&#9670;&#160;</a></span>PrepareToLoadBLV()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void PrepareToLoadBLV </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bLoading</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -729,24 +738,6 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="ad7204929de76f2cc3e43a6f5e92875fb" name="ad7204929de76f2cc3e43a6f5e92875fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7204929de76f2cc3e43a6f5e92875fb">&#9670;&#160;</a></span>_4E6BDC_loc_names</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;const char *, 11&gt; _4E6BDC_loc_names</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    <span class="stringliteral">&quot;mdt12.blv&quot;</span>, <span class="stringliteral">&quot;d18.blv&quot;</span>,   <span class="stringliteral">&quot;mdt14.blv&quot;</span>, <span class="stringliteral">&quot;d37.blv&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;mdk01.blv&quot;</span>, <span class="stringliteral">&quot;mdt01.blv&quot;</span>, <span class="stringliteral">&quot;mdr01.blv&quot;</span>, <span class="stringliteral">&quot;mdt10.blv&quot;</span>,</div>
-<div class="line">    <span class="stringliteral">&quot;mdt09.blv&quot;</span>, <span class="stringliteral">&quot;mdt15.blv&quot;</span>, <span class="stringliteral">&quot;mdt11.blv&quot;</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="ac0fb829e03a912f8cfee4431c86ddce9" name="ac0fb829e03a912f8cfee4431c86ddce9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac0fb829e03a912f8cfee4431c86ddce9">&#9670;&#160;</a></span>pBLVRenderParams</h2>
 

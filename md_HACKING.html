@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;c0bbb1c</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2310288</span>
    </div>
   </td>
  </tr>
@@ -84,8 +84,8 @@ Dependencies</h1>
 <p >By default, we are using prebuilt dependencies, and they are resolved automatically during the cmake phase.</p>
 <p >The only exception is Linux, where we're using SDL2 from the distribution, so you will need to install a development versions of SDL2 before building OpenEnroth. E.g. on Ubuntu: </p><div class="fragment"><div class="line">sudo apt-get install SDL2 SDL2-devel</div>
 </div><!-- fragment --><p >Additional dependencies:</p><ul>
-<li>CMake 3.20.4+ (3.20.21032501-MSVC_2 from VS2019 won't work);</li>
-<li>Python 3.x (optional, for style checks).</li>
+<li><a href="https://cmake.org/download/">CMake 3.27+</a></li>
+<li><a href="https://www.python.org/downloads/">Python 3.x</a> (optional, for style checks).</li>
 </ul>
 <p >Minimum required compiler versions are as follows:</p><ul>
 <li>Visual Studio 2022;</li>
@@ -100,7 +100,7 @@ Dependencies</h1>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Building on *nix platforms</h1>
 <p >This project uses the <a href="https://cmake.org">CMake</a> build system. Use the following commands to clone the repository and build OpenEnroth:</p>
-<div class="fragment"><div class="line">$ git clone https://github.com/OpenEnroth/OpenEnroth.git</div>
+<div class="fragment"><div class="line">$ git clone --recurse-submodules --shallow-submodules https://github.com/OpenEnroth/OpenEnroth.git</div>
 <div class="line">$ cd OpenEnroth</div>
 <div class="line">$ cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug</div>
 <div class="line">$ cmake --build build</div>
@@ -150,6 +150,7 @@ Coding style</h1>
 <li><code>*</code> and <code>&amp;</code> in type declarations should be preceded by a space. So it's <code>char *string</code>, and not <code>char* string</code>.</li>
 </ul>
 <p >Language features:</p><ul>
+<li>Use <code>using Alias = Type</code> instead of <code>typedef Type Alias</code>.</li>
 <li>Use <code>enum class</code>es followed by <code>using enum</code> statements instead of ordinary <code>enum</code>s. This provides type safety without changing the syntax. For flags, use <code><a class="el" href="classFlags.html">Flags</a></code> class.</li>
 <li>It's OK to use plain <code>enum</code>s if you really need to have implicit casts to integer types, but this is a very rare use case. If you're using <code>enum</code> values to index into some array, consider using <code>enum class</code> coupled with <code><a class="el" href="classIndexedArray.html">IndexedArray</a></code>.</li>
 <li>Make your code speak for itself when it comes to ownership. If a function takes ownership of one of its parameters, it should take <code>std::unique_ptr</code> by value. If it allocates its result and passes ownership to the caller, then it should return <code>std::unique_ptr</code>.</li>
@@ -158,6 +159,7 @@ Coding style</h1>
 <li>In general, you shouldn't bother optimizing code paths where you might save an allocation by moving in an <code>std::string</code> or passing it by const reference, the performance benefits are almost always negligible.</li>
 <li>Use <code>TransparentString*</code> classes if you need to index into a string map using <code>std::string_view</code> keys.</li>
 <li>However, feel free to use <code>std::string</code> or <code>const std::string &amp;</code> parameters where it makes your code simpler (e.g. by avoiding jumping through hoops if you'll need to create an intermediate <code>std::string</code> object anyway).</li>
+<li>C++ is notoriously bad when it comes to string concatenation (you can't concatenate <code>std::string_view</code> with a string literal using <code>operator+</code>, and never will). In most cases you should be fine just using <code>fmt::format</code> for this. If <code>fmt::format</code> looks like an overkill, use <code>join</code> from <code><a class="el" href="Transformations_8h.html">Utility/String/Transformations.h</a></code>.</li>
 </ul>
 </li>
 <li>We generally refrain from using namespaces because OpenEnroth is a relatively small codebase, and we don't need the measures advocated by the Google style guide to prevent name clashes.<ul>
@@ -216,6 +218,23 @@ Testing</h1>
 <p >If you need to look closely at the recorded trace, you can play it by running <code>OpenEnroth play --speed 0.5 &lt;path-to-trace.json&gt;</code>. Alternatively, if you already have a unit test that runs the recorded trace, you can run <code>OpenEnroth_GameTest --speed 0.5 --gtest_filter=&lt;test-suite-name&gt;.&lt;test-name&gt; --test-path &lt;path-to-test-data-folder&gt;</code>. Note that <code>--gtest_filter</code> needs that <code>=</code> and won't work if you try passing test name after a space.</p>
 <p >Changing game logic might result in failures in game tests because they check random number generator state after each frame, and this will show as <code>Random state desynchronized when playing back trace</code> message in test logs. This is intentional – we don't want accidental game logic changes. If the change was actually intentional, then you might need to either retrace or re-record the traces for the failing tests. To retrace, run <code>OpenEnroth retrace &lt;path-to-trace.json&gt;</code>. Note that you can pass multiple trace paths to this command.</p>
 <h1><a class="anchor" id="autotoc_md7"></a>
+Scripting</h1>
+<p >We're using Lua as the scripting language, and all our scripts are currently located under the <code>resources/scripts</code> folder.</p>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Lua Language Server</h3>
+<p >Script files undergo a syntax checking process during the build generation. If you intend to work with scripts, it is recommended to install the <a href="https://github.com/LuaLS/lua-language-server">Lua Language Server</a> to run the style checker locally. Follow these steps to setup <code>LuaLS</code> locally:</p><ul>
+<li>Install <code>LuaLS</code> through one of the <a href="https://luals.github.io/#other-install">following methods</a>. Ensure that the lua-language-server executable is available in the <code>PATH</code> environment variable.</li>
+<li>Generate the project.</li>
+<li>The <code>check_style</code> target is now including scripting in its tests.</li>
+</ul>
+<p >Little note: If <code>LuaLS</code> is not found, everything still build but no checks will be run against the Lua scripts.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Tools</h3>
+<p >To go through a better experience while working with scripts it is strongly recommended to use <a href="https://code.visualstudio.com/">VS Code</a> and <a href="https://luals.github.io/#vscode-install">install the LuaLS extension</a>. Just be sure to open the root repository folder in <code>VS Code</code>. By doing so <code>LuaLS</code> reads the correct configuration file used by the project</p>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Modding ?</h3>
+<p >Scripting is currently used only for debugging purposes. Modding support is not planned for the near future. You can check the <a href="https://github.com/OpenEnroth/OpenEnroth/milestones">milestones</a> to get a better idea.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Console Commands</h1>
 <p >The game features a console capable of executing various Lua script commands. To activate this feature, please follow these steps:</p>
 <ol type="1">
@@ -227,10 +246,10 @@ Console Commands</h1>
 <li>Click on the <code>Console</code> button to reveal the command-line interface at the bottom left corner of the screen.</li>
 </ol>
 <p >Currently, the console is only available while in-game.</p>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Additional Resources</h1>
 <p >Old event decompiler and IDB files can be found <a href="https://www.dropbox.com/sh/if4u3lphn633oit/AADUYMxNcrkAU6epJ50RskyXa?dl=0">here</a>. Feel free to ping <code>zipi#6029</code> on Discord for more info.</p>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Support</h1>
 <p >Still having problems? Ask for help on our discord! <a href="https://discord.gg/jRCyPtq"><img src="https://img.shields.io/badge/chat-on%20discord-green.svg" alt="" style="pointer-events: none;" class="inline"/></a> </p>
 </div></div><!-- contents -->
