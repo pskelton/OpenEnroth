@@ -26,8 +26,8 @@ var searchData=
   ['lodinfo_23',['LodInfo',['../structLodInfo.html',1,'']]],
   ['lodreader_24',['LodReader',['../classLodReader.html',1,'']]],
   ['lodregion_25',['LodRegion',['../structLodReader_1_1LodRegion.html',1,'LodReader']]],
-  ['lodsprite_26',['LODSprite',['../structLODSprite.html',1,'']]],
-  ['lodsprite_27',['LodSprite',['../structLodSprite.html',1,'']]],
+  ['lodsprite_26',['LodSprite',['../structLodSprite.html',1,'']]],
+  ['lodsprite_27',['LODSprite',['../structLODSprite.html',1,'']]],
   ['lodspritecache_28',['LodSpriteCache',['../classLodSpriteCache.html',1,'']]],
   ['lodspriteheader_5fmm6_29',['LodSpriteHeader_MM6',['../structLodSpriteHeader__MM6.html',1,'']]],
   ['lodspriteline_5fmm6_30',['LodSpriteLine_MM6',['../structLodSpriteLine__MM6.html',1,'']]],
@@ -42,6 +42,7 @@ var searchData=
   ['logsource_39',['LogSource',['../classLogSource.html',1,'']]],
   ['logstate_40',['LogState',['../structFFmpegLogProxy_1_1LogState.html',1,'FFmpegLogProxy']]],
   ['longcivilduration_41',['LongCivilDuration',['../structLongCivilDuration.html',1,'']]],
-  ['luaitemquerytable_42',['LuaItemQueryTable',['../classLuaItemQueryTable.html',1,'']]],
-  ['luaitemquerytable_3c_20character_20_3e_43',['LuaItemQueryTable&lt; Character &gt;',['../classLuaItemQueryTable.html',1,'']]]
+  ['lowercasefilesystem_42',['LowercaseFileSystem',['../classLowercaseFileSystem.html',1,'']]],
+  ['luaitemquerytable_43',['LuaItemQueryTable',['../classLuaItemQueryTable.html',1,'']]],
+  ['luaitemquerytable_3c_20character_20_3e_44',['LuaItemQueryTable&lt; Character &gt;',['../classLuaItemQueryTable.html',1,'']]]
 ];

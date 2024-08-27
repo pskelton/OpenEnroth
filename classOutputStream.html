@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;556e87b</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;7e89a50</span>
    </div>
   </td>
  </tr>
@@ -83,9 +83,10 @@ Inheritance diagram for OutputStream:</div>
  <div class="center">
   <img src="classOutputStream.png" usemap="#OutputStream_map" alt=""/>
   <map id="OutputStream_map" name="OutputStream_map">
-<area href="classFileOutputStream.html" alt="FileOutputStream" shape="rect" coords="0,56,121,80"/>
-<area href="classStringOutputStream.html" alt="StringOutputStream" shape="rect" coords="131,56,252,80"/>
-<area href="classBlobOutputStream.html" alt="BlobOutputStream" shape="rect" coords="131,112,252,136"/>
+<area href="classFileOutputStream.html" alt="FileOutputStream" shape="rect" coords="0,56,231,80"/>
+<area href="classStringOutputStream.html" alt="StringOutputStream" shape="rect" coords="241,56,472,80"/>
+<area href="classBlobOutputStream.html" alt="BlobOutputStream" shape="rect" coords="241,112,472,136"/>
+<area href="classdetail_1_1MemoryFileSystemOutputStream.html" alt="detail::MemoryFileSystemOutputStream" shape="rect" coords="241,168,472,192"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -97,6 +98,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac3a7f2b6c87b13f5ffc7c0eb307753e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a699316a61182c0951ecbc043b7ec63f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#a699316a61182c0951ecbc043b7ec63f2">write</a> (std::string_view <a class="el" href="Json__ut_8cpp.html#a3691308f2a4c2f6983f2880d32e29c84">s</a>)</td></tr>
 <tr class="separator:a699316a61182c0951ecbc043b7ec63f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6de134f3717f14542b996868e13d79e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#ad6de134f3717f14542b996868e13d79e">write</a> (const <a class="el" href="classBlob.html">Blob</a> &amp;blob)</td></tr>
+<tr class="separator:ad6de134f3717f14542b996868e13d79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b731aef87084c3779bea292f85e800d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#a2b731aef87084c3779bea292f85e800d">flush</a> ()=0</td></tr>
 <tr class="separator:a2b731aef87084c3779bea292f85e800d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae5655027e69592cfc6d2b74a1d4036"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classOutputStream.html#a2ae5655027e69592cfc6d2b74a1d4036">close</a> ()=0</td></tr>
@@ -109,7 +112,7 @@ Public Member Functions</h2></td></tr>
 <p >Compared to <code>std::ostream</code> it is:</p><ul>
 <li>Non-buffered.</li>
 <li>Uses exceptions for error handling.</li>
-<li>Has a very simple and intuitive interface consisting of exactly three methods. </li>
+<li>Has a very simple and intuitive interface. No <code>tellg</code> and other bullshit. </li>
 </ul>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3c3286bd6c6c8fb6b16ce7f88745075b" name="a3c3286bd6c6c8fb6b16ce7f88745075b"></a>
@@ -169,7 +172,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classBlobOutputStream.html#ad667dab53dce661c3cf04de4b25de3f1">BlobOutputStream</a>, <a class="el" href="classFileOutputStream.html#a6d2831b0950de52741b7f536b1c29315">FileOutputStream</a>, and <a class="el" href="classStringOutputStream.html#aace3081172b55c84aa49c9fc1ec3a234">StringOutputStream</a>.</p>
+<p>Implemented in <a class="el" href="classdetail_1_1MemoryFileSystemOutputStream.html#afe823fbdd211d8b6def31e6a5af5a74c">detail::MemoryFileSystemOutputStream</a>, <a class="el" href="classBlobOutputStream.html#ad667dab53dce661c3cf04de4b25de3f1">BlobOutputStream</a>, <a class="el" href="classFileOutputStream.html#a6d2831b0950de52741b7f536b1c29315">FileOutputStream</a>, and <a class="el" href="classStringOutputStream.html#aace3081172b55c84aa49c9fc1ec3a234">StringOutputStream</a>.</p>
 
 </div>
 </div>
@@ -235,8 +238,47 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="ad6de134f3717f14542b996868e13d79e" name="ad6de134f3717f14542b996868e13d79e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6de134f3717f14542b996868e13d79e">&#9670;&#160;</a></span>write() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void OutputStream::write </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classBlob.html">Blob</a> &amp;&#160;</td>
+          <td class="paramname"><em>blob</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Writes provided <code><a class="el" href="classBlob.html">Blob</a></code> into the output stream.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">blob</td><td><code><a class="el" href="classBlob.html">Blob</a></code> to write. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ac3a7f2b6c87b13f5ffc7c0eb307753e3" name="ac3a7f2b6c87b13f5ffc7c0eb307753e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a7f2b6c87b13f5ffc7c0eb307753e3">&#9670;&#160;</a></span>write() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a7f2b6c87b13f5ffc7c0eb307753e3">&#9670;&#160;</a></span>write() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +330,7 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a699316a61182c0951ecbc043b7ec63f2" name="a699316a61182c0951ecbc043b7ec63f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699316a61182c0951ecbc043b7ec63f2">&#9670;&#160;</a></span>write() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a699316a61182c0951ecbc043b7ec63f2">&#9670;&#160;</a></span>write() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
