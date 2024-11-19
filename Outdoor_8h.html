@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;088a660</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;a4bb5d1</span>
    </div>
   </td>
  </tr>
@@ -86,20 +86,16 @@ $(function() {
 <code>#include &quot;<a class="el" href="TileEnums_8h.html">Engine/Data/TileEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SpawnPoint_8h.html">Engine/SpawnPoint.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MapEnums_8h.html">Engine/MapEnums.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SoundEnums_8h.html">Media/Audio/SoundEnums.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="Color_8h.html">Library/Color/Color.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BSPModel_8h.html">BSPModel.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LocationInfo_8h.html">LocationInfo.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LocationTime_8h.html">LocationTime.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LocationFunctions_8h.html">LocationFunctions.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="OutdoorTerrain_8h.html">OutdoorTerrain.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOutdoorLocationTileType.html">OutdoorLocationTileType</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structDMap.html">DMap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOutdoorLocationTerrain.html">OutdoorLocationTerrain</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structOutdoorLocation.html">OutdoorLocation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -108,40 +104,24 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aeedbd3470634fbb22ebda28d2f8006e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#aeedbd3470634fbb22ebda28d2f8006e4">ODM_UpdateUserInputAndOther</a> ()</td></tr>
 <tr class="separator:aeedbd3470634fbb22ebda28d2f8006e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41c92e3655ff26d5ebf520f0becead27"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a41c92e3655ff26d5ebf520f0becead27">ODM_GetFloorLevel</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;pos, int unused, bool *pOnWater, int *faceId, int bWaterWalk)</td></tr>
-<tr class="separator:a41c92e3655ff26d5ebf520f0becead27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cb4e2f07755f6b767be0cdb25f8aa7b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a6cb4e2f07755f6b767be0cdb25f8aa7b">ODM_GetFloorLevel</a> (const <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> &amp;pos, bool *pOnWater, int *faceId)</td></tr>
+<tr class="separator:a6cb4e2f07755f6b767be0cdb25f8aa7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc34dfcb349a04b729e6aacb2d71f14f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#abc34dfcb349a04b729e6aacb2d71f14f">GetCeilingHeight</a> (int Party_X, signed int Party_Y, int Party_ZHeight, int *pFaceID)</td></tr>
 <tr class="separator:abc34dfcb349a04b729e6aacb2d71f14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf87cc365ed7c8af3026b93f0b77ac11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#adf87cc365ed7c8af3026b93f0b77ac11">ODM_GetTerrainNormalAt</a> (float pos_x, float pos_y, <a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> *out)</td></tr>
-<tr class="separator:adf87cc365ed7c8af3026b93f0b77ac11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3cc30c01fb2e9afa8ec291e6043bf99"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#ab3cc30c01fb2e9afa8ec291e6043bf99">UpdateActors_ODM</a> ()</td></tr>
 <tr class="separator:ab3cc30c01fb2e9afa8ec291e6043bf99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62e44d7fd493356cb340fe1dc8fe993b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a62e44d7fd493356cb340fe1dc8fe993b">ODM_ProcessPartyActions</a> ()</td></tr>
 <tr class="separator:a62e44d7fd493356cb340fe1dc8fe993b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b27f3d68bad2b06d1caef0efe3b49ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a1b27f3d68bad2b06d1caef0efe3b49ec">SetUnderwaterFog</a> ()</td></tr>
 <tr class="separator:a1b27f3d68bad2b06d1caef0efe3b49ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ad0932fe04ea63562fad5cea5e454b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a5ad0932fe04ea63562fad5cea5e454b7">sub_487DA9</a> ()</td></tr>
-<tr class="separator:a5ad0932fe04ea63562fad5cea5e454b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2ef3a16e28c3ce7e36bae7d2fa0fb9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#af2ef3a16e28c3ce7e36bae7d2fa0fb9e">loadAndPrepareODM</a> (<a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a> mapid, bool bLoading, <a class="el" href="structODMRenderParams.html">ODMRenderParams</a> *a2)</td></tr>
-<tr class="separator:af2ef3a16e28c3ce7e36bae7d2fa0fb9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ba6f933e419c4d830c44a8f5c1c54b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a7ba6f933e419c4d830c44a8f5c1c54b7">loadAndPrepareODM</a> (<a class="el" href="MapEnums_8h.html#a270ed629fcd100c7ea16f8c87ebb86a0">MapId</a> mapid, bool bLoading)</td></tr>
+<tr class="separator:a7ba6f933e419c4d830c44a8f5c1c54b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afc756df02d61405f6513cdd2468c414e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structColor.html">Color</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#afc756df02d61405f6513cdd2468c414e">GetLevelFogColor</a> ()</td></tr>
 <tr class="separator:afc756df02d61405f6513cdd2468c414e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc8b7e2e0e1853d30c9bd70d4536d23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a4dc8b7e2e0e1853d30c9bd70d4536d23">sub_47C3D7_get_fog_specular</a> (int unused, int a2, float a3)</td></tr>
 <tr class="separator:a4dc8b7e2e0e1853d30c9bd70d4536d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae473faee8194c1b4cc418dafde2c764a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#ae473faee8194c1b4cc418dafde2c764a">WorldPosToGridCellX</a> (int)</td></tr>
-<tr class="separator:ae473faee8194c1b4cc418dafde2c764a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a504c240577e7befe50b117f5bce02f61"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a504c240577e7befe50b117f5bce02f61">WorldPosToGridCellY</a> (int)</td></tr>
-<tr class="separator:a504c240577e7befe50b117f5bce02f61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32afab6f958d62e7ce0133ec09549f27"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a32afab6f958d62e7ce0133ec09549f27">GridCellToWorldPosX</a> (int)</td></tr>
-<tr class="separator:a32afab6f958d62e7ce0133ec09549f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a833e841282e1ede794a0e6808d4cfe37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a833e841282e1ede794a0e6808d4cfe37">GridCellToWorldPosY</a> (int)</td></tr>
-<tr class="separator:a833e841282e1ede794a0e6808d4cfe37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a037dc3ba7f2399401d39f14740a23788"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#a037dc3ba7f2399401d39f14740a23788">sub_481ED9_MessWithODMRenderParams</a> ()</td></tr>
 <tr class="separator:a037dc3ba7f2399401d39f14740a23788"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae602f4c8ec31d075c5d7bb9ba420f712"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#ae602f4c8ec31d075c5d7bb9ba420f712">IsTerrainSlopeTooHigh</a> (int pos_x, int pos_y)</td></tr>
-<tr class="separator:ae602f4c8ec31d075c5d7bb9ba420f712"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad250ef394a2d309d4158ff5c5adf326d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#ad250ef394a2d309d4158ff5c5adf326d">GetTerrainHeightsAroundParty2</a> (int x, int y, bool *pIsOnWater, int bFloatAboveWater)</td></tr>
-<tr class="separator:ad250ef394a2d309d4158ff5c5adf326d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab77e6eeddb252822cbab29444d66a41c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Outdoor_8h.html#ab77e6eeddb252822cbab29444d66a41c">TeleportToStartingPoint</a> (<a class="el" href="MapEnums_8h.html#adad43ef8fbf56e2a3bc00fd08cca312f">MapStartPoint</a> point)</td></tr>
 <tr class="separator:ab77e6eeddb252822cbab29444d66a41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -210,112 +190,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="ad250ef394a2d309d4158ff5c5adf326d" name="ad250ef394a2d309d4158ff5c5adf326d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad250ef394a2d309d4158ff5c5adf326d">&#9670;&#160;</a></span>GetTerrainHeightsAroundParty2()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GetTerrainHeightsAroundParty2 </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool *&#160;</td>
-          <td class="paramname"><em>pIsOnWater</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bFloatAboveWater</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a32afab6f958d62e7ce0133ec09549f27" name="a32afab6f958d62e7ce0133ec09549f27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32afab6f958d62e7ce0133ec09549f27">&#9670;&#160;</a></span>GridCellToWorldPosX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GridCellToWorldPosX </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a833e841282e1ede794a0e6808d4cfe37" name="a833e841282e1ede794a0e6808d4cfe37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a833e841282e1ede794a0e6808d4cfe37">&#9670;&#160;</a></span>GridCellToWorldPosY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int GridCellToWorldPosY </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>a1</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae602f4c8ec31d075c5d7bb9ba420f712" name="ae602f4c8ec31d075c5d7bb9ba420f712"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae602f4c8ec31d075c5d7bb9ba420f712">&#9670;&#160;</a></span>IsTerrainSlopeTooHigh()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool IsTerrainSlopeTooHigh </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pos_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pos_y</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af2ef3a16e28c3ce7e36bae7d2fa0fb9e" name="af2ef3a16e28c3ce7e36bae7d2fa0fb9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2ef3a16e28c3ce7e36bae7d2fa0fb9e">&#9670;&#160;</a></span>loadAndPrepareODM()</h2>
+<a id="a7ba6f933e419c4d830c44a8f5c1c54b7" name="a7ba6f933e419c4d830c44a8f5c1c54b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ba6f933e419c4d830c44a8f5c1c54b7">&#9670;&#160;</a></span>loadAndPrepareODM()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,13 +206,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>bLoading</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structODMRenderParams.html">ODMRenderParams</a> *&#160;</td>
-          <td class="paramname"><em>a2</em>&#160;</td>
+          <td class="paramname"><em>bLoading</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -349,8 +219,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a41c92e3655ff26d5ebf520f0becead27" name="a41c92e3655ff26d5ebf520f0becead27"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41c92e3655ff26d5ebf520f0becead27">&#9670;&#160;</a></span>ODM_GetFloorLevel()</h2>
+<a id="a6cb4e2f07755f6b767be0cdb25f8aa7b" name="a6cb4e2f07755f6b767be0cdb25f8aa7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cb4e2f07755f6b767be0cdb25f8aa7b">&#9670;&#160;</a></span>ODM_GetFloorLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,12 +234,6 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>unused</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">bool *&#160;</td>
           <td class="paramname"><em>pOnWater</em>, </td>
         </tr>
@@ -377,47 +241,7 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int *&#160;</td>
-          <td class="paramname"><em>faceId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>bWaterWalk</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="adf87cc365ed7c8af3026b93f0b77ac11" name="adf87cc365ed7c8af3026b93f0b77ac11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf87cc365ed7c8af3026b93f0b77ac11">&#9670;&#160;</a></span>ODM_GetTerrainNormalAt()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void ODM_GetTerrainNormalAt </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pos_x</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>pos_y</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="Vec_8h.html#a40b8356e33151c22cb4d1adaf2b762a8">Vec3f</a> *&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
+          <td class="paramname"><em>faceId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -531,23 +355,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a5ad0932fe04ea63562fad5cea5e454b7" name="a5ad0932fe04ea63562fad5cea5e454b7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ad0932fe04ea63562fad5cea5e454b7">&#9670;&#160;</a></span>sub_487DA9()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sub_487DA9 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="ab77e6eeddb252822cbab29444d66a41c" name="ab77e6eeddb252822cbab29444d66a41c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab77e6eeddb252822cbab29444d66a41c">&#9670;&#160;</a></span>TeleportToStartingPoint()</h2>
 
@@ -576,42 +383,6 @@ Variables</h2></td></tr>
           <td class="memname">void UpdateActors_ODM </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae473faee8194c1b4cc418dafde2c764a" name="ae473faee8194c1b4cc418dafde2c764a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae473faee8194c1b4cc418dafde2c764a">&#9670;&#160;</a></span>WorldPosToGridCellX()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int WorldPosToGridCellX </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sWorldPosX</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a504c240577e7befe50b117f5bce02f61" name="a504c240577e7befe50b117f5bce02f61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a504c240577e7befe50b117f5bce02f61">&#9670;&#160;</a></span>WorldPosToGridCellY()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int WorldPosToGridCellY </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sWorldPosY</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
