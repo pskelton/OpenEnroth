@@ -6624,6 +6624,7 @@ void Character::OnInventoryLeftClick() {
                     emptyIndex = this->AddItem2(-1, &pParty->pPickedItem);
                     if (!emptyIndex) {
                         // failed to add, put back the old item
+                        pAudioPlayer->playUISound(SOUND_error);
                         this->AddItem2(invMatrixIndex, &tmpItem);
                         return;
                     }
