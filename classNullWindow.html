@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;12c9d75</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;2d8e6fe</span>
    </div>
   </td>
  </tr>
@@ -128,6 +128,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aadbd8fa83d658878720d26d7ab141cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26f783abf6528cf44b1c25204c02e73b"><td class="memItemLeft" align="right" valign="top">virtual PlatformWindowOrientations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#a26f783abf6528cf44b1c25204c02e73b">orientations</a> () override</td></tr>
 <tr class="separator:a26f783abf6528cf44b1c25204c02e73b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98b41d2f55518ffbb3da758a70097dec"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#a98b41d2f55518ffbb3da758a70097dec">setMouseRelative</a> (bool mouseRelative) override</td></tr>
+<tr class="separator:a98b41d2f55518ffbb3da758a70097dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c67335c6a465562f0c1ddeeadbb3c4"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#af1c67335c6a465562f0c1ddeeadbb3c4">isMouseRelative</a> () const override</td></tr>
+<tr class="separator:af1c67335c6a465562f0c1ddeeadbb3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f430132e6de326bd90b03aaaeb16bd"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Margins_8h.html#af54b4ff4492cf2e8fcef8f00c26bb08e">Marginsi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#ac2f430132e6de326bd90b03aaaeb16bd">frameMargins</a> () const override</td></tr>
 <tr class="separator:ac2f430132e6de326bd90b03aaaeb16bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af94f5aa2f74d6ade563046090e6a90e7"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#af94f5aa2f74d6ade563046090e6a90e7">nativeHandle</a> () const override</td></tr>
@@ -175,6 +179,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aae51e9e8be56d58adc512e55ee919aec inherit pub_methods_classPlatformWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aafd03f0e345d23c1eb1dfdd8b8f0313a inherit pub_methods_classPlatformWindow"><td class="memItemLeft" align="right" valign="top">virtual PlatformWindowOrientations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformWindow.html#aafd03f0e345d23c1eb1dfdd8b8f0313a">orientations</a> ()=0</td></tr>
 <tr class="separator:aafd03f0e345d23c1eb1dfdd8b8f0313a inherit pub_methods_classPlatformWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3c3fbda41b8b64633ea598bf119d49e inherit pub_methods_classPlatformWindow"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformWindow.html#aa3c3fbda41b8b64633ea598bf119d49e">setMouseRelative</a> (bool mouseRelative)=0</td></tr>
+<tr class="separator:aa3c3fbda41b8b64633ea598bf119d49e inherit pub_methods_classPlatformWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a463271aa600f647efca681d2e364e405 inherit pub_methods_classPlatformWindow"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformWindow.html#a463271aa600f647efca681d2e364e405">isMouseRelative</a> () const =0</td></tr>
+<tr class="separator:a463271aa600f647efca681d2e364e405 inherit pub_methods_classPlatformWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a7dc359543aab96a396ab5f90cf6f55 inherit pub_methods_classPlatformWindow"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="Margins_8h.html#af54b4ff4492cf2e8fcef8f00c26bb08e">Marginsi</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformWindow.html#a0a7dc359543aab96a396ab5f90cf6f55">frameMargins</a> () const =0</td></tr>
 <tr class="separator:a0a7dc359543aab96a396ab5f90cf6f55 inherit pub_methods_classPlatformWindow"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7bae32f1184173ccc81c36aea766f49 inherit pub_methods_classPlatformWindow"><td class="memItemLeft" align="right" valign="top">virtual void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPlatformWindow.html#aa7bae32f1184173ccc81c36aea766f49">nativeHandle</a> () const =0</td></tr>
@@ -204,6 +212,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ab2ac7f4cdd3d701fcccb7097be882395"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf04cc11c92cbabb5a05cc71332c5a20"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#adf04cc11c92cbabb5a05cc71332c5a20">_grabsMouse</a> = false</td></tr>
 <tr class="separator:adf04cc11c92cbabb5a05cc71332c5a20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24f79cb5eda5f47a5a71b8a3e3d82c52"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#a24f79cb5eda5f47a5a71b8a3e3d82c52">_mouseRelative</a> = false</td></tr>
+<tr class="separator:a24f79cb5eda5f47a5a71b8a3e3d82c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8507fab5c304b126af9212fd90e32ac2"><td class="memItemLeft" align="right" valign="top">PlatformWindowOrientations&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNullWindow.html#a8507fab5c304b126af9212fd90e32ac2">_orientations</a> = <a class="el" href="PlatformEnums_8h.html#acef92f6f6dcb8940ab858cd4fe1c64bcaf20145b5d77d7dd17c06a922e4895885">LANDSCAPE_LEFT</a> | <a class="el" href="PlatformEnums_8h.html#acef92f6f6dcb8940ab858cd4fe1c64bca223c617210b9abad14670bbda0b80fdf">LANDSCAPE_RIGHT</a> | <a class="el" href="PlatformEnums_8h.html#acef92f6f6dcb8940ab858cd4fe1c64bca55961a0edf48ddea54efca22c6308323">PORTRAIT_UP</a> | <a class="el" href="PlatformEnums_8h.html#acef92f6f6dcb8940ab858cd4fe1c64bcae6d6a81eeb54ec5b32e4cd2996b39005">PORTRAIT_DOWN</a></td></tr>
 <tr class="separator:a8507fab5c304b126af9212fd90e32ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -366,6 +376,33 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classPlatformWindow.html#a778154a2e74c9dfb286ed7145dbc9b46">PlatformWindow</a>.</p>
+
+</div>
+</div>
+<a id="af1c67335c6a465562f0c1ddeeadbb3c4" name="af1c67335c6a465562f0c1ddeeadbb3c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1c67335c6a465562f0c1ddeeadbb3c4">&#9670;&#160;</a></span>isMouseRelative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NullWindow::isMouseRelative </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classPlatformWindow.html#a463271aa600f647efca681d2e364e405">PlatformWindow</a>.</p>
 
 </div>
 </div>
@@ -586,6 +623,41 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="classPlatformWindow.html#aa0a5b323b27f0c20c43a5bb4c69897f1">PlatformWindow</a>.</p>
+
+</div>
+</div>
+<a id="a98b41d2f55518ffbb3da758a70097dec" name="a98b41d2f55518ffbb3da758a70097dec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98b41d2f55518ffbb3da758a70097dec">&#9670;&#160;</a></span>setMouseRelative()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void NullWindow::setMouseRelative </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mouseRelative</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Setter for the relative mouse motion mode. When enabled for a given window, the cursor is hidden for that window while it has focus, and relative mouse motion is properly handled (w/o window edge clamping).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mouseRelative</td><td>Whether relative mouse motion mode should be enabled for this window. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classPlatformWindow.html#aa3c3fbda41b8b64633ea598bf119d49e">PlatformWindow</a>.</p>
 
 </div>
 </div>
@@ -909,6 +981,28 @@ Private Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="PlatformEnums_8h.html#a7772d16a8207ba672642f139658d8f14">PlatformWindowMode</a> NullWindow::_mode = <a class="el" href="PlatformEnums_8h.html#a7772d16a8207ba672642f139658d8f14ac1aeae4a2f4ef2ed71913aca8cd3567d">WINDOW_MODE_WINDOWED</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24f79cb5eda5f47a5a71b8a3e3d82c52" name="a24f79cb5eda5f47a5a71b8a3e3d82c52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24f79cb5eda5f47a5a71b8a3e3d82c52">&#9670;&#160;</a></span>_mouseRelative</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool NullWindow::_mouseRelative = false</td>
         </tr>
       </table>
   </td>
