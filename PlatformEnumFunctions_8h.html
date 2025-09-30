@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Io/Key.h File Reference</title>
+<title>OpenEnroth: src/Library/Platform/Interface/PlatformEnumFunctions.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;9561831</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;83f8ca9</span>
    </div>
   </td>
  </tr>
@@ -69,70 +69,47 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_c28834340a66ce69e3436ea57e474e24.html">Io</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f741251061e5c7c7ed48ab45c3348f11.html">Library</a></li><li class="navelem"><a class="el" href="dir_25027ba02c8792d1a429072f307f55f7.html">Platform</a></li><li class="navelem"><a class="el" href="dir_e38b3c953dcb93a7c7a02922dc1d1b59.html">Interface</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Key.h File Reference</div></div>
+  <div class="headertitle"><div class="title">PlatformEnumFunctions.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &lt;string_view&gt;</code><br />
-<code>#include &quot;<a class="el" href="PlatformEnums_8h.html">Library/Platform/Interface/PlatformEnums.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="SerializationFwd_8h.html">Library/Serialization/SerializationFwd.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;cassert&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="PlatformEnums_8h.html">PlatformEnums.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a650bbc045a1772a20a9877e4960691bc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Key_8h.html#a650bbc045a1772a20a9877e4960691bc">GetDisplayName</a> (<a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a> key)</td></tr>
-<tr class="separator:a650bbc045a1772a20a9877e4960691bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a169f6a009372cfef2f27e19099574544"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="Key_8h.html#a169f6a009372cfef2f27e19099574544">TryParseDisplayName</a> (std::string_view displayName, <a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a> *outKey)</td></tr>
-<tr class="separator:a169f6a009372cfef2f27e19099574544"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fc6cf63305e961ef5294c724c1be18a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="PlatformEnumFunctions_8h.html#a5fc6cf63305e961ef5294c724c1be18a">platformKeyForDigit</a> (int digit)</td></tr>
+<tr class="separator:a5fc6cf63305e961ef5294c724c1be18a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a650bbc045a1772a20a9877e4960691bc" name="a650bbc045a1772a20a9877e4960691bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a650bbc045a1772a20a9877e4960691bc">&#9670;&#160;</a></span>GetDisplayName()</h2>
+<a id="a5fc6cf63305e961ef5294c724c1be18a" name="a5fc6cf63305e961ef5294c724c1be18a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fc6cf63305e961ef5294c724c1be18a">&#9670;&#160;</a></span>platformKeyForDigit()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string GetDisplayName </td>
+          <td class="memname"><a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a> platformKeyForDigit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a>&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>digit</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a169f6a009372cfef2f27e19099574544" name="a169f6a009372cfef2f27e19099574544"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a169f6a009372cfef2f27e19099574544">&#9670;&#160;</a></span>TryParseDisplayName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool TryParseDisplayName </td>
-          <td>(</td>
-          <td class="paramtype">std::string_view&#160;</td>
-          <td class="paramname"><em>displayName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="PlatformEnums_8h.html#a2ba59747730ab559dd1191f51081eecc">PlatformKey</a> *&#160;</td>
-          <td class="paramname"><em>outKey</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
