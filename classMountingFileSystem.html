@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;0984a90</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;0e27c90</span>
    </div>
   </td>
  </tr>
@@ -243,7 +243,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line">fs.<a class="code hl_function" href="classMountingFileSystem.html#a6e376e939761368ea4b1424c33437ed4">mount</a>(<span class="stringliteral">&quot;data/images&quot;</span>, &amp;fs2); <span class="comment">// Now &quot;data/images&quot; is pointing into `fs2`, whatever was there in `fs1` is ignored.</span></div>
 <div class="ttc" id="aclassMemoryFileSystem_html"><div class="ttname"><a href="classMemoryFileSystem.html">MemoryFileSystem</a></div><div class="ttdef"><b>Definition:</b> MemoryFileSystem.h:33</div></div>
 <div class="ttc" id="aclassMountingFileSystem_html"><div class="ttname"><a href="classMountingFileSystem.html">MountingFileSystem</a></div><div class="ttdef"><b>Definition:</b> MountingFileSystem.h:31</div></div>
-<div class="ttc" id="aclassMountingFileSystem_html_a6e376e939761368ea4b1424c33437ed4"><div class="ttname"><a href="classMountingFileSystem.html#a6e376e939761368ea4b1424c33437ed4">MountingFileSystem::mount</a></div><div class="ttdeci">void mount(std::string_view path, FileSystem *fileSystem)</div><div class="ttdef"><b>Definition:</b> MountingFileSystem.cpp:17</div></div>
+<div class="ttc" id="aclassMountingFileSystem_html_a6e376e939761368ea4b1424c33437ed4"><div class="ttname"><a href="classMountingFileSystem.html#a6e376e939761368ea4b1424c33437ed4">MountingFileSystem::mount</a></div><div class="ttdeci">void mount(std::string_view path, FileSystem *fileSystem)</div><div class="ttdef"><b>Definition:</b> MountingFileSystem.cpp:16</div></div>
 </div><!-- fragment --><p >In the example above, repeated calls to <code>mount</code> create a hierarchy of virtual directories. These virtual directories override everything with the same name that existed in the underlying file systems.</p>
 <p >Note that <code>rename</code> and <code>remove</code> only work on regular files, and will fail on virtual directories. If you want to tweak the virtual directory tree, use <code>mount</code> and <code>unmount</code>. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
