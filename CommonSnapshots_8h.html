@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;0e27c90</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
    </div>
   </td>
  </tr>
@@ -74,10 +74,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">CommonSnapshots.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -90,25 +87,11 @@ $(function() {
 <code>#include &lt;deque&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &quot;<a class="el" href="BinaryConcepts_8h.html">Library/Binary/BinaryConcepts.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="Segment_8h.html">Utility/Segment.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndexedArray_8h.html">Utility/IndexedArray.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="IndexedBitset_8h.html">Utility/IndexedBitset.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SnapshotConcepts_8h.html">SnapshotConcepts.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="SnapshotTags_8h.html">SnapshotTags.h</a>&quot;</code><br />
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structCastTag.html">CastTag&lt; From, To &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structSegmentTag.html">SegmentTag&lt; FirstIndex, LastIndex &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structReverseBitOrderTag.html">ReverseBitOrderTag</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:namespacetags"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetags.html">tags</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1f0f2388e8fed123396a5528122ecd17"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
@@ -169,17 +152,6 @@ requires (!std::is_same_v&lt;T1, T2&gt;)</td></tr>
 <tr class="memitem:a3831495bb06c1fdac1497445dcb3cdcb"><td class="memTemplParams" colspan="2">template&lt;size_t N, auto L, auto H&gt; </td></tr>
 <tr class="memitem:a3831495bb06c1fdac1497445dcb3cdcb"><td class="memTemplItemLeft" align="right" valign="top">static void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="CommonSnapshots_8h.html#a3831495bb06c1fdac1497445dcb3cdcb">reconstruct</a> (const std::array&lt; uint8_t, N &gt; &amp;src, <a class="el" href="classIndexedBitset.html">IndexedBitset</a>&lt; L, H &gt; *dst, <a class="el" href="structReverseBitOrderTag.html">ReverseBitOrderTag</a>)</td></tr>
 <tr class="separator:a3831495bb06c1fdac1497445dcb3cdcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a219c202990d5cc990c77b83ec11d757b"><td class="memTemplParams" colspan="2">template&lt;class From , class To &gt; </td></tr>
-<tr class="memitem:a219c202990d5cc990c77b83ec11d757b"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structCastTag.html">CastTag</a>&lt; From, To &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#a219c202990d5cc990c77b83ec11d757b">tags::cast</a></td></tr>
-<tr class="separator:a219c202990d5cc990c77b83ec11d757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8514cbca4d8b5eedd8e4b41d21ce64ec"><td class="memTemplParams" colspan="2">template&lt;auto First, auto Last&gt; </td></tr>
-<tr class="memitem:a8514cbca4d8b5eedd8e4b41d21ce64ec"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structSegmentTag.html">SegmentTag</a>&lt; First, Last &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#a8514cbca4d8b5eedd8e4b41d21ce64ec">tags::segment</a></td></tr>
-<tr class="separator:a8514cbca4d8b5eedd8e4b41d21ce64ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9e7ac13c05fddd8f86f19d2b2ace2a4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structReverseBitOrderTag.html">ReverseBitOrderTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetags.html#ad9e7ac13c05fddd8f86f19d2b2ace2a4">tags::reverseBits</a></td></tr>
-<tr class="separator:ad9e7ac13c05fddd8f86f19d2b2ace2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a026c6076df22e380273b5178f978f3ba" name="a026c6076df22e380273b5178f978f3ba"></a>

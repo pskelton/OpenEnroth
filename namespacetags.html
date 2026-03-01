@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;0e27c90</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
    </div>
   </td>
  </tr>
@@ -90,6 +90,11 @@ Variables</h2></td></tr>
 <tr class="separator:a6f953b471a3cfd738ec10cff1cb13a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef36221ead71ef92d58bc63d39bbcdb4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structAppendTag.html">AppendTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetags.html#aef36221ead71ef92d58bc63d39bbcdb4">append</a></td></tr>
 <tr class="separator:aef36221ead71ef92d58bc63d39bbcdb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ec68b7cef3c8b988044cd3b5b7a3957"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="classEachTag.html">EachTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetags.html#a0ec68b7cef3c8b988044cd3b5b7a3957">each</a></td></tr>
+<tr class="separator:a0ec68b7cef3c8b988044cd3b5b7a3957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad49790c2169c7de26b5e6d855f9cea79"><td class="memTemplParams" colspan="2">template&lt;class Via &gt; </td></tr>
+<tr class="memitem:ad49790c2169c7de26b5e6d855f9cea79"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structViaTag.html">ViaTag</a>&lt; Via &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#ad49790c2169c7de26b5e6d855f9cea79">via</a></td></tr>
+<tr class="separator:ad49790c2169c7de26b5e6d855f9cea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a219c202990d5cc990c77b83ec11d757b"><td class="memTemplParams" colspan="2">template&lt;class From , class To &gt; </td></tr>
 <tr class="memitem:a219c202990d5cc990c77b83ec11d757b"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structCastTag.html">CastTag</a>&lt; From, To &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#a219c202990d5cc990c77b83ec11d757b">cast</a></td></tr>
 <tr class="separator:a219c202990d5cc990c77b83ec11d757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -98,12 +103,6 @@ Variables</h2></td></tr>
 <tr class="separator:a8514cbca4d8b5eedd8e4b41d21ce64ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad9e7ac13c05fddd8f86f19d2b2ace2a4"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="structReverseBitOrderTag.html">ReverseBitOrderTag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacetags.html#ad9e7ac13c05fddd8f86f19d2b2ace2a4">reverseBits</a></td></tr>
 <tr class="separator:ad9e7ac13c05fddd8f86f19d2b2ace2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad49790c2169c7de26b5e6d855f9cea79"><td class="memTemplParams" colspan="2">template&lt;class Via &gt; </td></tr>
-<tr class="memitem:ad49790c2169c7de26b5e6d855f9cea79"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structViaTag.html">ViaTag</a>&lt; Via &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#ad49790c2169c7de26b5e6d855f9cea79">via</a></td></tr>
-<tr class="separator:ad49790c2169c7de26b5e6d855f9cea79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a507abccbfe98e44c123e02b9b6a44d6d"><td class="memTemplParams" colspan="2">template&lt;class Via &gt; </td></tr>
-<tr class="memitem:a507abccbfe98e44c123e02b9b6a44d6d"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structViaEachTag.html">ViaEachTag</a>&lt; Via &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacetags.html#a507abccbfe98e44c123e02b9b6a44d6d">via_each</a></td></tr>
-<tr class="separator:a507abccbfe98e44c123e02b9b6a44d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a63afe6af5ba898cc9268de78d0b4db2b" name="a63afe6af5ba898cc9268de78d0b4db2b"></a>
@@ -222,7 +221,47 @@ template&lt;class From , class To &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Snapshot tag that performs a <code>static_cast</code> between source and destination types during snapshot/reconstruct. Both template parameters must exactly match the types passed to <code>snapshot</code> / <code>reconstruct</code>.</p>
+<p >Example usage: </p><div class="fragment"><div class="line">uint32_t src = 42;</div>
+<div class="line">uint8_t dst;</div>
+<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a>(src, &amp;dst, tags::cast&lt;uint32_t, uint8_t&gt;);</div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_a6812b2ab6323d9ecd969408e1a5c474e"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a></div><div class="ttdeci">void snapshot(const IndoorLocation &amp;src, IndoorDelta_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:275</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">From</td><td>Source type for the cast. </td></tr>
+    <tr><td class="paramname">To</td><td>Destination type for the cast. </td></tr>
+  </table>
+  </dd>
+</dl>
 
+</div>
+</div>
+<a id="a0ec68b7cef3c8b988044cd3b5b7a3957" name="a0ec68b7cef3c8b988044cd3b5b7a3957"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec68b7cef3c8b988044cd3b5b7a3957">&#9670;&#160;</a></span>each</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="classEachTag.html">EachTag</a> tags::each</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Serialization tag that applies subsequent tags to each element of a container individually, rather than to the container as a whole. Without this tag, there is no way to pass tags down to individual container elements.</p>
+<p >Example usage: </p><div class="fragment"><div class="line">std::vector&lt;Monster&gt; monsters;</div>
+<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(src, &amp;monsters, <a class="code hl_variable" href="namespacetags.html#aef36221ead71ef92d58bc63d39bbcdb4">tags::append</a>, <a class="code hl_variable" href="namespacetags.html#a0ec68b7cef3c8b988044cd3b5b7a3957">tags::each</a>, tags::via&lt;MonsterDesc_MM7&gt;);</div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:255</div></div>
+<div class="ttc" id="anamespacetags_html_a0ec68b7cef3c8b988044cd3b5b7a3957"><div class="ttname"><a href="namespacetags.html#a0ec68b7cef3c8b988044cd3b5b7a3957">tags::each</a></div><div class="ttdeci">constexpr EachTag each</div><div class="ttdef"><b>Definition:</b> BinaryTags.h:87</div></div>
+<div class="ttc" id="anamespacetags_html_aef36221ead71ef92d58bc63d39bbcdb4"><div class="ttname"><a href="namespacetags.html#aef36221ead71ef92d58bc63d39bbcdb4">tags::append</a></div><div class="ttdeci">constexpr AppendTag append</div><div class="ttdef"><b>Definition:</b> BinaryTags.h:62</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="ad9e7ac13c05fddd8f86f19d2b2ace2a4" name="ad9e7ac13c05fddd8f86f19d2b2ace2a4"></a>
@@ -244,7 +283,13 @@ template&lt;class From , class To &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<p >Snapshot tag that reverses the bit order within each byte during <code><a class="el" href="classIndexedBitset.html">IndexedBitset</a></code> snapshot/reconstruct. MM7 uses inverted bit order for bitset serialization, so this tag is needed to match the on-disk format.</p>
+<p >Example usage: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classIndexedBitset.html">IndexedBitset&lt;1, 32&gt;</a> bits;</div>
+<div class="line">std::array&lt;uint8_t, 4&gt; bytes;</div>
+<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a>(bits, &amp;bytes, <a class="code hl_variable" href="namespacetags.html#ad9e7ac13c05fddd8f86f19d2b2ace2a4">tags::reverseBits</a>);</div>
+<div class="ttc" id="aclassIndexedBitset_html"><div class="ttname"><a href="classIndexedBitset.html">IndexedBitset</a></div><div class="ttdef"><b>Definition:</b> IndexedBitset.h:9</div></div>
+<div class="ttc" id="anamespacetags_html_ad9e7ac13c05fddd8f86f19d2b2ace2a4"><div class="ttname"><a href="namespacetags.html#ad9e7ac13c05fddd8f86f19d2b2ace2a4">tags::reverseBits</a></div><div class="ttdeci">constexpr ReverseBitOrderTag reverseBits</div><div class="ttdef"><b>Definition:</b> SnapshotTags.h:90</div></div>
+</div><!-- fragment --> 
 </div>
 </div>
 <a id="a8514cbca4d8b5eedd8e4b41d21ce64ec" name="a8514cbca4d8b5eedd8e4b41d21ce64ec"></a>
@@ -268,6 +313,18 @@ template&lt;auto First, auto Last&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+<p >Snapshot tag that extracts a sub-range from an <code><a class="el" href="classIndexedArray.html">IndexedArray</a></code> into a <code>std::array</code> during snapshot/reconstruct. The array size must match the number of elements in the <code>[First, Last]</code> range.</p>
+<p >Example usage: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classIndexedArray.html">IndexedArray&lt;int, ITEM_FIRST, ITEM_LAST&gt;</a> src;</div>
+<div class="line">std::array&lt;int, 10&gt; dst;</div>
+<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a>(src, &amp;dst, tags::segment&lt;ITEM_FIRST, ITEM_10&gt;);</div>
+<div class="ttc" id="aclassIndexedArray_html"><div class="ttname"><a href="classIndexedArray.html">IndexedArray</a></div><div class="ttdef"><b>Definition:</b> IndexedArray.h:66</div></div>
+</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">First</td><td>First index of the range (inclusive). </td></tr>
+    <tr><td class="paramname">Last</td><td>Last index of the range (inclusive). </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -316,48 +373,14 @@ template&lt;class Via &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Serialization tag that instructs the binary serialization framework to first read a <code>Via</code> object from a stream, and then use it to reconstruct the target object.</p>
+<p >Serialization tag that instructs the binary serialization framework to first read a <code>Via</code> object from a stream, and then use it to reconstruct the target object. All tags that follow <code><a class="el" href="namespacetags.html#ad49790c2169c7de26b5e6d855f9cea79">tags::via</a></code> in the argument list are forwarded to the <code>snapshot</code> / <code>reconstruct</code> call on the intermediate type.</p>
 <p >Example usage: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structSaveGameHeader.html">SaveGameHeader</a> header;</div>
-<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(headerBlob, &amp;header, tags::via&lt;SaveGameHeader_MM7&gt;);</div>
-<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:255</div></div>
+<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(headerBlob, &amp;header, tags::via&lt;SaveGameHeader_MM7&gt;, tags::encoding(<a class="code hl_enumvalue" href="Encoding_8h.html#a90188b65183db4f834d3f1fb464b2677a00148de07624d229a2843b9f4c37438c">ENCODING_ASCII</a>));</div>
+<div class="ttc" id="aEncoding_8h_html_a90188b65183db4f834d3f1fb464b2677a00148de07624d229a2843b9f4c37438c"><div class="ttname"><a href="Encoding_8h.html#a90188b65183db4f834d3f1fb464b2677a00148de07624d229a2843b9f4c37438c">TextEncoding::ENCODING_ASCII</a></div><div class="ttdeci">@ ENCODING_ASCII</div></div>
 <div class="ttc" id="astructSaveGameHeader_html"><div class="ttname"><a href="structSaveGameHeader.html">SaveGameHeader</a></div><div class="ttdef"><b>Definition:</b> SaveLoad.h:20</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">Via</td><td>Intermediate type to read from the stream. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a507abccbfe98e44c123e02b9b6a44d6d" name="a507abccbfe98e44c123e02b9b6a44d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a507abccbfe98e44c123e02b9b6a44d6d">&#9670;&#160;</a></span>via_each</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class Via &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="structViaEachTag.html">ViaEachTag</a>&lt;Via&gt; tags::via_each</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Serialization tag for containers that instructs the binary serialization framework to use <code><a class="el" href="namespacetags.html#ad49790c2169c7de26b5e6d855f9cea79">tags::via</a>&lt;Via&gt;</code> for each element in the container.</p>
-<p >Example usage: </p><div class="fragment"><div class="line">std::vector&lt;PortraitFrameData&gt; frames;</div>
-<div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(blob, &amp;frames, <a class="code hl_function" href="namespacetags.html#afb5d986579cf83cdefd02b830f8248a3">tags::presized</a>(count), tags::via_each&lt;PortraitFrameData_MM7&gt;);</div>
-<div class="ttc" id="anamespacetags_html_afb5d986579cf83cdefd02b830f8248a3"><div class="ttname"><a href="namespacetags.html#afb5d986579cf83cdefd02b830f8248a3">tags::presized</a></div><div class="ttdeci">constexpr PresizedTag presized(size_t size)</div><div class="ttdef"><b>Definition:</b> BinaryTags.h:50</div></div>
-</div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Via</td><td>Intermediate type to use for each element. </td></tr>
   </table>
   </dd>
 </dl>
