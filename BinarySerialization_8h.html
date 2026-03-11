@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -80,9 +80,8 @@ $(function() {
   <div class="headertitle"><div class="title">BinarySerialization.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="ContainerSerialization_8h.html">ContainerSerialization.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Binary_2CommonSerialization_8h.html">CommonSerialization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BlobSerialization_8h.html">BlobSerialization.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MemCopySerialization_8h.html">MemCopySerialization.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="BinaryConcepts_8h.html">BinaryConcepts.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
@@ -90,6 +89,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1BlobSerializer.html">detail::BlobSerializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1BlobDeserializer.html">detail::BlobDeserializer&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1StreamDeserializer.html">detail::StreamDeserializer&lt; T &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -104,6 +105,9 @@ Variables</h2></td></tr>
 <tr class="memitem:aef8c61524d13a175df462d251dc85156"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:aef8c61524d13a175df462d251dc85156"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structdetail_1_1BlobDeserializer.html">detail::BlobDeserializer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="BinarySerialization_8h.html#aef8c61524d13a175df462d251dc85156">fromBlob</a></td></tr>
 <tr class="separator:aef8c61524d13a175df462d251dc85156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2dc5af1b16139ce7a5786f569ff921c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:af2dc5af1b16139ce7a5786f569ff921c"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="structdetail_1_1StreamDeserializer.html">detail::StreamDeserializer</a>&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="BinarySerialization_8h.html#af2dc5af1b16139ce7a5786f569ff921c">fromStream</a></td></tr>
+<tr class="separator:af2dc5af1b16139ce7a5786f569ff921c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="aef8c61524d13a175df462d251dc85156" name="aef8c61524d13a175df462d251dc85156"></a>
@@ -131,6 +135,34 @@ template&lt;class T &gt; </div>
 <p >Can be used directly as <code>return fromBlob&lt;T&gt;(blob)</code>, or passed into <code>std::views::transform</code>.</p>
 <p >Under the hood it's calling the <code>deserialize</code> function using argument-dependent lookup.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="BinarySerialization_8h.html#abcfed470c1f1b659a4e6f01096272792">toBlob</a> </dd></dl>
+
+</div>
+</div>
+<a id="af2dc5af1b16139ce7a5786f569ff921c" name="af2dc5af1b16139ce7a5786f569ff921c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2dc5af1b16139ce7a5786f569ff921c">&#9670;&#160;</a></span>fromStream</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr <a class="el" href="structdetail_1_1StreamDeserializer.html">detail::StreamDeserializer</a>&lt;T&gt; fromStream</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Value-returning binary stream deserialization object.</p>
+<p >Can be used as <code>fromStream&lt;uint32_t&gt;(stream)</code> or <code>fromStream&lt;std::string&gt;(stream, <a class="el" href="namespacetags.html#aff0fa503e23f7a99bcf5f3d64b565596">tags::nullTerminated</a>)</code>.</p>
+<p >Under the hood it's calling the <code>deserialize</code> function using argument-dependent lookup.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="BinarySerialization_8h.html#aef8c61524d13a175df462d251dc85156">fromBlob</a> </dd></dl>
 
 </div>
 </div>

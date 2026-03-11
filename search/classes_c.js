@@ -16,5 +16,6 @@ var searchData=
   ['nullplatformoptions_13',['NullPlatformOptions',['../structNullPlatformOptions.html',1,'']]],
   ['nullplatformsharedstate_14',['NullPlatformSharedState',['../classNullPlatformSharedState.html',1,'']]],
   ['nullrenderer_15',['NullRenderer',['../classNullRenderer.html',1,'']]],
-  ['nullwindow_16',['NullWindow',['../classNullWindow.html',1,'']]]
+  ['nullterminatedtag_16',['NullTerminatedTag',['../structNullTerminatedTag.html',1,'']]],
+  ['nullwindow_17',['NullWindow',['../classNullWindow.html',1,'']]]
 ];

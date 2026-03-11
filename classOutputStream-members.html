@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -75,13 +75,27 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classOutputStream.html">OutputStream</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a2ae5655027e69592cfc6d2b74a1d4036">close</a>()=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#a29f22a113171c766409880a154136a5c">displayPath</a>() const =0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a2b731aef87084c3779bea292f85e800d">flush</a>()=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#ac3a7f2b6c87b13f5ffc7c0eb307753e3">write</a>(const void *data, size_t size)=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a1f706c65a1f55ff6843a1331dac03504">_buffer</a></td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#abf71628fa8b9a35206a65a4af670f27b">_bufferBase</a></td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a5228f08654fa2c70a0f33d37c4225320">_close</a>(Buffer *buffer)=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#aabba63c5aac3c74ab40b2eef1e95f65c">_displayPath</a></td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a71054ff0f5adaf5a335aedf48847426b">_flush</a>(Buffer *buffer)=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#ae0489ffa2feabab71059d3c8bedb7a8f">_isOpen</a></td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#acaa520180b88e35eaa7edac426b236bd">_overflow</a>(const void *data, size_t size, Buffer *buffer)=0</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#a26cbe498c7b54ff00f1fbb0688aa4cc9">Buffer</a> typedef</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#ac7c702f674ff0fe8a29123d37d7df00a">close</a>()</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#aeb050321e9682fa5c85b589c0cb703df">displayPath</a>() const</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#aa91fe07c2e92355846e3a6fea60f3d28">flush</a>()</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#acf617658a864282f0d8990a53f19617f">isOpen</a>() const</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#acd7dce184ea945603f2ad41361be4638">open</a>(Buffer buffer, std::string_view displayPath)</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#aaa48c62b1c9a2c461bec449113ac6c92">OutputStream</a>()=default</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a6b0a0f6824f24b588fbf862929d629a1">overflow</a>(const void *data, size_t size)</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#a2e3cbe661669ab18472f3fb9fb28ce8c">position</a>() const</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a3cbe80a560ce0573c9af2fe453759f5c">size</a>() const</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#a970d59eb5b83559ca4eb49928c96e723">write</a>(const void *data, size_t size)</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a699316a61182c0951ecbc043b7ec63f2">write</a>(std::string_view s)</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr class="odd"><td class="entry"><a class="el" href="classOutputStream.html#ad6de134f3717f14542b996868e13d79e">write</a>(const Blob &amp;blob)</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a3c3286bd6c6c8fb6b16ce7f88745075b">~OutputStream</a>()</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">virtual</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classOutputStream.html#a0e63481676582adb93cae5970d16d37a">~OutputStream</a>()</td><td class="entry"><a class="el" href="classOutputStream.html">OutputStream</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

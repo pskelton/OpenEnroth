@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -75,6 +75,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-types">Private Types</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classdetail_1_1MemoryFileSystemInputStream-members.html">List of all members</a>  </div>
@@ -98,7 +99,7 @@ Inheritance diagram for detail::MemoryFileSystemInputStream:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:afe16a316ec4df733682cc8c18d92cb37"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#afe16a316ec4df733682cc8c18d92cb37">MemoryFileSystemInputStream</a> (std::shared_ptr&lt; <a class="el" href="structdetail_1_1MemoryFileData.html">MemoryFileData</a> &gt; data)</td></tr>
 <tr class="separator:afe16a316ec4df733682cc8c18d92cb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af39ccc05e6d4c1ff50a310c8790193d3"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#af39ccc05e6d4c1ff50a310c8790193d3">~MemoryFileSystemInputStream</a> ()</td></tr>
+<tr class="memitem:af39ccc05e6d4c1ff50a310c8790193d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#af39ccc05e6d4c1ff50a310c8790193d3">~MemoryFileSystemInputStream</a> ()</td></tr>
 <tr class="separator:af39ccc05e6d4c1ff50a310c8790193d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classBlobInputStream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classBlobInputStream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classBlobInputStream.html">BlobInputStream</a></td></tr>
 <tr class="memitem:a02c07f70365d1aed7a0228fc3f1394bc inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a02c07f70365d1aed7a0228fc3f1394bc">BlobInputStream</a> ()=default</td></tr>
@@ -111,48 +112,51 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9b7ffcf745e80cf801b0cc77fb520d8c inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade97d19a198be41af77120a94d892f46 inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#ade97d19a198be41af77120a94d892f46">open</a> (const <a class="el" href="classBlob.html">Blob</a> &amp;blob)</td></tr>
 <tr class="separator:ade97d19a198be41af77120a94d892f46 inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11d916f1d4bd8e57f658f62cd7856547 inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a11d916f1d4bd8e57f658f62cd7856547">read</a> (void *data, size_t <a class="el" href="classBlobInputStream.html#ac73b8dbf3de8b82ea6188ca9d1a8468d">size</a>) override</td></tr>
-<tr class="separator:a11d916f1d4bd8e57f658f62cd7856547 inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec94f54aa8002d9c289e1f97ea4d622b inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#aec94f54aa8002d9c289e1f97ea4d622b">skip</a> (size_t <a class="el" href="classBlobInputStream.html#ac73b8dbf3de8b82ea6188ca9d1a8468d">size</a>) override</td></tr>
-<tr class="separator:aec94f54aa8002d9c289e1f97ea4d622b inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aee9d6242c38cbb55016587c4fd2c2222 inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#aee9d6242c38cbb55016587c4fd2c2222">close</a> () override</td></tr>
-<tr class="separator:aee9d6242c38cbb55016587c4fd2c2222 inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab98cfa96bc2eeca090d6e4cf4fb4aa1d inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#ab98cfa96bc2eeca090d6e4cf4fb4aa1d">displayPath</a> () const override</td></tr>
-<tr class="separator:ab98cfa96bc2eeca090d6e4cf4fb4aa1d inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeeb85044494782ef0e372e4865da03c inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#abeeb85044494782ef0e372e4865da03c">seek</a> (size_t pos)</td></tr>
-<tr class="separator:abeeb85044494782ef0e372e4865da03c inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3b10c016197b2f139129e9d7402923 inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a8c3b10c016197b2f139129e9d7402923">position</a> () const</td></tr>
-<tr class="separator:a8c3b10c016197b2f139129e9d7402923 inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac73b8dbf3de8b82ea6188ca9d1a8468d inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#ac73b8dbf3de8b82ea6188ca9d1a8468d">size</a> () const</td></tr>
-<tr class="separator:ac73b8dbf3de8b82ea6188ca9d1a8468d inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e40bd2fc1e20e11681e5af6dfaca7ed inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a0e40bd2fc1e20e11681e5af6dfaca7ed">readAsBlob</a> (size_t <a class="el" href="classBlobInputStream.html#ac73b8dbf3de8b82ea6188ca9d1a8468d">size</a>)</td></tr>
+<tr class="memitem:a0e40bd2fc1e20e11681e5af6dfaca7ed inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a0e40bd2fc1e20e11681e5af6dfaca7ed">readAsBlob</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a0e40bd2fc1e20e11681e5af6dfaca7ed inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20c9da3d4fc63eda8d331022b097c19b inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a20c9da3d4fc63eda8d331022b097c19b">readAsBlobOrFail</a> (size_t <a class="el" href="classBlobInputStream.html#ac73b8dbf3de8b82ea6188ca9d1a8468d">size</a>)</td></tr>
+<tr class="memitem:a20c9da3d4fc63eda8d331022b097c19b inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a20c9da3d4fc63eda8d331022b097c19b">readAsBlobOrFail</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a20c9da3d4fc63eda8d331022b097c19b inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d6b319b3f2ca47ff146ab34357757ee inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a4d6b319b3f2ca47ff146ab34357757ee">readAllAsBlob</a> () const</td></tr>
-<tr class="separator:a4d6b319b3f2ca47ff146ab34357757ee inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a616a0b0564ae7fdeef9df568e592d96a inherit pub_methods_classBlobInputStream"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlobInputStream.html#a616a0b0564ae7fdeef9df568e592d96a">readAllAsBlob</a> ()</td></tr>
+<tr class="separator:a616a0b0564ae7fdeef9df568e592d96a inherit pub_methods_classBlobInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classInputStream"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classInputStream')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classInputStream.html">InputStream</a></td></tr>
-<tr class="memitem:a8c49246dd62e559578732f518f159432 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a8c49246dd62e559578732f518f159432">~InputStream</a> ()</td></tr>
-<tr class="separator:a8c49246dd62e559578732f518f159432 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39ae65ea1ecb89c53f31aa0206d901c3 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a39ae65ea1ecb89c53f31aa0206d901c3">read</a> (void *data, size_t size)=0</td></tr>
-<tr class="separator:a39ae65ea1ecb89c53f31aa0206d901c3 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07805609a6bab85285c492845c4ceaf5 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a07805609a6bab85285c492845c4ceaf5">readOrFail</a> (void *data, size_t size)</td></tr>
+<tr class="memitem:ae71831adce618d60783c287a2ac7075a inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ae71831adce618d60783c287a2ac7075a">~InputStream</a> ()</td></tr>
+<tr class="separator:ae71831adce618d60783c287a2ac7075a inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75777910d670db8765a967abd3c1825 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac75777910d670db8765a967abd3c1825">read</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
+<tr class="separator:ac75777910d670db8765a967abd3c1825 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07805609a6bab85285c492845c4ceaf5 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a07805609a6bab85285c492845c4ceaf5">readOrFail</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a07805609a6bab85285c492845c4ceaf5 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ce2c2eab02d9826c5db7321dccc5dc inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a01ce2c2eab02d9826c5db7321dccc5dc">readAll</a> (size_t maxSize=-1)</td></tr>
-<tr class="separator:a01ce2c2eab02d9826c5db7321dccc5dc inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb53adf30be18bfecda9cd4a42c03394 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#afb53adf30be18bfecda9cd4a42c03394">skip</a> (size_t size)=0</td></tr>
-<tr class="separator:afb53adf30be18bfecda9cd4a42c03394 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c88a664d86b146829b6c5c9912449a inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a47c88a664d86b146829b6c5c9912449a">skipOrFail</a> (size_t size)</td></tr>
+<tr class="memitem:af6d6bca10bea1e9ccdfba290ed6149ea inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#af6d6bca10bea1e9ccdfba290ed6149ea">readAll</a> (std::string *dst)</td></tr>
+<tr class="separator:af6d6bca10bea1e9ccdfba290ed6149ea inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e44982f09d85375746fde3f5177bc73 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a9e44982f09d85375746fde3f5177bc73">readAll</a> ()</td></tr>
+<tr class="separator:a9e44982f09d85375746fde3f5177bc73 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4b8bcb57abb2df0a4c7a96e7005e55 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a4e4b8bcb57abb2df0a4c7a96e7005e55">skip</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
+<tr class="separator:a4e4b8bcb57abb2df0a4c7a96e7005e55 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c88a664d86b146829b6c5c9912449a inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a47c88a664d86b146829b6c5c9912449a">skipOrFail</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a47c88a664d86b146829b6c5c9912449a inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0148f63b4e9e39a214362403a474a61c inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a0148f63b4e9e39a214362403a474a61c">close</a> ()=0</td></tr>
-<tr class="separator:a0148f63b4e9e39a214362403a474a61c inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0ef9cd7386baf8c31c73158498eaa2 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acd0ef9cd7386baf8c31c73158498eaa2">displayPath</a> () const =0</td></tr>
-<tr class="separator:acd0ef9cd7386baf8c31c73158498eaa2 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac111e7410314b2b01feb748c7e314753 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac111e7410314b2b01feb748c7e314753">readUntil</a> (char delimiter, std::string *dst)</td></tr>
+<tr class="separator:ac111e7410314b2b01feb748c7e314753 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada552be1753462a8ba939b5d2a3f2328 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ada552be1753462a8ba939b5d2a3f2328">readUntil</a> (char delimiter)</td></tr>
+<tr class="separator:ada552be1753462a8ba939b5d2a3f2328 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1699529455d9627f1bb4ba82a1dee642 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a1699529455d9627f1bb4ba82a1dee642">close</a> ()</td></tr>
+<tr class="separator:a1699529455d9627f1bb4ba82a1dee642 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44b4e89bfbc1684cbe670409aa89417 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac44b4e89bfbc1684cbe670409aa89417">isOpen</a> () const</td></tr>
+<tr class="separator:ac44b4e89bfbc1684cbe670409aa89417 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881f4a3293ee68ebfb43af900b580dd inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a9881f4a3293ee68ebfb43af900b580dd">position</a> () const</td></tr>
+<tr class="separator:a9881f4a3293ee68ebfb43af900b580dd inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bb6de3a8b9a2914e9639e76f670e14 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a> () const</td></tr>
+<tr class="separator:a82bb6de3a8b9a2914e9639e76f670e14 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc9ccb2ad209443b51fbc369a51b049 inherit pub_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#adbc9ccb2ad209443b51fbc369a51b049">displayPath</a> () const</td></tr>
+<tr class="separator:adbc9ccb2ad209443b51fbc369a51b049 inherit pub_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-types" name="pri-types"></a>
+Private Types</h2></td></tr>
+<tr class="memitem:a628c17d950932ad9f302ddcc22f32671"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a628c17d950932ad9f302ddcc22f32671">base_type</a> = <a class="el" href="classBlobInputStream.html">BlobInputStream</a></td></tr>
+<tr class="separator:a628c17d950932ad9f302ddcc22f32671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7ec37beb08bef1342baa62490368f03c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a7ec37beb08bef1342baa62490368f03c">close</a> () override</td></tr>
-<tr class="separator:a7ec37beb08bef1342baa62490368f03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29b7b91a1ff67a7fb11b0598d56f3381"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a29b7b91a1ff67a7fb11b0598d56f3381">_close</a> () override</td></tr>
+<tr class="separator:a29b7b91a1ff67a7fb11b0598d56f3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23590d7aa86d00ec9b9f05fc76cb13f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a23590d7aa86d00ec9b9f05fc76cb13f7">closeInternal</a> ()</td></tr>
 <tr class="separator:a23590d7aa86d00ec9b9f05fc76cb13f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -160,7 +164,51 @@ Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:afbdf7c053b8d495d8e05b0a29729842c"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structdetail_1_1MemoryFileData.html">MemoryFileData</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#afbdf7c053b8d495d8e05b0a29729842c">_data</a></td></tr>
 <tr class="separator:afbdf7c053b8d495d8e05b0a29729842c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classInputStream"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classInputStream')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classInputStream.html">InputStream</a></td></tr>
+<tr class="memitem:acc4acc8bdf641655fd6bc5b2e0c7ff75 inherit pub_types_classInputStream"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> = <a class="el" href="classStreamBuffer.html">StreamBuffer</a>&lt; const char &gt;</td></tr>
+<tr class="separator:acc4acc8bdf641655fd6bc5b2e0c7ff75 inherit pub_types_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classInputStream"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classInputStream')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classInputStream.html">InputStream</a></td></tr>
+<tr class="memitem:a44bb66bced237daaacd2686991053d48 inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a44bb66bced237daaacd2686991053d48">InputStream</a> ()=default</td></tr>
+<tr class="separator:a44bb66bced237daaacd2686991053d48 inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedfdf865a7e9c359b20eb11e6c94310 inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acedfdf865a7e9c359b20eb11e6c94310">open</a> (<a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> buffer, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>, std::string_view <a class="el" href="classInputStream.html#adbc9ccb2ad209443b51fbc369a51b049">displayPath</a>)</td></tr>
+<tr class="separator:acedfdf865a7e9c359b20eb11e6c94310 inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe6ce050427c23c03b9eb29d4498fac inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#adbe6ce050427c23c03b9eb29d4498fac">_underflow</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>, <a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> *buffer)</td></tr>
+<tr class="separator:adbe6ce050427c23c03b9eb29d4498fac inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeae9dccbfe04c2833cd683f2d9c9aac inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">_close</a> ()</td></tr>
+<tr class="separator:abeae9dccbfe04c2833cd683f2d9c9aac inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f59a498ee663f949cba10474f959dc inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ab3f59a498ee663f949cba10474f959dc">throwReadError</a> (size_t requested, size_t actual) const</td></tr>
+<tr class="separator:ab3f59a498ee663f949cba10474f959dc inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec29631e8e0b8229e02f8faa1c202f7 inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7ec29631e8e0b8229e02f8faa1c202f7">throwSkipError</a> (size_t requested, size_t actual) const</td></tr>
+<tr class="separator:a7ec29631e8e0b8229e02f8faa1c202f7 inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >Input stream for reading from a memory file system entry. Manages reader counting for the memory file data. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a628c17d950932ad9f302ddcc22f32671" name="a628c17d950932ad9f302ddcc22f32671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a628c17d950932ad9f302ddcc22f32671">&#9670;&#160;</a></span>base_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a628c17d950932ad9f302ddcc22f32671">detail::MemoryFileSystemInputStream::base_type</a> =  <a class="el" href="classBlobInputStream.html">BlobInputStream</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afe16a316ec4df733682cc8c18d92cb37" name="afe16a316ec4df733682cc8c18d92cb37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afe16a316ec4df733682cc8c18d92cb37">&#9670;&#160;</a></span>MemoryFileSystemInputStream()</h2>
@@ -193,9 +241,6 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">detail::MemoryFileSystemInputStream::~MemoryFileSystemInputStream </td>
@@ -204,18 +249,13 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7ec37beb08bef1342baa62490368f03c" name="a7ec37beb08bef1342baa62490368f03c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ec37beb08bef1342baa62490368f03c">&#9670;&#160;</a></span>close()</h2>
+<a id="a29b7b91a1ff67a7fb11b0598d56f3381" name="a29b7b91a1ff67a7fb11b0598d56f3381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29b7b91a1ff67a7fb11b0598d56f3381">&#9670;&#160;</a></span>_close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +264,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void detail::MemoryFileSystemInputStream::close </td>
+          <td class="memname">void detail::MemoryFileSystemInputStream::_close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -236,8 +276,7 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Closes this input stream. Reading from a closed stream will result in undefined behavior.</p>
-<p >Does nothing if the stream is already closed.</p>
+<p >Closes the underlying source, releasing any held resources. Override in subclasses that need cleanup. Derived implementations should call <code><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">InputStream::_close()</a></code> at the end.</p>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
@@ -245,7 +284,7 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classBlobInputStream.html#aee9d6242c38cbb55016587c4fd2c2222">BlobInputStream</a>.</p>
+<p>Reimplemented from <a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">InputStream</a>.</p>
 
 </div>
 </div>

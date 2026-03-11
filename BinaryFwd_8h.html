@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Library/Binary/MemCopySerialization.h File Reference</title>
+<title>OpenEnroth: src/Library/Binary/BinaryFwd.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -76,16 +76,11 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">MemCopySerialization.h File Reference</div></div>
+  <div class="headertitle"><div class="title">BinaryFwd.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;typeinfo&gt;</code><br />
-<code>#include &lt;type_traits&gt;</code><br />
-<code>#include &quot;<a class="el" href="OutputStream_8h.html">Utility/Streams/OutputStream.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="InputStream_8h.html">Utility/Streams/InputStream.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="BinaryExceptions_8h.html">BinaryExceptions.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -94,24 +89,13 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a0e5a65ffd33a77c01b7a2cad84b5618a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemCopySerialization_8h.html#a0e5a65ffd33a77c01b7a2cad84b5618a">MM_DECLARE_MEMCOPY_SERIALIZABLE</a>(T)</td></tr>
+<tr class="memitem:a0e5a65ffd33a77c01b7a2cad84b5618a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="BinaryFwd_8h.html#a0e5a65ffd33a77c01b7a2cad84b5618a">MM_DECLARE_MEMCOPY_SERIALIZABLE</a>(T)</td></tr>
 <tr class="separator:a0e5a65ffd33a77c01b7a2cad84b5618a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a10f1523217d3404f3478eacb12cb78dc"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
-requires <a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a>&lt;T&gt;</td></tr>
-<tr class="memitem:a10f1523217d3404f3478eacb12cb78dc"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemCopySerialization_8h.html#a10f1523217d3404f3478eacb12cb78dc">serialize</a> (const T &amp;src, <a class="el" href="classOutputStream.html">OutputStream</a> *dst)</td></tr>
-<tr class="separator:a10f1523217d3404f3478eacb12cb78dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f4ba790a7f18369cb03d5387ea3d9fd"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
-requires <a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a>&lt;T&gt;</td></tr>
-<tr class="memitem:a4f4ba790a7f18369cb03d5387ea3d9fd"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemCopySerialization_8h.html#a4f4ba790a7f18369cb03d5387ea3d9fd">deserialize</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;src, T *dst)</td></tr>
-<tr class="separator:a4f4ba790a7f18369cb03d5387ea3d9fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a1020e86d4a3a2f3646c53d69404efd48"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a1020e86d4a3a2f3646c53d69404efd48"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a> = <a class="el" href="structis__memcopy__serializable.html">is_memcopy_serializable</a>&lt;T&gt;::value</td></tr>
+<tr class="memitem:a1020e86d4a3a2f3646c53d69404efd48"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="BinaryFwd_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a> = <a class="el" href="structis__memcopy__serializable.html">is_memcopy_serializable</a>&lt;T&gt;::value</td></tr>
 <tr class="separator:a1020e86d4a3a2f3646c53d69404efd48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -132,7 +116,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;&gt;                                                                                                              \</div>
 <div class="line"><span class="keyword">struct </span><a class="code hl_struct" href="structis__memcopy__serializable.html">is_memcopy_serializable</a>&lt;T&gt; : std::true_type {};</div>
-<div class="ttc" id="astructis__memcopy__serializable_html"><div class="ttname"><a href="structis__memcopy__serializable.html">is_memcopy_serializable</a></div><div class="ttdef"><b>Definition:</b> MemCopySerialization.h:24</div></div>
+<div class="ttc" id="astructis__memcopy__serializable_html"><div class="ttname"><a href="structis__memcopy__serializable.html">is_memcopy_serializable</a></div><div class="ttdef"><b>Definition:</b> BinaryFwd.h:18</div></div>
 </div><!-- fragment --><p >Invoke this macro for a type to use it with binary serialization functions via simple memory copy.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -140,69 +124,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a4f4ba790a7f18369cb03d5387ea3d9fd" name="a4f4ba790a7f18369cb03d5387ea3d9fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f4ba790a7f18369cb03d5387ea3d9fd">&#9670;&#160;</a></span>deserialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; <br />
-requires <a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a>&lt;T&gt;</div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void deserialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a> &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T *&#160;</td>
-          <td class="paramname"><em>dst</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a10f1523217d3404f3478eacb12cb78dc" name="a10f1523217d3404f3478eacb12cb78dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a10f1523217d3404f3478eacb12cb78dc">&#9670;&#160;</a></span>serialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; <br />
-requires <a class="el" href="MemCopySerialization_8h.html#a1020e86d4a3a2f3646c53d69404efd48">is_memcopy_serializable_v</a>&lt;T&gt;</div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void serialize </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td>
-          <td class="paramname"><em>dst</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

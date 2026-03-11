@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -74,22 +74,257 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">InputStream_ut.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="UnitTest_8h.html">Testing/Unit/UnitTest.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="InputStream_8h.html">Utility/Streams/InputStream.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="MemoryInputStream_8h.html">Utility/Streams/MemoryInputStream.h</a>&quot;</code><br />
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classUnsizedInputStream.html">UnsizedInputStream</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a1e520c0f3b2d805b92df6197c2e28d42"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a1e520c0f3b2d805b92df6197c2e28d42">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadAll)</td></tr>
 <tr class="separator:a1e520c0f3b2d805b92df6197c2e28d42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5f0d54fc984ea55acc74f9b54d5a8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aca5f0d54fc984ea55acc74f9b54d5a8f">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadAllToString)</td></tr>
+<tr class="separator:aca5f0d54fc984ea55acc74f9b54d5a8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb053d366a672e5228feef2960e7187"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#abfb053d366a672e5228feef2960e7187">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadAllToStringClears)</td></tr>
+<tr class="separator:abfb053d366a672e5228feef2960e7187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f067a33757161837429412ca9b24f7d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a3f067a33757161837429412ca9b24f7d">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadAllEmpty)</td></tr>
+<tr class="separator:a3f067a33757161837429412ca9b24f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cb2a23fe7693cb7981169ce3a8ea232"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a3cb2a23fe7693cb7981169ce3a8ea232">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadOrFailThrowsOnShortRead)</td></tr>
+<tr class="separator:a3cb2a23fe7693cb7981169ce3a8ea232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4804f5bf93dcacd2984b38aad8cc861a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a4804f5bf93dcacd2984b38aad8cc861a">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadOrFailErrorIncludesDisplayPath)</td></tr>
+<tr class="separator:a4804f5bf93dcacd2984b38aad8cc861a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca6c261aaf1d2a14d335ba403a1b70db"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aca6c261aaf1d2a14d335ba403a1b70db">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadOrFailSucceeds)</td></tr>
+<tr class="separator:aca6c261aaf1d2a14d335ba403a1b70db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97ccce70de6b655763fc73a3a17bbf40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a97ccce70de6b655763fc73a3a17bbf40">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SkipOrFailThrowsOnShortSkip)</td></tr>
+<tr class="separator:a97ccce70de6b655763fc73a3a17bbf40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b5dc658537b460cc0b9777769b1f233"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a4b5dc658537b460cc0b9777769b1f233">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SkipOrFailErrorIncludesDisplayPath)</td></tr>
+<tr class="separator:a4b5dc658537b460cc0b9777769b1f233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17434beb659bf27e7823d760cfdc790e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a17434beb659bf27e7823d760cfdc790e">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SkipOrFailSucceeds)</td></tr>
+<tr class="separator:a17434beb659bf27e7823d760cfdc790e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554334b7c8d45828acd47bc467c9113c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a554334b7c8d45828acd47bc467c9113c">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadZeroBytes)</td></tr>
+<tr class="separator:a554334b7c8d45828acd47bc467c9113c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2192805b0b3971d019310cf67e5c641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#af2192805b0b3971d019310cf67e5c641">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SkipZeroBytes)</td></tr>
+<tr class="separator:af2192805b0b3971d019310cf67e5c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e04fc70910cc8a51d94c362c2724b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a92e04fc70910cc8a51d94c362c2724b8">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, CloseIdempotent)</td></tr>
+<tr class="separator:a92e04fc70910cc8a51d94c362c2724b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244107783ab6fd192eb49178b2e103ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a244107783ab6fd192eb49178b2e103ad">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReopenAfterClose)</td></tr>
+<tr class="separator:a244107783ab6fd192eb49178b2e103ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef7b83b732e5a4525104fdcbc492b7fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aef7b83b732e5a4525104fdcbc492b7fb">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilDelimiterNotFound)</td></tr>
+<tr class="separator:aef7b83b732e5a4525104fdcbc492b7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70af975cba6e54aec1fc381cc714fb01"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a70af975cba6e54aec1fc381cc714fb01">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilConsumesDelimiter)</td></tr>
+<tr class="separator:a70af975cba6e54aec1fc381cc714fb01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42f4bf263db2da2bf18d2d093333741"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aa42f4bf263db2da2bf18d2d093333741">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilEmptyBeforeDelimiter)</td></tr>
+<tr class="separator:aa42f4bf263db2da2bf18d2d093333741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ba644a655b46d38385e36293b1da45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a84ba644a655b46d38385e36293b1da45">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilClearsString)</td></tr>
+<tr class="separator:a84ba644a655b46d38385e36293b1da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae07cedc29d4a181576720f80662eacdb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#ae07cedc29d4a181576720f80662eacdb">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilNewlineDelimiter)</td></tr>
+<tr class="separator:ae07cedc29d4a181576720f80662eacdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f367b51dd000fb24d9aaf7cf1991cd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a1f367b51dd000fb24d9aaf7cf1991cd0">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, ReadUntilEmpty)</td></tr>
+<tr class="separator:a1f367b51dd000fb24d9aaf7cf1991cd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5adfe5d640aa850a431d6924e78af0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a3d5adfe5d640aa850a431d6924e78af0">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SizeKnownForMemoryStream)</td></tr>
+<tr class="separator:a3d5adfe5d640aa850a431d6924e78af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa89a3e758fc0f88045abe62343e1855e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aa89a3e758fc0f88045abe62343e1855e">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, SizeUnknownByDefault)</td></tr>
+<tr class="separator:aa89a3e758fc0f88045abe62343e1855e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0f27f8b91013dee8f1c759d5e5062ea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#aa0f27f8b91013dee8f1c759d5e5062ea">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, PositionStartsAtZero)</td></tr>
+<tr class="separator:aa0f27f8b91013dee8f1c759d5e5062ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661f554931ef620c2fa762995c775d0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a661f554931ef620c2fa762995c775d0b">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, PositionAdvancesOnSkip)</td></tr>
+<tr class="separator:a661f554931ef620c2fa762995c775d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad87596b9ff55083f02231600a3933f2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#ad87596b9ff55083f02231600a3933f2e">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, PositionAtEnd)</td></tr>
+<tr class="separator:ad87596b9ff55083f02231600a3933f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97d928f77aea0b4c5818a26df2e0d573"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a97d928f77aea0b4c5818a26df2e0d573">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, PositionAfterPartialRead)</td></tr>
+<tr class="separator:a97d928f77aea0b4c5818a26df2e0d573"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538c131242355428e56a78241932b7b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a538c131242355428e56a78241932b7b9">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, PositionResetsOnReopen)</td></tr>
+<tr class="separator:a538c131242355428e56a78241932b7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e66e7548dc9dbf57f1399485f2c6270"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a5e66e7548dc9dbf57f1399485f2c6270">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, UnsizedReadAll)</td></tr>
+<tr class="separator:a5e66e7548dc9dbf57f1399485f2c6270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a956610d5036a6edfd6fefdfc3374c059"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#a956610d5036a6edfd6fefdfc3374c059">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, UnsizedReadAllLarge)</td></tr>
+<tr class="separator:a956610d5036a6edfd6fefdfc3374c059"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae04244edaec09365d13b4100c5c5ba12"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="InputStream__ut_8cpp.html#ae04244edaec09365d13b4100c5c5ba12">UNIT_TEST</a> (<a class="el" href="classInputStream.html">InputStream</a>, UnsizedReadAllEmpty)</td></tr>
+<tr class="separator:ae04244edaec09365d13b4100c5c5ba12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a92e04fc70910cc8a51d94c362c2724b8" name="a92e04fc70910cc8a51d94c362c2724b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e04fc70910cc8a51d94c362c2724b8">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[1/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">CloseIdempotent&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a661f554931ef620c2fa762995c775d0b" name="a661f554931ef620c2fa762995c775d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661f554931ef620c2fa762995c775d0b">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[2/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PositionAdvancesOnSkip&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97d928f77aea0b4c5818a26df2e0d573" name="a97d928f77aea0b4c5818a26df2e0d573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97d928f77aea0b4c5818a26df2e0d573">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[3/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PositionAfterPartialRead&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad87596b9ff55083f02231600a3933f2e" name="ad87596b9ff55083f02231600a3933f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad87596b9ff55083f02231600a3933f2e">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[4/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PositionAtEnd&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a538c131242355428e56a78241932b7b9" name="a538c131242355428e56a78241932b7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a538c131242355428e56a78241932b7b9">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[5/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PositionResetsOnReopen&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0f27f8b91013dee8f1c759d5e5062ea" name="aa0f27f8b91013dee8f1c759d5e5062ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0f27f8b91013dee8f1c759d5e5062ea">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[6/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PositionStartsAtZero&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a1e520c0f3b2d805b92df6197c2e28d42" name="a1e520c0f3b2d805b92df6197c2e28d42"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e520c0f3b2d805b92df6197c2e28d42">&#9670;&#160;</a></span>UNIT_TEST()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e520c0f3b2d805b92df6197c2e28d42">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[7/30]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -104,6 +339,650 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">ReadAll&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f067a33757161837429412ca9b24f7d" name="a3f067a33757161837429412ca9b24f7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f067a33757161837429412ca9b24f7d">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[8/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadAllEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca5f0d54fc984ea55acc74f9b54d5a8f" name="aca5f0d54fc984ea55acc74f9b54d5a8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca5f0d54fc984ea55acc74f9b54d5a8f">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[9/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadAllToString&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfb053d366a672e5228feef2960e7187" name="abfb053d366a672e5228feef2960e7187"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb053d366a672e5228feef2960e7187">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[10/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadAllToStringClears&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4804f5bf93dcacd2984b38aad8cc861a" name="a4804f5bf93dcacd2984b38aad8cc861a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4804f5bf93dcacd2984b38aad8cc861a">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[11/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadOrFailErrorIncludesDisplayPath&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca6c261aaf1d2a14d335ba403a1b70db" name="aca6c261aaf1d2a14d335ba403a1b70db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca6c261aaf1d2a14d335ba403a1b70db">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[12/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadOrFailSucceeds&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3cb2a23fe7693cb7981169ce3a8ea232" name="a3cb2a23fe7693cb7981169ce3a8ea232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb2a23fe7693cb7981169ce3a8ea232">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[13/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadOrFailThrowsOnShortRead&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a84ba644a655b46d38385e36293b1da45" name="a84ba644a655b46d38385e36293b1da45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ba644a655b46d38385e36293b1da45">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[14/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilClearsString&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a70af975cba6e54aec1fc381cc714fb01" name="a70af975cba6e54aec1fc381cc714fb01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70af975cba6e54aec1fc381cc714fb01">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[15/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilConsumesDelimiter&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aef7b83b732e5a4525104fdcbc492b7fb" name="aef7b83b732e5a4525104fdcbc492b7fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef7b83b732e5a4525104fdcbc492b7fb">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[16/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilDelimiterNotFound&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1f367b51dd000fb24d9aaf7cf1991cd0" name="a1f367b51dd000fb24d9aaf7cf1991cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f367b51dd000fb24d9aaf7cf1991cd0">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[17/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa42f4bf263db2da2bf18d2d093333741" name="aa42f4bf263db2da2bf18d2d093333741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42f4bf263db2da2bf18d2d093333741">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[18/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilEmptyBeforeDelimiter&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae07cedc29d4a181576720f80662eacdb" name="ae07cedc29d4a181576720f80662eacdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07cedc29d4a181576720f80662eacdb">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[19/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadUntilNewlineDelimiter&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a554334b7c8d45828acd47bc467c9113c" name="a554334b7c8d45828acd47bc467c9113c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a554334b7c8d45828acd47bc467c9113c">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[20/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadZeroBytes&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a244107783ab6fd192eb49178b2e103ad" name="a244107783ab6fd192eb49178b2e103ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244107783ab6fd192eb49178b2e103ad">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[21/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReopenAfterClose&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d5adfe5d640aa850a431d6924e78af0" name="a3d5adfe5d640aa850a431d6924e78af0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d5adfe5d640aa850a431d6924e78af0">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[22/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SizeKnownForMemoryStream&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa89a3e758fc0f88045abe62343e1855e" name="aa89a3e758fc0f88045abe62343e1855e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa89a3e758fc0f88045abe62343e1855e">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[23/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SizeUnknownByDefault&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b5dc658537b460cc0b9777769b1f233" name="a4b5dc658537b460cc0b9777769b1f233"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b5dc658537b460cc0b9777769b1f233">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[24/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SkipOrFailErrorIncludesDisplayPath&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17434beb659bf27e7823d760cfdc790e" name="a17434beb659bf27e7823d760cfdc790e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17434beb659bf27e7823d760cfdc790e">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[25/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SkipOrFailSucceeds&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a97ccce70de6b655763fc73a3a17bbf40" name="a97ccce70de6b655763fc73a3a17bbf40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97ccce70de6b655763fc73a3a17bbf40">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[26/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SkipOrFailThrowsOnShortSkip&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af2192805b0b3971d019310cf67e5c641" name="af2192805b0b3971d019310cf67e5c641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2192805b0b3971d019310cf67e5c641">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[27/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SkipZeroBytes&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5e66e7548dc9dbf57f1399485f2c6270" name="a5e66e7548dc9dbf57f1399485f2c6270"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e66e7548dc9dbf57f1399485f2c6270">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[28/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnsizedReadAll&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae04244edaec09365d13b4100c5c5ba12" name="ae04244edaec09365d13b4100c5c5ba12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae04244edaec09365d13b4100c5c5ba12">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[29/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnsizedReadAllEmpty&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a956610d5036a6edfd6fefdfc3374c059" name="a956610d5036a6edfd6fefdfc3374c059"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a956610d5036a6edfd6fefdfc3374c059">&#9670;&#160;</a></span>UNIT_TEST() <span class="overload">[30/30]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">UNIT_TEST </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UnsizedReadAllLarge&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>

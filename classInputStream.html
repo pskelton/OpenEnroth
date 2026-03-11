@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -70,9 +70,13 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classInputStream-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">InputStream Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">InputStream Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -86,39 +90,104 @@ Inheritance diagram for InputStream:</div>
 <area href="classBlobInputStream.html" alt="BlobInputStream" shape="rect" coords="0,56,221,80"/>
 <area href="classFileInputStream.html" alt="FileInputStream" shape="rect" coords="231,56,452,80"/>
 <area href="classMemoryInputStream.html" alt="MemoryInputStream" shape="rect" coords="462,56,683,80"/>
+<area href="classUnsizedInputStream.html" alt="UnsizedInputStream" shape="rect" coords="693,56,914,80"/>
 <area href="classdetail_1_1MemoryFileSystemInputStream.html" alt="detail::MemoryFileSystemInputStream" shape="rect" coords="0,112,221,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:acc4acc8bdf641655fd6bc5b2e0c7ff75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> = <a class="el" href="classStreamBuffer.html">StreamBuffer</a>&lt; const char &gt;</td></tr>
+<tr class="separator:acc4acc8bdf641655fd6bc5b2e0c7ff75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8c49246dd62e559578732f518f159432"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a8c49246dd62e559578732f518f159432">~InputStream</a> ()</td></tr>
-<tr class="separator:a8c49246dd62e559578732f518f159432"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39ae65ea1ecb89c53f31aa0206d901c3"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a39ae65ea1ecb89c53f31aa0206d901c3">read</a> (void *data, size_t size)=0</td></tr>
-<tr class="separator:a39ae65ea1ecb89c53f31aa0206d901c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07805609a6bab85285c492845c4ceaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a07805609a6bab85285c492845c4ceaf5">readOrFail</a> (void *data, size_t size)</td></tr>
+<tr class="memitem:ae71831adce618d60783c287a2ac7075a"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ae71831adce618d60783c287a2ac7075a">~InputStream</a> ()</td></tr>
+<tr class="separator:ae71831adce618d60783c287a2ac7075a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac75777910d670db8765a967abd3c1825"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac75777910d670db8765a967abd3c1825">read</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
+<tr class="separator:ac75777910d670db8765a967abd3c1825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07805609a6bab85285c492845c4ceaf5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a07805609a6bab85285c492845c4ceaf5">readOrFail</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a07805609a6bab85285c492845c4ceaf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ce2c2eab02d9826c5db7321dccc5dc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a01ce2c2eab02d9826c5db7321dccc5dc">readAll</a> (size_t maxSize=-1)</td></tr>
-<tr class="separator:a01ce2c2eab02d9826c5db7321dccc5dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb53adf30be18bfecda9cd4a42c03394"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#afb53adf30be18bfecda9cd4a42c03394">skip</a> (size_t size)=0</td></tr>
-<tr class="separator:afb53adf30be18bfecda9cd4a42c03394"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c88a664d86b146829b6c5c9912449a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a47c88a664d86b146829b6c5c9912449a">skipOrFail</a> (size_t size)</td></tr>
+<tr class="memitem:af6d6bca10bea1e9ccdfba290ed6149ea"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#af6d6bca10bea1e9ccdfba290ed6149ea">readAll</a> (std::string *dst)</td></tr>
+<tr class="separator:af6d6bca10bea1e9ccdfba290ed6149ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e44982f09d85375746fde3f5177bc73"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a9e44982f09d85375746fde3f5177bc73">readAll</a> ()</td></tr>
+<tr class="separator:a9e44982f09d85375746fde3f5177bc73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e4b8bcb57abb2df0a4c7a96e7005e55"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a4e4b8bcb57abb2df0a4c7a96e7005e55">skip</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
+<tr class="separator:a4e4b8bcb57abb2df0a4c7a96e7005e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c88a664d86b146829b6c5c9912449a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a47c88a664d86b146829b6c5c9912449a">skipOrFail</a> (size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
 <tr class="separator:a47c88a664d86b146829b6c5c9912449a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0148f63b4e9e39a214362403a474a61c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a0148f63b4e9e39a214362403a474a61c">close</a> ()=0</td></tr>
-<tr class="separator:a0148f63b4e9e39a214362403a474a61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0ef9cd7386baf8c31c73158498eaa2"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acd0ef9cd7386baf8c31c73158498eaa2">displayPath</a> () const =0</td></tr>
-<tr class="separator:acd0ef9cd7386baf8c31c73158498eaa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac111e7410314b2b01feb748c7e314753"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac111e7410314b2b01feb748c7e314753">readUntil</a> (char delimiter, std::string *dst)</td></tr>
+<tr class="separator:ac111e7410314b2b01feb748c7e314753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada552be1753462a8ba939b5d2a3f2328"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ada552be1753462a8ba939b5d2a3f2328">readUntil</a> (char delimiter)</td></tr>
+<tr class="separator:ada552be1753462a8ba939b5d2a3f2328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1699529455d9627f1bb4ba82a1dee642"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a1699529455d9627f1bb4ba82a1dee642">close</a> ()</td></tr>
+<tr class="separator:a1699529455d9627f1bb4ba82a1dee642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac44b4e89bfbc1684cbe670409aa89417"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ac44b4e89bfbc1684cbe670409aa89417">isOpen</a> () const</td></tr>
+<tr class="separator:ac44b4e89bfbc1684cbe670409aa89417"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881f4a3293ee68ebfb43af900b580dd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a9881f4a3293ee68ebfb43af900b580dd">position</a> () const</td></tr>
+<tr class="separator:a9881f4a3293ee68ebfb43af900b580dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82bb6de3a8b9a2914e9639e76f670e14"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a> () const</td></tr>
+<tr class="separator:a82bb6de3a8b9a2914e9639e76f670e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbc9ccb2ad209443b51fbc369a51b049"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#adbc9ccb2ad209443b51fbc369a51b049">displayPath</a> () const</td></tr>
+<tr class="separator:adbc9ccb2ad209443b51fbc369a51b049"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a44bb66bced237daaacd2686991053d48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a44bb66bced237daaacd2686991053d48">InputStream</a> ()=default</td></tr>
+<tr class="separator:a44bb66bced237daaacd2686991053d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acedfdf865a7e9c359b20eb11e6c94310"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#acedfdf865a7e9c359b20eb11e6c94310">open</a> (<a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> buffer, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>, std::string_view <a class="el" href="classInputStream.html#adbc9ccb2ad209443b51fbc369a51b049">displayPath</a>)</td></tr>
+<tr class="separator:acedfdf865a7e9c359b20eb11e6c94310"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe6ce050427c23c03b9eb29d4498fac"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#adbe6ce050427c23c03b9eb29d4498fac">_underflow</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>, <a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> *buffer)</td></tr>
+<tr class="separator:adbe6ce050427c23c03b9eb29d4498fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeae9dccbfe04c2833cd683f2d9c9aac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">_close</a> ()</td></tr>
+<tr class="separator:abeae9dccbfe04c2833cd683f2d9c9aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3f59a498ee663f949cba10474f959dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ab3f59a498ee663f949cba10474f959dc">throwReadError</a> (size_t requested, size_t actual) const</td></tr>
+<tr class="separator:ab3f59a498ee663f949cba10474f959dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec29631e8e0b8229e02f8faa1c202f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7ec29631e8e0b8229e02f8faa1c202f7">throwSkipError</a> (size_t requested, size_t actual) const</td></tr>
+<tr class="separator:a7ec29631e8e0b8229e02f8faa1c202f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a8b3491c6ff8c417a89015a657b06ff18"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a8b3491c6ff8c417a89015a657b06ff18">underflow</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>)</td></tr>
+<tr class="separator:a8b3491c6ff8c417a89015a657b06ff18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fe9f1bd8f29a1ed0981f0e2a14b85fd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a3fe9f1bd8f29a1ed0981f0e2a14b85fd">readUntilSlow</a> (char delimiter, std::string *dst)</td></tr>
+<tr class="separator:a3fe9f1bd8f29a1ed0981f0e2a14b85fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a80990d5ab6e37ea022dedbabbec9cff0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a80990d5ab6e37ea022dedbabbec9cff0">_buffer</a></td></tr>
+<tr class="separator:a80990d5ab6e37ea022dedbabbec9cff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9777111730b1e611b96970b726d71be6"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a9777111730b1e611b96970b726d71be6">_bufferBase</a> = 0</td></tr>
+<tr class="separator:a9777111730b1e611b96970b726d71be6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12f4337ba6815f901a68fd507ff5ef7a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a12f4337ba6815f901a68fd507ff5ef7a">_size</a> = static_cast&lt;size_t&gt;(-1)</td></tr>
+<tr class="separator:a12f4337ba6815f901a68fd507ff5ef7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16339ad6052a31151898494c4749fdc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a16339ad6052a31151898494c4749fdc7">_isOpen</a> = false</td></tr>
+<tr class="separator:a16339ad6052a31151898494c4749fdc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab58224c32ac15342833f19337b56ec23"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ab58224c32ac15342833f19337b56ec23">_displayPath</a></td></tr>
+<tr class="separator:ab58224c32ac15342833f19337b56ec23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Abstract base class for all data input streams.</p>
-<p >Compared to <code>std::istream</code> it is:</p><ul>
-<li>Non-buffered.</li>
-<li>Uses exceptions for error handling.</li>
-<li>Has a very simple and intuitive interface. </li>
-</ul>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8c49246dd62e559578732f518f159432" name="a8c49246dd62e559578732f518f159432"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c49246dd62e559578732f518f159432">&#9670;&#160;</a></span>~InputStream()</h2>
+<div class="textblock"><p >Base class for all data input streams.</p>
+<p >Manages an internal buffer window and implements all read operations on top of it, with inline fast paths for the common case when the requested data is already in the buffer.</p>
+<p >Data is provided either by setting the buffer directly (for memory-backed streams) or through overriding the <code>_underflow</code> virtual method. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="acc4acc8bdf641655fd6bc5b2e0c7ff75" name="acc4acc8bdf641655fd6bc5b2e0c7ff75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4acc8bdf641655fd6bc5b2e0c7ff75">&#9670;&#160;</a></span>Buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">InputStream::Buffer</a> =  <a class="el" href="classStreamBuffer.html">StreamBuffer</a>&lt;const char&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae71831adce618d60783c287a2ac7075a" name="ae71831adce618d60783c287a2ac7075a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71831adce618d60783c287a2ac7075a">&#9670;&#160;</a></span>~InputStream()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -127,7 +196,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual InputStream::~InputStream </td>
+          <td class="memname">InputStream::~InputStream </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -135,7 +204,32 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44bb66bced237daaacd2686991053d48" name="a44bb66bced237daaacd2686991053d48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44bb66bced237daaacd2686991053d48">&#9670;&#160;</a></span>InputStream()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">InputStream::InputStream </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -143,8 +237,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0148f63b4e9e39a214362403a474a61c" name="a0148f63b4e9e39a214362403a474a61c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0148f63b4e9e39a214362403a474a61c">&#9670;&#160;</a></span>close()</h2>
+<a id="abeae9dccbfe04c2833cd683f2d9c9aac" name="abeae9dccbfe04c2833cd683f2d9c9aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeae9dccbfe04c2833cd683f2d9c9aac">&#9670;&#160;</a></span>_close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +247,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual void InputStream::close </td>
+          <td class="memname">void InputStream::_close </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -161,7 +255,107 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Closes the underlying source, releasing any held resources. Override in subclasses that need cleanup. Derived implementations should call <code><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">InputStream::_close()</a></code> at the end.</p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a29b7b91a1ff67a7fb11b0598d56f3381">detail::MemoryFileSystemInputStream</a>, and <a class="el" href="classFileInputStream.html#a4ecf01332a4e10140317a6d6e452addd">FileInputStream</a>.</p>
+
+</div>
+</div>
+<a id="adbe6ce050427c23c03b9eb29d4498fac" name="adbe6ce050427c23c03b9eb29d4498fac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe6ce050427c23c03b9eb29d4498fac">&#9670;&#160;</a></span>_underflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::_underflow </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> *&#160;</td>
+          <td class="paramname"><em>buffer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Fetches more data from the underlying source. Override in subclasses that perform I/O.</p>
+<p >Three modes of operation:</p><ul>
+<li><code>size == 0</code>: just refills the buffer without consuming any data.</li>
+<li><code>data != nullptr</code>: reads <code>size</code> bytes into <code>data</code>.</li>
+<li><code>data == nullptr &amp;&amp; size &gt; 0</code>: skips <code>size</code> bytes.</li>
+</ul>
+<p >In all modes, sets <code>*buffer</code> to the new buffer state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Buffer to read into, or <code>nullptr</code> for skip/refill. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>Number of bytes to read or skip. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buffer</td><td>New buffer state. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes read into <code>data</code> or skipped. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented in <a class="el" href="classFileInputStream.html#afdf24c49db8432a8052eb02de35fbe98">FileInputStream</a>, and <a class="el" href="classUnsizedInputStream.html#a3f0ab88d5cdc4f0e662588d0d0f45ffd">UnsizedInputStream</a>.</p>
+
+</div>
+</div>
+<a id="a1699529455d9627f1bb4ba82a1dee642" name="a1699529455d9627f1bb4ba82a1dee642"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1699529455d9627f1bb4ba82a1dee642">&#9670;&#160;</a></span>close()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputStream::close </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -174,12 +368,10 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a7ec37beb08bef1342baa62490368f03c">detail::MemoryFileSystemInputStream</a>, <a class="el" href="classBlobInputStream.html#aee9d6242c38cbb55016587c4fd2c2222">BlobInputStream</a>, <a class="el" href="classFileInputStream.html#af945368142d438059e88f8a5eb23f6a4">FileInputStream</a>, and <a class="el" href="classMemoryInputStream.html#ade3b3c9a4a35fcf89fb8c6109047cba2">MemoryInputStream</a>.</p>
-
 </div>
 </div>
-<a id="acd0ef9cd7386baf8c31c73158498eaa2" name="acd0ef9cd7386baf8c31c73158498eaa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd0ef9cd7386baf8c31c73158498eaa2">&#9670;&#160;</a></span>displayPath()</h2>
+<a id="adbc9ccb2ad209443b51fbc369a51b049" name="adbc9ccb2ad209443b51fbc369a51b049"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbc9ccb2ad209443b51fbc369a51b049">&#9670;&#160;</a></span>displayPath()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -188,7 +380,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual std::string InputStream::displayPath </td>
+          <td class="memname">const std::string &amp; InputStream::displayPath </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -196,18 +388,16 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Path to the file or resource being read, to be used for debugging and error reporting. </dd></dl>
 
-<p>Implemented in <a class="el" href="classBlobInputStream.html#ab98cfa96bc2eeca090d6e4cf4fb4aa1d">BlobInputStream</a>, <a class="el" href="classFileInputStream.html#a96ec9ea08cb1df5bc51489056cf2a71f">FileInputStream</a>, and <a class="el" href="classMemoryInputStream.html#a040e29c438c790beed3a370366ecead5">MemoryInputStream</a>.</p>
-
 </div>
 </div>
-<a id="a39ae65ea1ecb89c53f31aa0206d901c3" name="a39ae65ea1ecb89c53f31aa0206d901c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39ae65ea1ecb89c53f31aa0206d901c3">&#9670;&#160;</a></span>read()</h2>
+<a id="ac44b4e89bfbc1684cbe670409aa89417" name="ac44b4e89bfbc1684cbe670409aa89417"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac44b4e89bfbc1684cbe670409aa89417">&#9670;&#160;</a></span>isOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +406,110 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t InputStream::read </td>
+          <td class="memname">bool InputStream::isOpen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Whether this stream is open. </dd></dl>
+
+</div>
+</div>
+<a id="acedfdf865a7e9c359b20eb11e6c94310" name="acedfdf865a7e9c359b20eb11e6c94310"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acedfdf865a7e9c359b20eb11e6c94310">&#9670;&#160;</a></span>open()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputStream::open </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a>&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>displayPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Initializes the stream with the given buffer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">buffer</td><td>Initial buffer state. </td></tr>
+    <tr><td class="paramname">size</td><td>Total stream size in bytes, or <code>size_t(-1)</code> if unknown. </td></tr>
+    <tr><td class="paramname">displayPath</td><td>Display path for error reporting. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9881f4a3293ee68ebfb43af900b580dd" name="a9881f4a3293ee68ebfb43af900b580dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9881f4a3293ee68ebfb43af900b580dd">&#9670;&#160;</a></span>position()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::position </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Current position in the stream, in bytes from the beginning. </dd></dl>
+
+</div>
+</div>
+<a id="ac75777910d670db8765a967abd3c1825" name="ac75777910d670db8765a967abd3c1825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac75777910d670db8765a967abd3c1825">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::read </td>
           <td>(</td>
           <td class="paramtype">void *&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -235,14 +528,14 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Output buffer to write read data into. </td></tr>
-    <tr><td class="paramname">size</td><td>Number of bytes to read. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Output buffer to write read data into. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>Number of bytes to read. </td></tr>
   </table>
   </dd>
 </dl>
@@ -254,33 +547,64 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classBlobInputStream.html#a11d916f1d4bd8e57f658f62cd7856547">BlobInputStream</a>, <a class="el" href="classFileInputStream.html#a1908e3816662bda1bb2393af8959c91d">FileInputStream</a>, and <a class="el" href="classMemoryInputStream.html#a4986d3872a3360ff338987ce3980d963">MemoryInputStream</a>.</p>
+</div>
+</div>
+<a id="a9e44982f09d85375746fde3f5177bc73" name="a9e44982f09d85375746fde3f5177bc73"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e44982f09d85375746fde3f5177bc73">&#9670;&#160;</a></span>readAll() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InputStream::readAll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Reads everything that's in this stream.</p>
+<dl class="section return"><dt>Returns</dt><dd>Data read from the stream, as <code>std::string</code>. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a01ce2c2eab02d9826c5db7321dccc5dc" name="a01ce2c2eab02d9826c5db7321dccc5dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a01ce2c2eab02d9826c5db7321dccc5dc">&#9670;&#160;</a></span>readAll()</h2>
+<a id="af6d6bca10bea1e9ccdfba290ed6149ea" name="af6d6bca10bea1e9ccdfba290ed6149ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d6bca10bea1e9ccdfba290ed6149ea">&#9670;&#160;</a></span>readAll() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::string InputStream::readAll </td>
+          <td class="memname">size_t InputStream::readAll </td>
           <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>maxSize</em> = <code>-1</code></td><td>)</td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>dst</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Reads everything that's in this stream, up to <code>maxSize</code> bytes.</p>
+<p >Reads everything that's in this stream, writing into the provided string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">maxSize</td><td>Maximal number of bytes to read from the stream. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>String to write the data into. Previous contents are cleared. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Data read from the stream, as <code>std::string</code>. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes read from the stream. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
     <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
@@ -295,6 +619,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void InputStream::readOrFail </td>
@@ -314,12 +641,17 @@ Public Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p >Reads the requested amount of data from the stream, or fails with an exception if unable to do so.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>Output buffer to write read data into. </td></tr>
-    <tr><td class="paramname">size</td><td>Number of bytes to read. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">data</td><td>Output buffer to write read data into. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size</td><td>Number of bytes to read. </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,8 +664,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afb53adf30be18bfecda9cd4a42c03394" name="afb53adf30be18bfecda9cd4a42c03394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb53adf30be18bfecda9cd4a42c03394">&#9670;&#160;</a></span>skip()</h2>
+<a id="ada552be1753462a8ba939b5d2a3f2328" name="ada552be1753462a8ba939b5d2a3f2328"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada552be1753462a8ba939b5d2a3f2328">&#9670;&#160;</a></span>readUntil() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -342,7 +674,160 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">virtual size_t InputStream::skip </td>
+          <td class="memname">std::string InputStream::readUntil </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delimiter</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Reads data from the stream until the given delimiter is found and returns it as a string. The delimiter itself is consumed from the stream but not included in the returned string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delimiter</td><td>Delimiter character to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Data read from the stream, up to (but not including) the delimiter. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac111e7410314b2b01feb748c7e314753" name="ac111e7410314b2b01feb748c7e314753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac111e7410314b2b01feb748c7e314753">&#9670;&#160;</a></span>readUntil() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::readUntil </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delimiter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Reads data from the stream until the given delimiter is found, writing into the provided string. The delimiter itself is consumed from the stream but not written to the string.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">delimiter</td><td>Delimiter character to search for. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dst</td><td>String to write the data into. Previous contents are cleared. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes read from the stream, including the delimiter if it was found. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3fe9f1bd8f29a1ed0981f0e2a14b85fd" name="a3fe9f1bd8f29a1ed0981f0e2a14b85fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe9f1bd8f29a1ed0981f0e2a14b85fd">&#9670;&#160;</a></span>readUntilSlow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::readUntilSlow </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>delimiter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string *&#160;</td>
+          <td class="paramname"><em>dst</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82bb6de3a8b9a2914e9639e76f670e14" name="a82bb6de3a8b9a2914e9639e76f670e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82bb6de3a8b9a2914e9639e76f670e14">&#9670;&#160;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Total size of the stream in bytes, or <code>size_t(-1)</code> for unsized streams. </dd></dl>
+
+</div>
+</div>
+<a id="a4e4b8bcb57abb2df0a4c7a96e7005e55" name="a4e4b8bcb57abb2df0a4c7a96e7005e55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e4b8bcb57abb2df0a4c7a96e7005e55">&#9670;&#160;</a></span>skip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::skip </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
@@ -351,7 +836,7 @@ Public Member Functions</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -369,8 +854,6 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classBlobInputStream.html#aec94f54aa8002d9c289e1f97ea4d622b">BlobInputStream</a>, <a class="el" href="classFileInputStream.html#a0de32c076c2c1f5629fd9d9792a49590">FileInputStream</a>, and <a class="el" href="classMemoryInputStream.html#a24bd1affb3a8203c65d69aad51b3d55d">MemoryInputStream</a>.</p>
-
 </div>
 </div>
 <a id="a47c88a664d86b146829b6c5c9912449a" name="a47c88a664d86b146829b6c5c9912449a"></a>
@@ -378,6 +861,9 @@ Public Member Functions</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void InputStream::skipOrFail </td>
@@ -387,6 +873,11 @@ Public Member Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p >Same as <code>readOrFail</code>, but for skipping bytes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -401,6 +892,225 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab3f59a498ee663f949cba10474f959dc" name="ab3f59a498ee663f949cba10474f959dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3f59a498ee663f949cba10474f959dc">&#9670;&#160;</a></span>throwReadError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputStream::throwReadError </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>requested</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>actual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ec29631e8e0b8229e02f8faa1c202f7" name="a7ec29631e8e0b8229e02f8faa1c202f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ec29631e8e0b8229e02f8faa1c202f7">&#9670;&#160;</a></span>throwSkipError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void InputStream::throwSkipError </td>
+          <td>(</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>requested</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>actual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8b3491c6ff8c417a89015a657b06ff18" name="a8b3491c6ff8c417a89015a657b06ff18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b3491c6ff8c417a89015a657b06ff18">&#9670;&#160;</a></span>underflow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::underflow </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a80990d5ab6e37ea022dedbabbec9cff0" name="a80990d5ab6e37ea022dedbabbec9cff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80990d5ab6e37ea022dedbabbec9cff0">&#9670;&#160;</a></span>_buffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> InputStream::_buffer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9777111730b1e611b96970b726d71be6" name="a9777111730b1e611b96970b726d71be6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9777111730b1e611b96970b726d71be6">&#9670;&#160;</a></span>_bufferBase</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::_bufferBase = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab58224c32ac15342833f19337b56ec23" name="ab58224c32ac15342833f19337b56ec23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab58224c32ac15342833f19337b56ec23">&#9670;&#160;</a></span>_displayPath</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string InputStream::_displayPath</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a16339ad6052a31151898494c4749fdc7" name="a16339ad6052a31151898494c4749fdc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16339ad6052a31151898494c4749fdc7">&#9670;&#160;</a></span>_isOpen</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool InputStream::_isOpen = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12f4337ba6815f901a68fd507ff5ef7a" name="a12f4337ba6815f901a68fd507ff5ef7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12f4337ba6815f901a68fd507ff5ef7a">&#9670;&#160;</a></span>_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t InputStream::_size = static_cast&lt;size_t&gt;(-1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

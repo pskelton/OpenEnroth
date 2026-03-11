@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -118,8 +118,10 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a08c54b538e212d9e2cea406770b3a18f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlob.html#a08c54b538e212d9e2cea406770b3a18f">fromMalloc</a> (const void *<a class="el" href="classBlob.html#a177116f40a530c74dbfd7db661ecbe4b">data</a>, size_t <a class="el" href="classBlob.html#a5a1c073c88e0aa47eb45f46d30e53de8">size</a>)</td></tr>
 <tr class="separator:a08c54b538e212d9e2cea406770b3a18f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8dd2df493213c9c038e94cd161f335d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlob.html#af8dd2df493213c9c038e94cd161f335d">fromMalloc</a> (std::unique_ptr&lt; void, <a class="el" href="structFreeDeleter.html">FreeDeleter</a> &gt; <a class="el" href="classBlob.html#a177116f40a530c74dbfd7db661ecbe4b">data</a>, size_t <a class="el" href="classBlob.html#a5a1c073c88e0aa47eb45f46d30e53de8">size</a>)</td></tr>
-<tr class="separator:af8dd2df493213c9c038e94cd161f335d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a250b0cd022a5a0652794da9766928f28"><td class="memTemplParams" colspan="2">template&lt;class T &gt; <br />
+requires std::is_integral_v&lt;T&gt; || std::is_void_v&lt;T&gt;</td></tr>
+<tr class="memitem:a250b0cd022a5a0652794da9766928f28"><td class="memTemplItemLeft" align="right" valign="top">static <a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classBlob.html#a250b0cd022a5a0652794da9766928f28">fromMalloc</a> (std::unique_ptr&lt; T, <a class="el" href="structFreeDeleter.html">FreeDeleter</a> &gt; <a class="el" href="classBlob.html#a177116f40a530c74dbfd7db661ecbe4b">data</a>, size_t <a class="el" href="classBlob.html#a5a1c073c88e0aa47eb45f46d30e53de8">size</a>)</td></tr>
+<tr class="separator:a250b0cd022a5a0652794da9766928f28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6596e8e6cefe9db2a5066f15af2f48cf"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlob.html#a6596e8e6cefe9db2a5066f15af2f48cf">fromFile</a> (std::string_view path)</td></tr>
 <tr class="separator:a6596e8e6cefe9db2a5066f15af2f48cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2c8698283bc7bc821f714302ee17128"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classBlob.html">Blob</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlob.html#ad2c8698283bc7bc821f714302ee17128">fromString</a> (std::string string)</td></tr>
@@ -544,19 +546,22 @@ Friends</h2></td></tr>
 
 </div>
 </div>
-<a id="af8dd2df493213c9c038e94cd161f335d" name="af8dd2df493213c9c038e94cd161f335d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8dd2df493213c9c038e94cd161f335d">&#9670;&#160;</a></span>fromMalloc() <span class="overload">[2/2]</span></h2>
+<a id="a250b0cd022a5a0652794da9766928f28" name="a250b0cd022a5a0652794da9766928f28"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a250b0cd022a5a0652794da9766928f28">&#9670;&#160;</a></span>fromMalloc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; <br />
+requires std::is_integral_v&lt;T&gt; || std::is_void_v&lt;T&gt;</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBlob.html">Blob</a> Blob::fromMalloc </td>
+          <td class="memname">static <a class="el" href="classBlob.html">Blob</a> Blob::fromMalloc </td>
           <td>(</td>
-          <td class="paramtype">std::unique_ptr&lt; void, <a class="el" href="structFreeDeleter.html">FreeDeleter</a> &gt;&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; T, <a class="el" href="structFreeDeleter.html">FreeDeleter</a> &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -573,7 +578,7 @@ Friends</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

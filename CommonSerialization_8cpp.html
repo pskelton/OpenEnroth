@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Library/Serialization/StandardSerialization.cpp File Reference</title>
+<title>OpenEnroth: src/Library/Serialization/CommonSerialization.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -77,13 +77,13 @@ $(function() {
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">StandardSerialization.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">CommonSerialization.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="StandardSerialization_8h.html">StandardSerialization.h</a>&quot;</code><br />
-<code>#include &lt;fast_float/fast_float.h&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="Serialization_2CommonSerialization_8h.html">CommonSerialization.h</a>&quot;</code><br />
 <code>#include &lt;string&gt;</code><br />
 <code>#include &lt;charconv&gt;</code><br />
+<code>#include &lt;fast_float/fast_float.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="Format_8h.html">Utility/String/Format.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="SerializationExceptions_8h.html">SerializationExceptions.h</a>&quot;</code><br />
 </div><table class="memberdecls">
@@ -98,9 +98,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aa44dea6f3e2910952de421c8a21e8afc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#aa44dea6f3e2910952de421c8a21e8afc">MM_DEFINE_TYPE_NAME</a>(T)&#160;&#160;&#160;template&lt;&gt; const char *typeName&lt;T&gt;() { return #T; }</td></tr>
+<tr class="memitem:aa44dea6f3e2910952de421c8a21e8afc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#aa44dea6f3e2910952de421c8a21e8afc">MM_DEFINE_TYPE_NAME</a>(T)&#160;&#160;&#160;template&lt;&gt; const char *typeName&lt;T&gt;() { return #T; }</td></tr>
 <tr class="separator:aa44dea6f3e2910952de421c8a21e8afc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4f35fba1e00c9803c8b652533b84467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#ae4f35fba1e00c9803c8b652533b84467">MM_DEFINE_PROXY_SERIALIZATION_FUNCTIONS</a>(TYPE,  NAMESPACE)</td></tr>
+<tr class="memitem:ae4f35fba1e00c9803c8b652533b84467"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#ae4f35fba1e00c9803c8b652533b84467">MM_DEFINE_PROXY_SERIALIZATION_FUNCTIONS</a>(TYPE,  NAMESPACE)</td></tr>
 <tr class="separator:ae4f35fba1e00c9803c8b652533b84467"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -108,21 +108,21 @@ Functions</h2></td></tr>
 <tr class="memitem:abc7d0567dd4f86b4f4589749e91bd294"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:abc7d0567dd4f86b4f4589749e91bd294"><td class="memTemplItemLeft" align="right" valign="top">const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#abc7d0567dd4f86b4f4589749e91bd294">detail::typeName</a> ()</td></tr>
 <tr class="separator:abc7d0567dd4f86b4f4589749e91bd294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e030070a47872390fb1f3ec08447b5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a> (const bool &amp;src, std::string *dst)</td></tr>
+<tr class="memitem:a2e030070a47872390fb1f3ec08447b5e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a> (const bool &amp;src, std::string *dst)</td></tr>
 <tr class="separator:a2e030070a47872390fb1f3ec08447b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a897b4104dc916637eb6e69bd81724456"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a> (std::string_view src, bool *dst)</td></tr>
+<tr class="memitem:a897b4104dc916637eb6e69bd81724456"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a> (std::string_view src, bool *dst)</td></tr>
 <tr class="separator:a897b4104dc916637eb6e69bd81724456"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abecef40087fb695953bb50dda6b9fbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a> (const bool &amp;src, std::string *dst)</td></tr>
+<tr class="memitem:abecef40087fb695953bb50dda6b9fbd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a> (const bool &amp;src, std::string *dst)</td></tr>
 <tr class="separator:abecef40087fb695953bb50dda6b9fbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a969d299d395d3e6959278443a4cf7cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a> (std::string_view src, bool *dst)</td></tr>
+<tr class="memitem:a969d299d395d3e6959278443a4cf7cf9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a> (std::string_view src, bool *dst)</td></tr>
 <tr class="separator:a969d299d395d3e6959278443a4cf7cf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a119ad2c13180a8c4bf72bd6946c7683e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a119ad2c13180a8c4bf72bd6946c7683e">trySerialize</a> (const std::string &amp;src, std::string *dst)</td></tr>
+<tr class="memitem:a119ad2c13180a8c4bf72bd6946c7683e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a119ad2c13180a8c4bf72bd6946c7683e">trySerialize</a> (const std::string &amp;src, std::string *dst)</td></tr>
 <tr class="separator:a119ad2c13180a8c4bf72bd6946c7683e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27983f520f100f7803bdaacbdffba97a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a27983f520f100f7803bdaacbdffba97a">tryDeserialize</a> (std::string_view src, std::string *dst)</td></tr>
+<tr class="memitem:a27983f520f100f7803bdaacbdffba97a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a27983f520f100f7803bdaacbdffba97a">tryDeserialize</a> (std::string_view src, std::string *dst)</td></tr>
 <tr class="separator:a27983f520f100f7803bdaacbdffba97a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6239fd3cc3dc1b66e09c2e3e50a7df5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a6239fd3cc3dc1b66e09c2e3e50a7df5e">serialize</a> (const std::string &amp;src, std::string *dst)</td></tr>
+<tr class="memitem:a6239fd3cc3dc1b66e09c2e3e50a7df5e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a6239fd3cc3dc1b66e09c2e3e50a7df5e">serialize</a> (const std::string &amp;src, std::string *dst)</td></tr>
 <tr class="separator:a6239fd3cc3dc1b66e09c2e3e50a7df5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31f063016545a9363e97ecc50732ad20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="StandardSerialization_8cpp.html#a31f063016545a9363e97ecc50732ad20">deserialize</a> (std::string_view src, std::string *dst)</td></tr>
+<tr class="memitem:a31f063016545a9363e97ecc50732ad20"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="CommonSerialization_8cpp.html#a31f063016545a9363e97ecc50732ad20">deserialize</a> (std::string_view src, std::string *dst)</td></tr>
 <tr class="separator:a31f063016545a9363e97ecc50732ad20"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fd52f6b019cf68349d94812d03cac20"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a3fd52f6b019cf68349d94812d03cac20"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail__float.html#a3fd52f6b019cf68349d94812d03cac20">detail_float::trySerialize</a> (const T &amp;src, std::string *dst)</td></tr>
@@ -175,14 +175,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(<span class="keyword">const</span> TYPE &amp;src, std::string *dst) { <span class="keywordflow">return</span> NAMESPACE::trySerialize(src, dst); }                  \</div>
-<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(std::string_view src, TYPE *dst) { <span class="keywordflow">return</span> NAMESPACE::tryDeserialize(src, dst); }                \</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a>(<span class="keyword">const</span> TYPE &amp;src, std::string *dst) { NAMESPACE::serialize(src, dst); }                               \</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="StandardSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a>(std::string_view src, TYPE *dst) { NAMESPACE::deserialize(src, dst); }</div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_a2e030070a47872390fb1f3ec08447b5e"><div class="ttname"><a href="StandardSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a></div><div class="ttdeci">bool trySerialize(const bool &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:32</div></div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_a897b4104dc916637eb6e69bd81724456"><div class="ttname"><a href="StandardSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a></div><div class="ttdeci">bool tryDeserialize(std::string_view src, bool *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:37</div></div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_a969d299d395d3e6959278443a4cf7cf9"><div class="ttname"><a href="StandardSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a></div><div class="ttdeci">void deserialize(std::string_view src, bool *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:53</div></div>
-<div class="ttc" id="aStandardSerialization_8cpp_html_abecef40087fb695953bb50dda6b9fbd0"><div class="ttname"><a href="StandardSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a></div><div class="ttdeci">void serialize(const bool &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> StandardSerialization.cpp:49</div></div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="CommonSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a>(<span class="keyword">const</span> TYPE &amp;src, std::string *dst) { <span class="keywordflow">return</span> NAMESPACE::trySerialize(src, dst); }                  \</div>
+<div class="line">    <span class="keywordtype">bool</span> <a class="code hl_function" href="CommonSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a>(std::string_view src, TYPE *dst) { <span class="keywordflow">return</span> NAMESPACE::tryDeserialize(src, dst); }                \</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="CommonSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a>(<span class="keyword">const</span> TYPE &amp;src, std::string *dst) { NAMESPACE::serialize(src, dst); }                               \</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="CommonSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a>(std::string_view src, TYPE *dst) { NAMESPACE::deserialize(src, dst); }</div>
+<div class="ttc" id="aCommonSerialization_8cpp_html_a2e030070a47872390fb1f3ec08447b5e"><div class="ttname"><a href="CommonSerialization_8cpp.html#a2e030070a47872390fb1f3ec08447b5e">trySerialize</a></div><div class="ttdeci">bool trySerialize(const bool &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> CommonSerialization.cpp:32</div></div>
+<div class="ttc" id="aCommonSerialization_8cpp_html_a897b4104dc916637eb6e69bd81724456"><div class="ttname"><a href="CommonSerialization_8cpp.html#a897b4104dc916637eb6e69bd81724456">tryDeserialize</a></div><div class="ttdeci">bool tryDeserialize(std::string_view src, bool *dst)</div><div class="ttdef"><b>Definition:</b> CommonSerialization.cpp:37</div></div>
+<div class="ttc" id="aCommonSerialization_8cpp_html_a969d299d395d3e6959278443a4cf7cf9"><div class="ttname"><a href="CommonSerialization_8cpp.html#a969d299d395d3e6959278443a4cf7cf9">deserialize</a></div><div class="ttdeci">void deserialize(std::string_view src, bool *dst)</div><div class="ttdef"><b>Definition:</b> CommonSerialization.cpp:53</div></div>
+<div class="ttc" id="aCommonSerialization_8cpp_html_abecef40087fb695953bb50dda6b9fbd0"><div class="ttname"><a href="CommonSerialization_8cpp.html#abecef40087fb695953bb50dda6b9fbd0">serialize</a></div><div class="ttdeci">void serialize(const bool &amp;src, std::string *dst)</div><div class="ttdef"><b>Definition:</b> CommonSerialization.cpp:49</div></div>
 </div><!-- fragment -->
 </div>
 </div>

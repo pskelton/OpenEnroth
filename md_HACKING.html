@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -75,26 +75,20 @@ $(function() {
 <div class="textblock"><p >This document describes the development process we're following. It's required reading for anyone intending to contribute.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Dependencies</h1>
-<p >Main dependencies:</p><ul>
-<li><a href="https://github.com/libsdl-org/SDL">SDL3</a> — cross-platform media framework;</li>
-<li><a href="https://github.com/FFmpeg/FFmpeg">FFmpeg</a> — video support;</li>
-<li><a href="https://github.com/kcat/openal-soft">OpenAL Soft</a> — audio support;</li>
-<li><a href="https://github.com/madler/zlib">Zlib</a> — compression.</li>
-</ul>
-<p >By default, we are using prebuilt dependencies, and they are resolved automatically during the cmake phase.</p>
-<p >Additional dependencies:</p><ul>
+<p >The project requires:</p><ul>
 <li><a href="https://cmake.org/download/">CMake 3.27+</a>.</li>
 <li><a href="https://www.python.org/downloads/">Python 3.x</a> (optional, for style checks).</li>
 </ul>
+<p >By default, we are using prebuilt dependencies, and they are resolved automatically during the cmake phase.</p>
 <p >Minimum required compiler versions are as follows:</p><ul>
 <li>Visual Studio 2022;</li>
-<li>GCC 13;</li>
-<li>AppleClang 15 or Clang 15.</li>
+<li>GCC 14;</li>
+<li>AppleClang 16 (Xcode 16.3).</li>
 </ul>
 <p >The following IDEs have been tested and should work fine:</p><ul>
 <li>Visual Studio (2022 or later);</li>
 <li>Visual Studio Code (2022 or later);</li>
-<li>CLion (2022 or later).</li>
+<li>CLion (2025 or later).</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Building on *nix platforms</h1>
@@ -105,16 +99,15 @@ Building on *nix platforms</h1>
 <div class="line">$ cmake --build build</div>
 </div><!-- fragment --><p >To cross-compile for 32-bit x86, you can pass <code>-m32</code> via compiler flags to cmake. In the snipped above that would mean running <code>export CFLAGS="-m32" CXXFLAGS="-m32"</code> first.</p>
 <p >You can also select platform dependent <a href="https://cmake.org/cmake/help/latest/manual/cmake-generators.7.html">generator</a> for your favorite IDE.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
-Additional Notes for MacOS</h2>
-<ul>
-<li>Make sure you have the latest Xcode installed. Do this through the App Store or by downloading it from the <a href="https://developer.apple.com/download/more/">Apple Developer website</a>.</li>
-</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Building on MacOS</h1>
+<p >Everything written above for *nix platforms applies.</p>
+<p >Make sure you have the latest Xcode installed. Do this through the App Store or by downloading it from the <a href="https://developer.apple.com/download/more/">Apple Developer website</a>.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Building on Windows</h1>
 <ul>
 <li>Get git (<code><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></code>) and Visual Studio 2022.</li>
-<li>Make sure you have Windows SDK v10.0.20348.0 or higher.</li>
+<li>Make sure you have Windows SDK v10.0.17134.0 or higher (required for UTF-8 locale support).</li>
 <li>Clone, fork or download the repo <code><a href="https://github.com/OpenEnroth/OpenEnroth">https://github.com/OpenEnroth/OpenEnroth</a></code>.</li>
 <li>Setup CMake:<ul>
 <li>either install standalone cmake from the official website,</li>
@@ -134,7 +127,7 @@ Coding style</h1>
 <p >To perform a style check before pushing anything you can build <code>check_style</code> target. In Visual Studio you can do that by going to <em><b>Solution Explorer → Change Views → CMake targets</b></em>. Right click and build <code>check_style</code>, errors will be listed in output.</p>
 <p >We also follow some additional style preferences, as listed below.</p>
 <p >Documentation:</p><ul>
-<li>Documentation should be in doxydoc format with <code>@</code> used for tags, and starting with <code>/**</code> comment introducer.</li>
+<li>Documentation should be in doxydoc format with <code>@</code> used for tags, and starting with <code>/**</code> comment introducer. Use <code>@param[out]</code> for output parameters.</li>
 <li>Documentation should be written in English.</li>
 <li>Please leave original function offsets intact. If you have a chance, move them to doxygen comments using <code>@par Original binary offset:\ilinebr</code> doxygen tag (e.g. <code>@par Original binary offset:\ilinebr 0xCAFEBEEF</code>).</li>
 </ul>
@@ -152,8 +145,12 @@ Coding style</h1>
 </ul>
 <p >Code formatting:</p><ul>
 <li><code>*</code> and <code>&amp;</code> in type declarations should be preceded by a space. So it's <code>char *string</code>, and not <code>char* string</code>.</li>
+<li>Sort method definitions in <code>.cpp</code> files in the same order as they appear in the <code>.h</code> file.</li>
+<li>In header files, use an additional <code>private:</code> label before listing all class fields at the end of the class declaration.</li>
+<li>Use <code>virtual</code> prefix for all virtual functions, even when <code>override</code> is also present.</li>
 </ul>
 <p >Language features:</p><ul>
+<li>We use C++23. Prefer modern alternatives where appropriate, e.g. <code>contains()</code> instead of <code>find() != end()</code>.</li>
 <li>Use <code>using Alias = Type</code> instead of <code>typedef Type Alias</code>.</li>
 <li>Use <code>enum class</code>es followed by <code>using enum</code> statements instead of ordinary <code>enum</code>s. This provides type safety without changing the syntax. For flags, use <code><a class="el" href="classFlags.html">Flags</a></code> class.</li>
 <li>It's OK to use plain <code>enum</code>s if you really need to have implicit casts to integer types, but this is a very rare use case. If you're using <code>enum</code> values to index into some array, consider using <code>enum class</code> coupled with <code><a class="el" href="classIndexedArray.html">IndexedArray</a></code>.</li>
@@ -163,7 +160,7 @@ Coding style</h1>
 <li>In general, you shouldn't bother optimizing code paths where you might save an allocation by moving in an <code>std::string</code> or passing it by const reference, the performance benefits are almost always negligible.</li>
 <li>Use <code>TransparentString*</code> classes if you need to index into a string map using <code>std::string_view</code> keys.</li>
 <li>However, feel free to use <code>std::string</code> or <code>const std::string &amp;</code> parameters where it makes your code simpler (e.g. by avoiding jumping through hoops if you'll need to create an intermediate <code>std::string</code> object anyway).</li>
-<li>C++ is notoriously bad when it comes to string concatenation (you can't concatenate <code>std::string_view</code> with a string literal using <code>operator+</code>, and never will). In most cases you should be fine just using <code>fmt::format</code> for this. If <code>fmt::format</code> looks like an overkill, use <code>join</code> from <code><a class="el" href="Transformations_8h.html">Utility/String/Transformations.h</a></code>.</li>
+<li>C++ is notoriously bad when it comes to string concatenation (you can't concatenate <code>std::string_view</code> with a string literal using <code>operator+</code>, and never will). In most cases you should be fine just using <code>fmt::format</code> for this. If <code>fmt::format</code> looks like an overkill, use <code>join</code> from <code><a class="el" href="Join_8h.html">Utility/String/Join.h</a></code>.</li>
 </ul>
 </li>
 <li>We generally refrain from using namespaces because OpenEnroth is a relatively small codebase, and we don't need the measures advocated by the Google style guide to prevent name clashes.<ul>
@@ -201,7 +198,7 @@ Code Organization</h1>
 Testing</h1>
 <p >We strive for a good test coverage of the project, and while we're not there yet, the current policy is to add tests for all the bugs we fix, as long as the fix is testable. E.g. graphical glitches are generally very hard to test, but we have the infrastructure to test game logic and small isolated classes.</p>
 <p >Tests in OpenEnroth fall into two categories:</p><ul>
-<li>Unit tests. These are a standard breed of tests, written using Google Test. You can see some examples in <code>src/Utility/Tests</code>.</li>
+<li>Unit tests. These are a standard breed of tests, written using Google Test. You can see some examples in <code>src/Utility/Streams/Tests</code>.</li>
 <li><a class="el" href="classGame.html">Game</a> tests. If you're familiar with how testing is done these days for complex mobile apps, then you can consider game tests a variation of UI tests that's specific to our project. <a class="el" href="classGame.html">Game</a> tests need game assets to run.</li>
 </ul>
 <p ><a class="el" href="classGame.html">Game</a> tests work by instrumenting the engine, and then running test code in between the game frames. This code usually sends events to the engine (e.g. mouse clicks), which are then processed by the engine in the next frame, but it can do pretty much anything else – all of engine's data is accessible and writable from inside the game test.</p>
@@ -258,7 +255,7 @@ Console Commands</h1>
 <p >Currently, the console is only available while in-game.</p>
 <h1><a class="anchor" id="autotoc_md14"></a>
 Additional Resources</h1>
-<p >Old event decompiler and IDB files can be found <a href="https://www.dropbox.com/sh/if4u3lphn633oit/AADUYMxNcrkAU6epJ50RskyXa?dl=0">here</a>. Feel free to ping <code>zipi#6029</code> on Discord for more info.</p>
+<p >Old event decompiler and IDB files can be found <a href="https://www.dropbox.com/sh/if4u3lphn633oit/AADUYMxNcrkAU6epJ50RskyXa?dl=0">here</a>. Feel free to ping <code>zipi6616</code> on Discord for more info.</p>
 <h1><a class="anchor" id="autotoc_md15"></a>
 Support</h1>
 <p >Still having problems? Ask for help on our discord! <a href="https://discord.gg/jRCyPtq"><img src="https://img.shields.io/badge/chat-on%20discord-green.svg" alt="" style="pointer-events: none;" class="inline"/></a> </p>

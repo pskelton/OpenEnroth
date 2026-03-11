@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.5"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>OpenEnroth: src/Utility/Streams/Tests/MemoryInputStream_ut.cpp File Reference</title>
+<title>OpenEnroth: detail::StreamDeserializer&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -69,53 +69,69 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_9761b53e3d9349800c0cb59b71c8cd3d.html">Utility</a></li><li class="navelem"><a class="el" href="dir_4927241bf9d88ee11776b3778575d2d8.html">Streams</a></li><li class="navelem"><a class="el" href="dir_ebcfb1f669eaff82303f6809a781536e.html">Tests</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespacedetail.html">detail</a></li><li class="navelem"><a class="el" href="structdetail_1_1StreamDeserializer.html">StreamDeserializer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">MemoryInputStream_ut.cpp File Reference</div></div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="structdetail_1_1StreamDeserializer-members.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">detail::StreamDeserializer&lt; T &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;string&gt;</code><br />
-<code>#include &quot;<a class="el" href="UnitTest_8h.html">Testing/Unit/UnitTest.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="MemoryInputStream_8h.html">Utility/Streams/MemoryInputStream.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a8aa81355856114a9c198d0bd18c98f3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="MemoryInputStream__ut_8cpp.html#a8aa81355856114a9c198d0bd18c98f3e">UNIT_TEST</a> (<a class="el" href="classMemoryInputStream.html">MemoryInputStream</a>, Seek)</td></tr>
-<tr class="separator:a8aa81355856114a9c198d0bd18c98f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+
+<p><code>#include &lt;BinarySerialization.h&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4c577ca094df8e15182d6ea2798c655a"><td class="memTemplParams" colspan="2">template&lt;class... Tags&gt; </td></tr>
+<tr class="memitem:a4c577ca094df8e15182d6ea2798c655a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structdetail_1_1StreamDeserializer.html#a4c577ca094df8e15182d6ea2798c655a">operator()</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;src, const Tags &amp;... tags) const</td></tr>
+<tr class="separator:a4c577ca094df8e15182d6ea2798c655a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a8aa81355856114a9c198d0bd18c98f3e" name="a8aa81355856114a9c198d0bd18c98f3e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8aa81355856114a9c198d0bd18c98f3e">&#9670;&#160;</a></span>UNIT_TEST()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4c577ca094df8e15182d6ea2798c655a" name="a4c577ca094df8e15182d6ea2798c655a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c577ca094df8e15182d6ea2798c655a">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<div class="memtemplate">
+template&lt;class... Tags&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">UNIT_TEST </td>
+          <td class="memname">T <a class="el" href="structdetail_1_1StreamDeserializer.html">detail::StreamDeserializer</a>&lt; T &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classMemoryInputStream.html">MemoryInputStream</a>&#160;</td>
-          <td class="paramname">, </td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Seek&#160;</td>
-          <td class="paramname">&#160;</td>
+          <td class="paramtype">const Tags &amp;...&#160;</td>
+          <td class="paramname"><em>tags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/Library/Binary/<a class="el" href="BinarySerialization_8h.html">BinarySerialization.h</a></li>
+</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

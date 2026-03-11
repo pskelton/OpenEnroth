@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -86,6 +86,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2a0ff4335a1ee9096df90f288c026c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a161d53d20061f2835401a2e97bb881b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a161d53d20061f2835401a2e97bb881b5">Actor</a> (int <a class="el" href="classActor.html#a0d2b93f5baefded4573b9f89aa5bda9a">id</a>)</td></tr>
 <tr class="separator:a161d53d20061f2835401a2e97bb881b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a389100e86858cd4156b7b9fe661c841e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a389100e86858cd4156b7b9fe661c841e">GetDisplayName</a> () const</td></tr>
+<tr class="separator:a389100e86858cd4156b7b9fe661c841e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a944ef847694008402b37d466dd8e81ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a944ef847694008402b37d466dd8e81ee">SummonMinion</a> (int <a class="el" href="classActor.html#a9e2a67c5ddc57faa869639edd1fedf50">summonerId</a>)</td></tr>
 <tr class="separator:a944ef847694008402b37d466dd8e81ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64d7be4e14386c473bd6e9028f395230"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a64d7be4e14386c473bd6e9028f395230">Reset</a> ()</td></tr>
@@ -246,8 +248,6 @@ Static Public Member Functions</h2></td></tr>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0d2b93f5baefded4573b9f89aa5bda9a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a0d2b93f5baefded4573b9f89aa5bda9a">id</a> = -1</td></tr>
 <tr class="separator:a0d2b93f5baefded4573b9f89aa5bda9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99855a0b1eb2cb0ff78eb32e98e487f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#ae99855a0b1eb2cb0ff78eb32e98e487f">name</a></td></tr>
-<tr class="separator:ae99855a0b1eb2cb0ff78eb32e98e487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b495266be78d0cd15f9cef7ead88ed9"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a1b495266be78d0cd15f9cef7ead88ed9">npcId</a> = 0</td></tr>
 <tr class="separator:a1b495266be78d0cd15f9cef7ead88ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cdb673f9cad414ba3c8a7000ce4514c"><td class="memItemLeft" align="right" valign="top">ActorAttributes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classActor.html#a3cdb673f9cad414ba3c8a7000ce4514c">attributes</a> = 0</td></tr>
@@ -1959,6 +1959,23 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a389100e86858cd4156b7b9fe661c841e" name="a389100e86858cd4156b7b9fe661c841e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a389100e86858cd4156b7b9fe661c841e">&#9670;&#160;</a></span>GetDisplayName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Actor::GetDisplayName </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4ee7d405ac5f625e922231b53d20c067" name="a4ee7d405ac5f625e922231b53d20c067"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ee7d405ac5f625e922231b53d20c067">&#9670;&#160;</a></span>GetObjDescId()</h2>
 
@@ -3112,20 +3129,6 @@ Public Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">uint16_t Actor::moveSpeed = 200</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae99855a0b1eb2cb0ff78eb32e98e487f" name="ae99855a0b1eb2cb0ff78eb32e98e487f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae99855a0b1eb2cb0ff78eb32e98e487f">&#9670;&#160;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Actor::name</td>
         </tr>
       </table>
 </div><div class="memdoc">

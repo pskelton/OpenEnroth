@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;4cea689</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
    </div>
   </td>
  </tr>
@@ -127,6 +127,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1SplitViewSentinel.html">SplitViewSentinel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1StreamDeserializer.html">StreamDeserializer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1StringDeserializer.html">StringDeserializer</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdetail_1_1StringSerializer.html">StringSerializer</a></td></tr>
@@ -148,6 +150,12 @@ Functions</h2></td></tr>
 <tr class="separator:a7268102572d1b3c5e091ea5b0ade1182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1892a4a5733ec83f0734ad3b41ad4f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html#ab1892a4a5733ec83f0734ad3b41ad4f6">globalWaitForMessages</a> ()</td></tr>
 <tr class="separator:ab1892a4a5733ec83f0734ad3b41ad4f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52df148bbcb71f131c813469b71e851f"><td class="memTemplParams" colspan="2">template&lt;class T , class... Tags, size_t... Indices&gt; </td></tr>
+<tr class="memitem:a52df148bbcb71f131c813469b71e851f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a52df148bbcb71f131c813469b71e851f">serializePack</a> (const T &amp;src, <a class="el" href="classOutputStream.html">OutputStream</a> *dst, const TagPack&lt; Tags... &gt; &amp;pack, std::index_sequence&lt; Indices... &gt;)</td></tr>
+<tr class="separator:a52df148bbcb71f131c813469b71e851f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a700f74782dc66bd049ffaa88c6780890"><td class="memTemplParams" colspan="2">template&lt;class T , class... Tags, size_t... Indices&gt; </td></tr>
+<tr class="memitem:a700f74782dc66bd049ffaa88c6780890"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a700f74782dc66bd049ffaa88c6780890">deserializePack</a> (<a class="el" href="classInputStream.html">InputStream</a> &amp;src, T *dst, const TagPack&lt; Tags... &gt; &amp;pack, std::index_sequence&lt; Indices... &gt;)</td></tr>
+<tr class="separator:a700f74782dc66bd049ffaa88c6780890"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc7d0567dd4f86b4f4589749e91bd294"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:abc7d0567dd4f86b4f4589749e91bd294"><td class="memTemplItemLeft" align="right" valign="top">const char *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#abc7d0567dd4f86b4f4589749e91bd294">typeName</a> ()</td></tr>
 <tr class="separator:abc7d0567dd4f86b4f4589749e91bd294"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,6 +181,48 @@ Variables</h2></td></tr>
 <tr class="separator:a2a68b6b2f889f935ff44d6e1ab8a693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a700f74782dc66bd049ffaa88c6780890" name="a700f74782dc66bd049ffaa88c6780890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a700f74782dc66bd049ffaa88c6780890">&#9670;&#160;</a></span>deserializePack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class... Tags, size_t... Indices&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void detail::deserializePack </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classInputStream.html">InputStream</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">T *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TagPack&lt; Tags... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Indices... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a7268102572d1b3c5e091ea5b0ade1182" name="a7268102572d1b3c5e091ea5b0ade1182"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7268102572d1b3c5e091ea5b0ade1182">&#9670;&#160;</a></span>globalProcessMessages()</h2>
 
@@ -226,6 +276,48 @@ template&lt;typename T &gt; </div>
           <td></td>
           <td class="paramtype">const T &amp;&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a52df148bbcb71f131c813469b71e851f" name="a52df148bbcb71f131c813469b71e851f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52df148bbcb71f131c813469b71e851f">&#9670;&#160;</a></span>serializePack()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , class... Tags, size_t... Indices&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void detail::serializePack </td>
+          <td>(</td>
+          <td class="paramtype">const T &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classOutputStream.html">OutputStream</a> *&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const TagPack&lt; Tags... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pack</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::index_sequence&lt; Indices... &gt;&#160;</td>
+          <td class="paramname">&#160;</td>
         </tr>
         <tr>
           <td></td>
