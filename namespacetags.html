@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cf228e9</span>
    </div>
   </td>
  </tr>
@@ -227,7 +227,7 @@ template&lt;class From , class To &gt; </div>
 <p >Example usage: </p><div class="fragment"><div class="line">uint32_t src = 42;</div>
 <div class="line">uint8_t dst;</div>
 <div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a>(src, &amp;dst, tags::cast&lt;uint32_t, uint8_t&gt;);</div>
-<div class="ttc" id="aCompositeSnapshots_8cpp_html_a6812b2ab6323d9ecd969408e1a5c474e"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a></div><div class="ttdeci">void snapshot(const IndoorLocation &amp;src, IndoorDelta_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:275</div></div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_a6812b2ab6323d9ecd969408e1a5c474e"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a6812b2ab6323d9ecd969408e1a5c474e">snapshot</a></div><div class="ttdeci">void snapshot(const IndoorLocation &amp;src, IndoorDelta_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:279</div></div>
 </div><!-- fragment --><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
     <tr><td class="paramname">From</td><td>Source type for the cast. </td></tr>
@@ -260,7 +260,7 @@ template&lt;class From , class To &gt; </div>
 <p >Serialization tag that applies subsequent tags to each element of a container individually, rather than to the container as a whole. Without this tag, there is no way to pass tags down to individual container elements.</p>
 <p >Example usage: </p><div class="fragment"><div class="line">std::vector&lt;Monster&gt; monsters;</div>
 <div class="line"><a class="code hl_function" href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a>(src, &amp;monsters, <a class="code hl_variable" href="namespacetags.html#aef36221ead71ef92d58bc63d39bbcdb4">tags::append</a>, <a class="code hl_variable" href="namespacetags.html#a0ec68b7cef3c8b988044cd3b5b7a3957">tags::each</a>, tags::via&lt;MonsterDesc_MM7&gt;);</div>
-<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:255</div></div>
+<div class="ttc" id="aCompositeSnapshots_8cpp_html_a19304568664873e32a8849fbf0496588"><div class="ttname"><a href="CompositeSnapshots_8cpp.html#a19304568664873e32a8849fbf0496588">deserialize</a></div><div class="ttdeci">void deserialize(InputStream &amp;src, IndoorLocation_MM7 *dst)</div><div class="ttdef"><b>Definition:</b> CompositeSnapshots.cpp:259</div></div>
 <div class="ttc" id="anamespacetags_html_a0ec68b7cef3c8b988044cd3b5b7a3957"><div class="ttname"><a href="namespacetags.html#a0ec68b7cef3c8b988044cd3b5b7a3957">tags::each</a></div><div class="ttdeci">constexpr EachTag each</div><div class="ttdef"><b>Definition:</b> BinaryTags.h:95</div></div>
 <div class="ttc" id="anamespacetags_html_aef36221ead71ef92d58bc63d39bbcdb4"><div class="ttname"><a href="namespacetags.html#aef36221ead71ef92d58bc63d39bbcdb4">tags::append</a></div><div class="ttdeci">constexpr AppendTag append</div><div class="ttdef"><b>Definition:</b> BinaryTags.h:64</div></div>
 </div><!-- fragment --> 

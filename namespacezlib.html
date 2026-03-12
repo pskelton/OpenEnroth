@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;6cb7177</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cf228e9</span>
    </div>
   </td>
  </tr>
@@ -98,6 +98,13 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td><a class="el" href="classBlob.html">Blob</a> to compress. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Compressed blob. </dd></dl>
 
 </div>
 </div>
@@ -117,7 +124,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>sizeHint</em>&#160;</td>
+          <td class="paramname"><em>sizeHint</em> = <code>0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -126,6 +133,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source</td><td><a class="el" href="classBlob.html">Blob</a> to decompress. </td></tr>
+    <tr><td class="paramname">sizeHint</td><td>Expected decompressed size. If zero, a default heuristic is used. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Decompressed blob. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On decompression error. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
