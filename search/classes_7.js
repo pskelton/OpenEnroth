@@ -7,8 +7,9 @@ var searchData=
   ['historydata_4',['HistoryData',['../structHistoryData.html',1,'']]],
   ['historytable_5',['HistoryTable',['../structHistoryTable.html',1,'']]],
   ['hitmap_6',['HitMap',['../classHitMap.html',1,'']]],
-  ['houseanimdescr_7',['HouseAnimDescr',['../structHouseAnimDescr.html',1,'']]],
-  ['housedata_8',['HouseData',['../structHouseData.html',1,'']]],
-  ['housenpcdesc_9',['HouseNpcDesc',['../structHouseNpcDesc.html',1,'']]],
-  ['hsvcolorf_10',['HsvColorf',['../structHsvColorf.html',1,'']]]
+  ['hostilitytable_7',['HostilityTable',['../structHostilityTable.html',1,'']]],
+  ['houseanimdescr_8',['HouseAnimDescr',['../structHouseAnimDescr.html',1,'']]],
+  ['housedata_9',['HouseData',['../structHouseData.html',1,'']]],
+  ['housenpcdesc_10',['HouseNpcDesc',['../structHouseNpcDesc.html',1,'']]],
+  ['hsvcolorf_11',['HsvColorf',['../structHsvColorf.html',1,'']]]
 ];

@@ -31,7 +31,7 @@ var searchData=
   ['regenstacking_28',['RegenStacking',['../classGameConfig_1_1Gameplay.html#a5c03474b02354a835f13484daa1c1ae1',1,'GameConfig::Gameplay']]],
   ['registrykeys_29',['registryKeys',['../structPathResolutionConfig.html#aa01585c686acd71bb69b8f88022456d0',1,'PathResolutionConfig']]],
   ['rel_30',['rel',['../classPlatformMouseEvent.html#a05bce8401f79c49aff51bc63a681184e',1,'PlatformMouseEvent']]],
-  ['relations_31',['relations',['../structFactionTable.html#a7a7f7e8b9498d82b88213a22e632ec6e',1,'FactionTable']]],
+  ['relations_31',['relations',['../structHostilityTable.html#a73089b546515c01fff4507732bf9f6f9',1,'HostilityTable']]],
   ['reloadtex_32',['ReloadTex',['../classGameConfig_1_1Window.html#ad93e22040af9052d344ffb8c715362c5',1,'GameConfig::Window']]],
   ['remaining_5fsparks_5fto_5finit_33',['remaining_sparks_to_init',['../structexplosion__effect__struct.html#a1b6e88ee42fdd4f30fef4c4c581c3082',1,'explosion_effect_struct']]],
   ['remainingresttime_34',['remainingRestTime',['../UIRest_8h.html#a1e94907e52d1a533391b8146f4117db2',1,'remainingRestTime():&#160;UIRest.cpp'],['../UIRest_8cpp.html#a1e94907e52d1a533391b8146f4117db2',1,'remainingRestTime():&#160;UIRest.cpp']]],

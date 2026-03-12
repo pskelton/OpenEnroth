@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;cf228e9</span>
+   <div id="projectname">OpenEnroth<span id="projectnumber">&#160;bb0c5f2</span>
    </div>
   </td>
  </tr>
@@ -155,10 +155,8 @@ Private Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a29b7b91a1ff67a7fb11b0598d56f3381"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a29b7b91a1ff67a7fb11b0598d56f3381">_close</a> () override</td></tr>
-<tr class="separator:a29b7b91a1ff67a7fb11b0598d56f3381"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23590d7aa86d00ec9b9f05fc76cb13f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#a23590d7aa86d00ec9b9f05fc76cb13f7">closeInternal</a> ()</td></tr>
-<tr class="separator:a23590d7aa86d00ec9b9f05fc76cb13f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae29d641a8a0221efe350341c8c2b4dbb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdetail_1_1MemoryFileSystemInputStream.html#ae29d641a8a0221efe350341c8c2b4dbb">_close</a> (bool canThrow) override</td></tr>
+<tr class="separator:ae29d641a8a0221efe350341c8c2b4dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -177,8 +175,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:acedfdf865a7e9c359b20eb11e6c94310 inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbe6ce050427c23c03b9eb29d4498fac inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#adbe6ce050427c23c03b9eb29d4498fac">_underflow</a> (void *data, size_t <a class="el" href="classInputStream.html#a82bb6de3a8b9a2914e9639e76f670e14">size</a>, <a class="el" href="classInputStream.html#acc4acc8bdf641655fd6bc5b2e0c7ff75">Buffer</a> *buffer)</td></tr>
 <tr class="separator:adbe6ce050427c23c03b9eb29d4498fac inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abeae9dccbfe04c2833cd683f2d9c9aac inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">_close</a> ()</td></tr>
-<tr class="separator:abeae9dccbfe04c2833cd683f2d9c9aac inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7038ae92f654ac4138389d6c4cd46d71 inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7038ae92f654ac4138389d6c4cd46d71">_close</a> (bool canThrow)</td></tr>
+<tr class="separator:a7038ae92f654ac4138389d6c4cd46d71 inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33277edd94ec9191fce5a89ee39baefb inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a33277edd94ec9191fce5a89ee39baefb">destroy</a> () noexcept</td></tr>
+<tr class="separator:a33277edd94ec9191fce5a89ee39baefb inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f59a498ee663f949cba10474f959dc inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#ab3f59a498ee663f949cba10474f959dc">throwReadError</a> (size_t requested, size_t actual) const</td></tr>
 <tr class="separator:ab3f59a498ee663f949cba10474f959dc inherit pro_methods_classInputStream"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ec29631e8e0b8229e02f8faa1c202f7 inherit pro_methods_classInputStream"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInputStream.html#a7ec29631e8e0b8229e02f8faa1c202f7">throwSkipError</a> (size_t requested, size_t actual) const</td></tr>
@@ -254,8 +254,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a29b7b91a1ff67a7fb11b0598d56f3381" name="a29b7b91a1ff67a7fb11b0598d56f3381"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29b7b91a1ff67a7fb11b0598d56f3381">&#9670;&#160;</a></span>_close()</h2>
+<a id="ae29d641a8a0221efe350341c8c2b4dbb" name="ae29d641a8a0221efe350341c8c2b4dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae29d641a8a0221efe350341c8c2b4dbb">&#9670;&#160;</a></span>_close()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +266,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void detail::MemoryFileSystemInputStream::_close </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>canThrow</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -276,40 +277,21 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Closes the underlying source, releasing any held resources. Override in subclasses that need cleanup. Derived implementations should call <code><a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">InputStream::_close()</a></code> at the end.</p>
+<p >Closes the underlying source, releasing any held resources. Override in subclasses that need cleanup. Derived implementations should call <code><a class="el" href="classInputStream.html#a7038ae92f654ac4138389d6c4cd46d71">InputStream::_close()</a></code> at the end.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">canThrow</td><td>Whether the implementation is allowed to throw. When called from a destructor via <code><a class="el" href="classInputStream.html#a33277edd94ec9191fce5a89ee39baefb">destroy()</a></code>, this is <code>false</code> and the implementation should do best-effort cleanup without throwing. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classException.html">Exception</a></td><td>On error, only if <code>canThrow</code> is <code>true</code>. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classInputStream.html#abeae9dccbfe04c2833cd683f2d9c9aac">InputStream</a>.</p>
-
-</div>
-</div>
-<a id="a23590d7aa86d00ec9b9f05fc76cb13f7" name="a23590d7aa86d00ec9b9f05fc76cb13f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23590d7aa86d00ec9b9f05fc76cb13f7">&#9670;&#160;</a></span>closeInternal()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void detail::MemoryFileSystemInputStream::closeInternal </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Reimplemented from <a class="el" href="classInputStream.html#a7038ae92f654ac4138389d6c4cd46d71">InputStream</a>.</p>
 
 </div>
 </div>

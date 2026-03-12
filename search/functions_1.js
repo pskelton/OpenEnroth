@@ -113,7 +113,7 @@ var searchData=
   ['allmonsterattackpreferences_110',['allMonsterAttackPreferences',['../MonsterEnumFunctions_8cpp.html#ac7a2eaeb4e2f87592290e53b9228e101',1,'allMonsterAttackPreferences():&#160;MonsterEnumFunctions.cpp'],['../MonsterEnumFunctions_8h.html#ac7a2eaeb4e2f87592290e53b9228e101',1,'allMonsterAttackPreferences():&#160;MonsterEnumFunctions.cpp']]],
   ['allmonsters_111',['allMonsters',['../MonsterEnumFunctions_8h.html#a07273e19ee32a0957750cd0ff0e755a9',1,'MonsterEnumFunctions.h']]],
   ['allmonstertypes_112',['allMonsterTypes',['../MonsterEnumFunctions_8h.html#a3df50b4da19c804145180877c89d7797',1,'MonsterEnumFunctions.h']]],
-  ['allocateactor_113',['AllocateActor',['../Actor_8cpp.html#a11f0e5830746921e41b31a47ea54fe69',1,'AllocateActor(bool appendOnly):&#160;Actor.cpp'],['../Actor_8h.html#a11f0e5830746921e41b31a47ea54fe69',1,'AllocateActor(bool appendOnly):&#160;Actor.cpp']]],
+  ['allocateactor_113',['AllocateActor',['../Actor_8cpp.html#a5b1c607c6d471059fcf33d833e375010',1,'AllocateActor():&#160;Actor.cpp'],['../Actor_8h.html#a5b1c607c6d471059fcf33d833e375010',1,'AllocateActor():&#160;Actor.cpp']]],
   ['allocatechunk_114',['allocateChunk',['../classChunkBuffer.html#a92b7b5883397ede59eab9c15b2b1ebaf',1,'ChunkBuffer']]],
   ['alloccursorsystemmem_115',['AllocCursorSystemMem',['../classIo_1_1Mouse.html#a0ba914aa030302ad616012df0031091f',1,'Io::Mouse']]],
   ['allpotionbuffs_116',['allPotionBuffs',['../GameTests__0500_8cpp.html#ae18930af1f64c8f0d5b08d336f3ac894',1,'GameTests_0500.cpp']]],
