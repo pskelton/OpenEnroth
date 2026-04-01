@@ -52,6 +52,10 @@ void NullRenderer::SetUIClipRect(const Recti &rect) {}
 void NullRenderer::ResetUIClipRect() {}
 
 void NullRenderer::DrawQuad2D(GraphicsImage *texture, const Recti &srcRect, const Recti &dstRect, Color color) {
+    DrawQuad2D(texture, Rectf(srcRect.x, srcRect.y, srcRect.w, srcRect.h), dstRect, color);
+}
+
+void NullRenderer::DrawQuad2D(GraphicsImage *texture, const Rectf &srcRect, const Recti &dstRect, Color color) {
     if (texture && engine->callObserver)
         engine->callObserver->notify(CALL_DRAW_2D_TEXTURE, texture->name());
 }

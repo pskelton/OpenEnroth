@@ -1972,6 +1972,10 @@ void OpenGLRenderer::BeginScene2D() {
 }
 
 void OpenGLRenderer::DrawQuad2D(GraphicsImage *texture, const Recti &srcRect, const Recti &dstRect, Color color) {
+    DrawQuad2D(texture, Rectf(srcRect.x, srcRect.y, srcRect.w, srcRect.h), dstRect, color);
+}
+
+void OpenGLRenderer::DrawQuad2D(GraphicsImage *texture, const Rectf &srcRect, const Recti &dstRect, Color color) {
     if (!texture) {
         logger->trace("Null texture passed to DrawQuad2D");
         return;
