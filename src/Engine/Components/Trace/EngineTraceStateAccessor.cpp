@@ -25,7 +25,7 @@ static bool shouldSkip(const GameConfig *config, const ConfigSection *section, c
         entry == &config->settings.SoundLevel ||
         entry == &config->debug.LogLevel ||
         entry == &config->debug.NoVideo ||
-        entry == &config->gameplay.NoPartyActorCollisions ||
+        entry == &config->debug.NoPartyActorCollisions ||
         entry == &config->gameplay.QuickSavesCount;
 }
 
@@ -45,7 +45,7 @@ void EngineTraceStateAccessor::prepareForRecording(GameConfig *config, ConfigPat
 
     config->graphics.FPSLimit.setValue(1000 / config->debug.TraceFrameTimeMs.value());
     config->debug.NoVideo.setValue(config->debug.TraceNoVideo.value());
-    config->gameplay.NoPartyActorCollisions.setValue(config->debug.TraceNoPartyActorCollisions.value());
+    config->debug.NoPartyActorCollisions.setValue(config->debug.TraceNoPartyActorCollisions.value());
 }
 
 void EngineTraceStateAccessor::prepareForPlayback(GameConfig *config, const ConfigPatch &patch) {
@@ -67,7 +67,7 @@ void EngineTraceStateAccessor::prepareForPlayback(GameConfig *config, const Conf
     config->graphics.FPSLimit.setValue(0); // Unlimited.
     config->graphics.AlwaysCustomCursor.setValue(true); // We want to see the mouse pointer.
     config->debug.NoVideo.setValue(config->debug.TraceNoVideo.value());
-    config->gameplay.NoPartyActorCollisions.setValue(config->debug.TraceNoPartyActorCollisions.value());
+    config->debug.NoPartyActorCollisions.setValue(config->debug.TraceNoPartyActorCollisions.value());
     pAudioPlayer->UpdateVolumeFromConfig();
 }
 

@@ -141,9 +141,19 @@ class GameConfig : public Config {
         Bool OverrideBuiltInResources = {this, "override_built_in_resources", false,
             "Allow overriding built-in game resources (shaders and scripts) with files in game data folder."};
 
+        Int FloorChecksEps = { this, "floor_checks_eps", 3, &ValidateFloorChecksEps,
+            "Maximum allowed slack for point-inside-a-polygon checks when calculating floor z level. "
+            "This is needed because there are actual holes in level geometry sometimes, up to several units wide." };
+
+        Bool NoPartyActorCollisions = { this, "no_party_actor_collisions", false,
+            "Disable collisions between the party and monsters on the map. Mainly useful for debugging and tests." };
+
      private:
         static int ValidateFrameTime(int frameTime) {
             return std::max(frameTime, 1);
+        }
+        static int ValidateFloorChecksEps(int eps) {
+            return std::clamp(eps, 0, 10);
         }
     };
 
@@ -164,10 +174,6 @@ class GameConfig : public Config {
             "Use 0 for vanilla behaviour, items that don't fit will be lost. "
             "Use 1 to try to place items that didn't fit every time the chest is opened again. "
             "Use 2 to try to place items that didn't fit every time an item is picked up from the chest."};
-
-        Int FloorChecksEps = {this, "floor_checks_eps", 3, &ValidateFloorChecksEps, // TODO(pskelton): Move to debug
-            "Maximum allowed slack for point-inside-a-polygon checks when calculating floor z level. "
-            "This is needed because there are actual holes in level geometry sometimes, up to several units wide."};
 
         Int Gravity = {this, "gravity", 5,
             "Gravity strength, the higher the more gravity, 0 disables gravity completely."};
@@ -254,9 +260,6 @@ class GameConfig : public Config {
             "How many quick saves have currently been used."
             "This will rotate back to 0 when 5 saves has been reached."};
 
-        Bool NoPartyActorCollisions = {this, "no_party_actor_collisions", false, // TODO(pskelton): Move to debug
-            "Disable collisions between the party and monsters on the map. Mainly useful for debugging and tests."};
-
         Bool NoIndoorFallDamage = {this, "no_indoor_fall_damage", false,
             "Disable fall damage for indoor maps."};
 
@@ -301,9 +304,6 @@ class GameConfig : public Config {
         }
         static float ValidateSpellFailureRecoveryMod(float mod) {
             return std::clamp(mod, 0.0f, 1.0f);
-        }
-        static int ValidateFloorChecksEps(int eps) {
-            return std::clamp(eps, 0, 10);
         }
         static int ValidateRecovery(int recovery) {
             if (recovery < 0)

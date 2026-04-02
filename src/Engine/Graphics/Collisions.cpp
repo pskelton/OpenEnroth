@@ -891,7 +891,7 @@ void ProcessPartyCollisionsBLV(int sectorId, int min_party_move_delta_sqr, int *
             // TODO(captainurist): why there is no call to _46ED8A_collide_against_sprite_objects?
             //                     See ProcessPartyCollisionsODM.
             // pskelton - probably because there are no/ very few sprite objects in BLV. The only ones i can think of are the trees in the fairy hill.
-            if (!engine->config->gameplay.NoPartyActorCollisions.value()) {
+            if (!engine->config->debug.NoPartyActorCollisions.value()) {
                 for (int k = 0; k < pActors.size(); ++k)
                     CollideWithActor(k, 0);
             }
@@ -1046,7 +1046,7 @@ void ProcessPartyCollisionsODM(Vec3f *partyNewPos, Vec3f *partyInputSpeed, int *
         CollideOutdoorWithModels(true);
         CollideOutdoorWithDecorations(worldToGrid(pParty->pos));
         _46ED8A_collide_against_sprite_objects(Pid::character(0));
-        if (!engine->config->gameplay.NoPartyActorCollisions.value()) {
+        if (!engine->config->debug.NoPartyActorCollisions.value()) {
             for (size_t actor_id = 0; actor_id < pActors.size(); ++actor_id)
                 CollideWithActor(actor_id, 0);
         }
