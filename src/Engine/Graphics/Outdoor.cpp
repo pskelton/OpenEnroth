@@ -824,7 +824,7 @@ float ODM_GetFloorLevel(const Vec3f &pos, bool *pIsOnWater, int *faceId) {
             if (!face.boundingBox.containsXY(pos.x, pos.y))
                 continue;
 
-            int slack = engine->config->gameplay.FloorChecksEps.value();
+            int slack = engine->config->debug.FloorChecksEps.value();
             if (!face.Contains(pos, model.index, slack, FACE_XY_PLANE))
                 continue;
 
@@ -1537,7 +1537,7 @@ int GetCeilingHeight(int Party_X, signed int Party_Y, int Party_ZHeight, int *pF
             if (!face.boundingBox.containsXY(Party_X, Party_Y))
                 continue;
 
-            int slack = engine->config->gameplay.FloorChecksEps.value();
+            int slack = engine->config->debug.FloorChecksEps.value();
             if (!face.Contains(Vec3f(Party_X, Party_Y, 0), model.index, slack, FACE_XY_PLANE))
                 continue;
 

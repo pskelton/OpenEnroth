@@ -141,7 +141,7 @@ enum class ArcomageMessageType {
     ARCO_MSG_RM_UP,
     ARCO_MSG_LM_DOWN,
     ARCO_MSG_RM_DOWN,
-    ARCO_MSG_SWITCH_FULLSCREEN,
+    ARCO_MSG_SWITCH_FULLSCREEN, // Not used in Arcomage
     ARCO_MSG_ESCAPE
 };
 using enum ArcomageMessageType;

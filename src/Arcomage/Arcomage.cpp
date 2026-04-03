@@ -231,10 +231,6 @@ void ArcomageGame::onKeyPress(PlatformKey key) {
         } else if (pArcomageGame->check_exit) {
             pArcomageGame->check_exit = 0;
         }
-
-        if (keyboardActionMapping->isBound(INPUT_ACTION_TOGGLE_WINDOW_MODE, key) && !pMovie_Track) {
-            pArcomageGame->stru1.am_input_type = ARCO_MSG_SWITCH_FULLSCREEN;
-        }
     }
 }
 

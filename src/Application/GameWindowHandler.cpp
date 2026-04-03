@@ -152,9 +152,8 @@ void GameWindowHandler::UpdateConfigFromWindow(GameConfig *config) {
 
 void GameWindowHandler::OnScreenshot() {
     if (render) {
-        // TODO(pskelton): add "Screenshots" folder?
         engine->config->settings.ScreenshotNumber.increment();
-        std::string path = fmt::format("screenshot_{:05}.png", engine->config->settings.ScreenshotNumber.value());
+        std::string path = fmt::format("screenshots/screenshot_{:05}.png", engine->config->settings.ScreenshotNumber.value());
 
         ufs->write(path, png::encode(render->MakeFullScreenshot()));
     }
@@ -286,11 +285,11 @@ void GameWindowHandler::OnKey(PlatformKey key) {
         // we're setting a key binding in options
         keyboardInputHandler->ProcessTextInput(key, -1);
     } else if (pArcomageGame->bGameInProgress) {
-        // TODO(pskelton): how should this be handled?
         if (keyboardActionMapping->isBound(INPUT_ACTION_TOGGLE_WINDOW_MODE, key) && !pMovie_Track) {
             OnToggleWindowMode();
+        } else {
+            pArcomageGame->onKeyPress(key);
         }
-        pArcomageGame->onKeyPress(key);
     } else {
         pMediaPlayer->StopMovie();
         if (keyboardActionMapping->isBound(INPUT_ACTION_PARTY_CREATION_DONE, key)) {
