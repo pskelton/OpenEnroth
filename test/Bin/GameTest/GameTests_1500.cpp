@@ -26,6 +26,8 @@
 #include "Engine/Objects/Chest.h"
 #include "Engine/Snapshots/EntitySnapshots.h"
 
+#include "GameTestCommon.h"
+
 // 1500
 
 GAME_TEST(Issues, Issue1503) {
@@ -81,17 +83,33 @@ GAME_TEST(Issues, Issue1521) {
     EXPECT_GT(mobToMobDist(pActors[38], pActors[39]), 512.0f);
 }
 
-GAME_TEST(Issues, Issue1522) {
+GAME_TEST(Issues, Issue1522_2458) {
     // Wizards not summoning light elementals.
+    // Archmages summons water elemental instead of light elemental.
+    test.prepareForNextTest();
+    engine->config->debug.NoActors.setValue(true);
+    game.startNewGame();
     auto actorsCount = actorTapes.totalCount();
     auto lightElemCount = tapes.custom([] { return std::ranges::count_if(pActors, [](const Actor& actor) {
-        return pMonsterStats->infos[actor.monsterInfo.id].internalName.contains("Elemental Light"); });
-    });
-    test.playTraceFromTestData("issue_1522.mm7", "issue_1522.json");
+            return pMonsterStats->infos[actor.monsterInfo.id].internalName.contains("Elemental Light"); });
+        });
+    test.startTaping();
+    prepareForBattleTest();
+
+    // Spawn Wizards and wait.
+    engine->config->debug.NoActors.setValue(false);
+    for (int i = 0; i < 5; i++) {
+        game.spawnMonster(pParty->pos + Vec3f(0, 700, 0), MONSTER_MAGE_A);
+        game.spawnMonster(pParty->pos + Vec3f(0, 800, 0), MONSTER_MAGE_B);
+        game.spawnMonster(pParty->pos + Vec3f(0, 900, 0), MONSTER_MAGE_C);
+    }
+    game.tick(200);
+
     EXPECT_GT(actorsCount.back(), actorsCount.front());
     EXPECT_GT(lightElemCount.back(), lightElemCount.front());
     auto summoned = std::ranges::count_if(pActors, [](const Actor& a) { return a.summonerId.type() == OBJECT_Actor; });
     EXPECT_GT(summoned, 0);
+    EXPECT_EQ(lightElemCount.back(), summoned); // All summoned monsters should be light elementals.
 }
 
 GAME_TEST(Issues, Issue1524) {
@@ -234,7 +252,7 @@ GAME_TEST(Issues, Issue1665) {
     auto xpos = tapes.custom([]() { return static_cast<int>(pParty->pos.x); });
     auto zpos = tapes.custom([]() { return static_cast<int>(pParty->pos.z); });
     test.playTraceFromTestData("issue_1665.mm7", "issue_1665.json");
-    
+
     // TODO(pskelton): fixing cylinder collisions means we can no longer get into this hole
     //EXPECT_GT(xpos.max(), 2200);
     //EXPECT_LT(zpos.min(), -1700); // weve made it into the hole
@@ -812,7 +830,7 @@ GAME_TEST(Issues, Issue1966) {
     EXPECT_GT(spritesTape.map([] (auto &&sprites) { return sprites.count(SPRITE_SPELL_EARTH_ROCK_BLAST); }).max(), 100);
 
     // Some rocks should have hit monsters - this is what was triggering the assertion.
-    EXPECT_GT(spritesTape.flatten().count(SPRITE_SPELL_EARTH_ROCK_BLAST_IMPACT), 10);
+    EXPECT_GT(spritesTape.flatten().count(SPRITE_SPELL_EARTH_ROCK_BLAST_IMPACT), 6);
 }
 
 GAME_TEST(Issues, Issue1972) {

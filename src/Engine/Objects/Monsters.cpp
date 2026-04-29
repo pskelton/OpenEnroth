@@ -942,10 +942,10 @@ MonsterId MonsterList::GetMonsterIDByName(std::string_view pMonsterName) {
 }
 
 MonsterId MonsterList::GetBaseMonsterIDByName(std::string_view pBaseMonsterName) {
-	auto Id = GetMonsterIDByName(pBaseMonsterName);
+    MonsterId Id = GetMonsterIDByName(pBaseMonsterName);
     if (Id == MONSTER_INVALID) {
         return MONSTER_INVALID;
-	}
+    }
     // Base monster IDs are always the first in their group of 3 (e.g. MONSTER_ANGEL_A, MONSTER_ANGEL_B, MONSTER_ANGEL_C).
-	return MonsterId(std::to_underlying(Id) - ((std::to_underlying(Id)-1) % 3));
+    return MonsterId(std::to_underlying(Id) - ((std::to_underlying(Id)-1) % 3));
 }
